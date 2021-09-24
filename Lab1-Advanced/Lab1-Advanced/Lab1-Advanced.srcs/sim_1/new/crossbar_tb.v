@@ -21,8 +21,24 @@
 
 
 module crossbar_tb;
-    wire [3:0] out1;
+    reg [3:0] in1, in2;
+    wire [3:0] out1, out2;
+    reg control = 1'b0;
+    
     crossbar verify(
-        .out1(out1)
+        .in1(in1), .in2(in2),
+        .out1(out1), .out2(out2),
+        .control(control)
     );
+    
+    initial begin
+        in1 = 4'b0000;
+        repeat (2 ** 4) begin
+            #1;
+            control = control + 1'b1;
+            in1 = in1 + 4'b0001;
+            in2 = 4'b1111 - in1;
+        end
+        #1 $finish;
+    end;
 endmodule
