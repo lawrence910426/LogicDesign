@@ -20,9 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module dmux_tb(
-
-    );
-    
-    dmux verify();
+module dmux_tb;
+    wire[3:0] a;
+    dmux verify(.a(a));
 endmodule
