@@ -1,15 +1,15 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c56b473357c41dab8815dbc9a27af66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot crossbar_tb_behav xil_defaultlib.crossbar_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 3c56b473357c41dab8815dbc9a27af66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dmux_tb_behav xil_defaultlib.dmux_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'in1' is not connected on this instance [C:/home/github/LogicDesign/Lab1-Advanced/Lab1-Advanced/Lab1-Advanced.srcs/sim_1/new/crossbar_tb.v:25]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.crossbar
-Compiling module xil_defaultlib.crossbar_tb
+Compiling module xil_defaultlib.sdmux
+Compiling module xil_defaultlib.dmux
+Compiling module xil_defaultlib.dmux_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot crossbar_tb_behav
+Built simulation snapshot dmux_tb_behav
