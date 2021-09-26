@@ -4,3 +4,18 @@
 
 # Coding rules
 to be determined (???
+ 
+# Schematic systhesis tools
+https://electronics.stackexchange.com/questions/13995/how-can-i-generate-a-schematic-block-diagram-image-file-from-verilog
+```bash=
+yosys
+yosys> read_verilog [Your verilog].v
+… …
+yosys> hierarchy -check;
+yosys> proc;
+yosys> opt;
+yosys> fsm;
+yosys> opt;
+yosys> select [Your module]; # Optional if you only have one module
+yosys> show;
+```
