@@ -68,7 +68,7 @@ module mux_2_1(
     and (temp[1], in2, sel);
     
     or (out, temp[0], temp[1]);
-endmodule;
+endmodule
 
 module dmux_1_2(
     input in, 
@@ -80,5 +80,5 @@ module dmux_1_2(
     
     and (out1, in, nsel);
     and (out2, in, sel);
-endmodule;
+endmodule
 
