@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/LogicDesignExperiment/LAB01_0923/advance/crossbar_fpga/crossbar_fpga.runs/impl_1/crossbar.tcl"
+  variable script "D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga/crossbar_fpga.runs/impl_1/crossbar.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,28 +123,12 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
-OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7a35tcpg236-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-OPTRACE "create in-memory project" END { }
-OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/LogicDesignExperiment/LAB01_0923/advance/crossbar_fpga/crossbar_fpga.cache/wt [current_project]
-  set_property parent.project_path D:/LogicDesignExperiment/LAB01_0923/advance/crossbar_fpga/crossbar_fpga.xpr [current_project]
-  set_property ip_output_repo D:/LogicDesignExperiment/LAB01_0923/advance/crossbar_fpga/crossbar_fpga.cache/ip [current_project]
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga/crossbar_fpga.runs/impl_1/crossbar.dcp
+  set_property webtalk.parent_dir D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga/crossbar_fpga.cache/wt [current_project]
+  set_property parent.project_path D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga/crossbar_fpga.xpr [current_project]
+  set_property ip_output_repo D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga/crossbar_fpga.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-OPTRACE "set parameters" END { }
-OPTRACE "add files" START { }
-  add_files -quiet D:/LogicDesignExperiment/LAB01_0923/advance/crossbar_fpga/crossbar_fpga.runs/synth_1/crossbar.dcp
-OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/LogicDesignExperiment/LAB01_0923/advance/crossbar_fpga/crossbar_fpga.srcs/constrs_1/new/crossbar.xdc
-OPTRACE "read constraints: implementation" END { }
-OPTRACE "add files" END { }
-OPTRACE "link_design" START { }
-  link_design -top crossbar -part xc7a35tcpg236-1
-OPTRACE "link_design" END { }
-OPTRACE "gray box cells" START { }
-OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }

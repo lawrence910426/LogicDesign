@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/LogicDesignExperiment/LAB01_0923/advance/crossbar_fpga/crossbar_fpga.srcs/constrs_1/new/crossbar.xdc rfile:../../../crossbar_fpga.srcs/constrs_1/new/crossbar.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga/crossbar_fpga.srcs/constrs_1/new/crossbar.xdc rfile:../../../crossbar_fpga.srcs/constrs_1/new/crossbar.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V16 [get_ports {in1[0]}]
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]

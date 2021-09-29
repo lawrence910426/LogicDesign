@@ -34,17 +34,17 @@ module crossbar4x4_tb;
                 );
     
     initial begin
-        in1 = 4'b0000;
-        in2 = 4'b0001;
-        in3 = 4'b0010;
-        in4 = 4'b0011;
+        in1 = 4'b1010;
+        in2 = 4'b1011;
+        in3 = 4'b1100;
+        in4 = 4'b1101;
         repeat (2 ** 5) begin
             #1;
             control = control + 5'b00001;
-            in1 = in1 + 4'b0001;
-            in2 = in2 + 4'b0001;
-            in3 = in3 + 4'b0001;
-            in4 = in4 + 4'b0001;
+            //in1 = in1 + 4'b0001;
+            //in2 = in2 + 4'b0001;
+            //in3 = in3 + 4'b0001;
+            //in4 = in4 + 4'b0001;
         end
         #1 $finish;
     end;

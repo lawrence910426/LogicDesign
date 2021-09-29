@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Mon Sep 27 23:39:12 2021
+| Date             : Wed Sep 29 20:48:09 2021
 | Host             : TACO-SUGO-KAWAII running 64-bit major release  (build 9200)
 | Command          : report_power -file crossbar_power_routed.rpt -pb crossbar_power_summary_routed.pb -rpx crossbar_power_routed.rpx
 | Design           : crossbar
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+--------------+
-| Total On-Chip Power (W)  | 8.306        |
-| Design Power Budget (W)  | Unspecified* |
-| Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 8.189        |
-| Device Static (W)        | 0.118        |
-| Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 43.5         |
-| Junction Temperature (C) | 66.5         |
-| Confidence Level         | Low          |
-| Setting File             | ---          |
-| Simulation Activity File | ---          |
-| Design Nets Matched      | NA           |
-+--------------------------+--------------+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 16.564 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 16.252                           |
+| Device Static (W)        | 0.312                            |
+| Effective TJA (C/W)      | 5.0                              |
+| Max Ambient (C)          | 2.2                              |
+| Junction Temperature (C) | 107.8                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.021 |        8 |       --- |             --- |
-|   LUT as Logic |     0.021 |        6 |     20800 |            0.03 |
-| Signals        |     0.116 |       17 |       --- |             --- |
-| I/O            |     8.052 |       17 |       106 |           16.04 |
-| Static Power   |     0.118 |          |           |                 |
-| Total          |     8.306 |          |           |                 |
+| Slice Logic    |     0.022 |        8 |       --- |             --- |
+|   LUT as Logic |     0.022 |        6 |     20800 |            0.03 |
+| Signals        |     0.163 |       17 |       --- |             --- |
+| I/O            |    16.067 |       25 |       106 |           23.58 |
+| Static Power   |     0.312 |          |           |                 |
+| Total          |    16.564 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,16 +67,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.221 |       0.173 |      0.047 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.310 |       0.294 |      0.017 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     2.270 |       2.269 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.423 |       0.220 |      0.203 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.623 |       0.587 |      0.036 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     4.538 |       4.537 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.006 |       0.000 |      0.006 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -134,11 +134,11 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| crossbar      |     8.189 |
-|   mux_out2[0] |     0.008 |
-|   mux_out2[1] |     0.019 |
-|   mux_out2[2] |     0.023 |
-|   mux_out2[3] |     0.021 |
+| crossbar      |    16.252 |
+|   mux_out2[0] |     0.024 |
+|   mux_out2[1] |     0.022 |
+|   mux_out2[2] |     0.025 |
+|   mux_out2[3] |     0.027 |
 +---------------+-----------+
 
 

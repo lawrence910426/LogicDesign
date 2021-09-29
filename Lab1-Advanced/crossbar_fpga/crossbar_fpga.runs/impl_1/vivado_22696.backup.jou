@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 29 20:40:30 2021
+# Process ID: 22696
+# Current directory: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga/crossbar_fpga.runs/impl_1
+# Command line: vivado.exe -log crossbar.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source crossbar.tcl -notrace
+# Log file: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga/crossbar_fpga.runs/impl_1/crossbar.vdi
+# Journal file: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga/crossbar_fpga.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source crossbar.tcl -notrace

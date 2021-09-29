@@ -1,7 +1,7 @@
-Running: xsim.dir/crossbar4x4_tb_behav/xsimk.exe -simmode gui -wdb crossbar4x4_tb_behav.wdb -simrunnum 0 -socket 58498
+Running: xsim.dir/crossbar4x4_tb_behav/xsimk.exe -simmode gui -wdb crossbar4x4_tb_behav.wdb -simrunnum 0 -socket 56537
 Design successfully loaded
-Design Loading Memory Usage: 6452 KB (Peak: 6452 KB)
+Design Loading Memory Usage: 6032 KB (Peak: 6032 KB)
 Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 7128 KB (Peak: 7128 KB)
-Simulation CPU Usage: 31 ms
+Simulation Memory Usage: 6680 KB (Peak: 6680 KB)
+Simulation CPU Usage: 15 ms

@@ -25,7 +25,9 @@ module crossbar(
     input [3:0] in2,
     input control,
     output [3:0] out1,
-    output [3:0] out2
+    output [3:0] out11,
+    output [3:0] out2,
+    output [3:0] out22
 );
 
     wire ncontrol;
@@ -48,10 +50,20 @@ module crossbar(
                                         .sel(ncontrol),
                                         .out(out1)
                                     ),
+                mux_out11    [3:0]  (
+                                        .in1(x), .in2(z),
+                                        .sel(ncontrol),
+                                        .out(out11)
+                                    ),
                 mux_out2     [3:0]  (
                                         .in1(y), .in2(w),
                                         .sel(control),
                                         .out(out2)    
+                                    ),
+                mux_out22    [3:0]  (
+                                        .in1(y), .in2(w),
+                                        .sel(control),
+                                        .out(out22)    
                                     );
 endmodule
 

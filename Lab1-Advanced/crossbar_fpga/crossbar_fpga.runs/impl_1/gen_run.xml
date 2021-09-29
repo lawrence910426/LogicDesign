@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1632757067">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1632919620">
+  <File Type="OPT-HWDEF" Name="crossbar.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="crossbar_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="crossbar.dcp"/>
   <File Type="BITSTR-BMM" Name="crossbar_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="crossbar_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="crossbar_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="crossbar_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="crossbar_reports.tcl"/>
   <File Type="OPT-DRC" Name="crossbar_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="crossbar.hwdef"/>
   <File Type="PWROPT-DCP" Name="crossbar_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="crossbar_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="crossbar_timing_summary_pwropted.rpt"/>
@@ -48,7 +50,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="crossbar_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="crossbar_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="crossbar_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="crossbar_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="crossbar_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="crossbar_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="crossbar_postroute_physopt.dcp"/>
@@ -110,9 +111,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
