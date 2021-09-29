@@ -13,6 +13,7 @@ module T_Flip_Flop(clk, t, rst_n, q);
     and and2(w12, q_n, t);
     or or1(w2, w11, w12);
     and and3(w3, w2, rst_n);
+    
     D_Flip_Flop dff(.clk(clk), .d(w3), .q(q));
     
 endmodule
