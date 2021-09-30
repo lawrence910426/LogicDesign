@@ -2,6 +2,6 @@
 2020.2
 Nov 18 2020
 09:47:47
-C:/home/github/LogicDesign/Lab1-Advanced/question4/D_Flip_Flop_t.v,1632931496,verilog,,,,T_Flip_Flop_t,,,,,,,,
-C:/home/github/LogicDesign/Lab1-Advanced/question4/Lab1_D_Flip_Flop.v,1632931339,verilog,,C:/home/github/LogicDesign/Lab1-Advanced/question4/D_Flip_Flop_t.v,,D_Flip_Flop;D_Latch;T_Flip_Flop,,,,,,,,
-C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.sim/sim_1/behav/xsim/glbl.v,1632929986,verilog,,,,glbl,,,,,,,,
+D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/D_Flip_Flop_t.v,1632969231,verilog,,,,T_Flip_Flop_t,,,,,,,,
+D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/Lab1_D_Flip_Flop.v,1632969055,verilog,,D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/D_Flip_Flop_t.v,,D_Flip_Flop;D_Latch;T_Flip_Flop,,,,,,,,
+D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/question4.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,

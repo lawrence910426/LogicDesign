@@ -26,7 +26,7 @@ initial begin
     @(negedge clk) t = 1'b1;
     @(negedge clk) t = 1'b0;
     @(negedge clk) rst_n = 1'b0;
-    @(negedge clk) rst_n = 1'b1;
+    //@(negedge clk) rst_n = 1'b1;
     @(negedge clk) t = 1'b1;
     @(negedge clk) t = 1'b0;
     @(negedge clk) t = 1'b1;

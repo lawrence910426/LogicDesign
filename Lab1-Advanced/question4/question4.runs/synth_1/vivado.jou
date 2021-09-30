@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 30 10:33:59 2021
+# Process ID: 22608
+# Current directory: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/question4.runs/synth_1
+# Command line: vivado.exe -log T_Flip_Flop_t.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source T_Flip_Flop_t.tcl
+# Log file: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/question4.runs/synth_1/T_Flip_Flop_t.vds
+# Journal file: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/question4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source T_Flip_Flop_t.tcl -notrace

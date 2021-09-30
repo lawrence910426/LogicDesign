@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 30 01:06:11 2021
+# Process ID: 7576
+# Current directory: C:/home/github/LogicDesign/Lab1-Advanced/question4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7164 C:\home\github\LogicDesign\Lab1-Advanced\question4\question4.xpr
+# Log file: C:/home/github/LogicDesign/Lab1-Advanced/question4/vivado.log
+# Journal file: C:/home/github/LogicDesign/Lab1-Advanced/question4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'T_Flip_Flop_t' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj T_Flip_Flop_t_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.sim/sim_1/behav/xsim'
+"xelab -wto ce689a6fcce74a48a4c63de6aefb5e6b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot T_Flip_Flop_t_behav xil_defaultlib.T_Flip_Flop_t xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ce689a6fcce74a48a4c63de6aefb5e6b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot T_Flip_Flop_t_behav xil_defaultlib.T_Flip_Flop_t xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "T_Flip_Flop_t_behav -key {Behavioral:sim_1:Functional:T_Flip_Flop_t} -tclbatch {T_Flip_Flop_t.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source T_Flip_Flop_t.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 24 ns : File "C:/home/github/LogicDesign/Lab1-Advanced/question4/D_Flip_Flop_t.v" Line 34
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'T_Flip_Flop_t_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.227 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 30 10:28:46 2021...

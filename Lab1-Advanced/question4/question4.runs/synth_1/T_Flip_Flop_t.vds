@@ -1,0 +1,177 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 30 10:33:59 2021
+# Process ID: 22608
+# Current directory: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/question4.runs/synth_1
+# Command line: vivado.exe -log T_Flip_Flop_t.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source T_Flip_Flop_t.tcl
+# Log file: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/question4.runs/synth_1/T_Flip_Flop_t.vds
+# Journal file: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/question4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source T_Flip_Flop_t.tcl -notrace
+Command: synth_design -top T_Flip_Flop_t -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16440
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'T_Flip_Flop_t' [D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/D_Flip_Flop_t.v:3]
+WARNING: [Synth 8-6896] event control except as first statement of always block inside initial block, initial block items will be ignored [D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/D_Flip_Flop_t.v:24]
+WARNING: [Synth 8-85] always block has no event control specified [D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/D_Flip_Flop_t.v:12]
+INFO: [Synth 8-6157] synthesizing module 'T_Flip_Flop' [D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/Lab1_D_Flip_Flop.v:3]
+INFO: [Synth 8-6157] synthesizing module 'D_Flip_Flop' [D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/Lab1_D_Flip_Flop.v:21]
+INFO: [Synth 8-6157] synthesizing module 'D_Latch' [D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/Lab1_D_Flip_Flop.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'D_Latch' (1#1) [D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/Lab1_D_Flip_Flop.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'D_Flip_Flop' (2#1) [D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/Lab1_D_Flip_Flop.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'T_Flip_Flop' (3#1) [D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/Lab1_D_Flip_Flop.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'T_Flip_Flop_t' (4#1) [D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/D_Flip_Flop_t.v:3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.691 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.691 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1017.691 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1017.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1017.691 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/question4/question4.runs/synth_1/T_Flip_Flop_t.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file T_Flip_Flop_t_utilization_synth.rpt -pb T_Flip_Flop_t_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 30 10:34:18 2021...
