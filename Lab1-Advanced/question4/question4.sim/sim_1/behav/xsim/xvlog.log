@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Lab1-Advanced/question4/Lab1_D_Flip_Flop.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module T_Flip_Flop
-INFO: [VRFC 10-311] analyzing module D_Flip_Flop
-INFO: [VRFC 10-311] analyzing module D_Latch
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Lab1-Advanced/question4/D_Flip_Flop_t.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module T_Flip_Flop_t

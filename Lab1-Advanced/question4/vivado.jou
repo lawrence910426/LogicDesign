@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Sep 29 23:39:59 2021
-# Process ID: 1448
+# Start of session at: Thu Sep 30 01:06:11 2021
+# Process ID: 7576
 # Current directory: C:/home/github/LogicDesign/Lab1-Advanced/question4
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11068 C:\home\github\LogicDesign\Lab1-Advanced\question4\question4.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7164 C:\home\github\LogicDesign\Lab1-Advanced\question4\question4.xpr
 # Log file: C:/home/github/LogicDesign/Lab1-Advanced/question4/vivado.log
 # Journal file: C:/home/github/LogicDesign/Lab1-Advanced/question4\vivado.jou
 #-----------------------------------------------------------
@@ -15,33 +15,3 @@ update_compile_order -fileset sources_1
 launch_simulation
 source T_Flip_Flop_t.tcl
 close_sim
-launch_simulation
-source T_Flip_Flop_t.tcl
-close_sim
-launch_simulation
-source T_Flip_Flop_t.tcl
-file mkdir C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.srcs/sim_1/new
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.srcs/sim_1/new/dff_tb.v w ]
-add_files -fileset sim_1 C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.srcs/sim_1/new/dff_tb.v
-update_compile_order -fileset sim_1
-export_ip_user_files -of_objects  [get_files C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.srcs/sim_1/new/dff_tb.v] -no_script -reset -force -quiet
-remove_files  -fileset sim_1 C:/home/github/LogicDesign/Lab1-Advanced/question4/question4.srcs/sim_1/new/dff_tb.v
-close_sim
-launch_simulation
-launch_simulation
-launch_simulation
-source T_Flip_Flop_t.tcl
-close_sim
-launch_simulation
-source T_Flip_Flop_t.tcl
-close_sim
-launch_simulation
-source T_Flip_Flop_t.tcl
-close_sim
-launch_simulation
-launch_simulation
-source T_Flip_Flop_t.tcl
-close_sim
-launch_simulation
-source T_Flip_Flop_t.tcl
