@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Sep 30 15:34:38 2021
-# Process ID: 9604
+# Start of session at: Thu Sep 30 10:31:29 2021
+# Process ID: 22736
 # Current directory: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11500 D:\LogicDesignExperiment\LAB01_0923\share_repo\Lab1-Advanced\crossbar_fpga\crossbar_fpga.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13724 D:\LogicDesignExperiment\LAB01_0923\share_repo\Lab1-Advanced\crossbar_fpga\crossbar_fpga.xpr
 # Log file: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga/vivado.log
 # Journal file: D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga\vivado.jou
 #-----------------------------------------------------------
@@ -23,4 +23,3 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB01_0923/share_repo/Lab1-Advanced/crossbar_fpga/crossbar_fpga.runs/impl_1/crossbar.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
