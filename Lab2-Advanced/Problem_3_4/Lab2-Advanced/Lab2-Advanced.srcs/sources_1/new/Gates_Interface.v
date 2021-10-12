@@ -61,3 +61,7 @@ endmodule
 module XOR (output o, input a, input b);
     NAND_Implement g (.a(a), .b(b), .sel(3'b100), .out(o));
 endmodule
+
+module WIRE(output o, input i);
+    XOR g (o, i, 0);
+endmodule
