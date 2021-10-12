@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab2-Advanced.srcs/sources_1/new/Gates_Interface.v" \
+"../../../../Lab2-Advanced.srcs/sources_1/new/Lab2_NAND_Implement.v" \
+"../../../../../../../../../../Users/lawre/Downloads/Lab2_TeamX_Carry_Look_Ahead_Adder_8bit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

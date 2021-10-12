@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/lawre/Downloads/Lab2_TeamX_Carry_Look_Ahead_Adder_8bit.v,1634049378,verilog,,C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.srcs/sim_1/new/CLA_t.v,,Adder;CLA_Generator_2bit;CLA_Generator_4bit;Carry_Look_Ahead_Adder_8bit,,,,,,,,
+C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.srcs/sim_1/new/CLA_t.v,1634046143,verilog,,,,CLA_t,,,,,,,,
+C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.srcs/sources_1/new/Gates_Interface.v,1634039266,verilog,,C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.srcs/sources_1/new/Lab2_NAND_Implement.v,,AND;AND3;AND4;AND5;OR;OR3;OR4;OR5;XOR,,,,,,,,
+C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.srcs/sources_1/new/Lab2_NAND_Implement.v,1634039139,verilog,,C:/Users/lawre/Downloads/Lab2_TeamX_Carry_Look_Ahead_Adder_8bit.v,,NAND_Implement,,,,,,,,
