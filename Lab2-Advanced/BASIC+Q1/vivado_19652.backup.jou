@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Oct 11 18:23:25 2021
+# Process ID: 19652
+# Current directory: D:/LogicDesignExperiment/LAB02_1007
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4864 D:\LogicDesignExperiment\LAB02_1007\LAB02_1007.xpr
+# Log file: D:/LogicDesignExperiment/LAB02_1007/vivado.log
+# Journal file: D:/LogicDesignExperiment/LAB02_1007\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/LAB02_1007/LAB02_1007.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Lab2_TeamX_Ripple_Carry_Adder_t.tcl
+close_sim

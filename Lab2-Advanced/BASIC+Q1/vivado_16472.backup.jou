@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Oct 11 01:06:23 2021
+# Process ID: 16472
+# Current directory: D:/LogicDesignExperiment/LAB02_1007
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14180 D:\LogicDesignExperiment\LAB02_1007\LAB02_1007.xpr
+# Log file: D:/LogicDesignExperiment/LAB02_1007/vivado.log
+# Journal file: D:/LogicDesignExperiment/LAB02_1007\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/LAB02_1007/LAB02_1007.xpr
+update_compile_order -fileset sources_1
+file mkdir D:/LogicDesignExperiment/LAB02_1007/LAB02_1007.srcs/sources_1/new
+add_files -norecurse D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_TeamX_Ripple_Carry_Adder.v
+close [ open D:/LogicDesignExperiment/LAB02_1007/LAB02_1007.srcs/sources_1/new/Lab2_TeamX_Ripple_Carry_Adder_t.v w ]
+add_files D:/LogicDesignExperiment/LAB02_1007/LAB02_1007.srcs/sources_1/new/Lab2_TeamX_Ripple_Carry_Adder_t.v
+update_compile_order -fileset sources_1
+set_property top Lab2_TeamX_Ripple_Carry_Adder_t [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+source Lab2_TeamX_Ripple_Carry_Adder_t.tcl
+close_sim
+launch_simulation
+source Lab2_TeamX_Ripple_Carry_Adder_t.tcl
+close_sim
+launch_simulation
+source Lab2_TeamX_Ripple_Carry_Adder_t.tcl
+close_sim
+launch_simulation
+source Lab2_TeamX_Ripple_Carry_Adder_t.tcl
+close_sim
+launch_simulation
+source Lab2_TeamX_Ripple_Carry_Adder_t.tcl
+close_sim

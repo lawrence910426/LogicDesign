@@ -1,0 +1,1 @@
+-wto "0d25569c7a504573937a2441aaecfec1" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Lab2_TeamX_Ripple_Carry_Adder_t_behav" "xil_defaultlib.Lab2_TeamX_Ripple_Carry_Adder_t" "xil_defaultlib.glbl" -log "elaborate.log" 

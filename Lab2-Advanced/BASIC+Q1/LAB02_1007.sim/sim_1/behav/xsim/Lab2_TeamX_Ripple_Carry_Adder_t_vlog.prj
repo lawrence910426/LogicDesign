@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../THINGS/Lab2_Adders.v" \
+"../../../../THINGS/Lab2_Majority.v" \
+"../../../../THINGS/Lab2_NAND_Implement.v" \
+"../../../../THINGS/Lab2_TeamX_Ripple_Carry_Adder.v" \
+"../../../../LAB02_1007.srcs/sources_1/new/Lab2_TeamX_Ripple_Carry_Adder_t.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
