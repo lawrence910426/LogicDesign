@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 13 23:00:05 2021
+# Process ID: 15308
+# Current directory: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16536 D:\LogicDesignExperiment\LAB02_1007\DECODE_EXECUTE\DECODE_EXECUTE.xpr
+# Log file: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/vivado.log
+# Journal file: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.xpr
+INFO: [Project 1-313] Project file moved from 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/DECODE_EXECUTE' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1', nor could it be found using path 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1'.
+WARNING: [Project 1-312] File not found as 'D:/LogicDesignExperiment/THINGS/Lab2_TeamX_Decode_And_Execute_4bit.v'; using path 'D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_TeamX_Decode_And_Execute_4bit.v' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.332 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 13 23:02:40 2021...

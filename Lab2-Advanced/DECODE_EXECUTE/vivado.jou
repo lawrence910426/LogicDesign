@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 14 03:04:49 2021
+# Process ID: 14480
+# Current directory: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11700 D:\LogicDesignExperiment\LAB02_1007\DECODE_EXECUTE\DECODE_EXECUTE.xpr
+# Log file: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/vivado.log
+# Journal file: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim

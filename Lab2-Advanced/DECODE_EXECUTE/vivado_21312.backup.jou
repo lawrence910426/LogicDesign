@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 13 23:03:35 2021
+# Process ID: 21312
+# Current directory: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19444 D:\LogicDesignExperiment\LAB02_1007\DECODE_EXECUTE\DECODE_EXECUTE.xpr
+# Log file: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/vivado.log
+# Journal file: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/LogicDesignExperiment/THINGS/Lab2_TeamX_Decode_And_Execute_4bit.v] -no_script -reset -force -quiet
+remove_files  D:/LogicDesignExperiment/THINGS/Lab2_TeamX_Decode_And_Execute_4bit.v
+add_files -norecurse D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
