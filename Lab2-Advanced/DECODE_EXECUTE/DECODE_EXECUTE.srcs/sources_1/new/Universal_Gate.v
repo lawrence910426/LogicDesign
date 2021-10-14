@@ -26,6 +26,6 @@ module Universal_Gate(a, b, out);
     wire b_n;
     
     not n1(b_n, b);
-    and a1(out, b_n, b);
+    and a1(out, b_n, a);
     
 endmodule

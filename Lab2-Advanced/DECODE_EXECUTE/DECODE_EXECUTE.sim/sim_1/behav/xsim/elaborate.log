@@ -4,6 +4,29 @@ Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 09bd9294e4
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'b' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:131]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'b' [C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:131]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Universal_Gate
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.XOR
+Compiling module xil_defaultlib.H_ADDER
+Compiling module xil_defaultlib.F_ADDER
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.BITWISE_AND
+Compiling module xil_defaultlib.BITWISE_OR
+Compiling module xil_defaultlib.LEFT_SHIFT
+Compiling module xil_defaultlib.RIGHT_SHIFT
+Compiling module xil_defaultlib.XNOR
+Compiling module xil_defaultlib.COMPARE_EQ
+Compiling module xil_defaultlib.COMPARE_GT
+Compiling module xil_defaultlib.SELECT
+Compiling module xil_defaultlib.Decode_And_Execute
+Compiling module xil_defaultlib.Decode_And_Execute_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Decode_And_Execute_tb_behav

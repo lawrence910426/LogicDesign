@@ -1,0 +1,935 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 14 10:55:09 2021
+# Process ID: 15592
+# Current directory: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21988 D:\LogicDesignExperiment\LAB02_1007\DECODE_EXECUTE\DECODE_EXECUTE.xpr
+# Log file: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/vivado.log
+# Journal file: D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1004.645 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd>...
+Successfully read diagram <design_1> from block design file <D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd>
+generate_target all [get_files  D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <D:\LogicDesignExperiment\LAB02_1007\DECODE_EXECUTE\DECODE_EXECUTE.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1004.645 ; gain = 0.000
+export_ip_user_files -of_objects [get_files D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.ip_user_files/sim_scripts -ip_user_files_dir D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.ip_user_files -ipstatic_source_dir D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/modelsim} {questa=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/questa} {riviera=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/riviera} {activehdl=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd}
+set_property synth_checkpoint_mode None [get_files  D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:\LogicDesignExperiment\LAB02_1007\DECODE_EXECUTE\DECODE_EXECUTE.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.ip_user_files/sim_scripts -ip_user_files_dir D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.ip_user_files -ipstatic_source_dir D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/modelsim} {questa=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/questa} {riviera=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/riviera} {activehdl=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd}
+set_property synth_checkpoint_mode Hierarchical [get_files  D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <D:\LogicDesignExperiment\LAB02_1007\DECODE_EXECUTE\DECODE_EXECUTE.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File d:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.gen/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.ip_user_files/sim_scripts -ip_user_files_dir D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.ip_user_files -ipstatic_source_dir D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/modelsim} {questa=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/questa} {riviera=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/riviera} {activehdl=D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Decode_And_Execute_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Decode_And_Execute_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute
+INFO: [VRFC 10-311] analyzing module SELECT
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-311] analyzing module F_ADDER
+INFO: [VRFC 10-311] analyzing module H_ADDER
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-311] analyzing module BITWISE_AND
+INFO: [VRFC 10-311] analyzing module BITWISE_OR
+INFO: [VRFC 10-311] analyzing module LEFT_SHIFT
+INFO: [VRFC 10-311] analyzing module RIGHT_SHIFT
+INFO: [VRFC 10-311] analyzing module COMPARE_EQ
+INFO: [VRFC 10-311] analyzing module COMPARE_GT
+INFO: [VRFC 10-311] analyzing module XNOR
+INFO: [VRFC 10-311] analyzing module XOR
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Universal_Gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Universal_Gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xelab -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'b' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:126]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Universal_Gate
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.XOR
+Compiling module xil_defaultlib.H_ADDER
+Compiling module xil_defaultlib.F_ADDER
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.BITWISE_AND
+Compiling module xil_defaultlib.BITWISE_OR
+Compiling module xil_defaultlib.LEFT_SHIFT
+Compiling module xil_defaultlib.RIGHT_SHIFT
+Compiling module xil_defaultlib.XNOR
+Compiling module xil_defaultlib.COMPARE_EQ
+Compiling module xil_defaultlib.COMPARE_GT
+Compiling module xil_defaultlib.SELECT
+Compiling module xil_defaultlib.Decode_And_Execute
+Compiling module xil_defaultlib.Decode_And_Execute_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Decode_And_Execute_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Decode_And_Execute_tb_behav -key {Behavioral:sim_1:Functional:Decode_And_Execute_tb} -tclbatch {Decode_And_Execute_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source Decode_And_Execute_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 321 ps : File "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" Line 62
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decode_And_Execute_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1014.031 ; gain = 9.387
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Decode_And_Execute_tb
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1395.926 ; gain = 250.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Decode_And_Execute_tb' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Decode_And_Execute' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ADD' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:86]
+INFO: [Synth 8-6157] synthesizing module 'H_ADDER' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:106]
+INFO: [Synth 8-6157] synthesizing module 'XOR' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:258]
+INFO: [Synth 8-6157] synthesizing module 'NOT' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:289]
+INFO: [Synth 8-6157] synthesizing module 'Universal_Gate' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Universal_Gate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Universal_Gate' (1#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Universal_Gate.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'NOT' (2#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:289]
+INFO: [Synth 8-6157] synthesizing module 'AND' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:281]
+INFO: [Synth 8-6155] done synthesizing module 'AND' (3#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:281]
+INFO: [Synth 8-6157] synthesizing module 'OR' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:269]
+INFO: [Synth 8-6155] done synthesizing module 'OR' (4#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:269]
+INFO: [Synth 8-6155] done synthesizing module 'XOR' (5#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:258]
+INFO: [Synth 8-6155] done synthesizing module 'H_ADDER' (6#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:106]
+INFO: [Synth 8-6157] synthesizing module 'F_ADDER' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'F_ADDER' (7#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'ADD' (8#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:86]
+INFO: [Synth 8-6157] synthesizing module 'SUB' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'SUB' (9#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:114]
+INFO: [Synth 8-6157] synthesizing module 'BITWISE_AND' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'BITWISE_AND' (10#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:131]
+INFO: [Synth 8-6157] synthesizing module 'BITWISE_OR' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'BITWISE_OR' (11#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:141]
+INFO: [Synth 8-6157] synthesizing module 'LEFT_SHIFT' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:151]
+INFO: [Synth 8-6155] done synthesizing module 'LEFT_SHIFT' (12#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:151]
+INFO: [Synth 8-6157] synthesizing module 'RIGHT_SHIFT' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:162]
+INFO: [Synth 8-6155] done synthesizing module 'RIGHT_SHIFT' (13#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:162]
+INFO: [Synth 8-6157] synthesizing module 'COMPARE_EQ' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:173]
+INFO: [Synth 8-6157] synthesizing module 'XNOR' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:247]
+INFO: [Synth 8-6155] done synthesizing module 'XNOR' (14#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:247]
+INFO: [Synth 8-6155] done synthesizing module 'COMPARE_EQ' (15#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:173]
+INFO: [Synth 8-6157] synthesizing module 'COMPARE_GT' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:191]
+INFO: [Synth 8-6155] done synthesizing module 'COMPARE_GT' (16#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:191]
+INFO: [Synth 8-6157] synthesizing module 'SELECT' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'SELECT' (17#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'Decode_And_Execute' (18#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Decode_And_Execute_tb' (19#1) [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1474.348 ; gain = 329.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1474.348 ; gain = 329.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1474.348 ; gain = 329.391
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1474.348 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1579.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1682.180 ; gain = 537.223
+41 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1682.180 ; gain = 639.262
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Decode_And_Execute_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Decode_And_Execute_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute
+INFO: [VRFC 10-311] analyzing module SELECT
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-311] analyzing module F_ADDER
+INFO: [VRFC 10-311] analyzing module H_ADDER
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-311] analyzing module BITWISE_AND
+INFO: [VRFC 10-311] analyzing module BITWISE_OR
+INFO: [VRFC 10-311] analyzing module LEFT_SHIFT
+INFO: [VRFC 10-311] analyzing module RIGHT_SHIFT
+INFO: [VRFC 10-311] analyzing module COMPARE_EQ
+INFO: [VRFC 10-311] analyzing module COMPARE_GT
+INFO: [VRFC 10-311] analyzing module XNOR
+INFO: [VRFC 10-311] analyzing module XOR
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Universal_Gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Universal_Gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xelab -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'b' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:126]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Universal_Gate
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.XOR
+Compiling module xil_defaultlib.H_ADDER
+Compiling module xil_defaultlib.F_ADDER
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.BITWISE_AND
+Compiling module xil_defaultlib.BITWISE_OR
+Compiling module xil_defaultlib.LEFT_SHIFT
+Compiling module xil_defaultlib.RIGHT_SHIFT
+Compiling module xil_defaultlib.XNOR
+Compiling module xil_defaultlib.COMPARE_EQ
+Compiling module xil_defaultlib.COMPARE_GT
+Compiling module xil_defaultlib.SELECT
+Compiling module xil_defaultlib.Decode_And_Execute
+Compiling module xil_defaultlib.Decode_And_Execute_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Decode_And_Execute_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Decode_And_Execute_tb_behav -key {Behavioral:sim_1:Functional:Decode_And_Execute_tb} -tclbatch {Decode_And_Execute_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source Decode_And_Execute_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 641 ps : File "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" Line 62
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decode_And_Execute_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1736.816 ; gain = 31.109
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Decode_And_Execute_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Decode_And_Execute_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute
+INFO: [VRFC 10-311] analyzing module SELECT
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-311] analyzing module F_ADDER
+INFO: [VRFC 10-311] analyzing module H_ADDER
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-311] analyzing module BITWISE_AND
+INFO: [VRFC 10-311] analyzing module BITWISE_OR
+INFO: [VRFC 10-311] analyzing module LEFT_SHIFT
+INFO: [VRFC 10-311] analyzing module RIGHT_SHIFT
+INFO: [VRFC 10-311] analyzing module COMPARE_EQ
+INFO: [VRFC 10-311] analyzing module COMPARE_GT
+INFO: [VRFC 10-311] analyzing module XNOR
+INFO: [VRFC 10-311] analyzing module XOR
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Universal_Gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Universal_Gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xelab -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'b' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:126]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Universal_Gate
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.XOR
+Compiling module xil_defaultlib.H_ADDER
+Compiling module xil_defaultlib.F_ADDER
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.BITWISE_AND
+Compiling module xil_defaultlib.BITWISE_OR
+Compiling module xil_defaultlib.LEFT_SHIFT
+Compiling module xil_defaultlib.RIGHT_SHIFT
+Compiling module xil_defaultlib.XNOR
+Compiling module xil_defaultlib.COMPARE_EQ
+Compiling module xil_defaultlib.COMPARE_GT
+Compiling module xil_defaultlib.SELECT
+Compiling module xil_defaultlib.Decode_And_Execute
+Compiling module xil_defaultlib.Decode_And_Execute_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Decode_And_Execute_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Decode_And_Execute_tb_behav -key {Behavioral:sim_1:Functional:Decode_And_Execute_tb} -tclbatch {Decode_And_Execute_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source Decode_And_Execute_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 641 ps : File "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" Line 62
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decode_And_Execute_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1741.828 ; gain = 3.594
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Decode_And_Execute_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Decode_And_Execute_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute
+INFO: [VRFC 10-311] analyzing module SELECT
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-311] analyzing module F_ADDER
+INFO: [VRFC 10-311] analyzing module H_ADDER
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-311] analyzing module BITWISE_AND
+INFO: [VRFC 10-311] analyzing module BITWISE_OR
+INFO: [VRFC 10-311] analyzing module LEFT_SHIFT
+INFO: [VRFC 10-311] analyzing module RIGHT_SHIFT
+INFO: [VRFC 10-311] analyzing module COMPARE_EQ
+INFO: [VRFC 10-311] analyzing module COMPARE_GT
+INFO: [VRFC 10-311] analyzing module XNOR
+INFO: [VRFC 10-311] analyzing module XOR
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Universal_Gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Universal_Gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xelab -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'b' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:130]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Universal_Gate
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.XOR
+Compiling module xil_defaultlib.H_ADDER
+Compiling module xil_defaultlib.F_ADDER
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.BITWISE_AND
+Compiling module xil_defaultlib.BITWISE_OR
+Compiling module xil_defaultlib.LEFT_SHIFT
+Compiling module xil_defaultlib.RIGHT_SHIFT
+Compiling module xil_defaultlib.XNOR
+Compiling module xil_defaultlib.COMPARE_EQ
+Compiling module xil_defaultlib.COMPARE_GT
+Compiling module xil_defaultlib.SELECT
+Compiling module xil_defaultlib.Decode_And_Execute
+Compiling module xil_defaultlib.Decode_And_Execute_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Decode_And_Execute_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Decode_And_Execute_tb_behav -key {Behavioral:sim_1:Functional:Decode_And_Execute_tb} -tclbatch {Decode_And_Execute_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source Decode_And_Execute_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 641 ps : File "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" Line 62
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decode_And_Execute_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1750.430 ; gain = 8.598
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Decode_And_Execute_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Decode_And_Execute_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute
+INFO: [VRFC 10-311] analyzing module SELECT
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-311] analyzing module F_ADDER
+INFO: [VRFC 10-311] analyzing module H_ADDER
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-311] analyzing module BITWISE_AND
+INFO: [VRFC 10-311] analyzing module BITWISE_OR
+INFO: [VRFC 10-311] analyzing module LEFT_SHIFT
+INFO: [VRFC 10-311] analyzing module RIGHT_SHIFT
+INFO: [VRFC 10-311] analyzing module COMPARE_EQ
+INFO: [VRFC 10-311] analyzing module COMPARE_GT
+INFO: [VRFC 10-311] analyzing module XNOR
+INFO: [VRFC 10-311] analyzing module XOR
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Universal_Gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Universal_Gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute_tb
+WARNING: [VRFC 10-3248] data object 'rd' is already declared [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v:27]
+WARNING: [VRFC 10-3703] second declaration of 'rd' ignored [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v:27]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xelab -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'b' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:131]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Universal_Gate
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.XOR
+Compiling module xil_defaultlib.H_ADDER
+Compiling module xil_defaultlib.F_ADDER
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.BITWISE_AND
+Compiling module xil_defaultlib.BITWISE_OR
+Compiling module xil_defaultlib.LEFT_SHIFT
+Compiling module xil_defaultlib.RIGHT_SHIFT
+Compiling module xil_defaultlib.XNOR
+Compiling module xil_defaultlib.COMPARE_EQ
+Compiling module xil_defaultlib.COMPARE_GT
+Compiling module xil_defaultlib.SELECT
+Compiling module xil_defaultlib.Decode_And_Execute
+Compiling module xil_defaultlib.Decode_And_Execute_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Decode_And_Execute_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Decode_And_Execute_tb_behav -key {Behavioral:sim_1:Functional:Decode_And_Execute_tb} -tclbatch {Decode_And_Execute_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source Decode_And_Execute_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 641 ps : File "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" Line 63
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decode_And_Execute_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1759.523 ; gain = 8.969
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Decode_And_Execute_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Decode_And_Execute_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute
+INFO: [VRFC 10-311] analyzing module SELECT
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-311] analyzing module F_ADDER
+INFO: [VRFC 10-311] analyzing module H_ADDER
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-311] analyzing module BITWISE_AND
+INFO: [VRFC 10-311] analyzing module BITWISE_OR
+INFO: [VRFC 10-311] analyzing module LEFT_SHIFT
+INFO: [VRFC 10-311] analyzing module RIGHT_SHIFT
+INFO: [VRFC 10-311] analyzing module COMPARE_EQ
+INFO: [VRFC 10-311] analyzing module COMPARE_GT
+INFO: [VRFC 10-311] analyzing module XNOR
+INFO: [VRFC 10-311] analyzing module XOR
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Universal_Gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Universal_Gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute_tb
+WARNING: [VRFC 10-3248] data object 'rd' is already declared [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v:27]
+WARNING: [VRFC 10-3703] second declaration of 'rd' ignored [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v:27]
+ERROR: [VRFC 10-4982] syntax error near 'and' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v:32]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword and used in incorrect context [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v:32]
+ERROR: [VRFC 10-2865] module 'Decode_And_Execute_tb' ignored due to previous errors [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Decode_And_Execute_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Decode_And_Execute_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute
+INFO: [VRFC 10-311] analyzing module SELECT
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-311] analyzing module F_ADDER
+INFO: [VRFC 10-311] analyzing module H_ADDER
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-311] analyzing module BITWISE_AND
+INFO: [VRFC 10-311] analyzing module BITWISE_OR
+INFO: [VRFC 10-311] analyzing module LEFT_SHIFT
+INFO: [VRFC 10-311] analyzing module RIGHT_SHIFT
+INFO: [VRFC 10-311] analyzing module COMPARE_EQ
+INFO: [VRFC 10-311] analyzing module COMPARE_GT
+INFO: [VRFC 10-311] analyzing module XNOR
+INFO: [VRFC 10-311] analyzing module XOR
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Universal_Gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Universal_Gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xelab -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'b' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:131]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Universal_Gate
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.XOR
+Compiling module xil_defaultlib.H_ADDER
+Compiling module xil_defaultlib.F_ADDER
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.BITWISE_AND
+Compiling module xil_defaultlib.BITWISE_OR
+Compiling module xil_defaultlib.LEFT_SHIFT
+Compiling module xil_defaultlib.RIGHT_SHIFT
+Compiling module xil_defaultlib.XNOR
+Compiling module xil_defaultlib.COMPARE_EQ
+Compiling module xil_defaultlib.COMPARE_GT
+Compiling module xil_defaultlib.SELECT
+Compiling module xil_defaultlib.Decode_And_Execute
+Compiling module xil_defaultlib.Decode_And_Execute_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Decode_And_Execute_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Decode_And_Execute_tb_behav -key {Behavioral:sim_1:Functional:Decode_And_Execute_tb} -tclbatch {Decode_And_Execute_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source Decode_And_Execute_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 641 ps : File "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decode_And_Execute_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1763.441 ; gain = 2.469
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Decode_And_Execute_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Decode_And_Execute_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute
+INFO: [VRFC 10-311] analyzing module SELECT
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-311] analyzing module F_ADDER
+INFO: [VRFC 10-311] analyzing module H_ADDER
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-311] analyzing module BITWISE_AND
+INFO: [VRFC 10-311] analyzing module BITWISE_OR
+INFO: [VRFC 10-311] analyzing module LEFT_SHIFT
+INFO: [VRFC 10-311] analyzing module RIGHT_SHIFT
+INFO: [VRFC 10-311] analyzing module COMPARE_EQ
+INFO: [VRFC 10-311] analyzing module COMPARE_GT
+INFO: [VRFC 10-311] analyzing module XNOR
+INFO: [VRFC 10-311] analyzing module XOR
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Universal_Gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Universal_Gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode_And_Execute_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xelab -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'b' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:131]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Universal_Gate
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.XOR
+Compiling module xil_defaultlib.H_ADDER
+Compiling module xil_defaultlib.F_ADDER
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.BITWISE_AND
+Compiling module xil_defaultlib.BITWISE_OR
+Compiling module xil_defaultlib.LEFT_SHIFT
+Compiling module xil_defaultlib.RIGHT_SHIFT
+Compiling module xil_defaultlib.XNOR
+Compiling module xil_defaultlib.COMPARE_EQ
+Compiling module xil_defaultlib.COMPARE_GT
+Compiling module xil_defaultlib.SELECT
+Compiling module xil_defaultlib.Decode_And_Execute
+Compiling module xil_defaultlib.Decode_And_Execute_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Decode_And_Execute_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Decode_And_Execute_tb_behav -key {Behavioral:sim_1:Functional:Decode_And_Execute_tb} -tclbatch {Decode_And_Execute_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source Decode_And_Execute_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 641 ps : File "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decode_And_Execute_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1764.516 ; gain = 0.809
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Decode_And_Execute_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Decode_And_Execute_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+"xelab -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 09bd9294e4474f1f8afa717ac5f71491 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_And_Execute_tb_behav xil_defaultlib.Decode_And_Execute_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'b' [D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/Lab2_TeamX_Decode_And_Execute_4bit.v:131]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Decode_And_Execute_tb_behav -key {Behavioral:sim_1:Functional:Decode_And_Execute_tb} -tclbatch {Decode_And_Execute_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/design_1.protoinst for the following reason(s):
+There are no instances of module "design_1" in the design.
+
+Time resolution is 1 ps
+source Decode_And_Execute_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 641 ps : File "D:/LogicDesignExperiment/LAB02_1007/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/new/Lab2_TeamX_Decode_And_Execute_4bit_t.v" Line 64
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decode_And_Execute_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1769.535 ; gain = 5.020
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 14 11:51:28 2021...
