@@ -1,9 +1,9 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_Adders.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_Adders.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Full_Adder
 INFO: [VRFC 10-311] analyzing module Half_Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_Majority.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_Majority.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Majority
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_NAND_Implement.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_NAND_Implement.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module NAND_Implement
 INFO: [VRFC 10-311] analyzing module XNOR
 INFO: [VRFC 10-311] analyzing module XOR
@@ -11,7 +11,5 @@ INFO: [VRFC 10-311] analyzing module NOR
 INFO: [VRFC 10-311] analyzing module OR
 INFO: [VRFC 10-311] analyzing module AND
 INFO: [VRFC 10-311] analyzing module NOT
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_TeamX_Ripple_Carry_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_TeamX_Ripple_Carry_Adder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Ripple_Carry_Adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB02_1007/LAB02_1007.srcs/sources_1/new/Lab2_TeamX_Ripple_Carry_Adder_t.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Lab2_TeamX_Ripple_Carry_Adder_t

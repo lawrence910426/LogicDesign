@@ -2,17 +2,15 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Oct 15 02:27:23 2021
-# Process ID: 6940
+# Start of session at: Thu Oct 14 19:52:15 2021
+# Process ID: 22320
 # Current directory: D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3356 D:\LogicDesignExperiment\LAB02_1007\BASIC+Q1\LAB02_1007.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19296 D:\LogicDesignExperiment\LAB02_1007\BASIC+Q1\LAB02_1007.xpr
 # Log file: D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/vivado.log
 # Journal file: D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/LAB02_1007.xpr
-update_compile_order -fileset sources_1
-add_files -norecurse {D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Adders_t.v D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/NAND_Implement_t.v D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_Adders.v D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Majority_t.v D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_Majority.v D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_NAND_Implement.v}
 update_compile_order -fileset sources_1
 launch_simulation
 source Lab2_TeamX_Ripple_Carry_Adder_t.tcl

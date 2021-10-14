@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 14 16:47:14 2021
+# Process ID: 13424
+# Current directory: D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7368 D:\LogicDesignExperiment\LAB02_1007\BASIC+Q1\LAB02_1007.xpr
+# Log file: D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/vivado.log
+# Journal file: D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/LAB02_1007.xpr
+INFO: [Project 1-313] Project file moved from 'D:/LogicDesignExperiment/LAB02_1007' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/LAB02_1007.gen/sources_1', nor could it be found using path 'D:/LogicDesignExperiment/LAB02_1007/LAB02_1007.gen/sources_1'.
+WARNING: [Project 1-312] File not found as 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/THINGS/Lab2_NAND_Implement.v'; using path 'D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_NAND_Implement.v' instead.
+WARNING: [Project 1-312] File not found as 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/THINGS/NAND_Implement_t.v'; using path 'D:/LogicDesignExperiment/LAB02_1007/THINGS/NAND_Implement_t.v' instead.
+WARNING: [Project 1-312] File not found as 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/THINGS/Majority_t.v'; using path 'D:/LogicDesignExperiment/LAB02_1007/THINGS/Majority_t.v' instead.
+WARNING: [Project 1-312] File not found as 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/THINGS/Lab2_Majority.v'; using path 'D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_Majority.v' instead.
+WARNING: [Project 1-312] File not found as 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/THINGS/Lab2_Adders.v'; using path 'D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_Adders.v' instead.
+WARNING: [Project 1-312] File not found as 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/THINGS/Adders_t.v'; using path 'D:/LogicDesignExperiment/LAB02_1007/THINGS/Adders_t.v' instead.
+WARNING: [Project 1-312] File not found as 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/THINGS/Lab2_TeamX_Ripple_Carry_Adder.v'; using path 'D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_TeamX_Ripple_Carry_Adder.v' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.883 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 14 16:55:42 2021...

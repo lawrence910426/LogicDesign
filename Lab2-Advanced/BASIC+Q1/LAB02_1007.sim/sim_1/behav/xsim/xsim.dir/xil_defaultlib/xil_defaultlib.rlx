@@ -2,12 +2,9 @@
 2020.2
 Nov 18 2020
 09:47:47
-D:/LogicDesignExperiment/LAB02_1007/LAB02_1007.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
-D:/LogicDesignExperiment/LAB02_1007/LAB02_1007.srcs/sources_1/new/Lab2_TeamX_Ripple_Carry_Adder_t.v,1633948802,verilog,,,,Lab2_TeamX_Ripple_Carry_Adder_t,,,,,,,,
-D:/LogicDesignExperiment/LAB02_1007/THINGS/Adders_t.v,1633592690,verilog,,,,Adders_t,,,,,,,,
-D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_Adders.v,1633597630,verilog,,D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_Majority.v,,Full_Adder;Half_Adder,,,,,,,,
-D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_Majority.v,1633596941,verilog,,D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_NAND_Implement.v,,Majority,,,,,,,,
-D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_NAND_Implement.v,1633596454,verilog,,D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_TeamX_Ripple_Carry_Adder.v,,AND;NAND_Implement;NOR;NOT;OR;XNOR;XOR,,,,,,,,
-D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_TeamX_Ripple_Carry_Adder.v,1633889905,verilog,,D:/LogicDesignExperiment/LAB02_1007/LAB02_1007.srcs/sources_1/new/Lab2_TeamX_Ripple_Carry_Adder_t.v,,Ripple_Carry_Adder,,,,,,,,
-D:/LogicDesignExperiment/LAB02_1007/THINGS/Majority_t.v,1633592688,verilog,,,,Majority_t,,,,,,,,
-D:/LogicDesignExperiment/LAB02_1007/THINGS/NAND_Implement_t.v,1633592685,verilog,,,,NAND_Implement_t,,,,,,,,
+D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/LAB02_1007.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/LAB02_1007.srcs/sources_1/new/Lab2_TeamX_Ripple_Carry_Adder_t.v,1633948802,verilog,,,,Lab2_TeamX_Ripple_Carry_Adder_t,,,,,,,,
+D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_Adders.v,1633597630,verilog,,D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_Majority.v,,Full_Adder;Half_Adder,,,,,,,,
+D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_Majority.v,1633596941,verilog,,D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_NAND_Implement.v,,Majority,,,,,,,,
+D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_NAND_Implement.v,1633596454,verilog,,D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_TeamX_Ripple_Carry_Adder.v,,AND;NAND_Implement;NOR;NOT;OR;XNOR;XOR,,,,,,,,
+D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/Lab2_TeamX_Ripple_Carry_Adder.v,1633889905,verilog,,D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/LAB02_1007.srcs/sources_1/new/Lab2_TeamX_Ripple_Carry_Adder_t.v,,Ripple_Carry_Adder,,,,,,,,
