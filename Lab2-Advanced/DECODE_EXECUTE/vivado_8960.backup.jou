@@ -2,15 +2,43 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+<<<<<<< Updated upstream
 # Start of session at: Thu Oct 14 12:15:29 2021
 # Process ID: 8960
 # Current directory: C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE
 # Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5624 C:\home\github\LogicDesign\Lab2-Advanced\DECODE_EXECUTE\DECODE_EXECUTE.xpr
+=======
+# Start of session at: Thu Oct 14 11:53:03 2021
+# Process ID: 7708
+# Current directory: C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent492 C:\home\github\LogicDesign\Lab2-Advanced\DECODE_EXECUTE\DECODE_EXECUTE.xpr
+>>>>>>> Stashed changes
 # Log file: C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE/vivado.log
 # Journal file: C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE\vivado.jou
 #-----------------------------------------------------------
 start_gui
+<<<<<<< Updated upstream
 open_project C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE/DECODE_EXECUTE.xpr
 update_compile_order -fileset sources_1
 launch_simulation
 source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+=======
+opopen_project C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE/DECODE_EXECUTE.xpupdate_compile_order -fileset sources_1
+open_bd_design {C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE/DECODE_EXECUTE.srcs/sources_1/bd/design_1/design_1.bd}
+>>>>>>> Stashed changes
