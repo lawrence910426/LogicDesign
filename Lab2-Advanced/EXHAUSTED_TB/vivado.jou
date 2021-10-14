@@ -2,13 +2,16 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Oct 14 16:02:49 2021
-# Process ID: 14428
-# Current directory: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/EXHAUSTED_TB
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1140 D:\LogicDesignExperiment\share_repo\Lab2-Advanced\EXHAUSTED_TB\EXHAUSTED_TB.xpr
-# Log file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/EXHAUSTED_TB/vivado.log
-# Journal file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/EXHAUSTED_TB\vivado.jou
+# Start of session at: Fri Oct 15 02:21:02 2021
+# Process ID: 15312
+# Current directory: D:/LogicDesignExperiment/LAB02_1007/EXHAUSTED_TB
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1816 D:\LogicDesignExperiment\LAB02_1007\EXHAUSTED_TB\EXHAUSTED_TB.xpr
+# Log file: D:/LogicDesignExperiment/LAB02_1007/EXHAUSTED_TB/vivado.log
+# Journal file: D:/LogicDesignExperiment/LAB02_1007/EXHAUSTED_TB\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/LogicDesignExperiment/share_repo/Lab2-Advanced/EXHAUSTED_TB/EXHAUSTED_TB.xpr
+open_project D:/LogicDesignExperiment/LAB02_1007/EXHAUSTED_TB/EXHAUSTED_TB.xpr
 update_compile_order -fileset sources_1
+launch_simulation
+source Exhausted_Testing.tcl
+close_sim

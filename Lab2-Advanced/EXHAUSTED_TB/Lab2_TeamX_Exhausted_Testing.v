@@ -16,7 +16,7 @@ reg done = 1'b0;
 // output from the test instance.
 wire [3:0] sum;
 wire cout;
-wire count;
+wire [3:0] count;
 
 // instantiate the test instance.
 Ripple_Carry_Adder rca(
@@ -58,46 +58,60 @@ initial begin
     a = 4'b0000;
     b = 4'b0000;
     error = 1'b0;
-    done = 1'b1;
+    done = 1'b0;
     
-    repeat(2 ** 4) begin
-        repeat(2 ** 4) begin
+    repeat (2) begin
+        a = 4'b0000;
+        b = 4'b0000;
+        repeat (2 **4) begin
+            repeat (2 ** 4) begin
             #1
-            if(count < a || count < b) begin
-                if(cout == 1'b1) begin
-                    if(count != sum) begin
-                        error = 1'b1;
-                    end
-                    else begin
-                        error = 1'b0;
-                    end
+            if(count >= a && count >= b) begin
+                if(a == 4'b1111 && b == 4'b1111 && cin == 1'b1) begin
+                    error = 1'b0;
                 end
                 else begin
-                    error = 1'b1;
+                    if(cout == 0)begin
+                        if(count == sum) begin
+                            error = 1'b0;
+                        end
+                        else begin
+                            error = 1'b1;
+                        end
+                    end
+                    else begin
+                        error = 1'b1;
+                    end
                 end
             end
             else begin
-                if(cout == 1'b0) begin
-                    if(count != sum) begin
-                        error = 1'b1;
+                if(cout == 1)begin
+                    if(count == sum) begin
+                        error = 1'b0;
                     end
                     else begin
-                        error = 1'b0;
+                        error = 1'b1;
                     end
                 end
                 else begin
                     error = 1'b1;
                 end
             end
-            
             #4
             a = a + 4'b0001;
-        end
+            end
         b = b + 4'b0001;
+        end
+    cin = cin + 1'b1;
     end
-    #5
+    #1
+    error = 1'b0;
+    #4
     done = 1'b1;
+    #5
+    done = 1'b0;
+    #1 $finish;
 end
-assign count = a + b;
+assign count = a + b + cin;
 
 endmodule
