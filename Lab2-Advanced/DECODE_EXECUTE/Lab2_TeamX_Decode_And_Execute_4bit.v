@@ -1,18 +1,19 @@
 `timescale 1ns/1ps
 
-module Decode_And_Execute(rs, rt, sel, rd);
+module Decode_And_Execute(rs, rt, sel, rd, w1,w2,w3,w4,w5,w6,w7,w8);
     input [3:0] rs, rt;
     input [2:0] sel;
     output [3:0] rd;
+    output [3:0] w1,w2,w3,w4,w5,w6,w7,w8;
     
     //FUNCTION
-    wire [3:0] w1,w2,w3,w4,w5,w6,w7,w8;
+    //wire [3:0] w1,w2,w3,w4,w5,w6,w7,w8;
     ADD func1 (.a(rs), .b(rt), .out(w1));
     SUB func2 (.a(rs), .b(rt), .out(w2));
     BITWISE_AND func3 (.a(rs), .b(rt), .out(w3));
     BITWISE_OR func4 (.a(rs), .b(rt), .out(w4));
     LEFT_SHIFT func5 (.a(rs), .out(w5));
-    RIGHT_SHIFT func6 (.a(rs), .out(w6));
+    RIGHT_SHIFT func6 (.a(rt), .out(w6));
     COMPARE_EQ func7 (.a(rs), .b(rt), .out(w7));
     COMPARE_GT func8 (.a(rs), .b(rt), .out(w8));
     
@@ -24,43 +25,47 @@ module Decode_And_Execute(rs, rt, sel, rd);
     NOT n_s_1 (.a(sel[1]), .out(s1_n));
     NOT n_s_2 (.a(sel[2]), .out(s2_n));
     
-    
+    //000
     AND a_s_11 (.a(s0_n), .b(s1_n), .out(s01));
     AND a_s_12 (.a(s2_n), .b(s01), .out(s[0]));
-    
+    //001
     AND a_s_21 (.a(sel[0]), .b(s1_n), .out(s02));
     AND a_s_22 (.a(s2_n), .b(s02), .out(s[1]));
-    
+    //010
     AND a_s_31 (.a(s0_n), .b(sel[1]), .out(s03));
     AND a_s_32 (.a(s2_n), .b(s03), .out(s[2]));
-    
+    //011
     AND a_s_41 (.a(sel[0]), .b(sel[1]), .out(s04));
     AND a_s_42 (.a(s2_n), .b(s04), .out(s[3]));
-    
+    //100
     AND a_s_51 (.a(s0_n), .b(s1_n), .out(s05));
     AND a_s_52 (.a(sel[2]), .b(s05), .out(s[4]));
-    
+    //101
     AND a_s_61 (.a(sel[0]), .b(s1_n), .out(s06));
     AND a_s_62 (.a(sel[2]), .b(s06), .out(s[5]));
-    
+    //110
     AND a_s_71 (.a(s0_n), .b(sel[1]), .out(s07));
     AND a_s_72 (.a(sel[2]), .b(s07), .out(s[6]));
-    
+    //111
     AND a_s_81 (.a(sel[0]), .b(sel[1]), .out(s08));
     AND a_s_82 (.a(sel[2]), .b(s08), .out(s[7]));
     
     //SELECTION FOR EACH
-    SELECT sel_0 (s, w1[0], w2[0], w3[0], w4[0], w5[0], w6[0], w7[0], w8[0], rd[0]);
-    SELECT sel_1 (s, w1[1], w2[1], w3[1], w4[1], w5[1], w6[1], w7[1], w8[1], rd[1]);
-    SELECT sel_2 (s, w1[2], w2[2], w3[2], w4[2], w5[2], w6[2], w7[2], w8[2], rd[2]);
-    SELECT sel_3 (s, w1[3], w2[3], w3[3], w4[3], w5[3], w6[3], w7[3], w8[3], rd[3]);
+    SELECT sel_0 (.sel(s), .w1(w1[0]), .w2(w2[0]), .w3(w3[0]),
+                  .w4(w4[0]), .w5(w5[0]), .w6(w6[0]), .w7(w7[0]), .w8(w8[0]), .out(rd[0]));
+    SELECT sel_1 (.sel(s), .w1(w1[1]), .w2(w2[1]), .w3(w3[1]),
+                  .w4(w4[1]), .w5(w5[1]), .w6(w6[1]), .w7(w7[1]), .w8(w8[1]), .out(rd[1]));
+    SELECT sel_2 (.sel(s), .w1(w1[2]), .w2(w2[2]), .w3(w3[2]),
+                  .w4(w4[2]), .w5(w5[2]), .w6(w6[2]), .w7(w7[2]), .w8(w8[2]), .out(rd[2]));
+    SELECT sel_3 (.sel(s), .w1(w1[3]), .w2(w2[3]), .w3(w3[3]),
+                  .w4(w4[3]), .w5(w5[3]), .w6(w6[3]), .w7(w7[3]), .w8(w8[3]), .out(rd[3]));
     
     
 endmodule
 
 module SELECT (sel, w1, w2, w3, w4, w5, w6, w7, w8, out);
-    input w1, w2, w3, w4, w5, w6, w7, w8;
     input [7:0] sel;
+    input w1, w2, w3, w4, w5, w6, w7, w8;
     output out;
     wire a01,a02,a03,a04,a05,a06,a07,a08;
     wire o1, o2, o3, o4, o5, o6;
@@ -224,13 +229,13 @@ module COMPARE_GT (a, b, out);
     NOT n3 (.a(w1), .out(w1_n));
     
     //
-    AND a1 (.a(w3), .b(w22), .out(a1_1));
+    AND a1 (.a(w3_n), .b(w22), .out(a1_1));
     
-    AND a21 (.a(w3), .b(w2), .out(a2_1));
+    AND a21 (.a(w3_n), .b(w2_n), .out(a2_1));
     AND a22 (.a(w12), .b(a2_1), .out(a2_2));
     
-    AND a31 (.a(w3), .b(w2), .out(a3_1));
-    AND a32 (.a(w1), .b(w0), .out(a3_2));
+    AND a31 (.a(w3_n), .b(w2_n), .out(a3_1));
+    AND a32 (.a(w1_n), .b(w0), .out(a3_2));
     AND a33 (.a(a3_1), .b(a3_2), .out(a3_3));
     
     OR or_last_1 (.a(w32), .b(a1_1), .out(o1));
@@ -281,8 +286,9 @@ endmodule
 module AND (a, b, out);
     input a, b;
     output out;
+    reg in = 1'b1;
     wire w;
-    Universal_Gate u1 (.a(a), .b(b), .out(w));
+    Universal_Gate u1 (.a(in), .b(b), .out(w));
     Universal_Gate u2 (.a(a), .b(w), .out(out));
 endmodule
 
