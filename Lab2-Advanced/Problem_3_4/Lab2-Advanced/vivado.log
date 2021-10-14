@@ -2,26 +2,21 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Oct 14 03:02:34 2021
-# Process ID: 19336
-# Current directory: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/Problem_3_4/Lab2-Advanced
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21960 D:\LogicDesignExperiment\share_repo\Lab2-Advanced\Problem_3_4\Lab2-Advanced\Lab2-Advanced.xpr
-# Log file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/Problem_3_4/Lab2-Advanced/vivado.log
-# Journal file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/Problem_3_4/Lab2-Advanced\vivado.jou
+# Start of session at: Thu Oct 14 13:24:26 2021
+# Process ID: 7468
+# Current directory: C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent588 C:\home\github\LogicDesign\Lab2-Advanced\Problem_3_4\Lab2-Advanced\Lab2-Advanced.xpr
+# Log file: C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/vivado.log
+# Journal file: C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/LogicDesignExperiment/share_repo/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.xpr
-INFO: [Project 1-313] Project file moved from 'C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced' since last save.
-WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/LogicDesignExperiment/share_repo/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.gen/sources_1', nor could it be found using path 'C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.gen/sources_1'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/../Users/lawre/Downloads/Lab2_TeamX_Carry_Look_Ahead_Adder_8bit.v', nor could it be found using path 'C:/Users/lawre/Downloads/Lab2_TeamX_Carry_Look_Ahead_Adder_8bit.v'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/../Users/lawre/Downloads/Lab2_TeamX_Multiplier_4bit.v', nor could it be found using path 'C:/Users/lawre/Downloads/Lab2_TeamX_Multiplier_4bit.v'.
+open_project C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.336 ; gain = 0.000
-update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 14 03:03:25 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 14 13:27:52 2021...

@@ -2,26 +2,31 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Oct 14 12:31:25 2021
-# Process ID: 12728
-# Current directory: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/DECODE_EXECUTE
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13136 D:\LogicDesignExperiment\share_repo\Lab2-Advanced\DECODE_EXECUTE\DECODE_EXECUTE.xpr
-# Log file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/DECODE_EXECUTE/vivado.log
-# Journal file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/DECODE_EXECUTE\vivado.jou
+# Start of session at: Thu Oct 14 12:15:29 2021
+# Process ID: 8960
+# Current directory: C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5624 C:\home\github\LogicDesign\Lab2-Advanced\DECODE_EXECUTE\DECODE_EXECUTE.xpr
+# Log file: C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE/vivado.log
+# Journal file: C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/LogicDesignExperiment/share_repo/Lab2-Advanced/DECODE_EXECUTE/DECODE_EXECUTE.xpr
+open_project C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE/DECODE_EXECUTE.xpr
 update_compile_order -fileset sources_1
 launch_simulation
 source Decode_And_Execute_tb.tcl
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-open_run synth_1 -name synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
 close_sim
