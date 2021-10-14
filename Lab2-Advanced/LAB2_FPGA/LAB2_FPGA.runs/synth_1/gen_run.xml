@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1634193950">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1634236891">
   <File Type="PA-TCL" Name="Decode_And_Execute_FPGA.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Decode_And_Execute_FPGA_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Decode_And_Execute_FPGA_reports.tcl"/>
   <File Type="RDS-RDS" Name="Decode_And_Execute_FPGA.vds"/>
   <File Type="RDS-UTIL" Name="Decode_And_Execute_FPGA_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Decode_And_Execute_FPGA_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Decode_And_Execute_FPGA.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Decode_And_Execute_FPGA_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Decode_And_Execute_FPGA_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/Lab2_TeamX_Decode_And_Execute_4bit.v">

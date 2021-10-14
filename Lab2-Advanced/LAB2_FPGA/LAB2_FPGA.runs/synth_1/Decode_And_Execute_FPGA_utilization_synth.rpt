@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Oct 14 14:44:03 2021
+| Date         : Fri Oct 15 02:42:10 2021
 | Host         : TACO-SUGO-KAWAII running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Decode_And_Execute_FPGA_utilization_synth.rpt -pb Decode_And_Execute_FPGA_utilization_synth.pb
 | Design       : Decode_And_Execute_FPGA
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   25 |     0 |     20800 |  0.12 |
-|   LUT as Logic          |   25 |     0 |     20800 |  0.12 |
+| Slice LUTs*             |   24 |     0 |     20800 |  0.12 |
+|   LUT as Logic          |   24 |     0 |     20800 |  0.12 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |    0 |     0 |     41600 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |     41600 |  0.00 |
@@ -149,11 +149,11 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |   15 |                 LUT |
+| LUT6     |   14 |                 LUT |
 | OBUF     |   12 |                  IO |
 | IBUF     |   11 |                  IO |
-| LUT5     |   10 |                 LUT |
-| LUT4     |    3 |                 LUT |
+| LUT5     |    9 |                 LUT |
+| LUT4     |    4 |                 LUT |
 | LUT2     |    3 |                 LUT |
 | LUT3     |    1 |                 LUT |
 +----------+------+---------------------+

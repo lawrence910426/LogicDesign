@@ -5,7 +5,6 @@ module Decode_And_Execute_FPGA (rs, rt, sel, a, b, c, d, e, f, g, h, AN);
     input [2:0] sel;
     output a, b, c, d, e, f, g, h;
     output [3:0] AN;
-    reg in = 1'b0;
     wire [3:0] rd;
     Decode_And_Execute dae(.rs(rs), .rt(rt), .sel(sel), .rd(rd));
     
@@ -52,11 +51,11 @@ module Decode_And_Execute_FPGA (rs, rt, sel, a, b, c, d, e, f, g, h, AN);
     not not5 (e, e_n);
     not not6 (f, f_n);
     not not7 (g, g_n);
-    not not8 (h, in);
-    not nota3 (AN[3], in);
-    not nota2 (AN[2], in);
-    not nota1 (AN[1], in);
-    buf nota0 (AN[0], in);
+    not not8 (h, 1'b0);
+    not nota3 (AN[3], 1'b0);
+    not nota2 (AN[2], 1'b0);
+    not nota1 (AN[1], 1'b0);
+    buf nota0 (AN[0], 1'b0);
 endmodule
 
 module Decode_And_Execute(rs, rt, sel, rd);
@@ -180,14 +179,13 @@ module SUB (a, b, out);
     output [3:0] out;
     wire [3:0] b_n, b_2;
     wire n_0, n_1, n_2, n_3;
-    reg in = 4'b0001;
     
     //2's complement
     NOT not0 (.a(b[0]), .out(b_n[0]));
     NOT not1 (.a(b[1]), .out(b_n[1]));
     NOT not2 (.a(b[2]), .out(b_n[2]));
     NOT not3 (.a(b[3]), .out(b_n[3]));
-    ADD add1 (.a(b_n), .b(in), .out(b_2));
+    ADD add1 (.a(b_n), .b(4'b0001), .out(b_2));
     ADD add2 (.a(a), .b(b_2), .out(out));
 endmodule
 
@@ -215,22 +213,20 @@ endmodule
 module LEFT_SHIFT (a, out);
     input [3:0] a;
     output [3:0] out;
-    reg in = 1'b0;
-    Universal_Gate u0 (.a(a[0]), .b(in), .out(out[1]));
-    Universal_Gate u1 (.a(a[1]), .b(in), .out(out[2]));
-    Universal_Gate u2 (.a(a[2]), .b(in), .out(out[3]));
-    Universal_Gate u3 (.a(a[3]), .b(in), .out(out[0]));
+    Universal_Gate u0 (.a(a[0]), .b(1'b0), .out(out[1]));
+    Universal_Gate u1 (.a(a[1]), .b(1'b0), .out(out[2]));
+    Universal_Gate u2 (.a(a[2]), .b(1'b0), .out(out[3]));
+    Universal_Gate u3 (.a(a[3]), .b(1'b0), .out(out[0]));
 endmodule
 
 //6
 module RIGHT_SHIFT (a, out);
     input [3:0] a;
     output [3:0] out;
-    reg in = 1'b0;
-    Universal_Gate u0 (.a(a[0]), .b(in), .out(out[3]));
-    Universal_Gate u1 (.a(a[1]), .b(in), .out(out[0]));
-    Universal_Gate u2 (.a(a[2]), .b(in), .out(out[1]));
-    Universal_Gate u3 (.a(a[3]), .b(in), .out(out[2]));
+    Universal_Gate u0 (.a(a[3]), .b(1'b0), .out(out[3]));
+    Universal_Gate u1 (.a(a[1]), .b(1'b0), .out(out[0]));
+    Universal_Gate u2 (.a(a[2]), .b(1'b0), .out(out[1]));
+    Universal_Gate u3 (.a(a[3]), .b(1'b0), .out(out[2]));
 endmodule
 
 //7
@@ -238,7 +234,6 @@ module COMPARE_EQ (a, b, out);
     input [3:0] a, b;
     output [3:0] out;
     wire c1, c2, c3, c0, w1, w2;
-    reg in = 1'b0;
     XNOR xnor0 (.a(a[0]), .b(b[0]), .out(c0));
     XNOR xnor1 (.a(a[1]), .b(b[1]), .out(c1));
     XNOR xnor2 (.a(a[2]), .b(b[2]), .out(c2));
@@ -246,9 +241,9 @@ module COMPARE_EQ (a, b, out);
     AND and1 (.a(c0), .b(c1), .out(w1));
     AND and2 (.a(c2), .b(c3), .out(w2));
     AND and3 (.a(w1), .b(w2), .out(out[0]));
-    NOT not1 (.a(in), .out(out[1]));
-    NOT not2 (.a(in), .out(out[2]));
-    NOT not3 (.a(in), .out(out[3]));
+    NOT not1 (.a(1'b0), .out(out[1]));
+    NOT not2 (.a(1'b0), .out(out[2]));
+    NOT not3 (.a(1'b0), .out(out[3]));
 endmodule
 
 //8
@@ -259,7 +254,6 @@ module COMPARE_GT (a, b, out);
     wire w0, w11, w12, w21, w22, w31, w32;
     wire w1, w1_n, w2, w2_n, w3, w3_n;
     wire a1_1, a2_1, a2_2, a3_1, a3_2, a3_3, o1, o2;
-    reg in = 1'b0;
     
     //invert
     NOT not1 (.a(a[1]), .out(a1_n));
@@ -302,9 +296,9 @@ module COMPARE_GT (a, b, out);
     OR or_last_3 (.a(o1), .b(o2), .out(out[0]));
     
     //
-    NOT not11 (.a(in), .out(out[1]));
-    NOT not22 (.a(in), .out(out[2]));
-    NOT not33 (.a(in), .out(out[3]));
+    NOT not11 (.a(1'b0), .out(out[1]));
+    NOT not22 (.a(1'b0), .out(out[2]));
+    NOT not33 (.a(1'b0), .out(out[3]));
 endmodule
 
 //using
@@ -333,29 +327,26 @@ endmodule
 module OR (a, b, out);
     input a, b;
     output out;
-    reg in = 1'b1;
     wire a_n, b_n, w1, w2;
-    Universal_Gate u1 (.a(in), .b(a), .out(a_n));
-    Universal_Gate u2 (.a(in), .b(b), .out(b_n));
-    Universal_Gate u3 (.a(in), .b(b_n), .out(w1));
+    Universal_Gate u1 (.a(1'b1), .b(a), .out(a_n));
+    Universal_Gate u2 (.a(1'b1), .b(b), .out(b_n));
+    Universal_Gate u3 (.a(1'b1), .b(b_n), .out(w1));
     Universal_Gate u4 (.a(a_n), .b(w1), .out(w2));
-    Universal_Gate u5 (.a(in), .b(w2), .out(out));
+    Universal_Gate u5 (.a(1'b1), .b(w2), .out(out));
 endmodule
 
 module AND (a, b, out);
     input a, b;
     output out;
-    reg in = 1'b1;
     wire w;
-    Universal_Gate u1 (.a(in), .b(b), .out(w));
+    Universal_Gate u1 (.a(1'b1), .b(b), .out(w));
     Universal_Gate u2 (.a(a), .b(w), .out(out));
 endmodule
 
 module NOT (a, out);
     input a;
     output out;
-    reg in = 1'b1;
-    Universal_Gate u1 (.a(in), .b(a), .out(out));
+    Universal_Gate u1 (.a(1'b1), .b(a), .out(out));
 endmodule
 
 module Universal_Gate(a, b, out);

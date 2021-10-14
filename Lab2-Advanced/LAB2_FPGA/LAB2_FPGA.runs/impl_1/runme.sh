@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA/LAB2_FPGA.runs/impl_1'
+HD_PWD='D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/LAB2_FPGA.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log Decode_And_Execute_FPGA.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Decode_And_Execute_FPGA.tcl -notrace
 
 

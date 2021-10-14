@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Oct 14 14:46:49 2021
+| Date             : Fri Oct 15 02:42:58 2021
 | Host             : TACO-SUGO-KAWAII running 64-bit major release  (build 9200)
 | Command          : report_power -file Decode_And_Execute_FPGA_power_routed.rpt -pb Decode_And_Execute_FPGA_power_summary_routed.pb -rpx Decode_And_Execute_FPGA_power_routed.rpx
 | Design           : Decode_And_Execute_FPGA
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 11.676       |
+| Total On-Chip Power (W)  | 11.719       |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 11.507       |
-| Device Static (W)        | 0.169        |
+| Dynamic (W)              | 11.549       |
+| Device Static (W)        | 0.170        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 26.6         |
-| Junction Temperature (C) | 83.4         |
+| Max Ambient (C)          | 26.4         |
+| Junction Temperature (C) | 83.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,13 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.154 |       34 |       --- |             --- |
-|   LUT as Logic |     0.154 |       25 |     20800 |            0.12 |
+| Slice Logic    |     0.152 |       33 |       --- |             --- |
+|   LUT as Logic |     0.152 |       24 |     20800 |            0.12 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.267 |       43 |       --- |             --- |
-| I/O            |    11.085 |       23 |       106 |           21.70 |
-| Static Power   |     0.169 |          |           |                 |
-| Total          |    11.676 |          |           |                 |
+| Signals        |     0.271 |       42 |       --- |             --- |
+| I/O            |    11.126 |       23 |       106 |           21.70 |
+| Static Power   |     0.170 |          |           |                 |
+| Total          |    11.719 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,9 +68,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.555 |       0.466 |      0.089 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.426 |       0.405 |      0.022 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     3.126 |       3.125 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.556 |       0.467 |      0.090 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.428 |       0.406 |      0.022 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     3.138 |       3.137 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -135,7 +135,7 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| Decode_And_Execute_FPGA |    11.507 |
+| Decode_And_Execute_FPGA |    11.549 |
 +-------------------------+-----------+
 
 

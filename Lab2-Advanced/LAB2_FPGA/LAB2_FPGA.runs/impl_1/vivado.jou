@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Oct 14 20:27:15 2021
-# Process ID: 12100
-# Current directory: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA/LAB2_FPGA.runs/impl_1
+# Start of session at: Fri Oct 15 02:42:17 2021
+# Process ID: 1556
+# Current directory: D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/LAB2_FPGA.runs/impl_1
 # Command line: vivado.exe -log Decode_And_Execute_FPGA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Decode_And_Execute_FPGA.tcl -notrace
-# Log file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA/LAB2_FPGA.runs/impl_1/Decode_And_Execute_FPGA.vdi
-# Journal file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA/LAB2_FPGA.runs/impl_1\vivado.jou
+# Log file: D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/LAB2_FPGA.runs/impl_1/Decode_And_Execute_FPGA.vdi
+# Journal file: D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/LAB2_FPGA.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source Decode_And_Execute_FPGA.tcl -notrace

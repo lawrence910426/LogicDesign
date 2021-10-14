@@ -17,61 +17,61 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11196
+INFO: [Synth 8-7075] Helper process launched with PID 15572
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.914 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.258 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Decode_And_Execute_FPGA' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Decode_And_Execute' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:62]
-INFO: [Synth 8-6157] synthesizing module 'ADD' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:150]
-INFO: [Synth 8-6157] synthesizing module 'H_ADDER' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:170]
-INFO: [Synth 8-6157] synthesizing module 'XOR' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:322]
-INFO: [Synth 8-6157] synthesizing module 'NOT' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:354]
-INFO: [Synth 8-6157] synthesizing module 'Universal_Gate' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:361]
-INFO: [Synth 8-6155] done synthesizing module 'Universal_Gate' (1#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:361]
-INFO: [Synth 8-6155] done synthesizing module 'NOT' (2#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:354]
-INFO: [Synth 8-6157] synthesizing module 'AND' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:345]
-INFO: [Synth 8-6155] done synthesizing module 'AND' (3#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:345]
-INFO: [Synth 8-6157] synthesizing module 'OR' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:333]
-INFO: [Synth 8-6155] done synthesizing module 'OR' (4#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:333]
-INFO: [Synth 8-6155] done synthesizing module 'XOR' (5#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:322]
-INFO: [Synth 8-6155] done synthesizing module 'H_ADDER' (6#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:170]
-INFO: [Synth 8-6157] synthesizing module 'F_ADDER' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:161]
-INFO: [Synth 8-6155] done synthesizing module 'F_ADDER' (7#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:161]
-INFO: [Synth 8-6155] done synthesizing module 'ADD' (8#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:150]
-INFO: [Synth 8-6157] synthesizing module 'SUB' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:178]
-INFO: [Synth 8-6155] done synthesizing module 'SUB' (9#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:178]
-INFO: [Synth 8-6157] synthesizing module 'BITWISE_AND' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:195]
-INFO: [Synth 8-6155] done synthesizing module 'BITWISE_AND' (10#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:195]
-INFO: [Synth 8-6157] synthesizing module 'BITWISE_OR' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:205]
-INFO: [Synth 8-6155] done synthesizing module 'BITWISE_OR' (11#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:205]
-INFO: [Synth 8-6157] synthesizing module 'LEFT_SHIFT' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:215]
-INFO: [Synth 8-6155] done synthesizing module 'LEFT_SHIFT' (12#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:215]
-INFO: [Synth 8-6157] synthesizing module 'RIGHT_SHIFT' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:226]
-INFO: [Synth 8-6155] done synthesizing module 'RIGHT_SHIFT' (13#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:226]
-INFO: [Synth 8-6157] synthesizing module 'COMPARE_EQ' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:237]
-INFO: [Synth 8-6157] synthesizing module 'XNOR' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:311]
-INFO: [Synth 8-6155] done synthesizing module 'XNOR' (14#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:311]
-INFO: [Synth 8-6155] done synthesizing module 'COMPARE_EQ' (15#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:237]
-INFO: [Synth 8-6157] synthesizing module 'COMPARE_GT' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:255]
-INFO: [Synth 8-6155] done synthesizing module 'COMPARE_GT' (16#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:255]
-INFO: [Synth 8-6157] synthesizing module 'SELECT' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:125]
-INFO: [Synth 8-6155] done synthesizing module 'SELECT' (17#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:125]
-INFO: [Synth 8-6155] done synthesizing module 'Decode_And_Execute' (18#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:62]
+INFO: [Synth 8-6157] synthesizing module 'Decode_And_Execute' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:61]
+INFO: [Synth 8-6157] synthesizing module 'ADD' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:149]
+INFO: [Synth 8-6157] synthesizing module 'H_ADDER' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:169]
+INFO: [Synth 8-6157] synthesizing module 'XOR' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:316]
+INFO: [Synth 8-6157] synthesizing module 'NOT' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:346]
+INFO: [Synth 8-6157] synthesizing module 'Universal_Gate' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:352]
+INFO: [Synth 8-6155] done synthesizing module 'Universal_Gate' (1#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:352]
+INFO: [Synth 8-6155] done synthesizing module 'NOT' (2#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:346]
+INFO: [Synth 8-6157] synthesizing module 'AND' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:338]
+INFO: [Synth 8-6155] done synthesizing module 'AND' (3#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:338]
+INFO: [Synth 8-6157] synthesizing module 'OR' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:327]
+INFO: [Synth 8-6155] done synthesizing module 'OR' (4#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:327]
+INFO: [Synth 8-6155] done synthesizing module 'XOR' (5#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:316]
+INFO: [Synth 8-6155] done synthesizing module 'H_ADDER' (6#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:169]
+INFO: [Synth 8-6157] synthesizing module 'F_ADDER' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'F_ADDER' (7#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'ADD' (8#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:149]
+INFO: [Synth 8-6157] synthesizing module 'SUB' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:177]
+INFO: [Synth 8-6155] done synthesizing module 'SUB' (9#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:177]
+INFO: [Synth 8-6157] synthesizing module 'BITWISE_AND' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'BITWISE_AND' (10#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:193]
+INFO: [Synth 8-6157] synthesizing module 'BITWISE_OR' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:203]
+INFO: [Synth 8-6155] done synthesizing module 'BITWISE_OR' (11#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:203]
+INFO: [Synth 8-6157] synthesizing module 'LEFT_SHIFT' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:213]
+INFO: [Synth 8-6155] done synthesizing module 'LEFT_SHIFT' (12#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:213]
+INFO: [Synth 8-6157] synthesizing module 'RIGHT_SHIFT' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:223]
+INFO: [Synth 8-6155] done synthesizing module 'RIGHT_SHIFT' (13#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:223]
+INFO: [Synth 8-6157] synthesizing module 'COMPARE_EQ' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:233]
+INFO: [Synth 8-6157] synthesizing module 'XNOR' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:305]
+INFO: [Synth 8-6155] done synthesizing module 'XNOR' (14#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:305]
+INFO: [Synth 8-6155] done synthesizing module 'COMPARE_EQ' (15#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:233]
+INFO: [Synth 8-6157] synthesizing module 'COMPARE_GT' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:250]
+INFO: [Synth 8-6155] done synthesizing module 'COMPARE_GT' (16#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:250]
+INFO: [Synth 8-6157] synthesizing module 'SELECT' [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'SELECT' (17#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'Decode_And_Execute' (18#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:61]
 INFO: [Synth 8-6155] done synthesizing module 'Decode_And_Execute_FPGA' (19#1) [D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/Lab2_TeamX_Decode_And_Execute_4bit.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.914 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.258 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1014.914 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.258 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1014.914 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.258 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1014.914 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1015.258 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -82,30 +82,31 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Decode_And_Execute_FPGA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1045.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1041.121 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1045.590 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1041.121 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1045.590 ; gain = 30.676
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1041.121 ; gain = 25.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1045.590 ; gain = 30.676
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1041.121 ; gain = 25.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1045.590 ; gain = 30.676
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1041.121 ; gain = 25.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1045.590 ; gain = 30.676
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1041.121 ; gain = 25.863
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'dae/func6/u0' (Universal_Gate) to 'dae/func6/u3'
 INFO: [Synth 8-223] decloning instance 'dae/func7/not1' (NOT) to 'dae/func7/not2'
 INFO: [Synth 8-223] decloning instance 'dae/func7/not1' (NOT) to 'dae/func7/not3'
 INFO: [Synth 8-223] decloning instance 'dae/func8/not11' (NOT) to 'dae/func8/not22'
@@ -135,25 +136,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1045.590 ; gain = 30.676
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1041.121 ; gain = 25.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1045.590 ; gain = 30.676
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1041.121 ; gain = 25.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1045.590 ; gain = 30.676
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1041.121 ; gain = 25.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1045.590 ; gain = 30.676
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1041.121 ; gain = 25.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -171,37 +172,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1046.168 ; gain = 31.254
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1045.445 ; gain = 30.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1046.168 ; gain = 31.254
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1045.445 ; gain = 30.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1046.168 ; gain = 31.254
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1045.445 ; gain = 30.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1046.168 ; gain = 31.254
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1045.445 ; gain = 30.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1046.168 ; gain = 31.254
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1045.445 ; gain = 30.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1046.168 ; gain = 31.254
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1045.445 ; gain = 30.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -219,30 +220,30 @@ Report Cell Usage:
 +------+-----+------+
 |1     |LUT2 |     3|
 |2     |LUT3 |     1|
-|3     |LUT4 |     3|
-|4     |LUT5 |    10|
-|5     |LUT6 |    15|
+|3     |LUT4 |     4|
+|4     |LUT5 |     9|
+|5     |LUT6 |    14|
 |6     |IBUF |    11|
 |7     |OBUF |    12|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1046.168 ; gain = 31.254
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1045.445 ; gain = 30.188
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1046.168 ; gain = 0.578
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1046.168 ; gain = 31.254
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1045.445 ; gain = 4.324
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1045.445 ; gain = 30.188
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1054.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.477 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1054.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1061.359 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-60 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+61 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1054.957 ; gain = 40.043
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 1061.359 ; gain = 46.102
 INFO: [Common 17-1381] The checkpoint 'D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/LAB2_FPGA.runs/synth_1/Decode_And_Execute_FPGA.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Decode_And_Execute_FPGA_utilization_synth.rpt -pb Decode_And_Execute_FPGA_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 14 14:44:03 2021...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 15 02:42:10 2021...
