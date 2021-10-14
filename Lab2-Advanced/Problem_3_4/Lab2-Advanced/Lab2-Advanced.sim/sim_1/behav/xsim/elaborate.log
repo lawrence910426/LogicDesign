@@ -10,16 +10,4 @@ WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 fo
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'c0' [C:/Users/lawre/Downloads/Lab2_TeamX_Multiplier_4bit.v:27]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'c0' [C:/Users/lawre/Downloads/Lab2_TeamX_Multiplier_4bit.v:32]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.NAND_Implement
-Compiling module xil_defaultlib.AND
-Compiling module xil_defaultlib.XOR
-Compiling module xil_defaultlib.WIRE
-Compiling module xil_defaultlib.HalfAdder
-Compiling module xil_defaultlib.FullAdder
-Compiling module xil_defaultlib.Multiplier_4bit_default
-Compiling module xil_defaultlib.Multipler_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Multipler_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

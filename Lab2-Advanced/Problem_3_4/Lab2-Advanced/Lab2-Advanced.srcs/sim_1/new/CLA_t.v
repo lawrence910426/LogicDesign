@@ -39,6 +39,8 @@ module CLA_t();
             b = b - 3;
             c0 = 0;
             #10;
+            c0 = 1;
+            #10;
         end
         #1 $finish;
     end
