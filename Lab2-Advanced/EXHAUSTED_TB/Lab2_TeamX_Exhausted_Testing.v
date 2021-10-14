@@ -95,6 +95,7 @@ initial begin
         end
         b = b + 4'b0001;
     end
+    #5
     done = 1'b1;
 end
 assign count = a + b;

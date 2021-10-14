@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 14 20:15:01 2021
+# Process ID: 15588
+# Current directory: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19248 D:\LogicDesignExperiment\share_repo\Lab2-Advanced\LAB2_FPGA\LAB2_FPGA.xpr
+# Log file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA/vivado.log
+# Journal file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA/LAB2_FPGA.xpr
+INFO: [Project 1-313] Project file moved from 'D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA/LAB2_FPGA.gen/sources_1', nor could it be found using path 'D:/LogicDesignExperiment/LAB02_1007/LAB2_FPGA/LAB2_FPGA.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Oct 14 20:27:03 2021] Launched impl_1...
+Run output will be captured here: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA/LAB2_FPGA.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1205.441 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1856.531 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1856.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1856.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1969.098 ; gain = 952.168
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 14 20:31:28 2021...

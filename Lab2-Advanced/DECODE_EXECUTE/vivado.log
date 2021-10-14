@@ -166,3 +166,7 @@ $finish called at time : 641 ps : File "D:/LogicDesignExperiment/share_repo/Lab2
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decode_And_Execute_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
 launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.648 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 14 19:51:04 2021...

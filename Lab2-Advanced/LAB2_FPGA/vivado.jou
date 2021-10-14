@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 14 20:15:01 2021
+# Process ID: 15588
+# Current directory: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19248 D:\LogicDesignExperiment\share_repo\Lab2-Advanced\LAB2_FPGA\LAB2_FPGA.xpr
+# Log file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA/vivado.log
+# Journal file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/share_repo/Lab2-Advanced/LAB2_FPGA/LAB2_FPGA.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1

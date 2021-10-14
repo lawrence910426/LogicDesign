@@ -17,3 +17,4 @@ source Decode_And_Execute_tb.tcl
 close_sim
 launch_simulation
 source Decode_And_Execute_tb.tcl
+close_sim

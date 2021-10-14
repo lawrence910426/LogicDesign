@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 12 16:55:44 2021
+# Process ID: 19216
+# Current directory: D:/LogicDesignExperiment/LAB02_1007/EXHAUSTED_TB
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21080 D:\LogicDesignExperiment\LAB02_1007\EXHAUSTED_TB\EXHAUSTED_TB.xpr
+# Log file: D:/LogicDesignExperiment/LAB02_1007/EXHAUSTED_TB/vivado.log
+# Journal file: D:/LogicDesignExperiment/LAB02_1007/EXHAUSTED_TB\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/LAB02_1007/EXHAUSTED_TB/EXHAUSTED_TB.xpr
+INFO: [Project 1-313] Project file moved from 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/EXHAUSTED_TB' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/LogicDesignExperiment/LAB02_1007/EXHAUSTED_TB/EXHAUSTED_TB.gen/sources_1', nor could it be found using path 'D:/LogicDesignExperiment/LAB02_1007/BASIC+Q1/EXHAUSTED_TB/EXHAUSTED_TB.gen/sources_1'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/LogicDesignExperiment/THINGS/Lab2_TeamX_Exhausted_Testing.v', nor could it be found using path 'D:/LogicDesignExperiment/LAB02_1007/THINGS/Lab2_TeamX_Exhausted_Testing.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/LogicDesignExperiment/THINGS/Lab2_TeamX_Exhausted_Testing.v] -no_script -reset -force -quiet
+remove_files  D:/LogicDesignExperiment/THINGS/Lab2_TeamX_Exhausted_Testing.v
+add_files -norecurse D:/LogicDesignExperiment/LAB02_1007/EXHAUSTED_TB/Lab2_TeamX_Exhausted_Testing.v
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 12 16:56:48 2021...
