@@ -1,80 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1634186839">
-  <File Type="BITSTR-BMM" Name="Decode_And_Execute_tb_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Decode_And_Execute_tb_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Decode_And_Execute_tb_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="Decode_And_Execute_tb_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Decode_And_Execute_tb.tcl"/>
-  <File Type="OPT-TIMING" Name="Decode_And_Execute_tb_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Decode_And_Execute_tb_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="Decode_And_Execute_tb_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Decode_And_Execute_tb_reports.tcl"/>
-  <File Type="OPT-DRC" Name="Decode_And_Execute_tb_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="Decode_And_Execute_tb.hwdef"/>
-  <File Type="PWROPT-DCP" Name="Decode_And_Execute_tb_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="Decode_And_Execute_tb_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="Decode_And_Execute_tb_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="Decode_And_Execute_tb_placed.dcp"/>
-  <File Type="PLACE-IO" Name="Decode_And_Execute_tb_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Decode_And_Execute_tb_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="Decode_And_Execute_tb_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Decode_And_Execute_tb_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="Decode_And_Execute_tb_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Decode_And_Execute_tb_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Decode_And_Execute_tb_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="Decode_And_Execute_tb_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Decode_And_Execute_tb_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="Decode_And_Execute_tb.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Decode_And_Execute_tb_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Decode_And_Execute_tb_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Decode_And_Execute_tb_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="Decode_And_Execute_tb.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="Decode_And_Execute_tb_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Decode_And_Execute_tb_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="Decode_And_Execute_tb_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Decode_And_Execute_tb_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="Decode_And_Execute_tb_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="Decode_And_Execute_tb_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Decode_And_Execute_tb_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="Decode_And_Execute_tb.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Decode_And_Execute_tb_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Decode_And_Execute_tb_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Decode_And_Execute_tb_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="Decode_And_Execute_tb_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="Decode_And_Execute_tb_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="Decode_And_Execute_tb_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Decode_And_Execute_tb_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="Decode_And_Execute_tb_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Decode_And_Execute_tb_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="Decode_And_Execute_tb_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Decode_And_Execute_tb_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Decode_And_Execute_tb_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Decode_And_Execute_tb_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Decode_And_Execute_tb_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Decode_And_Execute_tb_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Decode_And_Execute_tb_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Decode_And_Execute_tb_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Decode_And_Execute_tb_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Decode_And_Execute_tb_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Decode_And_Execute_tb_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Decode_And_Execute_tb_bus_skew_postroute_physopted.pb"/>
+  <File Type="RDI-RDI" Name="Decode_And_Execute_tb.vdi"/>
   <File Type="BG-BIT" Name="Decode_And_Execute_tb.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Decode_And_Execute_tb_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-DRC" Name="Decode_And_Execute_tb.drc"/>
+  <File Type="BG-BGN" Name="Decode_And_Execute_tb.bgn"/>
+  <File Type="BG-BIN" Name="Decode_And_Execute_tb.bin"/>
   <File Type="BITSTR-RBT" Name="Decode_And_Execute_tb.rbt"/>
   <File Type="BITSTR-NKY" Name="Decode_And_Execute_tb.nky"/>
+  <File Type="BITSTR-BMM" Name="Decode_And_Execute_tb_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Decode_And_Execute_tb.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Decode_And_Execute_tb.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Decode_And_Execute_tb.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="Decode_And_Execute_tb_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Decode_And_Execute_tb.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Decode_And_Execute_tb_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="Decode_And_Execute_tb_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Decode_And_Execute_tb_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Decode_And_Execute_tb_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="Decode_And_Execute_tb_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="Decode_And_Execute_tb_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Decode_And_Execute_tb_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Decode_And_Execute_tb_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Decode_And_Execute_tb_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Decode_And_Execute_tb_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Decode_And_Execute_tb_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Decode_And_Execute_tb_postroute_physopt_bb.dcp"/>
   <File Type="PDI-FILE" Name="Decode_And_Execute_tb.pdi"/>
   <File Type="RCFI_FILE" Name="Decode_And_Execute_tb.rcfi"/>
   <File Type="CFI_FILE" Name="Decode_And_Execute_tb.cfi"/>
   <File Type="RNPI_FILE" Name="Decode_And_Execute_tb.rnpi"/>
   <File Type="NPI_FILE" Name="Decode_And_Execute_tb.npi"/>
   <File Type="RBD_FILE" Name="Decode_And_Execute_tb.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Decode_And_Execute_tb.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="Decode_And_Execute_tb.sysdef"/>
-  <File Type="BG-BGN" Name="Decode_And_Execute_tb.bgn"/>
-  <File Type="BG-DRC" Name="Decode_And_Execute_tb.drc"/>
-  <File Type="RDI-RDI" Name="Decode_And_Execute_tb.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/Lab2_TeamX_Decode_And_Execute_4bit.v">
@@ -135,5 +96,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>
