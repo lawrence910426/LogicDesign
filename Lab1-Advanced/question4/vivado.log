@@ -83,3 +83,7 @@ $finish called at time : 22 ns : File "D:/LogicDesignExperiment/LAB01_0923/share
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'T_Flip_Flop_t_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
 launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1018.180 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 30 10:42:24 2021...

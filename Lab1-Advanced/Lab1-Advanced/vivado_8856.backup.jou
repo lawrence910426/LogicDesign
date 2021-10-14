@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 30 00:50:52 2021
+# Process ID: 8856
+# Current directory: C:/home/github/LogicDesign/Lab1-Advanced/Lab1-Advanced
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6328 C:\home\github\LogicDesign\Lab1-Advanced\Lab1-Advanced\Lab1-Advanced.xpr
+# Log file: C:/home/github/LogicDesign/Lab1-Advanced/Lab1-Advanced/vivado.log
+# Journal file: C:/home/github/LogicDesign/Lab1-Advanced/Lab1-Advanced\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/home/github/LogicDesign/Lab1-Advanced/Lab1-Advanced/Lab1-Advanced.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top crossbar4x4_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source crossbar4x4_tb.tcl
+close_sim
+launch_simulation
+source crossbar4x4_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top crossbar_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source crossbar_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top dmux_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source dmux_tb.tcl
+close_sim
+launch_simulation
+source dmux_tb.tcl
+close_sim

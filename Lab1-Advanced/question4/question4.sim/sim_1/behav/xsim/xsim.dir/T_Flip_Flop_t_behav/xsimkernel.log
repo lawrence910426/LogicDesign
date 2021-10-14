@@ -2,3 +2,6 @@ Running: xsim.dir/T_Flip_Flop_t_behav/xsimk.exe -simmode gui -wdb T_Flip_Flop_t_
 Design successfully loaded
 Design Loading Memory Usage: 6340 KB (Peak: 6340 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6948 KB (Peak: 6948 KB)
+Simulation CPU Usage: 15 ms
