@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 14 12:46:45 2021
+# Process ID: 8328
+# Current directory: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/DECODE_EXECUTE/DECODE_EXECUTE.runs/synth_1
+# Command line: vivado.exe -log Decode_And_Execute_tb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Decode_And_Execute_tb.tcl
+# Log file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/DECODE_EXECUTE/DECODE_EXECUTE.runs/synth_1/Decode_And_Execute_tb.vds
+# Journal file: D:/LogicDesignExperiment/share_repo/Lab2-Advanced/DECODE_EXECUTE/DECODE_EXECUTE.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Decode_And_Execute_tb.tcl -notrace
