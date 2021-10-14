@@ -167,7 +167,7 @@ module RIGHT_SHIFT (a, out);
     input [3:0] a;
     output [3:0] out;
 
-    Universal_Gate u0 (.a(a[0]), .b(1'b0), .out(out[3]));
+    Universal_Gate u0 (.a(a[3]), .b(1'b0), .out(out[3]));
     Universal_Gate u1 (.a(a[1]), .b(1'b0), .out(out[0]));
     Universal_Gate u2 (.a(a[2]), .b(1'b0), .out(out[1]));
     Universal_Gate u3 (.a(a[3]), .b(1'b0), .out(out[2]));
