@@ -2,27 +2,13 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Oct 12 22:41:15 2021
-# Process ID: 9916
+# Start of session at: Thu Oct 14 13:24:26 2021
+# Process ID: 7468
 # Current directory: C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6576 C:\home\github\LogicDesign\Lab2-Advanced\Problem_3_4\Lab2-Advanced\Lab2-Advanced.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent588 C:\home\github\LogicDesign\Lab2-Advanced\Problem_3_4\Lab2-Advanced\Lab2-Advanced.xpr
 # Log file: C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/vivado.log
 # Journal file: C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.xpr
 update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.srcs/sim_1/new/Multipler_tb.v w ]
-add_files -fileset sim_1 C:/home/github/LogicDesign/Lab2-Advanced/Problem_3_4/Lab2-Advanced/Lab2-Advanced.srcs/sim_1/new/Multipler_tb.v
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top Multipler_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-source Multipler_tb.tcl
-close_sim

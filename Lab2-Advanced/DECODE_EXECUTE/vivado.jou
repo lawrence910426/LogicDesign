@@ -14,3 +14,19 @@ open_project C:/home/github/LogicDesign/Lab2-Advanced/DECODE_EXECUTE/DECODE_EXEC
 update_compile_order -fileset sources_1
 launch_simulation
 source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
+launch_simulation
+source Decode_And_Execute_tb.tcl
+close_sim
