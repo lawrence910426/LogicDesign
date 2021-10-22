@@ -6,4 +6,6 @@
 - [Float/Double arithematic](https://github.com/dawsonjon/fpu)
 - [Tensorflow MNIST example](https://www.tensorflow.org/tutorials/quickstart/beginner)
 - [Keras save model](https://www.tensorflow.org/guide/keras/save_and_serialize)
-- [Tensorflow KuzushijiNIST Dataset](https://www.tensorflow.org/datasets/catalog/kmnist?hl=zh-tw)
+- Datasets
+  - [Horse or human dataset](https://www.tensorflow.org/datasets/catalog/horses_or_humans?hl=zh-tw)
+  - [Rock paper scissor](https://www.tensorflow.org/datasets/catalog/rock_paper_scissors?hl=zh-tw)
