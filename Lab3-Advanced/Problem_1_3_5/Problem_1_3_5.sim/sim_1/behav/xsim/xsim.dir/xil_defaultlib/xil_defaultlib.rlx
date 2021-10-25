@@ -3,10 +3,10 @@
 Nov 18 2020
 09:47:47
 C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
-C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sim_1/new/MultiBankMemory_T.v,1635165122,verilog,,,,MultiBankMemory_T,,,,,,,,
+C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sim_1/new/MultiBankMemory_T.v,1635173625,verilog,,,,MultiBankMemory_T,,,,,,,,
 C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sim_1/new/Parameterized_PingPongCounter_T.v,1635149526,verilog,,,,Parameterized_PingPongCounter_T,,,,,,,,
 C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sim_1/new/PingPongCounter_T.v,1635144717,verilog,,,,PingPongCounter_T,,,,,,,,
-C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sources_1/imports/Users/lawre/Downloads/Lab3_TeamX_Multi_Bank_Memory.v,1635166657,verilog,,C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sim_1/new/MultiBankMemory_T.v,,Multi_Bank_Memory;Single_Bank_Memory,,,,,,,,
+C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sources_1/imports/Users/lawre/Downloads/Lab3_TeamX_Multi_Bank_Memory.v,1635173794,verilog,,C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sim_1/new/MultiBankMemory_T.v,,Multi_Bank_Memory;Single_Bank_Memory,,,,,,,,
 C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sources_1/imports/Users/lawre/Downloads/Lab3_TeamX_Parameterized_Ping_Pong_Counter.v,1635149239,verilog,,C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sim_1/new/Parameterized_PingPongCounter_T.v,,Parameterized_Ping_Pong_Counter,,,,,,,,
 C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sources_1/imports/Users/lawre/Downloads/Lab3_TeamX_Ping_Pong_Counter.v,1635144875,verilog,,C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sim_1/new/PingPongCounter_T.v,,Ping_Pong_Counter,,,,,,,,
-C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sources_1/imports/home/LogicDesign - Basic/Lab3/Lab3.srcs/sources_1/imports/Downloads/Lab3_Memory.v,1635166076,verilog,,C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sources_1/imports/Users/lawre/Downloads/Lab3_TeamX_Multi_Bank_Memory.v,,Memory,,,,,,,,
+C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sources_1/imports/home/LogicDesign - Basic/Lab3/Lab3.srcs/sources_1/imports/Downloads/Lab3_Memory.v,1635172090,verilog,,C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sources_1/imports/Users/lawre/Downloads/Lab3_TeamX_Multi_Bank_Memory.v,,Memory,,,,,,,,

@@ -7,12 +7,12 @@ module Memory (clk, ren, wen, addr, din, dout);
     input [7:0] din;
     output [7:0] dout;
     
-    reg [7:0] dout_reg;
+    reg [7:0] dout_reg = 8'b0000_0000;
     assign dout[7:0] = dout_reg[7:0];
 
     parameter M = 128;
     parameter N = 8;
-    reg [N-1:0] Storage[M-1:0];
+    reg [N-1:0] Storage [M-1:0];
     
     always @(posedge clk) begin
         if (ren == 1'b1) begin

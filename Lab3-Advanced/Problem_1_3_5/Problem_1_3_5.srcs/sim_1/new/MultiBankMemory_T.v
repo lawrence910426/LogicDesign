@@ -14,7 +14,7 @@ module MultiBankMemory_T();
     
     initial begin
         clk = 0;
-        #1;
+        #2;
         
         ren = 1;
         raddr = 11'b0011_0000000;
