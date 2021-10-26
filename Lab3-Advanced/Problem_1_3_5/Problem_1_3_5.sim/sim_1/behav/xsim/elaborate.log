@@ -1,16 +1,8 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c693d97e3ae049f9b0de872afa837ed0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MultiBankMemory_T_behav xil_defaultlib.MultiBankMemory_T xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c693d97e3ae049f9b0de872afa837ed0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Parameterized_PingPongCounter_T_behav xil_defaultlib.Parameterized_PingPongCounter_T xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Memory
-Compiling module xil_defaultlib.Single_Bank_Memory_default
-Compiling module xil_defaultlib.Multi_Bank_Memory_default
-Compiling module xil_defaultlib.MultiBankMemory_T
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot MultiBankMemory_T_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

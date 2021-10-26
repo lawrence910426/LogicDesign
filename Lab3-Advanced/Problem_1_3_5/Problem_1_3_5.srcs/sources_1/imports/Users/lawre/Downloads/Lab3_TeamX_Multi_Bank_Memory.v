@@ -47,12 +47,8 @@ module Single_Bank_Memory (clk, ren, wen, waddr, raddr, din, dout, debug);
     output [7:0] dout;
     
     wire [7:0] outputs [3:0];
-    assign dout = (
-        raddr[8:7] == 2'b00 ? outputs[2'b00] :
-        raddr[8:7] == 2'b01 ? outputs[2'b01] :
-        raddr[8:7] == 2'b10 ? outputs[2'b10] :
-        outputs[2'b11]
-    );
+    reg [7:0] dout_reg;
+    assign dout = dout_reg;
     
     assign debug[3:0] = {
         wen, waddr[8:7], 1'bx
@@ -71,4 +67,12 @@ module Single_Bank_Memory (clk, ren, wen, waddr, raddr, din, dout, debug);
         end
     endgenerate
     
+    always @ (outputs[0], outputs[1], outputs[2], outputs[3]) begin
+        dout_reg = (
+            raddr[10:9] == 2'b00 ? outputs[2'b00] :
+            raddr[10:9] == 2'b01 ? outputs[2'b01] :
+            raddr[10:9] == 2'b10 ? outputs[2'b10] :
+            outputs[2'b11]
+        );
+    end
 endmodule

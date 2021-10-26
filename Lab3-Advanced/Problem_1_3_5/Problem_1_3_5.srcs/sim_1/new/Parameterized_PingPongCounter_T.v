@@ -47,8 +47,8 @@ module Parameterized_PingPongCounter_T();
         min = 4'b000;
         #10;
         
-        max = 4'b010;
-        min = 4'b001;
+        max = 4'b001;
+        min = 4'b000;
         #20;
         
         max = 4'b100;
