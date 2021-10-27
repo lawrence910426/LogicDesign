@@ -7,7 +7,7 @@ module FIFO_8(clk, rst_n, wen, ren, din, dout, error);
     input [7:0] din;
     output [7:0] dout;
     output error;
-    reg [2:0] Queue [7:0];
+    reg [7:0] Queue [7:0];
     reg [2:0] r_cur, w_cur, next_r_cur, next_w_cur;
     reg [3:0] full;
     reg [7:0] next_out, out;
@@ -18,7 +18,8 @@ module FIFO_8(clk, rst_n, wen, ren, din, dout, error);
             if(r_cur == w_cur) begin
                 if(full == 4'b1000) begin
                     next_out =  Queue[r_cur];
-                    r_cur = r_cur - 3'b001;
+                    //$display("%b",Queue[r_cur]);
+                    next_r_cur = r_cur - 3'b001;
                     next_error = 1'b0;
                     full = full - 4'b0001;
                 end
@@ -28,10 +29,12 @@ module FIFO_8(clk, rst_n, wen, ren, din, dout, error);
             end
             else begin
                 next_out =  Queue[r_cur];
-                r_cur = r_cur - 3'b001;
+                //$display("%b",Queue[r_cur]);
+                next_r_cur = r_cur - 3'b001;
                 next_error = 1'b0;
                 full = full - 4'b0001;
-            end          
+            end 
+            next_w_cur = w_cur;         
         end
         else begin
             if(wen == 1'b1) begin
@@ -41,14 +44,16 @@ module FIFO_8(clk, rst_n, wen, ren, din, dout, error);
                     end
                     else begin
                         Queue[w_cur] = din;
-                        w_cur = w_cur - 3'b001;
+                        //$display("%b",Queue[w_cur]);
+                        next_w_cur = w_cur - 3'b001;
                         next_error = 1'b0;
                         full = full + 4'b0001;
                     end
                 end
                 else begin
                     Queue[w_cur] = din;
-                    w_cur = w_cur - 3'b001;
+                    //$display("%b",Queue[w_cur]);
+                    next_w_cur = w_cur - 3'b001;
                     next_error = 1'b0;
                     full = full + 4'b0001;
                 end    
@@ -56,6 +61,7 @@ module FIFO_8(clk, rst_n, wen, ren, din, dout, error);
             else begin
                 next_error = 1'b0;
             end
+            next_r_cur = r_cur;
         end
     end
     
@@ -78,6 +84,8 @@ module FIFO_8(clk, rst_n, wen, ren, din, dout, error);
         else begin
             _error = next_error;
             out = next_out;
+            r_cur = next_r_cur;
+            w_cur = next_w_cur;
         end
     end
     
