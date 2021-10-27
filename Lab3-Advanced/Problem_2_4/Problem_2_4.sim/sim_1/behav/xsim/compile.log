@@ -1,4 +1,6 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/THINGS/Lab3_Team3_FIFO_8.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module FIFO_8
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/Problem_2_4.srcs/sources_1/new/Lab3_FIFO_8_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Lab3_FIFO_8_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/THINGS/Lab3_Team3_Round_Robin_Arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round_Robin_Arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/Problem_2_4.srcs/sources_1/new/Lab3_Round_Robin_Arbiter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab3_Round_Robin_Arbiter_tb

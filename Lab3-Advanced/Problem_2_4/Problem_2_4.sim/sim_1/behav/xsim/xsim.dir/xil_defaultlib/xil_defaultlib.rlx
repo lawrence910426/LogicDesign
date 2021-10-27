@@ -4,4 +4,6 @@ Nov 18 2020
 09:47:47
 D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/Problem_2_4.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
 D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/Problem_2_4.srcs/sources_1/new/Lab3_FIFO_8_tb.v,1635237076,verilog,,,,Lab3_FIFO_8_tb,,,,,,,,
-D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/THINGS/Lab3_Team3_FIFO_8.v,1635335460,verilog,,D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/Problem_2_4.srcs/sources_1/new/Lab3_FIFO_8_tb.v,,FIFO_8,,,,,,,,
+D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/Problem_2_4.srcs/sources_1/new/Lab3_Round_Robin_Arbiter_tb.v,1635346843,verilog,,,,Lab3_Round_Robin_Arbiter_tb,,,,,,,,
+D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/THINGS/Lab3_Team3_FIFO_8.v,1635335460,verilog,,D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/THINGS/Lab3_Team3_Round_Robin_Arbiter.v,,FIFO_8,,,,,,,,
+D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/THINGS/Lab3_Team3_Round_Robin_Arbiter.v,1635359221,verilog,,D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/Problem_2_4.srcs/sources_1/new/Lab3_Round_Robin_Arbiter_tb.v,,Round_Robin_Arbiter,,,,,,,,

@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 27 19:07:59 2021
+# Process ID: 23068
+# Current directory: D:/LogicDesignExperiment/LAB03_1021/Problem_2_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12852 D:\LogicDesignExperiment\LAB03_1021\Problem_2_4\Problem_2_4.xpr
+# Log file: D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/vivado.log
+# Journal file: D:/LogicDesignExperiment/LAB03_1021/Problem_2_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/Problem_2_4.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Lab3_FIFO_8_tb.tcl
+close_sim
+launch_simulation
+source Lab3_FIFO_8_tb.tcl
+close_sim
+launch_simulation
+source Lab3_FIFO_8_tb.tcl
+close_sim
+launch_simulation
+source Lab3_FIFO_8_tb.tcl
+close_sim
+launch_simulation
+source Lab3_FIFO_8_tb.tcl
+close_sim
+launch_simulation
+source Lab3_FIFO_8_tb.tcl
+close_sim
+add_files -norecurse D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/THINGS/Lab3_Team3_Round_Robin_Arbiter.v
+update_compile_order -fileset sources_1
+close [ open D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/Problem_2_4.srcs/sources_1/new/Lab3_Round_Robin_Arbiter_tb.v w ]
+add_files D:/LogicDesignExperiment/LAB03_1021/Problem_2_4/Problem_2_4.srcs/sources_1/new/Lab3_Round_Robin_Arbiter_tb.v
+update_compile_order -fileset sources_1
+launch_simulation
+set_property top Lab3_Round_Robin_Arbiter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
+launch_simulation
+source Lab3_Round_Robin_Arbiter_tb.tcl
+close_sim
