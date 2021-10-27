@@ -11,7 +11,7 @@ module FPGA_T();
     
     assign rst = !rst_n;
     
-    FPGA # (.pingpong_latency(32'd10), .display_latency(32'd3))
+    FPGA # (.pingpong_latency(32'd4), .display_latency(32'd3))
     chip (clk, rst, enable, flip, max, min, AN, seg);
     
     always #1 clk = ~clk;
@@ -27,7 +27,7 @@ module FPGA_T();
         
         // Testing for reset signals
         rst_n = 0;
-        #2;
+        #8;
         rst_n = 1;
         #1;
         
