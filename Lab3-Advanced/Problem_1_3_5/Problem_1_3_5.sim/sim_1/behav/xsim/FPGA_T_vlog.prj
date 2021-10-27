@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Problem_1_3_5.srcs/sources_1/new/Clock_Divider.v" \
+"../../../../Problem_1_3_5.srcs/sources_1/new/FPGA.v" \
+"../../../../Problem_1_3_5.srcs/sources_1/new/FPGA_7sd.v" \
+"../../../../Problem_1_3_5.srcs/sources_1/imports/Users/lawre/Downloads/Lab3_TeamX_Parameterized_Ping_Pong_Counter.v" \
+"../../../../Problem_1_3_5.srcs/sim_1/new/FPGA_T.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

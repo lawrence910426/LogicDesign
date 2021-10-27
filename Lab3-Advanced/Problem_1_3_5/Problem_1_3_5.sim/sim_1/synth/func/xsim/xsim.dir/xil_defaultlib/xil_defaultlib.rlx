@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.sim/sim_1/synth/func/xsim/FPGA_7sd_T_func_synth.v,1635268606,verilog,,C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sources_1/new/FPGA_7sd.v,,Clock_Divider;Clock_Divider__parameterized0;FPGA;Parameterized_Ping_Pong_Counter;glbl,,,,,,,,
+C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sim_1/new/FPGA_7sd_T.v,1635268598,verilog,,,,FPGA_7sd_T,,,,,,,,
+C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sources_1/new/FPGA_7sd.v,1635268573,verilog,,C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/sim_1/new/FPGA_7sd_T.v,,FPGA_7sd,,,,,,,,

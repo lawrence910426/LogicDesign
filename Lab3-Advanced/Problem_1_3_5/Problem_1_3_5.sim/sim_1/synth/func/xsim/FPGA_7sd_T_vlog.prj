@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"FPGA_7sd_T_func_synth.v" \
+"../../../../../Problem_1_3_5.srcs/sources_1/new/FPGA_7sd.v" \
+"../../../../../Problem_1_3_5.srcs/sim_1/new/FPGA_7sd_T.v" \
+
+# Do not sort compile order
+nosort

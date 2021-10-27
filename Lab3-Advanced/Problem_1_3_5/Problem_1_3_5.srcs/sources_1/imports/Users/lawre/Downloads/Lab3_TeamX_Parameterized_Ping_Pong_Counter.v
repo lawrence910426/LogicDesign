@@ -15,7 +15,7 @@ module Parameterized_Ping_Pong_Counter (clk, rst_n, enable, flip, max, min, dire
     
     always @ (posedge clk) begin
         if (rst_n == 1'b0) begin
-            value = 4'b0000;
+            value = min;
             dir = 1'b1;
         end else begin
             if (enable == 1'b1 && min < max && min <= value_new && value_new <= max) begin
