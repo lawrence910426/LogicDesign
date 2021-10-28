@@ -1,6 +1,6 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c693d97e3ae049f9b0de872afa837ed0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Parameterized_PingPongCounter_T_behav xil_defaultlib.Parameterized_PingPongCounter_T xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c693d97e3ae049f9b0de872afa837ed0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot FPGA_T_behav xil_defaultlib.FPGA_T xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -8,7 +8,13 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FPGA_7sd
 Compiling module xil_defaultlib.Parameterized_Ping_Pong_Counter
-Compiling module xil_defaultlib.Parameterized_PingPongCounter_T
+Compiling module xil_defaultlib.Clock_Divider
+Compiling module xil_defaultlib.debounce
+Compiling module xil_defaultlib.onepulse
+Compiling module xil_defaultlib.Debounce_OnePulse
+Compiling module xil_defaultlib.FPGA(pingpong_latency=32'b0100,d...
+Compiling module xil_defaultlib.FPGA_T
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot Parameterized_PingPongCounter_T_behav
+Built simulation snapshot FPGA_T_behav

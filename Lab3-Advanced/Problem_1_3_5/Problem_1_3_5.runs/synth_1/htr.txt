@@ -6,4 +6,4 @@ REM          to be invoked for Vivado to track run status.
 REM Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 REM
 
-vivado -log Parameterized_Ping_Pong_Counter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Parameterized_Ping_Pong_Counter.tcl
+vivado -log FPGA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPGA.tcl

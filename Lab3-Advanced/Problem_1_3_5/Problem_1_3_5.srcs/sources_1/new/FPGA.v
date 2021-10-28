@@ -17,8 +17,9 @@ module FPGA(
     wire direction;
     wire [3:0] out;
     wire rst_n;
+    wire RST, FLIP;
     
-    not (rst_n, rst);
+    not (rst_n, RST);
     
     FPGA_7sd _7sd (
         .clk(clk_7sd), .rst_n(rst_n),
@@ -28,7 +29,7 @@ module FPGA(
     
     Parameterized_Ping_Pong_Counter Chip (
         .clk(clk_pingpong), .rst_n(rst_n), 
-        .enable(enable), .flip(flip), 
+        .enable(enable), .flip(FLIP), 
         .max(max), .min(min), 
         .direction(direction), .out(out)
     );
@@ -38,4 +39,8 @@ module FPGA(
     
     Clock_Divider #(.loop_size(pingpong_latency))
     _pp_clock (.clk(clk), .rst_n(rst_n), .clk_slow(clk_pingpong));
+    
+    Debounce_OnePulse   dbop_rst (clk_7sd, rst, RST);
+    debounce            db_flip (FLIP, flip, clk_7sd);
+                        
 endmodule
