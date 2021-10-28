@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Oct 27 22:15:02 2021
-# Process ID: 7792
+# Start of session at: Thu Oct 28 16:40:20 2021
+# Process ID: 12864
 # Current directory: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.runs/synth_1
-# Command line: vivado.exe -log Parameterized_Ping_Pong_Counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Parameterized_Ping_Pong_Counter.tcl
-# Log file: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.runs/synth_1/Parameterized_Ping_Pong_Counter.vds
+# Command line: vivado.exe -log FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPGA.tcl
+# Log file: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.runs/synth_1/FPGA.vds
 # Journal file: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source Parameterized_Ping_Pong_Counter.tcl -notrace
+source FPGA.tcl -notrace

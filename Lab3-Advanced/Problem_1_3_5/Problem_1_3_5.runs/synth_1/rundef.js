@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log Parameterized_Ping_Pong_Counter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Parameterized_Ping_Pong_Counter.tcl" );
+         "-log FPGA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPGA.tcl" );
 
 
 
