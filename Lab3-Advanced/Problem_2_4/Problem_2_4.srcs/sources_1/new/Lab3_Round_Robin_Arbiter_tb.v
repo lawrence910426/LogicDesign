@@ -38,10 +38,10 @@ module Lab3_Round_Robin_Arbiter_tb;
                             .dout(dout), .valid(valid));
     
     initial begin
-        //reset
+         //reset
         @(negedge clk)
         rst_n = 1'b0;
-        
+        /*
         //same as ppt
         @(negedge clk)
         rst_n = 1'b1;
@@ -71,6 +71,91 @@ module Lab3_Round_Robin_Arbiter_tb;
         rst_n = 1'b1;
         wen = 4'b0001;
         a = 8'd51;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;*/
+        
+        @(negedge clk)
+        //ren and wen at the same time
+        rst_n = 1'b1;
+        wen = 4'b1111;
+        a = 8'd87;
+        b = 8'd1;
+        c = 8'd9;
+        d = 8'd13;
+        
+        //to many b and try to get b's FIFO
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0010;
+        b = 8'd2;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0010;
+        b = 8'd3;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0010;
+        b = 8'd4;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0010;
+        b = 8'd5;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0010;
+        b = 8'd6;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0010;
+        b = 8'd7;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0010;
+        b = 8'd8;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0010;
+        b = 8'd9;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b1111;
+        a = 8'd50;
+        c = 8'd60;
+        d = 8'd70;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;
+        @(negedge clk)
+        rst_n = 1'b1;
+        wen = 4'b0000;
         @(negedge clk)
         rst_n = 1'b1;
         wen = 4'b0000;
