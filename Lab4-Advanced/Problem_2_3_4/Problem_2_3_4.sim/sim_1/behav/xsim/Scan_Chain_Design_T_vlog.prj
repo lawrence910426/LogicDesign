@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../../../Users/lawre/Downloads/Lab4_TeamX_Scan_Chain_Design.v" \
+"../../../../Problem_2_3_4.srcs/sim_1/new/Scan_Chain_Design_T.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

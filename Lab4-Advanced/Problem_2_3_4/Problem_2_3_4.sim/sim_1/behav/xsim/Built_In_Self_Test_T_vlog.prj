@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../../../Users/lawre/Downloads/Lab4/Lab4_Many_To_OneLFSR.v" \
+"../../../../../../../../../Users/lawre/Downloads/Lab4_TeamX_Built_In_Self_Test.v" \
+"../../../../../../../../../Users/lawre/Downloads/Lab4_TeamX_Scan_Chain_Design.v" \
+"../../../../Problem_2_3_4.srcs/sim_1/new/Built_In_Self_Test_T.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

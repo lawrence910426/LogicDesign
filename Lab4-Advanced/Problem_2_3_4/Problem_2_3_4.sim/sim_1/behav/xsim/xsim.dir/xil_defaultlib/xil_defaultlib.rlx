@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/lawre/Downloads/Lab4/Lab4_Many_To_OneLFSR.v,1635841170,verilog,,C:/Users/lawre/Downloads/Lab4_TeamX_Built_In_Self_Test.v,,Many_To_One_LFSR,,,,,,,,
+C:/Users/lawre/Downloads/Lab4_TeamX_Built_In_Self_Test.v,1636372195,verilog,,C:/Users/lawre/Downloads/Lab4_TeamX_Scan_Chain_Design.v,,Built_In_Self_Test,,,,,,,,
+C:/Users/lawre/Downloads/Lab4_TeamX_Mealy_Sequence_Detector.v,1636384337,verilog,,C:/home/github/LogicDesign/Lab4-Advanced/Problem_2_3_4/Problem_2_3_4.srcs/sim_1/new/Mealy_Sequence_Detector_T.v,,Mealy_Sequence_Detector,,,,,,,,
+C:/Users/lawre/Downloads/Lab4_TeamX_Scan_Chain_Design.v,1636361316,verilog,,C:/home/github/LogicDesign/Lab4-Advanced/Problem_2_3_4/Problem_2_3_4.srcs/sim_1/new/Built_In_Self_Test_T.v,,ScanDFF;Scan_Chain_Design,,,,,,,,
+C:/home/github/LogicDesign/Lab4-Advanced/Problem_2_3_4/Problem_2_3_4.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/home/github/LogicDesign/Lab4-Advanced/Problem_2_3_4/Problem_2_3_4.srcs/sim_1/new/Built_In_Self_Test_T.v,1636373914,verilog,,,,Built_In_Self_Test_T,,,,,,,,
+C:/home/github/LogicDesign/Lab4-Advanced/Problem_2_3_4/Problem_2_3_4.srcs/sim_1/new/Mealy_Sequence_Detector_T.v,1636386477,verilog,,,,Mealy_Sequence_Detector_T,,,,,,,,
+C:/home/github/LogicDesign/Lab4-Advanced/Problem_2_3_4/Problem_2_3_4.srcs/sim_1/new/Scan_Chain_Design_T.v,1636371412,verilog,,,,Scan_Chain_Design_T,,,,,,,,
