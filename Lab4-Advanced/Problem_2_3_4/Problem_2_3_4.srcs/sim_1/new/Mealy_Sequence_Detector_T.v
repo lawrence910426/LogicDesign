@@ -22,17 +22,21 @@
 
 module Mealy_Sequence_Detector_T();
     reg clk = 1;
-    reg rst_n = 0;
+    reg rst_n = 1;
     reg in = 1;
     wire out;
     Mealy_Sequence_Detector chip (clk, rst_n, in, out);
     
     always #1 clk = 1 - clk;
     initial begin
+        #1;
+        
+        // Test case 1
+        rst_n = 0;
         #2;
         rst_n = 1;
+        #2;
         
-        #1;
         in = 0;
         #2;
         in = 1;
@@ -40,6 +44,46 @@ module Mealy_Sequence_Detector_T();
         in = 0;
         #2;
         
+        // Test case 2
+        rst_n = 0;
+        #2;
+        rst_n = 1;
+        
+        in = 0;
+        #2;
+        in = 1;
+        #2;
+        in = 1;
+        #2;
+        in = 1;
+        #2;
+
+        in = 0;
+        #2;
+        in = 1;
+        #2;
+        in = 1;
+        #2;
+        in = 0;
+        #2;
+        
+        in = 1;
+        #2;
+        in = 0;
+        #2;
+        in = 0;
+        #2;
+        in = 1;
+        #2;
+        
+        in = 0;
+        #2;
+        in = 1;
+        #2;
+        in = 0;
+        #2;
+        in = 0;
+        #2;
         $finish;
     end
 endmodule

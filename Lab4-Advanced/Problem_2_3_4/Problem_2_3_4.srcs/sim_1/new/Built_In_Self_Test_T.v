@@ -52,7 +52,7 @@ module Built_In_Self_Test_T();
         
         rst_n = 1;
         scan_en = 1;
-        #16;
+        #32;
         
         scan_en = 0;
         #4;
