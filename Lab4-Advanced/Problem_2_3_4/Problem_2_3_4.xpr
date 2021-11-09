@@ -73,30 +73,38 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../../../Users/lawre/Downloads/Lab4/Lab4_Many_To_OneLFSR.v">
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/Lab4/Lab4_Many_To_OneLFSR.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/lawre/Downloads/Lab4/Lab4_Many_To_OneLFSR.v"/>
+          <Attr Name="ImportTime" Val="1635841170"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Users/lawre/Downloads/Lab4_TeamX_Scan_Chain_Design.v">
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/Lab4_TeamX_Scan_Chain_Design.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/lawre/Downloads/Lab4_TeamX_Scan_Chain_Design.v"/>
+          <Attr Name="ImportTime" Val="1636361316"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Users/lawre/Downloads/Lab4_TeamX_Built_In_Self_Test.v">
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/Lab4_TeamX_Built_In_Self_Test.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/lawre/Downloads/Lab4_TeamX_Built_In_Self_Test.v"/>
+          <Attr Name="ImportTime" Val="1636372195"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../Users/lawre/Downloads/Lab4_TeamX_Mealy_Sequence_Detector.v">
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/Lab4_TeamX_Mealy_Sequence_Detector.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/lawre/Downloads/Lab4_TeamX_Mealy_Sequence_Detector.v"/>
+          <Attr Name="ImportTime" Val="1636440281"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
