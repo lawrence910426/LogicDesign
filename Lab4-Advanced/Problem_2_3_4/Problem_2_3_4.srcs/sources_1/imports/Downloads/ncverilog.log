@@ -1,0 +1,28 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Nov 11, 2021 at 16:01:37 CST
+ncverilog
+	Lab4_TeamX_Built_In_Self_Test.v
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+    Many_To_One_LFSR LFSR (.clk(clk), .rst_n(rst_n), .out(scan_in));
+                                                                |
+ncelab: *W,CUVMPW (./Lab4_TeamX_Built_In_Self_Test.v,10|64): port sizes differ in port connection (1/8).
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                11       4
+		Registers:               9       2
+		Scalar wires:           17       -
+		Expanded wires:          8       1
+		Always blocks:           9       2
+		Cont. assignments:       0       4
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.Built_In_Self_Test:v
+Loading snapshot worklib.Built_In_Self_Test:v .................... Done
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Nov 11, 2021 at 16:01:39 CST  (total: 00:00:02)
