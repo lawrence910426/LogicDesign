@@ -29,7 +29,6 @@ module Many_To_One_LFSR(clk, rst_n, out);
     end
 endmodule
 
-
 module Scan_Chain_Design(clk, rst_n, scan_in, scan_en, scan_out);
     input clk;
     input rst_n;
