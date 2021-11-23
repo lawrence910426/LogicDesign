@@ -1,0 +1,145 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 11848
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Nov 23 13:21:33 CST 2021
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 6
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	lawre
+User home directory: C:/Users/lawre
+User working directory: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/lawre/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/lawre/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/lawre/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/vivado.log
+Vivado journal file location: 	C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/vivado.jou
+Engine tmp dir: 	C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/.Xil/Vivado-11848-DESKTOP-P0B4VES
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,012 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\home\github\LogicDesign\Lab3-Advanced\Problem_1_3_5\Problem_1_3_5.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 83 MB (+84839kb) [00:00:13]
+// [Engine Memory]: 1,012 MB (+909249kb) [00:00:13]
+// [GUI Memory]: 107 MB (+20245kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  2770 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,012 MB. GUI used memory: 60 MB. Current time: 11/23/21, 1:21:37 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1006.293 ; gain = 0.000 
+// Project name: Problem_1_3_5; location: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 115 MB (+2850kb) [00:01:00]
+// PAPropertyPanels.initPanels (FPGA.v) elapsed time: 0.2s
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPGA (FPGA.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPGA (FPGA.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPGA (FPGA.v), dbop_rst : Debounce_OnePulse (Debounce_OnePulse.v)]", 6); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPGA (FPGA.v), dbop_rst : Debounce_OnePulse (Debounce_OnePulse.v), db : debounce (Debounce_OnePulse.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPGA (FPGA.v), dbop_rst : Debounce_OnePulse (Debounce_OnePulse.v), db : debounce (Debounce_OnePulse.v)]", 7, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 129 MB (+8310kb) [00:01:08]
+selectCodeEditor("Debounce_OnePulse.v", 119, 267); // bP
+selectCodeEditor("Debounce_OnePulse.v", 119, 267, false, true, false, false, false); // bP - Control Key
+typeControlKey((HResource) null, "Debounce_OnePulse.v", 'c'); // bP
+// [GUI Memory]: 139 MB (+3977kb) [00:07:29]
+// Elapsed time: 376 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPGA (FPGA.v), dbop_rst : Debounce_OnePulse (Debounce_OnePulse.v)]", 6); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPGA (FPGA.v), _7sd : FPGA_7sd (FPGA_7sd.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPGA (FPGA.v), _7sd : FPGA_7sd (FPGA_7sd.v)]", 2, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPGA (FPGA.v), _7sd : FPGA_7sd (FPGA_7sd.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FPGA (FPGA.v), _7sd : FPGA_7sd (FPGA_7sd.v)]", 2, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("FPGA_7sd.v", 215, 317); // bP
+selectCodeEditor("FPGA_7sd.v", 234, 388); // bP
+// Elapsed time: 170 seconds
+selectCodeEditor("FPGA_7sd.v", 372, 344); // bP
+typeControlKey((HResource) null, "FPGA_7sd.v", 'c'); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,012 MB. GUI used memory: 77 MB. Current time: 11/23/21, 1:51:40 PM CST
+// Elapsed time: 1573 seconds
+selectCodeEditor("FPGA_7sd.v", 111, 87); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,012 MB. GUI used memory: 68 MB. Current time: 11/23/21, 2:21:40 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,012 MB. GUI used memory: 68 MB. Current time: 11/23/21, 2:51:40 PM CST
