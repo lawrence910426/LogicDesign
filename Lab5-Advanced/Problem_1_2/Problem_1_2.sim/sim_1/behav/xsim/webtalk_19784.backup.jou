@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov 25 00:02:01 2021
+# Process ID: 19784
+# Current directory: D:/LogicDesignExperiment/LAB05_1118/Problem_1_2/Problem_1_2.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/LogicDesignExperiment/LAB05_1118/Problem_1_2/Problem_1_2.sim/sim_1/behav/xsim/xsim.dir/Lab5_Team3_Traffic_Light_Controller_t_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/LogicDesignExperiment/LAB05_1118/Problem_1_2/Problem_1_2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/LogicDesignExperiment/LAB05_1118/Problem_1_2/Problem_1_2.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/LogicDesignExperiment/LAB05_1118/Problem_1_2/Problem_1_2.sim/sim_1/behav/xsim/xsim.dir/Lab5_Team3_Traffic_Light_Controller_t_behav/webtalk/xsim_webtalk.tcl -notrace

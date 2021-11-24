@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Nov 21 15:31:07 2021
+# Process ID: 6936
+# Current directory: D:/LogicDesignExperiment/LAB05_1118/FPGA_1/FPGA_1.runs/KeyboardCtrl_0_synth_1
+# Command line: vivado.exe -log KeyboardCtrl_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source KeyboardCtrl_0.tcl
+# Log file: D:/LogicDesignExperiment/LAB05_1118/FPGA_1/FPGA_1.runs/KeyboardCtrl_0_synth_1/KeyboardCtrl_0.vds
+# Journal file: D:/LogicDesignExperiment/LAB05_1118/FPGA_1/FPGA_1.runs/KeyboardCtrl_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source KeyboardCtrl_0.tcl -notrace
