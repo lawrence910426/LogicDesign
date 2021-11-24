@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov 24 23:21:13 2021
+# Process ID: 16452
+# Current directory: D:/LogicDesignExperiment/LAB05_1118/Problem_1_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22140 D:\LogicDesignExperiment\LAB05_1118\Problem_1_2\Problem_1_2.xpr
+# Log file: D:/LogicDesignExperiment/LAB05_1118/Problem_1_2/vivado.log
+# Journal file: D:/LogicDesignExperiment/LAB05_1118/Problem_1_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/LAB05_1118/Problem_1_2/Problem_1_2.xpr
+update_compile_order -fileset sources_1
+close [ open D:/LogicDesignExperiment/LAB05_1118/Problem_1_2/Problem_1_2.srcs/sources_1/new/Lab5_Team3_Traffic_Light_Controller_t.v w ]
+add_files D:/LogicDesignExperiment/LAB05_1118/Problem_1_2/Problem_1_2.srcs/sources_1/new/Lab5_Team3_Traffic_Light_Controller_t.v
+update_compile_order -fileset sources_1
+launch_simulation
+source Lab5_Team3_Sliding_Window_Sequence_Detector_t.tcl
+set_property top Lab5_Team3_Traffic_Light_Controller_t [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+close_sim
+launch_simulation
+source Lab5_Team3_Traffic_Light_Controller_t.tcl
+close_sim
+launch_simulation
+source Lab5_Team3_Traffic_Light_Controller_t.tcl
+set_property -name {xsim.simulate.runtime} -value {100000} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source Lab5_Team3_Traffic_Light_Controller_t.tcl
+close_sim
