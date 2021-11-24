@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1'
+HD_PWD='D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

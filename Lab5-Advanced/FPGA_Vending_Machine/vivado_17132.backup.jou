@@ -2,16 +2,17 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Nov 25 00:38:06 2021
-# Process ID: 24384
+# Start of session at: Thu Nov 25 00:32:57 2021
+# Process ID: 17132
 # Current directory: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19536 D:\LogicDesignExperiment\share_repo\Lab5-Advanced\FPGA_Vending_Machine\FPGA_Vending_Machine.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14400 D:\LogicDesignExperiment\share_repo\Lab5-Advanced\FPGA_Vending_Machine\FPGA_Vending_Machine.xpr
 # Log file: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/vivado.log
 # Journal file: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.xpr
-reset_run synth_1
 update_compile_order -fileset sources_1
+reset_run synth_1
 launch_runs impl_1 -jobs 2
 wait_on_run impl_1
+import_files

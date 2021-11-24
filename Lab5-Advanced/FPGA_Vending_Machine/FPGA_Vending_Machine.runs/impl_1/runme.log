@@ -11,112 +11,112 @@
 
 source FPGA_VendingMachine.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.cache/ip 
+Current IP cache path is D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.cache/ip 
 Command: link_design -top FPGA_VendingMachine -part xc7a35tcpg236-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-INFO: [Project 1-454] Reading design checkpoint 'c:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.dcp' for cell 'keyboard/key_de/inst'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1014.801 ; gain = 0.000
+INFO: [Project 1-454] Reading design checkpoint 'd:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.dcp' for cell 'keyboard/key_de/inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1018.617 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 129 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc]
-WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:2]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:2]
+Parsing XDC File [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:2]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:3]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:3]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:4]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:4]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-584] No ports matched 'display[0]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:7]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'display[0]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:7]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[0]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:8]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'display[0]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:8]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[1]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:9]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'display[1]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:9]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[1]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:10]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'display[1]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:10]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[2]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:11]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'display[2]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:11]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[2]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:12]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'display[2]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:12]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[3]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:13]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'display[3]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:13]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[3]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'display[3]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:14]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[4]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'display[4]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:15]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[4]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'display[4]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:16]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[5]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'display[5]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:17]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[5]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'display[5]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:18]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[6]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:19]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'display[6]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:19]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'display[6]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'display[6]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:20]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'digit[0]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'digit[0]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:25]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'digit[0]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'digit[0]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:26]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'digit[1]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'digit[1]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:27]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'digit[1]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:28]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'digit[1]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:28]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'digit[2]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:29]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'digit[2]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:29]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'digit[2]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:30]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'digit[2]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:30]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'digit[3]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:31]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'digit[3]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:31]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'digit[3]'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:32]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'digit[3]'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:32]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:36]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:36]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc:37]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc]
+Finished Parsing XDC File [D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1014.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1018.617 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
 11 Infos, 28 Warnings, 27 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1014.801 ; gain = 0.000
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.617 ; gain = 0.000
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -132,10 +132,10 @@ INFO: [Project 1-461] DRC finished with 2 Errors, 2 Warnings
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.938 . Memory (MB): peak = 1014.801 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1018.617 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 16 Infos, 30 Warnings, 27 Critical Warnings and 3 Errors encountered.
 opt_design failed
 ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
 
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 25 00:29:57 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 25 00:39:40 2021...

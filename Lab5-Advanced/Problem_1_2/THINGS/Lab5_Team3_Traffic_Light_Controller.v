@@ -10,9 +10,10 @@ module Traffic_Light_Controller (clk, rst_n, lr_has_car, hw_light, lr_light);
     parameter HR_RR_1 = 3'b010;
     parameter HR_RG = 3'b011;
     parameter HR_RY = 3'b100;
-    parameter HR_RR_2 = 3'b101;
+    parameter HR_RR_2 = 3'b101;  
     reg [2:0] state, next_state;
     reg [6:0] cycle;
+    reg last_reset;
     
     always @(posedge clk) begin
         if(rst_n == 1'b0) begin
@@ -21,9 +22,15 @@ module Traffic_Light_Controller (clk, rst_n, lr_has_car, hw_light, lr_light);
         end
         else begin
             state <= next_state;
-            if(cycle < 7'd80) cycle <= cycle + 7'd1;
-            else cycle <= cycle;
+            if(last_reset == rst_n) begin
+                if(cycle < 7'd8) cycle <= cycle + 7'd1;//80
+                else cycle <= cycle;
+            end
+            else begin
+                cycle <= cycle;
+            end
         end
+        last_reset <= rst_n;
     end
     
     assign hw_light[2] = (state == HG_RR) ? 1'b1 : 1'b0;
@@ -43,7 +50,7 @@ module Traffic_Light_Controller (clk, rst_n, lr_has_car, hw_light, lr_light);
     always @(*) begin
         case(state)
             HG_RR: begin
-                if(cycle == 7'd80) begin
+                if(cycle >= 7'd7) begin//80
                     if(lr_has_car) next_state = HY_RR;
                     else next_state = HG_RR;
                 end
@@ -52,23 +59,23 @@ module Traffic_Light_Controller (clk, rst_n, lr_has_car, hw_light, lr_light);
                 end
             end
             HY_RR: begin
-                if(cycle >= 7'd20) next_state = HR_RR_1;
+                if(cycle >= 7'd3) next_state = HR_RR_1;//20
                 else next_state = HY_RR;
             end
             HR_RR_1: begin
-                if(cycle >= 7'd1) next_state = HR_RG;
+                if(cycle >= 7'd0) next_state = HR_RG;
                 else next_state = HR_RR_1;
             end
             HR_RG: begin
-                if(cycle >= 7'd80) next_state = HR_RY;
+                if(cycle >= 7'd7) next_state = HR_RY;//80
                 else next_state = HR_RG;
             end
             HR_RY: begin
-                if(cycle >= 7'd20) next_state = HR_RR_2;
+                if(cycle >= 7'd3) next_state = HR_RR_2;//20
                 else next_state = HR_RY;
             end
             HR_RR_2: begin
-                if(cycle >= 7'd1) next_state = HG_RR;
+                if(cycle >= 7'd0) next_state = HG_RR;
                 else next_state = HR_RR_2;
             end
             default:
