@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov 24 22:48:46 2021
+# Process ID: 4796
+# Current directory: C:/home/github/LogicDesign/Lab5-Advanced/Problem_3_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5432 C:\home\github\LogicDesign\Lab5-Advanced\Problem_3_4\Problem_3_4.xpr
+# Log file: C:/home/github/LogicDesign/Lab5-Advanced/Problem_3_4/vivado.log
+# Journal file: C:/home/github/LogicDesign/Lab5-Advanced/Problem_3_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/home/github/LogicDesign/Lab5-Advanced/Problem_3_4/Problem_3_4.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Lab5_Team3_Booth_Multiplier_4bit_t.tcl
