@@ -2,13 +2,13 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Oct 21 18:06:14 2021
-# Process ID: 11804
-# Current directory: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9768 C:\home\github\LogicDesign\Lab3-Advanced\Problem_1_3_5\Problem_1_3_5.xpr
-# Log file: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/vivado.log
-# Journal file: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5\vivado.jou
+# Start of session at: Thu Nov 18 13:36:09 2021
+# Process ID: 11464
+# Current directory: D:/LogicDesignExperiment/share_repo/Lab3-Advanced/Problem_1_3_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15852 D:\LogicDesignExperiment\share_repo\Lab3-Advanced\Problem_1_3_5\Problem_1_3_5.xpr
+# Log file: D:/LogicDesignExperiment/share_repo/Lab3-Advanced/Problem_1_3_5/vivado.log
+# Journal file: D:/LogicDesignExperiment/share_repo/Lab3-Advanced/Problem_1_3_5\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.xpr
+open_project D:/LogicDesignExperiment/share_repo/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.xpr
 update_compile_order -fileset sources_1
