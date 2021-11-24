@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Problem_3_4.srcs/sources_1/imports/Downloads/Lab5_TeamX_Booth_Multiplier_4bit.v" \
+"../../../../Problem_3_4.srcs/sources_1/new/Lab5_Team3_Booth_Multiplier_4bit_t.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

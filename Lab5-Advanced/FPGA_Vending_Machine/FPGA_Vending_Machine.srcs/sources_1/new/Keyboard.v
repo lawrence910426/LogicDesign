@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module Keyboard(
+module Keyboard (
 	output reg A,
 	output reg S,
 	output reg D,
