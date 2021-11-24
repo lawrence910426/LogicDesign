@@ -212,3 +212,17 @@ selectButton(RDIResource.BaseDialog_OK, "OK"); // a
 dismissDialog("Implementation Failed"); // ag
 selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net keyboard/key_de/inst/inst/Ps2Interface_i/IOBUF_inst_0/IO has multiple drivers: keyboard/key_de/inst/inst/Ps2Interface_i/IOBUF_inst_0/OBUFT/O, and PS2_CLK.. ]", 8, true); // ah - Node
 selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net keyboard/key_de/inst/inst/Ps2Interface_i/IOBUF_inst_0/IO has multiple drivers: keyboard/key_de/inst/inst/Ps2Interface_i/IOBUF_inst_0/OBUFT/O, and PS2_CLK.. ]", 8, true, false, false, false, false, true); // ah - Double Click - Node
+// Elapsed time: 183 seconds
+selectCodeEditor("KeyboardDecoder.v", 842, 117); // bP
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 13); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, KeyboardConstraints.xdc]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, KeyboardConstraints.xdc]", 15, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_ALL_SRCS, "Copy All Files Into Project"); // ak
+// Run Command: PAResourceCommand.PACommandNames_IMPORT_ALL_SRCS
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: import_files 
+// Tcl Message: INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'KeyboardCtrl_0' INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'KeyboardCtrl_0' INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1' INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1' 

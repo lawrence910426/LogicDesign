@@ -28,3 +28,8 @@ launch_runs impl_1 -to_step write_bitstream -jobs 6
 Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
 [Thu Nov 25 00:28:54 2021] Launched impl_1...
 Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'KeyboardCtrl_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'KeyboardCtrl_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
