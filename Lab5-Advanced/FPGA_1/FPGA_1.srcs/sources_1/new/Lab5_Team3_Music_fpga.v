@@ -31,7 +31,7 @@ module Lab5_Team3_Music_fpga(
     );
     
     //AUDIO
-    parameter BEAT_FREQ = 32'd8;	//one beat=0.125sec
+    parameter BEAT_FREQ = 32'd1;	//one beat=1sec
     parameter DUTY_BEST = 10'd512;	//duty cycle=50%
     
     wire [31:0] freq;
@@ -42,18 +42,18 @@ module Lab5_Team3_Music_fpga(
     assign pmod_4 = 1'd1;	//turn-on
     
     //KEYBOARD
-    parameter [8:0] LEFT_SHIFT_CODES  = 9'b0_0001_0010;
-	parameter [8:0] RIGHT_SHIFT_CODES = 9'b0_0101_1001;
+    parameter [8:0] W = 9'b0_0001_1101; //1D
+	parameter [8:0] S = 9'b0_0001_1011; //1B
+	parameter [8:0] R = 9'b0_0010_1101; //2D
     
-    reg [15:0] nums;
-	reg [3:0] key_num;
-	reg [9:0] last_key;
+    reg dir;
+    reg [1:0] slow;
+    reg [1:0] key_num;
 	
-	wire shift_down;
 	wire [511:0] key_down;
 	wire [8:0] last_change;
 	wire been_ready;
- 	assign shift_down = (key_down[LEFT_SHIFT_CODES] == 1'b1 || key_down[RIGHT_SHIFT_CODES] == 1'b1) ? 1'b1 : 1'b0;
+ 	
     
     KeyboardDecoder key_de (
 		.key_down(key_down),
@@ -65,4 +65,69 @@ module Lab5_Team3_Music_fpga(
 		.clk(clk)
 	);
 	
+	always @ (posedge clk, posedge rst) begin
+	   if(rst) begin
+	       dir <= 1'b1;
+	       slow <= 2'd1;
+	   end
+	   else begin
+	       if (been_ready && key_down[last_change] == 1'b1) begin
+	           if (key_num == 2'b00)begin
+					dir <= 1'b1;
+	                slow <= slow;
+	           end
+	           else if (key_num == 2'b01) begin
+	                dir <= 1'b0;
+	                slow <= slow;
+	           end
+	           else if (key_num == 2'b10) begin
+	                dir <= dir;
+	                if(slow == 2'b01) slow <= 2'b10;
+	                else slow <= 2'b01;
+	           end
+	           else begin
+	                dir <= 1'b1;
+	                slow <= 2'd1;
+	           end
+	       end
+	   end
+	end
+	
+	always @ (*) begin
+		case (last_change)
+			W        : key_num = 2'b00;
+			S        : key_num = 2'b01;
+			R        : key_num = 2'b10;
+			default  : key_num = 2'b11;
+		endcase
+	end
+	
+	//Generate beat speed
+    PWM_gen btSpeedGen ( .clk(clk), 
+					     .reset(reset),
+					     .freq(BEAT_FREQ*slow),
+					     .duty(DUTY_BEST), 
+					     .PWM(beatFreq)
+    );
+	
+    //manipulate beat
+    PlayerCtrl playerCtrl_00 ( .clk(beatFreq),
+						       .reset(reset),
+						       .dir(dir),
+						       .ibeat(ibeatNum)
+    );	
+	
+    //Generate variant freq. of tones
+    Music music00 ( .ibeatNum(ibeatNum),
+				    .tone(freq)
+    );
+
+    // Generate particular freq. signal
+    PWM_gen toneGen ( .clk(clk), 
+				      .reset(reset), 
+				      .freq(freq),
+				      .duty(DUTY_BEST), 
+				      .PWM(pmod_1)
+    );
+        
 endmodule

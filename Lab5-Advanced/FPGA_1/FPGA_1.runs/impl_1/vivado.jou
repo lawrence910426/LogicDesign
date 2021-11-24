@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov 25 03:47:04 2021
+# Process ID: 20248
+# Current directory: D:/LogicDesignExperiment/LAB05_1118/FPGA_1/FPGA_1.runs/impl_1
+# Command line: vivado.exe -log Lab5_Team3_Music_fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab5_Team3_Music_fpga.tcl -notrace
+# Log file: D:/LogicDesignExperiment/LAB05_1118/FPGA_1/FPGA_1.runs/impl_1/Lab5_Team3_Music_fpga.vdi
+# Journal file: D:/LogicDesignExperiment/LAB05_1118/FPGA_1/FPGA_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Lab5_Team3_Music_fpga.tcl -notrace
