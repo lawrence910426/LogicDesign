@@ -29,7 +29,7 @@ module FPGA_VendingMachine(
     input CLK;
     input RESET, INSERT_5, INSERT_10, INSERT_50, CANCEL;
     input PS2_DATA, PS2_CLK;
-    output [1:0] AN;
+    output [3:0] AN;
     output [6:0] _7SEG;
     
     reg [2:0] state;
@@ -58,7 +58,7 @@ module FPGA_VendingMachine(
     Keyboard
         keyboard (
             .clk(CLK), .rst(reset), .PS2_DATA(PS2_DATA), .PS2_CLK(PS2_CLK),
-            .A(A), .B(B), .C(C), .D(D)
+            .A(A), .S(S), .D(D), .F(F)
         );
     
     always @ (posedge CLK) begin

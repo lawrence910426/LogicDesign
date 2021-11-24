@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov 24 23:54:03 2021
+# Process ID: 7424
+# Current directory: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1
+# Command line: vivado.exe -log FPGA_VendingMachine.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FPGA_VendingMachine.tcl -notrace
+# Log file: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/FPGA_VendingMachine.vdi
+# Journal file: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source FPGA_VendingMachine.tcl -notrace
+Command: open_checkpoint C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/FPGA_VendingMachine.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1016.348 ; gain = 0.000
+INFO: [Device 21-403] Loading part xa7a35tcpg236-1I
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1016.348 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 129 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1116.637 ; gain = 3.516
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1116.637 ; gain = 3.516
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1116.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766
+open_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1116.637 ; gain = 100.289
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/ip/Keyboard-Controller/keyboard_cntr_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.cache/ip 
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xa7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xa7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net keyboard/key_de/inst/Ps2Interface_i/IOBUF_inst_0/IO has multiple drivers: keyboard/key_de/inst/Ps2Interface_i/IOBUF_inst_0/OBUFT/O, and PS2_CLK.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net keyboard/key_de/inst/Ps2Interface_i/IOBUF_inst_1/IO has multiple drivers: keyboard/key_de/inst/Ps2Interface_i/IOBUF_inst_1/OBUFT/O, and PS2_DATA.
+WARNING: [DRC RPBF-7] IO port with bi-directional buffering is uni-directional: Device port PS2_CLK expects input buffering but has both input and output (bi-directional) buffering connected.
+WARNING: [DRC RPBF-7] IO port with bi-directional buffering is uni-directional: Device port PS2_DATA expects input buffering but has both input and output (bi-directional) buffering connected.
+INFO: [Project 1-461] DRC finished with 2 Errors, 2 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.899 . Memory (MB): peak = 1151.566 ; gain = 26.953
+INFO: [Common 17-83] Releasing license: Implementation
+19 Infos, 3 Warnings, 0 Critical Warnings and 3 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 24 23:54:23 2021...

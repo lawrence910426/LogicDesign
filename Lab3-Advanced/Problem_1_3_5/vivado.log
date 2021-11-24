@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Nov 23 13:21:14 2021
-# Process ID: 11848
+# Start of session at: Wed Nov 24 23:41:20 2021
+# Process ID: 4296
 # Current directory: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3652 C:\home\github\LogicDesign\Lab3-Advanced\Problem_1_3_5\Problem_1_3_5.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5588 C:\home\github\LogicDesign\Lab3-Advanced\Problem_1_3_5\Problem_1_3_5.xpr
 # Log file: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/vivado.log
 # Journal file: C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5\vivado.jou
 #-----------------------------------------------------------
@@ -17,7 +17,27 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1006.293 ; gain = 0.000
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 23 19:38:33 2021...
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1123.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/constrs_1/new/FPGA_Constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst_n'. [C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/constrs_1/new/FPGA_Constraint.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/constrs_1/new/FPGA_Constraint.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst_n'. [C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/constrs_1/new/FPGA_Constraint.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/constrs_1/new/FPGA_Constraint.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/home/github/LogicDesign/Lab3-Advanced/Problem_1_3_5/Problem_1_3_5.srcs/constrs_1/new/FPGA_Constraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1189.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1333.227 ; gain = 315.355
