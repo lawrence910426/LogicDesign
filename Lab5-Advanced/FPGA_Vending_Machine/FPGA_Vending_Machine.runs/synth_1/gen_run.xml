@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xa7a35tcpg236-1I" LaunchTime="1637769211">
   <File Type="PA-TCL" Name="FPGA_VendingMachine.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="FPGA_VendingMachine_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="FPGA_VendingMachine_reports.tcl"/>
   <File Type="RDS-RDS" Name="FPGA_VendingMachine.vds"/>
   <File Type="RDS-UTIL" Name="FPGA_VendingMachine_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="FPGA_VendingMachine_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="FPGA_VendingMachine.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="FPGA_VendingMachine_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="FPGA_VendingMachine_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Keyboard.v">
@@ -93,9 +90,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
