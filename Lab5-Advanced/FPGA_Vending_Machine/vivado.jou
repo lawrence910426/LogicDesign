@@ -2,20 +2,16 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Nov 25 00:27:05 2021
-# Process ID: 4220
-# Current directory: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9868 C:\home\github\LogicDesign\Lab5-Advanced\FPGA_Vending_Machine\FPGA_Vending_Machine.xpr
-# Log file: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/vivado.log
-# Journal file: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine\vivado.jou
+# Start of session at: Thu Nov 25 00:32:57 2021
+# Process ID: 17132
+# Current directory: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14400 D:\LogicDesignExperiment\share_repo\Lab5-Advanced\FPGA_Vending_Machine\FPGA_Vending_Machine.xpr
+# Log file: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/vivado.log
+# Journal file: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.xpr
-update_compile_order -fileset sources_1
-add_files -norecurse {{C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardDecoder.v}}
-update_compile_order -fileset sources_1
-add_files -norecurse {{C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/OnePulse.v}}
+open_project D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.xpr
 update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
+launch_runs impl_1 -jobs 2
 wait_on_run impl_1
