@@ -38,6 +38,7 @@ module Sliding_Window_Sequence_Detector (clk, rst_n, in, dec);
         endcase
     end
     
+    
     always @(*) begin
         if(state == S7) begin
             if(in == 1'b1) begin
@@ -51,4 +52,6 @@ module Sliding_Window_Sequence_Detector (clk, rst_n, in, dec);
             dec = 1'b0;
         end
     end
+    
+    always @(posedge clk) dec <= 1'b0;
 endmodule 
