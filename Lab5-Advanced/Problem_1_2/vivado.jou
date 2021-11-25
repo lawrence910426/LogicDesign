@@ -22,3 +22,4 @@ source Lab5_Team3_Traffic_Light_Controller_t.tcl
 close_sim
 launch_simulation
 source Lab5_Team3_Traffic_Light_Controller_t.tcl
+close_sim

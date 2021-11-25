@@ -182,3 +182,7 @@ $finish called at time : 984 ns : File "D:/LogicDesignExperiment/share_repo/Lab5
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'Lab5_Team3_Traffic_Light_Controller_t_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 100000
 launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1018.781 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 25 23:15:45 2021...
