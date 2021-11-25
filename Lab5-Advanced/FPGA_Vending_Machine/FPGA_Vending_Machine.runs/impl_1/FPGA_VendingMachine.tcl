@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/FPGA_VendingMachine.tcl"
+  variable script "C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/FPGA_VendingMachine.tcl"
   variable category "vivado_impl"
 }
 
@@ -129,18 +129,18 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.cache/wt [current_project]
-  set_property parent.project_path D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.xpr [current_project]
-  set_property ip_repo_paths D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/ip [current_project]
+  set_property webtalk.parent_dir C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.cache/wt [current_project]
+  set_property parent.project_path C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.xpr [current_project]
+  set_property ip_repo_paths C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/ip [current_project]
   update_ip_catalog
-  set_property ip_output_repo D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.cache/ip [current_project]
+  set_property ip_output_repo C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/FPGA_VendingMachine.dcp
-  read_ip -quiet D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci
+  add_files -quiet C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/FPGA_VendingMachine.dcp
+  read_ip -quiet C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc}}
+  read_xdc {{C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
@@ -297,4 +297,34 @@ if {$rc} {
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
+OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
+OPTRACE "write_bitstream setup" START { }
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+OPTRACE "read constraints: write_bitstream" START { }
+OPTRACE "read constraints: write_bitstream" END { }
+  catch { write_mem_info -force -no_partial_mmi FPGA_VendingMachine.mmi }
+OPTRACE "write_bitstream setup" END { }
+OPTRACE "write_bitstream" START { }
+  write_bitstream -force FPGA_VendingMachine.bit 
+OPTRACE "write_bitstream" END { }
+OPTRACE "write_bitstream misc" START { }
+OPTRACE "read constraints: write_bitstream_post" START { }
+OPTRACE "read constraints: write_bitstream_post" END { }
+  catch {write_debug_probes -quiet -force FPGA_VendingMachine}
+  catch {file copy -force FPGA_VendingMachine.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
+  unset ACTIVE_STEP 
+}
+
+OPTRACE "write_bitstream misc" END { }
+OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }

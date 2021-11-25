@@ -2,27 +2,166 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Nov 25 00:38:06 2021
-# Process ID: 24384
-# Current directory: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19536 D:\LogicDesignExperiment\share_repo\Lab5-Advanced\FPGA_Vending_Machine\FPGA_Vending_Machine.xpr
-# Log file: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/vivado.log
-# Journal file: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine\vivado.jou
+# Start of session at: Thu Nov 25 00:27:05 2021
+# Process ID: 4220
+# Current directory: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9868 C:\home\github\LogicDesign\Lab5-Advanced\FPGA_Vending_Machine\FPGA_Vending_Machine.xpr
+# Log file: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/vivado.log
+# Journal file: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.xpr
-INFO: [Project 1-313] Project file moved from 'C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine' since last save.
+open_project C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.xpr
+INFO: [Project 1-313] Project file moved from 'D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardDecoder.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/OnePulse.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Nov 25 00:28:54 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 00:28:54 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'KeyboardCtrl_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'KeyboardCtrl_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 01:11:03 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 01:11:04 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 01:31:02 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 01:31:02 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 01:33:03 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 01:33:03 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
 reset_run synth_1
 update_compile_order -fileset sources_1
-launch_runs impl_1 -jobs 2
-[Thu Nov 25 00:38:29 2021] Launched synth_1...
-Run output will be captured here: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
-[Thu Nov 25 00:38:29 2021] Launched impl_1...
-Run output will be captured here: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 01:37:28 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 01:37:28 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 01:41:12 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 01:41:12 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 01:48:20 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 01:48:21 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 01:52:14 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 01:53:06 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 01:53:06 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 02:00:58 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 02:00:58 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 02:15:43 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 02:15:43 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 02:57:34 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 02:57:34 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 02:59:17 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 13:15:02 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 13:15:02 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 13:20:02 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 13:20:02 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+[Thu Nov 25 13:22:15 2021] Launched synth_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/synth_1/runme.log
+[Thu Nov 25 13:22:15 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1162.316 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 129 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.164 . Memory (MB): peak = 1833.621 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.166 . Memory (MB): peak = 1833.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1833.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1952.637 ; gain = 932.941
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list {LEDS[3]} {LEDS[2]} {LEDS[1]} {LEDS[0]}]]
+place_ports {LEDS[3]} V19
+place_ports {LEDS[2]} U19
+place_ports {LEDS[1]} E19
+place_ports {LEDS[0]} U16
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Nov 25 13:37:57 2021] Launched impl_1...
+Run output will be captured here: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.runs/impl_1/runme.log
+open_hw_manager
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 25 01:45:43 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 25 14:12:19 2021...

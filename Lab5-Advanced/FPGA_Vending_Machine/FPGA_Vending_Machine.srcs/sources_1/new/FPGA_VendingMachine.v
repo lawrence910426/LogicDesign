@@ -24,11 +24,12 @@ module FPGA_VendingMachine(
     CLK,
     RESET, INSERT_5, INSERT_10, INSERT_50, CANCEL,
     PS2_DATA, PS2_CLK,
-    AN, _7SEG
+    AN, _7SEG, LEDS
 );
     input CLK;
     input RESET, INSERT_5, INSERT_10, INSERT_50, CANCEL;
-    input PS2_DATA, PS2_CLK;
+    input [3:0] LEDS;
+    inout PS2_DATA, PS2_CLK;
     output [3:0] AN;
     output [6:0] _7SEG;
     
@@ -44,6 +45,18 @@ module FPGA_VendingMachine(
     
     wire reset, insert_5, insert_10, insert_50, cancel;
     wire A, S, D, F;
+    wire [6:0] new_value;
+    
+    assign new_value = value +
+        (insert_5 ? 7'd5 : 7'd0) +
+        (insert_10 ? 7'd10 : 7'd0) +
+        (insert_50 ? 7'd50 : 7'd0);
+    
+    Keyboard
+        keyboard (
+            .clk(CLK), .rst(reset), .PS2_DATA(PS2_DATA), .PS2_CLK(PS2_CLK),
+            .A(A), .S(S), .D(D), .F(F)
+        );
     
     Debounce_OnePulse
         dbop_reset(.clk(CLK), .in(RESET), .out(reset)),
@@ -54,12 +67,13 @@ module FPGA_VendingMachine(
         
     Seven_Segment_Display
         _7sd (.clk(CLK), .rst_n(!reset), .value(value), .AN(AN), .SEG(_7SEG));
-        
-    Keyboard
-        keyboard (
-            .clk(CLK), .rst(reset), .PS2_DATA(PS2_DATA), .PS2_CLK(PS2_CLK),
-            .A(A), .S(S), .D(D), .F(F)
-        );
+    
+    assign LEDS = {
+        value >= 7'd75,
+        value >= 7'd50,
+        value >= 7'd30,
+        value >= 7'd25
+    };
     
     always @ (posedge CLK) begin
         if (reset == 1'b1) begin
@@ -76,15 +90,16 @@ module FPGA_VendingMachine(
                             (A ? 7'd75 : 7'd0) - 
                             (S ? 7'd50 : 7'd0) -
                             (D ? 7'd30 : 7'd0) -
-                            (S ? 7'd25 : 7'd0); 
+                            (F ? 7'd25 : 7'd0); 
                     end else begin
-                        value <= value +
-                            (insert_5 ? 7'd5 : 7'd0) +
-                            (insert_10 ? 7'd10 : 7'd0) +
-                            (insert_50 ? 7'd50 : 7'd0); 
+                        value <= (new_value >= 7'd100 ? 7'd100 : new_value);
                     end
                 end else begin
-                    value <= value - 7'd5;
+                    if (value == 7'd0) begin
+                        state <= INSERTING;
+                    end else begin
+                        value <= value - 7'd5;
+                    end
                 end
             end else begin
                 counter <= counter + 32'd1;

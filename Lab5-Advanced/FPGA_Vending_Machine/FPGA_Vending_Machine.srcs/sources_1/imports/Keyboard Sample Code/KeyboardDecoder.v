@@ -6,7 +6,7 @@ module KeyboardDecoder(
 	inout wire PS2_CLK,
 	input wire rst,
 	input wire clk
-    );
+);
     
     parameter [1:0] INIT			= 2'b00;
     parameter [1:0] WAIT_FOR_SIGNAL = 2'b01;
