@@ -1,4 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/share_repo/Lab5-Advanced/Problem_1_2/THINGS/Lab5_Team3_Sliding_Window_Sequence_Detector.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Sliding_Window_Sequence_Detector
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/share_repo/Lab5-Advanced/Problem_1_2/Problem_1_2.srcs/sources_1/new/Lab5_Team3_Sliding_Window_Sequence_Detector_t.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Lab5_Team3_Sliding_Window_Sequence_Detector_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/share_repo/Lab5-Advanced/Problem_1_2/THINGS/Lab5_Team3_Traffic_Light_Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Traffic_Light_Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LogicDesignExperiment/share_repo/Lab5-Advanced/Problem_1_2/Problem_1_2.srcs/sources_1/new/Lab5_Team3_Traffic_Light_Controller_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab5_Team3_Traffic_Light_Controller_t

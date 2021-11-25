@@ -38,12 +38,12 @@ module Lab5_Team3_Traffic_Light_Controller_t;
         lr_has_car = 1'b0;
         
         //80 and car
-        repeat (10) begin
+        repeat (100) begin
             @(negedge clk)
             rst_n = 1'b1;
             lr_has_car = 1'b0;
         end
-        repeat (50) begin
+        repeat (150) begin
             @(negedge clk)
             rst_n = 1'b1;
             lr_has_car = 1'b1;
@@ -55,12 +55,12 @@ module Lab5_Team3_Traffic_Light_Controller_t;
         lr_has_car = 1'b0;
         
         //car then 80
-        repeat (4) begin
+        repeat (40) begin
             @(negedge clk)
             rst_n = 1'b1;
             lr_has_car = 1'b0;
         end
-        repeat (50) begin
+        repeat (200) begin
             @(negedge clk)
             rst_n = 1'b1;
             lr_has_car = 1'b1;

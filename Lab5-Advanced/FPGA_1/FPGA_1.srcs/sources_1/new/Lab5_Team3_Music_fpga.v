@@ -111,7 +111,7 @@ module Lab5_Team3_Music_fpga(
 		endcase
 	end
 	
-	assign rst = (key_num == 3'b011) ? 1'b1 : 1'b0;
+	assign rst = (last_change == 3'b011) ? 1'b1 : 1'b0;
 	
 	//Generate beat speed
     PWM_gen btSpeedGen ( .clk(clk), 
