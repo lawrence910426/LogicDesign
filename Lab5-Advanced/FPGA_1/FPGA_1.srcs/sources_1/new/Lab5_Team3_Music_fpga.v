@@ -26,12 +26,12 @@ module Lab5_Team3_Music_fpga(
 	output pmod_4,
     inout wire PS2_DATA,
 	inout wire PS2_CLK,
-	input wire rst,
 	input wire clk
     );
     
     //AUDIO
-    parameter BEAT_FREQ = 32'd1;	//one beat=1sec
+    parameter BEAT_FREQ_1s = 32'd4;	//one beat=1sec
+    parameter BEAT_FREQ_1_2s = 32'd8;
     parameter DUTY_BEST = 10'd512;	//duty cycle=50%
     
     wire [31:0] freq;
@@ -45,14 +45,17 @@ module Lab5_Team3_Music_fpga(
     parameter [8:0] W = 9'b0_0001_1101; //1D
 	parameter [8:0] S = 9'b0_0001_1011; //1B
 	parameter [8:0] R = 9'b0_0010_1101; //2D
+    parameter [8:0] enter = 9'b0_0101_1010;//5A
     
+    wire rst;
     reg dir;
-    reg [1:0] slow;
-    reg [1:0] key_num;
+    reg fast;
+    reg [2:0] key_num;
 	
 	wire [511:0] key_down;
 	wire [8:0] last_change;
 	wire been_ready;
+ 	
  	
     
     KeyboardDecoder key_de (
@@ -65,54 +68,62 @@ module Lab5_Team3_Music_fpga(
 		.clk(clk)
 	);
 	
-	always @ (posedge clk, posedge rst) begin
-	   if(rst) begin
-	       dir <= 1'b1;
-	       slow <= 2'd1;
-	   end
-	   else begin
-	       if (been_ready && key_down[last_change] == 1'b1) begin
-	           if (key_num == 2'b00)begin
-					dir <= 1'b1;
-	                slow <= slow;
-	           end
-	           else if (key_num == 2'b01) begin
-	                dir <= 1'b0;
-	                slow <= slow;
-	           end
-	           else if (key_num == 2'b10) begin
-	                dir <= dir;
-	                if(slow == 2'b01) slow <= 2'b10;
-	                else slow <= 2'b01;
-	           end
-	           else begin
-	                dir <= 1'b1;
-	                slow <= 2'd1;
-	           end
-	       end
-	   end
+	
+	always @ (posedge clk) begin
+	   
+	      if (been_ready && key_down[last_change] == 1'b1) begin
+               if(key_num != 3'b100) begin
+                   case (key_num)
+                       3'b000:begin
+                           dir <= 1'b1;
+                           fast <= fast;
+                       end
+                       3'b001: begin
+                           dir <= 1'b0;
+                           fast <= fast;
+                       end
+                       3'b010: begin
+                           dir <= dir;
+                           fast <= fast + 1'b1;
+                       end
+                       3'b011: begin
+                           dir <= 1'b1;
+                           fast <= 1'b0;
+                       end
+                       default: begin
+                           dir <= dir;
+                           fast <= fast;
+                       end
+                   endcase
+               end
+           end
+	      
+    
 	end
 	
 	always @ (*) begin
 		case (last_change)
-			W        : key_num = 2'b00;
-			S        : key_num = 2'b01;
-			R        : key_num = 2'b10;
-			default  : key_num = 2'b11;
+			W        : key_num = 3'b000;
+			S        : key_num = 3'b001;
+			R        : key_num = 3'b010;
+			enter    : key_num = 3'b011;
+			default  : key_num = 3'b100;
 		endcase
 	end
 	
+	assign rst = (key_num == 3'b011) ? 1'b1 : 1'b0;
+	
 	//Generate beat speed
     PWM_gen btSpeedGen ( .clk(clk), 
-					     .reset(reset),
-					     .freq(BEAT_FREQ*slow),
-					     .duty(DUTY_BEST), 
+					     .reset(rst),
+					     .freq((fast==1'b0)?BEAT_FREQ_1s:BEAT_FREQ_1_2s),
+					     .duty(DUTY_BEST),
 					     .PWM(beatFreq)
     );
 	
     //manipulate beat
     PlayerCtrl playerCtrl_00 ( .clk(beatFreq),
-						       .reset(reset),
+						       .reset(rst),
 						       .dir(dir),
 						       .ibeat(ibeatNum)
     );	
@@ -124,7 +135,7 @@ module Lab5_Team3_Music_fpga(
 
     // Generate particular freq. signal
     PWM_gen toneGen ( .clk(clk), 
-				      .reset(reset), 
+				      .reset(rst), 
 				      .freq(freq),
 				      .duty(DUTY_BEST), 
 				      .PWM(pmod_1)

@@ -19,6 +19,8 @@ wire [31:0] count_max = 100_000_000 / freq;
 wire [31:0] count_duty = count_max * duty / 1024;
 reg [31:0] count;
     
+    
+    
 always @(posedge clk, posedge reset) begin
     if (reset) begin
         count <= 0;
