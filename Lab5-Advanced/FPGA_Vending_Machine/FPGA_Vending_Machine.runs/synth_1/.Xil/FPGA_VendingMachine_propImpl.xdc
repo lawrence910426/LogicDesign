@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc} rfile:{../../../../../../../../Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc} id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc} rfile:{../../../FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc} id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]

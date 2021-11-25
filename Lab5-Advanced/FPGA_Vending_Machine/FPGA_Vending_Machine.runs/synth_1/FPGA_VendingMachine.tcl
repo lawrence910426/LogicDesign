@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -89,8 +90,8 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/new/Keyboard.v
-  {C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardDecoder.v}
-  {C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/OnePulse.v}
+  {C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/imports/Keyboard Sample Code/KeyboardDecoder.v}
+  {C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/imports/Keyboard Sample Code/OnePulse.v}
   C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/new/Peripheral_Filters.v
   C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/new/SevenSegmentDisplay.v
   C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/new/FPGA_VendingMachine.v
@@ -106,8 +107,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardConstraints.xdc}}]
+read_xdc {{C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc}}
+set_property used_in_implementation false [get_files {{C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/constrs_1/imports/Keyboard Sample Code/KeyboardConstraints.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
