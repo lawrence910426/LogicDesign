@@ -23,7 +23,7 @@ module Traffic_Light_Controller (clk, rst_n, lr_has_car, hw_light, lr_light);
         else begin
             state <= next_state;
             if(last_reset == rst_n) begin
-                if(cycle < 7'd8) cycle <= cycle + 7'd1;//80
+                if(cycle < 7'd80) cycle <= cycle + 7'd1;//80
                 else cycle <= cycle;
             end
             else begin
@@ -50,7 +50,7 @@ module Traffic_Light_Controller (clk, rst_n, lr_has_car, hw_light, lr_light);
     always @(*) begin
         case(state)
             HG_RR: begin
-                if(cycle >= 7'd7) begin//80
+                if(cycle >= 7'd79) begin//80
                     if(lr_has_car) next_state = HY_RR;
                     else next_state = HG_RR;
                 end
@@ -59,7 +59,7 @@ module Traffic_Light_Controller (clk, rst_n, lr_has_car, hw_light, lr_light);
                 end
             end
             HY_RR: begin
-                if(cycle >= 7'd3) next_state = HR_RR_1;//20
+                if(cycle >= 7'd19) next_state = HR_RR_1;//20
                 else next_state = HY_RR;
             end
             HR_RR_1: begin
@@ -67,11 +67,11 @@ module Traffic_Light_Controller (clk, rst_n, lr_has_car, hw_light, lr_light);
                 else next_state = HR_RR_1;
             end
             HR_RG: begin
-                if(cycle >= 7'd7) next_state = HR_RY;//80
+                if(cycle >= 7'd79) next_state = HR_RY;//80
                 else next_state = HR_RG;
             end
             HR_RY: begin
-                if(cycle >= 7'd3) next_state = HR_RR_2;//20
+                if(cycle >= 7'd19) next_state = HR_RR_2;//20
                 else next_state = HR_RY;
             end
             HR_RR_2: begin
