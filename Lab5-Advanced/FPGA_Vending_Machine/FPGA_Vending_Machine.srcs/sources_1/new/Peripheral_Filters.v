@@ -37,4 +37,5 @@ module Debounce_OnePulse(clk, in, out);
     wire temp;
     debounce db (temp, in, clk);
     onepulse op (temp, clk, out);
+    // assign out = in;
 endmodule

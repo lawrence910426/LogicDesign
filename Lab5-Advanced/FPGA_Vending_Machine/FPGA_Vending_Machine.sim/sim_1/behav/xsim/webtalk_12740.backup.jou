@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov 25 16:43:41 2021
+# Process ID: 12740
+# Current directory: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.sim/sim_1/behav/xsim/xsim.dir/FPGA_T_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.sim/sim_1/behav/xsim/xsim.dir/FPGA_T_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../FPGA_Vending_Machine.srcs/sources_1/new/FPGA_VendingMachine.v" \
+"../../../../FPGA_Vending_Machine.srcs/sources_1/new/Peripheral_Filters.v" \
+"../../../../FPGA_Vending_Machine.srcs/sources_1/new/SevenSegmentDisplay.v" \
+"../../../../FPGA_Vending_Machine.srcs/sources_1/new/FPGA_T.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
