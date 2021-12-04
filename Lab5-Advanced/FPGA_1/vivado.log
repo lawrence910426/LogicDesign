@@ -2,64 +2,22 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Nov 25 01:49:39 2021
-# Process ID: 14856
-# Current directory: D:/LogicDesignExperiment/LAB05_1118/FPGA_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4928 D:\LogicDesignExperiment\LAB05_1118\FPGA_1\FPGA_1.xpr
-# Log file: D:/LogicDesignExperiment/LAB05_1118/FPGA_1/vivado.log
-# Journal file: D:/LogicDesignExperiment/LAB05_1118/FPGA_1\vivado.jou
+# Start of session at: Thu Nov 25 23:49:05 2021
+# Process ID: 10484
+# Current directory: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15940 D:\LogicDesignExperiment\share_repo\Lab5-Advanced\FPGA_1\FPGA_1.xpr
+# Log file: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_1/vivado.log
+# Journal file: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/LogicDesignExperiment/LAB05_1118/FPGA_1/FPGA_1.xpr
+open_project D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_1/FPGA_1.xpr
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/LogicDesignExperiment/LAB05_1118/FPGA_1/USE/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_1/USE/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.309 ; gain = 0.000
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 2
-[Thu Nov 25 03:45:49 2021] Launched synth_1...
-Run output will be captured here: D:/LogicDesignExperiment/LAB05_1118/FPGA_1/FPGA_1.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 2
-[Thu Nov 25 03:46:57 2021] Launched impl_1...
-Run output will be captured here: D:/LogicDesignExperiment/LAB05_1118/FPGA_1/FPGA_1.runs/impl_1/runme.log
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1162.980 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 222 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'Lab5_Team3_Music_fpga' is not ideal for floorplanning, since the cellview 'PWM_gen' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
-INFO: [Project 1-479] Netlist was created with Vivado 2020.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.162 . Memory (MB): peak = 1271.738 ; gain = 24.531
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.163 . Memory (MB): peak = 1271.738 ; gain = 24.531
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1657.816 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
-
-open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1771.535 ; gain = 753.875
-WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
-set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list pmod_1]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list pmod_2]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list pmod_4]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list PS2_CLK]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list PS2_DATA]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
-place_ports clk W5
-place_ports pmod_1 A14
-place_ports pmod_2 A16
-place_ports pmod_4 B16
-place_ports PS2_CLK C17
-place_ports PS2_DATA B17
-close_design
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 25 03:53:08 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 25 23:50:44 2021...

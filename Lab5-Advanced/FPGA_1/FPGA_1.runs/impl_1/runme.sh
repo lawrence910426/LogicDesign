@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/LogicDesignExperiment/LAB05_1118/FPGA_1/FPGA_1.runs/impl_1'
+HD_PWD='D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_1/FPGA_1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

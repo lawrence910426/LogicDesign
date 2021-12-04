@@ -2,35 +2,14 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Nov 25 01:49:39 2021
-# Process ID: 14856
-# Current directory: D:/LogicDesignExperiment/LAB05_1118/FPGA_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4928 D:\LogicDesignExperiment\LAB05_1118\FPGA_1\FPGA_1.xpr
-# Log file: D:/LogicDesignExperiment/LAB05_1118/FPGA_1/vivado.log
-# Journal file: D:/LogicDesignExperiment/LAB05_1118/FPGA_1\vivado.jou
+# Start of session at: Thu Nov 25 23:49:05 2021
+# Process ID: 10484
+# Current directory: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15940 D:\LogicDesignExperiment\share_repo\Lab5-Advanced\FPGA_1\FPGA_1.xpr
+# Log file: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_1/vivado.log
+# Journal file: D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_1\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/LogicDesignExperiment/LAB05_1118/FPGA_1/FPGA_1.xpr
+open_project D:/LogicDesignExperiment/share_repo/Lab5-Advanced/FPGA_1/FPGA_1.xpr
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-open_run impl_1
-set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list pmod_1]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list pmod_2]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list pmod_4]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list PS2_CLK]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list PS2_DATA]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
-place_ports clk W5
-place_ports pmod_1 A14
-place_ports pmod_2 A16
-place_ports pmod_4 B16
-place_ports PS2_CLK C17
-place_ports PS2_DATA B17
-close_design
