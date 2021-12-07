@@ -34,15 +34,7 @@ module Booth_Multiplier_4bit(clk, rst_n, start, a, b, p);
         end else begin
             case (state)
                 WAIT: begin
-                    if (start == 1'b1) begin
-                        A <= {a_5bit, 5'b00000};
-                        S <= {-a_5bit, 5'b00000};
-                        P <= {5'b00000, b, 1'b0};
-                        state <= CAL;
-                        step <= 2'b00;
-                    end else begin
-                        state <= WAIT;
-                    end
+                    state <= WAIT;
                 end
                 
                 CAL: begin
@@ -68,4 +60,18 @@ module Booth_Multiplier_4bit(clk, rst_n, start, a, b, p);
             endcase
         end
     end
+    
+    always @ (posedge start) begin
+        case (state)
+            WAIT: begin
+                A <= {a_5bit, 5'b00000};
+                S <= {-a_5bit, 5'b00000};
+                P <= {5'b00000, b, 1'b0};
+                state <= CAL;
+                step <= 2'b00;
+            end
+            
+            default: state <= WAIT;
+        endcase
+    end 
 endmodule
