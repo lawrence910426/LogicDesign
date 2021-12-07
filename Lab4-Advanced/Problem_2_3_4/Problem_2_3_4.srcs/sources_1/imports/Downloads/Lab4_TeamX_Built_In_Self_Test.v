@@ -7,9 +7,11 @@ module Built_In_Self_Test(clk, rst_n, scan_en, scan_in, scan_out);
     output scan_in;
     output scan_out;
     
-    Many_To_One_LFSR LFSR (.clk(clk), .rst_n(rst_n), .out(scan_in));
+    wire [7:0] LFSR_out;
+    
+    Many_To_One_LFSR LFSR (.clk(clk), .rst_n(rst_n), .out(LFSR_out));
     Scan_Chain_Design ScanChain (
-        .clk(clk), .rst_n(rst_n), .scan_in(scan_in), 
+        .clk(clk), .rst_n(rst_n), .scan_in(LFSR_out[7]), 
         .scan_en(scan_en), .scan_out(scan_out)
     );
 endmodule
