@@ -15,7 +15,7 @@ module Greatest_Common_Divisor (clk, rst_n, start, a, b, done, gcd);
     parameter CAL = 2'b01;
     parameter FINISH = 2'b10;
     parameter FINISH_2 = 2'b11;
-    
+        
     always @ (posedge clk) begin
         if (rst_n == 1'b1) begin
             state <= WAIT;
@@ -29,19 +29,23 @@ module Greatest_Common_Divisor (clk, rst_n, start, a, b, done, gcd);
                     end else begin
                         state <= WAIT;
                     end
+                     
+                    gcd <= 16'b0;
+                    done <= 1'b0;
                 end
                 
                 CAL: begin
-                    if (A == 16'd0 || B == 16'd0) begin
-                        gcd <= (A == 16'd0 ? B : A);
+                    if (A == 0) begin
+                        gcd <= B;
+                        state <= FINISH;
+                        done <= 1'b1;
+                    end else if (B == 0) begin
+                        gcd <= A;
                         state <= FINISH;
                         done <= 1'b1;
                     end else begin
-                        if (A > B) begin
-                            A <= A - B;
-                        end else begin
-                            B <= B - A;
-                        end
+                        if (A > B) A <= A - B;
+                        else B <= B - A;
                     end
                 end
                 
