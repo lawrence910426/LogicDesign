@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Nov 25 13:39:01 2021
+| Date             : Thu Nov 25 17:18:41 2021
 | Host             : DESKTOP-P0B4VES running 64-bit major release  (build 9200)
 | Command          : report_power -file FPGA_VendingMachine_power_routed.rpt -pb FPGA_VendingMachine_power_summary_routed.pb -rpx FPGA_VendingMachine_power_routed.rpx
 | Design           : FPGA_VendingMachine
@@ -29,20 +29,20 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.640        |
-| Design Power Budget (W)  | Unspecified* |
-| Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.557        |
-| Device Static (W)        | 0.083        |
-| Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 66.8         |
-| Junction Temperature (C) | 43.2         |
-| Confidence Level         | Low          |
-| Setting File             | ---          |
-| Simulation Activity File | ---          |
-| Design Nets Matched      | NA           |
-+--------------------------+--------------+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 25.942 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 25.456                           |
+| Device Static (W)        | 0.486                            |
+| Effective TJA (C/W)      | 5.0                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
 * Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.697 |     1890 |       --- |             --- |
-|   LUT as Logic |     0.579 |      930 |     20800 |            4.47 |
-|   CARRY4       |     0.074 |       26 |      8150 |            0.32 |
-|   Register     |     0.039 |      734 |     41600 |            1.76 |
+| Slice Logic    |     1.396 |     1975 |       --- |             --- |
+|   LUT as Logic |     1.278 |      931 |     20800 |            4.48 |
+|   CARRY4       |     0.063 |       26 |      8150 |            0.32 |
+|   Register     |     0.050 |      759 |     41600 |            1.82 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       32 |       --- |             --- |
+|   Others       |     0.000 |       47 |       --- |             --- |
 |   F7/F8 Muxes  |     0.000 |      101 |     32600 |            0.31 |
-| Signals        |     0.774 |     1045 |       --- |             --- |
-| I/O            |     2.086 |       19 |       106 |           17.92 |
-| Static Power   |     0.083 |          |           |                 |
-| Total          |     3.640 |          |           |                 |
+| Signals        |     1.567 |     1102 |       --- |             --- |
+| I/O            |    22.493 |       23 |       106 |           21.70 |
+| Static Power   |     0.486 |          |           |                 |
+| Total          |    25.942 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,16 +72,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.515 |       1.496 |      0.019 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.089 |       0.076 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.584 |       0.583 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     3.328 |       2.987 |      0.341 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.877 |       0.823 |      0.053 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     6.361 |       6.360 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -139,26 +139,30 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| FPGA_VendingMachine |     3.557 |
-|   _7sd              |     0.170 |
-|   dbop_cancel       |     0.015 |
-|     db              |     0.013 |
-|     op              |     0.002 |
-|   dbop_insert_10    |     0.017 |
-|     db              |     0.013 |
-|     op              |     0.004 |
-|   dbop_insert_5     |     0.053 |
+| FPGA_VendingMachine |    25.456 |
+|   _7sd              |     1.176 |
+|   dbop_a            |     0.054 |
+|     op              |     0.054 |
+|   dbop_cancel       |     0.177 |
 |     db              |     0.014 |
+|     op              |     0.164 |
+|   dbop_d            |     0.064 |
+|     op              |     0.064 |
+|   dbop_insert_10    |     0.019 |
+|     db              |     0.014 |
+|     op              |     0.005 |
+|   dbop_insert_5     |     0.054 |
+|     db              |     0.016 |
 |     op              |     0.038 |
-|   dbop_insert_50    |     0.037 |
+|   dbop_insert_50    |     0.081 |
 |     db              |     0.014 |
-|     op              |     0.023 |
-|   dbop_reset        |     0.082 |
-|     db              |     0.014 |
-|     op              |     0.068 |
-|   keyboard          |     0.655 |
-|     key_de          |     0.445 |
-|       inst          |     0.435 |
+|     op              |     0.067 |
+|   dbop_reset        |     0.115 |
+|     db              |     0.017 |
+|     op              |     0.097 |
+|   keyboard          |     0.470 |
+|     key_de          |     0.470 |
+|       inst          |     0.459 |
 +---------------------+-----------+
 
 

@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/new/FPGA_T.v,1637830521,verilog,,,,FPGA_T,,,,,,,,
+C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/new/FPGA_VendingMachine.v,1637830596,verilog,,C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/new/Peripheral_Filters.v,,FPGA_VendingMachine,,,,,,,,
+C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/new/Peripheral_Filters.v,1637830161,verilog,,C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/new/SevenSegmentDisplay.v,,Debounce_OnePulse;debounce;onepulse,,,,,,,,
+C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/new/SevenSegmentDisplay.v,1637829115,verilog,,C:/home/github/LogicDesign/Lab5-Advanced/FPGA_Vending_Machine/FPGA_Vending_Machine.srcs/sources_1/new/FPGA_T.v,,Seven_Segment_Display,,,,,,,,

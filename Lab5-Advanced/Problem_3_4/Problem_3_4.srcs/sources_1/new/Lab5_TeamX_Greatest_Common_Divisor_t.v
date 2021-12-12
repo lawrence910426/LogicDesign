@@ -33,7 +33,7 @@ module Lab5_Team3_Greatest_Common_Divisor_t();
     
     always #1 clk = 1 - clk;
     initial begin
-        a = 12;
+        a = 0;
         b = 18;
         rst_n = 1;
         #2;        
