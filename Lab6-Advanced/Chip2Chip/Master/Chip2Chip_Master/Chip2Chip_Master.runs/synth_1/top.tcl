@@ -85,11 +85,11 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/lawre/Downloads/chip2chip/chip2chip/chip2chip_master/counter.v
-  C:/Users/lawre/Downloads/chip2chip/chip2chip/chip2chip_master/encoder.v
-  C:/Users/lawre/Downloads/chip2chip/chip2chip/chip2chip_master/master_control.v
-  C:/Users/lawre/Downloads/chip2chip/chip2chip/chip2chip_master/seven_seg.v
-  C:/Users/lawre/Downloads/chip2chip/chip2chip/chip2chip_master/top.v
+  C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v
+  C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v
+  C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v
+  C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v
+  C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
