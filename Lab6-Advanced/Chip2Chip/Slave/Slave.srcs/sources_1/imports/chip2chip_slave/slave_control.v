@@ -81,11 +81,11 @@ module slave_control(clk, rst_n, request, ack, data_in, notice, valid, data);
                 next_start = 1'b0;
             end
             state_wait_data: begin
-                next_state = (valid == 1)? ??? : ???;
-                // next_notice = ???á
-                // next_ack = ???
-                // next_data = ???
-                // next_start = ???
+                next_state = (valid == 1)? state_wait_rqst : state_wait_data
+                next_notice = 1'b0;
+                next_ack = 1'b1;
+                next_data = data_in;
+                next_start = 1'b0;
             end
             default: begin
             end
