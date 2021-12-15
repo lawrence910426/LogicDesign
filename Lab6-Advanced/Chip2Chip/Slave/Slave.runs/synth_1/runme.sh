@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/LogicDesignExperiment/share_repo/Lab6-Advanced/Chip2Chip/Slave/Slave.runs/synth_1'
+HD_PWD='C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Slave/Slave.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

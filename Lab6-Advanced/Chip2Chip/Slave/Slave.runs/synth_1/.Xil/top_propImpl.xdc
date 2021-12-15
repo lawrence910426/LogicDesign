@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/LogicDesignExperiment/share_repo/Lab6-Advanced/Chip2Chip/Slave/Slave.srcs/constrs_1/imports/chip2chip_slave/constraint.xdc rfile:../../../Slave.srcs/constrs_1/imports/chip2chip_slave/constraint.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Slave/Slave.srcs/constrs_1/imports/chip2chip_slave/constraint.xdc rfile:../../../Slave.srcs/constrs_1/imports/chip2chip_slave/constraint.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN A15 [get_ports {data_in[2]}]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
