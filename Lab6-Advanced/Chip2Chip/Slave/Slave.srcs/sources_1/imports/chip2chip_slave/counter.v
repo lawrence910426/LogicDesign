@@ -21,9 +21,10 @@ module counter(clk, rst_n, start, done);
     input start;
     output reg done;
     reg [27-1:0] count, next_count;
+    
     always@(posedge clk) begin
         if (rst_n == 0) begin
-            count = 0;
+            count <= 0;
         end
         else begin
             count <= next_count;

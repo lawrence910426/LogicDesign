@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Dec 12 21:26:48 2021
-# Process ID: 18332
-# Current directory: D:/LogicDesignExperiment/share_repo/Lab6-Advanced/Chip2Chip/Slave/Slave.runs/synth_1
+# Start of session at: Mon Dec 13 21:03:23 2021
+# Process ID: 10404
+# Current directory: C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Slave/Slave.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: D:/LogicDesignExperiment/share_repo/Lab6-Advanced/Chip2Chip/Slave/Slave.runs/synth_1/top.vds
-# Journal file: D:/LogicDesignExperiment/share_repo/Lab6-Advanced/Chip2Chip/Slave/Slave.runs/synth_1\vivado.jou
+# Log file: C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Slave/Slave.runs/synth_1/top.vds
+# Journal file: C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Slave/Slave.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
