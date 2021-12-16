@@ -1,0 +1,2862 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 5504
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Dec 16 11:50:16 CST 2021
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ASUS
+User home directory: C:/Users/ASUS
+User working directory: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/vivado.log
+Vivado journal file location: 	D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/vivado.jou
+Engine tmp dir: 	D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/.Xil/Vivado-5504-TACO-SUGO-KAWAII
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,012 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\LogicDesignExperiment\LAB06_1202\Slot_Machine_fpga\Slot_Machine_fpga.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 120 MB (+123427kb) [00:00:15]
+// [Engine Memory]: 1,012 MB (+909986kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3869 ms.
+// Tcl Message: open_project D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,012 MB. GUI used memory: 60 MB. Current time: 12/16/21, 11:50:22 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1114 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 1004.844 ; gain = 0.000 
+// Project name: Slot_Machine_fpga; location: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 132 MB (+5912kb) [00:02:50]
+// Elapsed time: 294 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (LAB6_slot_machine_sample_code.v)]", 6, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 141 MB (+2457kb) [00:05:16]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (LAB6_slot_machine_sample_code.v)]", 6, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (LAB6_slot_machine_sample_code.v), DB0 : debounce (LAB6_slot_machine_sample_code.v)]", 9, false, false, false, false, false, true); // D - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 479, 421); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 470, 366); // bP
+// Elapsed time: 31 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 495, 429); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 436, 476); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 396, 519); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 396, 519); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 382, 570); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 382, 570); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 382, 570); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 386, 563); // bP
+// Elapsed time: 62 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 461, 395); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 461, 395); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bz (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1337 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bz
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bz (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2020.2   **** Build date : Nov 18 2020 at 10:01:48     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2020.2   ****** Build date   : Nov 04 2020-05:02:56     **** Build number : 2020.2.1604437376       ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1004.844 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5586 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183711944A 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,334 MB. GUI used memory: 82 MB. Current time: 12/16/21, 11:57:43 AM CST
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2369.914 ; gain = 1365.070 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,334 MB (+1332565kb) [00:07:40]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 15 seconds
+dismissDialog("Auto Connect"); // bz
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bz
+// Elapsed time: 14 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 367, 237); // bP
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // K
+// Elapsed time: 12 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 348, 225); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 53, 279); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 129, 441); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 97, 435); // bP
+// Elapsed time: 38 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 337, 458); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 429, 461); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 240, 187); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 682, 201); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 607, 201); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 731, 198); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 554, 275); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 610, 292); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 701, 299); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 695, 383); // bP
+// Elapsed time: 67 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 703, 328); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 637, 287); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 620, 281); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 430, 191); // bP
+// Elapsed time: 40 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 375, 389); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 375, 389); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 338, 420); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 315, 443); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 306, 457); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 319, 439); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 2,375 MB. GUI used memory: 83 MB. Current time: 12/16/21, 12:02:12 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 49 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 178, 492); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'c'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 289, 344); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 359, 338); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 532, 339); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 292, 345); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 138, 344); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'c'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 393, 336); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 659, 348); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 405, 341); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 875, 352); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 321, 189); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'c'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1083, 345); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 648, 373); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 12:03:37 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 12:03:37 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,397 MB. GUI used memory: 83 MB. Current time: 12/16/21, 12:03:37 PM CST
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 638, 355); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 607, 377); // bP
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 323, 187); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 271, 248); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 163, 282); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 152, 283); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Failed: addNotify
+// Elapsed time: 52 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 421, 234); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 416, 242); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 436, 274); // bP
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 12, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 12, false, false, false, false, false, true); // ah - Double Click
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design]", 7); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/slot_machine/cons.xdc:15]. ]", 6, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\LogicDesignExperiment\LAB06_1202\Slot_Machine_fpga\slot_machine\cons.xdc;-;;-;16;-;line;-;15;-;;-;16;-;"); // ah
+// Elapsed time: 12 seconds
+selectCodeEditor("cons.xdc", 382, 279); // bP
+selectCodeEditor("cons.xdc", 683, 287); // bP
+selectCodeEditor("cons.xdc", 708, 220); // bP
+selectCodeEditor("cons.xdc", 718, 196); // bP
+selectCodeEditor("cons.xdc", 706, 223); // bP
+selectCodeEditor("cons.xdc", 58, 270); // bP
+selectCodeEditor("cons.xdc", 99, 253); // bP
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/slot_machine/cons.xdc:15]. ]", 6, true); // ah - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/slot_machine/cons.xdc:15]. ]", 6); // ah
+selectCodeEditor("cons.xdc", 124, 256); // bP
+selectCodeEditor("cons.xdc", 665, 258); // bP
+selectCodeEditor("cons.xdc", 740, 256); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("cons.xdc", 685, 304); // bP
+selectCodeEditor("cons.xdc", 690, 254); // bP
+selectCodeEditor("cons.xdc", 693, 224); // bP
+selectCodeEditor("cons.xdc", 696, 244); // bP
+selectCodeEditor("cons.xdc", 696, 225); // bP
+selectCodeEditor("cons.xdc", 725, 174); // bP
+selectCodeEditor("cons.xdc", 724, 153); // bP
+// Elapsed time: 27 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design]", 10); // ah
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net SC0/counter[0] has multiple drivers: SC0/counter_reg[0]__0/Q, and SC0/counter_reg[0]/Q.. ]", 14); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net SC0/counter[0] has multiple drivers: SC0/counter_reg[0]__0/Q, and SC0/counter_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net SC0/counter[9] has multiple drivers: SC0/counter_reg[9]/Q, and SC0/counter_reg[9]__0/Q.. ]", 23, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net SC0/counter[0] has multiple drivers: SC0/counter_reg[0]__0/Q, and SC0/counter_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net SC0/counter[9] has multiple drivers: SC0/counter_reg[9]/Q, and SC0/counter_reg[9]__0/Q.. ]", 23, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net SC0/counter[0] has multiple drivers: SC0/counter_reg[0]__0/Q, and SC0/counter_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net SC0/counter[9] has multiple drivers: SC0/counter_reg[9]/Q, and SC0/counter_reg[9]__0/Q.. ]", 23, false, false, false, false, false, true); // ah - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LAB6_slot_machine_sample_code.v", 0); // m
+// Elapsed time: 37 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 110, 201); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 16 12:07:47 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cons.xdc", 1); // m
+selectCodeEditor("cons.xdc", 717, 155); // bP
+selectCodeEditor("cons.xdc", 712, 138); // bP
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // K
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // K
+selectCodeEditor("cons.xdc", 1018, 120); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LAB6_slot_machine_sample_code.v", 0); // m
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 580, 268); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 564, 287); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 569, 257); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 573, 228); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 536, 337); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 530, 360); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 534, 336); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 531, 360); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 543, 343); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 512, 381); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 40 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Dec 16 12:08:54 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Elapsed time: 126 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,471 MB. GUI used memory: 85 MB. Current time: 12/16/21, 12:11:02 PM CST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,279 MB. GUI used memory: 85 MB. Current time: 12/16/21, 12:11:26 PM CST
+// [Engine Memory]: 3,280 MB (+870291kb) [00:21:23]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// [Engine Memory]: 3,446 MB (+1248kb) [00:21:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  2273 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2718.008 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 3346.824 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 3346.824 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3346.824 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 3512.156 ; gain = 1076.707 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// [GUI Memory]: 155 MB (+7095kb) [00:21:26]
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 164 MB (+1838kb) [00:21:27]
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1229 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 177 MB (+5167kb) [00:21:29]
+// 'dV' command handler elapsed time: 31 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1158 ms.
+selectTab((HResource) null, (HResource) null, "I/O Ports", 10); // aK
+// Elapsed time: 32 seconds
+dismissDialog("Open Implemented Design"); // bz
+// [GUI Memory]: 187 MB (+664kb) [00:21:31]
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (5) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4, "Scalar ports (5)", 0, true); // A - Node
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (5) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4); // A
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "rst ; IN ;  ; U18 ; true ; 14 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 7, "U18", 3, false); // A
+// PAPropertyPanels.initPanels (rst) elapsed time: 0.2s
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports rst T18 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "hsync ; OUT ;  ; P19 ; true ; 14 ; LVCMOS33 ; 3.3 ;  ; 12 ;  ; NONE ; FP_VTT_50 ; ", 6, (String) null, 2, false); // A
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+// A (cr): Out of Date Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// F (cr): Save Constraints: addNotify
+dismissDialog("Out of Date Design"); // A
+selectButton(PAResourceItoN.ModifiedConstraintsWithoutTargetDialog_UPDATE, "Update"); // a
+// a (cr): Save Constraints: addNotify
+dismissDialog("Save Constraints"); // F
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bz (cr):  Save Constraints : addNotify
+// Tcl Message: set_property target_constrs_file D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/slot_machine/cons.xdc [current_fileset -constrset] 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Constraints"); // a
+// TclEventType: DESIGN_SAVE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: save_constraints -force 
+// 'h' command handler elapsed time: 5 seconds
+dismissDialog("Save Constraints"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Implementation is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Implementation is Out-of-date"); // A
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 12:12:02 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bz
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LAB6_slot_machine_sample_code.v", 2); // m
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 709, 210); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 425, 290); // bP
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 11 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 604, 404); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 603, 442); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 599, 473); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 612, 446); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 618, 417); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 578, 369); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 603, 340); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1036, 277); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'c'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 347, 373); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 333, 373); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 537, 375); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 510, 438); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 212, 432); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 274, 429); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 454, 211); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+// Elapsed time: 25 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 27 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 12:14:10 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 12:14:10 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// HOptionPane Error: 'The file 'D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_ fpga.runs/impl_1/Top.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bC
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 955, 214); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 539, 300); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 3,490 MB. GUI used memory: 124 MB. Current time: 12/16/21, 12:14:22 PM CST
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 505, 194); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 531, 226); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 558, 262); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 688, 228); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 774, 205); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 764, 224); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 44 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 796, 160); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 810, 278); // bP
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 23 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 537, 244); // bP
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // K
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // K
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 969, 336); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 886, 429); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 889, 482); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 893, 463); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 772, 398); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 756, 463); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 794, 509); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 787, 540); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 784, 565); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 774, 586); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 638, 457); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 646, 442); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 674, 421); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 697, 396); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 710, 368); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 733, 336); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 747, 283); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 676, 245); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 676, 196); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 639, 145); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 660, 75); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 896, 364); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 593, 315); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 572, 245); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 536, 308); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 588, 256); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 565, 326); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 601, 255); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 571, 319); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 603, 246); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 564, 318); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 428, 363); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 417, 358); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 391, 313); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 392, 287); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 422, 220); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 419, 283); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 415, 301); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 404, 363); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 408, 392); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 386, 457); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 378, 491); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 348, 569); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 374, 505); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 368, 472); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 384, 413); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 379, 374); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 412, 315); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 388, 289); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 446, 207); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 432, 246); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 453, 212); // bP
+// ag (cr): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bz
+// Elapsed time: 184 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 593, 425); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 607, 399); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 607, 399); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 607, 399); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 594, 400); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 594, 400); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 591, 375); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 520, 415); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 496, 452); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 484, 468); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 484, 484); // bP
+// Elapsed time: 72 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 604, 470); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 609, 498); // bP
+// Elapsed time: 153 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 636, 326); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 456, 403); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 489, 449); // bP
+// Elapsed time: 50 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 317, 321); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 330, 359); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 359, 370); // bP
+// Elapsed time: 129 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// Elapsed time: 219 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 530, 370); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 684, 440); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 782, 520); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 777, 500); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 657, 500); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 384, 285); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 457, 311); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 474, 243); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 478, 305); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 507, 277); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 593, 293); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 587, 311); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1246, 374); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1042, 421); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1037, 404); // bP
+// Elapsed time: 81 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 465, 397); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 532, 431); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 414, 387); // bP
+// Elapsed time: 44 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 643, 491); // bP
+// Elapsed time: 36 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 607, 414); // bP
+// Elapsed time: 31 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1182, 429); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 698, 478); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 675, 520); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 686, 493); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 631, 534); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 657, 507); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 651, 524); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 238, 374); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 417, 518); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 627, 486); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 614, 510); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 627, 489); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 615, 514); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 483, 217); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 479, 252); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 471, 314); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 468, 506); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 646, 499); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 304, 490); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 629, 488); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 430, 496); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 344, 498); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 624, 490); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 432, 496); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 327, 499); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 309, 495); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 451, 493); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 645, 500); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 536, 494); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 532, 494); // bP
+// Elapsed time: 55 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 702, 170); // bP
+// Elapsed time: 21 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 702, 487); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 695, 470); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 694, 513); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 703, 486); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 693, 460); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 685, 490); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 413, 408); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 835, 433); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 802, 397); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cr): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 3 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 12:36:54 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 12:36:54 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 426, 406); // bP
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h
+// bz (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Cancel Process"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 414, 404); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 726, 401); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 835, 430); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 734, 431); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 749, 402); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 487, 491); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 309, 492); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 642, 498); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 613, 494); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 65, 127); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 26, 373); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 191, 220); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 313, 314); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 374, 347); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 398, 252); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1223, 363); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1234, 354); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1202, 342); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'c'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 50, 382); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 243, 447); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 320, 326); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 378, 318); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 544, 319); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 754, 359); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 764, 379); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1022, 311); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1144, 309); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1086, 328); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1077, 337); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 475, 345); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 675, 362); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 351, 344); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 337, 468); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1096, 471); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 350, 405); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 212, 338); // bP
+// Elapsed time: 130 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 484, 307); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 557, 354); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 266, 431); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1317, 432); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 332, 430); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 321, 498); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1248, 495); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1294, 498); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 766, 552); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// cD (cr): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 12:43:33 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 12:43:33 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 340, 489); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 708, 555); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 3,507 MB. GUI used memory: 118 MB. Current time: 12/16/21, 12:44:23 PM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 109 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 437, 482); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 691, 546); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 643, 557); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 638, 533); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 654, 557); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 646, 515); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 656, 569); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 661, 520); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 660, 552); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 653, 558); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 666, 531); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 667, 555); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 653, 525); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 647, 562); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 51 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 368, 492); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 378, 492); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am
+// TclEventType: FILE_SET_CHANGE
+// cD (cr): Launch Runs: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 3 seconds
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 12:47:00 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 22 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 740, 331); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 553, 524); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 563, 497); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 554, 524); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 828, 527); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 868, 490); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 838, 528); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 225, 525); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 459, 426); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 459, 426); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 474, 412); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 474, 412); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 474, 412); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 470, 416); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 467, 442); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 675, 348); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 366, 340); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1226, 348); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 125, 138); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cr): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cD
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 16 12:48:32 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 12:48:32 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 101 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 474, 336); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 690, 348); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 696, 373); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 47 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 622, 269); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 421, 277); // bP
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // K
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // K
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 367, 447); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 735, 441); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 693, 485); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 698, 470); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 693, 462); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 673, 447); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 669, 481); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 660, 513); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 657, 505); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 706, 318); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 712, 279); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 723, 250); // bP
+// Elapsed time: 23 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 332, 332); // bP
+// Elapsed time: 571 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 3,507 MB. GUI used memory: 115 MB. Current time: 12/16/21, 1:14:23 PM CST
+// Elapsed time: 1086 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 591, 424); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 677, 229); // bP
+// Elapsed time: 71 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 755, 435); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 155, 222); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1192, 293); // bP
+// Elapsed time: 28 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 552, 427); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 338, 343); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 516, 341); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 639, 357); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 678, 354); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 652, 353); // bP
+// Elapsed time: 28 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 707, 350); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 498, 337); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 656, 341); // bP
+// Elapsed time: 257 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 512, 338); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 319, 351); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 332, 346); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 522, 341); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 383, 340); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 630, 348); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 515, 343); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 355, 343); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 378, 345); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 349, 339); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 683, 336); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 13:27:18 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 13:27:18 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 102 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 508, 350); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 677, 333); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 50 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 714, 342); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 653, 342); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 132, 313); // bP
+// Elapsed time: 326 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 610, 322); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 427, 346); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 762, 335); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 444, 344); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 358, 343); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 401, 342); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 441, 342); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 324, 346); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 738, 344); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 318, 256); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 687, 302); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 789, 344); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 283, 426); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 712, 431); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 154, 380); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 153, 347); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 616, 343); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 718, 338); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 419, 338); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 512, 336); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 697, 351); // bP
+// Elapsed time: 40 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 551, 346); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 745, 334); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 750, 399); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 772, 368); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 780, 352); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 598, 348); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 775, 341); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 13:38:31 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 13:38:31 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 777, 336); // bP
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 594, 336); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 765, 328); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 762, 342); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 604, 341); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 337, 506); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 459, 499); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 642, 491); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 751, 494); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 126 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// Elapsed time: 13 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 584, 263); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1023, 289); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 993, 330); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 595, 317); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 685, 345); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 678, 311); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 683, 356); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 677, 319); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 672, 350); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 535, 280); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 621, 339); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 598, 254); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 744, 255); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 52, 257); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1225, 278); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'c'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 84, 321); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 74, 316); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 84, 305); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 80, 341); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 607, 316); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 62 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 523, 335); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 530, 344); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 510, 349); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 530, 345); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 645, 343); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 837, 340); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 761, 396); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 782, 374); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 717, 405); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 13:43:44 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 13:43:44 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,507 MB. GUI used memory: 115 MB. Current time: 12/16/21, 1:44:23 PM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 142 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// Elapsed time: 11 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 839, 346); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1047, 334); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 531, 344); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 613, 342); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 592, 371); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 272, 325); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 783, 302); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 766, 332); // bP
+// Elapsed time: 35 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 563, 301); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 822, 342); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 901, 307); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1211, 320); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1209, 346); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 397, 301); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 771, 321); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 602, 318); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 732, 318); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 574, 310); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 790, 313); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 465, 311); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 13:47:44 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 13:47:44 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 469, 306); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 560, 322); // bP
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 125 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1226, 337); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1213, 308); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1221, 335); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 776, 396); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bz
+// Elapsed time: 15 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 387, 270); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 523, 265); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 710, 275); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 572, 323); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 756, 393); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 811, 380); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 716, 353); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 719, 291); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 697, 310); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 593, 376); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 593, 373); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 493, 405); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 229, 75); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 392, 216); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 814, 459); // bP
+// Elapsed time: 34 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 537, 376); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 200, 242); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 420, 284); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 194, 253); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 194, 279); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 216, 262); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 223, 265); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 226, 286); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 484, 275); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 305, 341); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 348, 342); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 332, 342); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'c'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 569, 344); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 542, 280); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 590, 342); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 413, 345); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 359, 289); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 349, 283); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 363, 195); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 377, 203); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 349, 223); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 346, 221); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 481, 387); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 743, 321); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'c'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 783, 312); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 205, 341); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 308, 342); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 458, 342); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 841, 401); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'c'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 880, 413); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 212, 432); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 209, 431); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 320, 434); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 516, 428); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 467, 475); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 224, 402); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 158, 208); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 496, 229); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 580, 227); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 491, 228); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'c'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 226, 401); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 253, 280); // bP
+typeControlKey((HResource) null, "LAB6_slot_machine_sample_code.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 338, 273); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 516, 291); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 442, 434); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 467, 460); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 495, 499); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 500, 447); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 419, 519); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 412, 546); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 519, 384); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 499, 404); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 463, 391); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 468, 378); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 483, 354); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 462, 325); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 454, 295); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 447, 268); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 441, 289); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 414, 323); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 457, 331); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 455, 364); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 445, 412); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 479, 375); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 441, 277); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 431, 249); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 412, 222); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 432, 271); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 443, 261); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 458, 581); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 358, 442); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 356, 470); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 417, 348); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 217, 348); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 280, 432); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 349, 444); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 260, 67); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 281, 520); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 288, 164); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 498, 284); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 562, 351); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 568, 374); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 348, 408); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 441, 358); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 463, 431); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 467, 416); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 486, 384); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 487, 352); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 480, 312); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 415, 276); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 411, 249); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 416, 279); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 463, 313); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 460, 362); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 463, 396); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 368, 441); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 460, 420); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 482, 402); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 371, 315); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 234, 223); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 276, 222); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1074, 223); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 681, 295); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 608, 270); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 640, 251); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 777, 280); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 62, 253); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1083, 228); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 269, 225); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 274, 225); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 294, 253); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 464, 388); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 745, 400); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 311, 48); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 171, 71); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 301, 347); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 301, 288); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 553, 376); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 588, 414); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1233, 377); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 52, 346); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 350, 385); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 552, 374); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 343, 369); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 351, 369); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 324, 378); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 351, 374); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 743, 370); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 378, 342); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 693, 342); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 776, 373); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 783, 384); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 426, 349); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1187, 349); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 624, 379); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 626, 404); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 343, 408); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 343, 407); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 347, 424); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 541, 359); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 467, 463); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 558, 441); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 540, 413); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 537, 398); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 538, 374); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 539, 350); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 484, 327); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 478, 297); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 445, 265); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 449, 290); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 443, 315); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 466, 349); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 465, 375); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 462, 410); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 469, 441); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 466, 411); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 466, 377); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 465, 354); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 459, 382); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 454, 403); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 465, 430); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 463, 409); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 467, 379); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 474, 356); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 365, 291); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 385, 312); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 335, 258); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 236, 258); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 189, 438); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 250, 438); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 238, 441); // bP
+// Elapsed time: 35 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 436, 260); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 171, 338); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 338, 355); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 343, 373); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 357, 397); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 362, 381); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 348, 346); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 355, 366); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 232, 343); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 271, 343); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 239, 343); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 469, 376); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 473, 349); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 468, 378); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 437, 326); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 838, 448); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 634, 476); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 194, 316); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 230, 407); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 579, 363); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 91 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 244, 405); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 595, 407); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 987, 397); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1084, 415); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 216, 417); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 170, 224); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 130, 224); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 306, 225); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 168, 252); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 390, 346); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1020, 352); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 526, 450); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 540, 433); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 464, 398); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 349, 421); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 353, 407); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 382, 430); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 392, 455); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 395, 455); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 298, 207); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 308, 237); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 481, 337); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 495, 502); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 365, 334); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 353, 230); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 600, 229); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 753, 227); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1012, 227); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 603, 201); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 349, 186); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 588, 204); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 14:03:15 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 14:03:15 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h
+// bz (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Cancel Process"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Dec 16 14:03:27 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Failed: addNotify
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 214, 96); // bP
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'ebounce' not found [D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:43]. ]", 2, false); // ah
+// Elapsed time: 15 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 54, 194); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-6156] failed synthesizing module 'Top' [D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:7]. ]", 3, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details. ]", 4, false); // ah
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Dec 16 14:04:18 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 65 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Dec 16 14:05:24 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Elapsed time: 84 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cr):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,507 MB. GUI used memory: 109 MB. Current time: 12/16/21, 2:06:52 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,507 MB. GUI used memory: 110 MB. Current time: 12/16/21, 2:06:52 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1388 ms.
+// Tcl Message: refresh_design 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,507 MB. GUI used memory: 89 MB. Current time: 12/16/21, 2:06:54 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2735 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3598.254 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.212 . Memory (MB): peak = 3598.254 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.212 . Memory (MB): peak = 3598.254 ; gain = 0.000 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 3598.254 ; gain = 11.898 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1054 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Reloading"); // bz
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4); // A
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "down ; IN ;  ; A18 ; false ; 16 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 6, "default (LVCMOS18)", 6, false); // A
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list down]] 
+// Elapsed time: 19 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "down ; IN ;  ; A18 ; false ; 16 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 6, "A18", 3, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports down T17 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "up ; IN ;  ; B18 ; false ; 16 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 9, "default (LVCMOS18)", 6, false); // A
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list up]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "up ; IN ;  ; B18 ; false ; 16 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 9, "B18", 3, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports up W19 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+// A (cr): Out of Date Design: addNotify
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Out of Date Design"); // A
+// TclEventType: DESIGN_SAVE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: save_constraints 
+dismissDialog("Save Constraints"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Implementation is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Implementation is Out-of-date"); // A
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 14:07:52 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 123 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cons.xdc", 3); // m
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+selectCodeEditor("cons.xdc", 692, 397); // bP
+selectCodeEditor("cons.xdc", 753, 471); // bP
+selectCodeEditor("cons.xdc", 741, 501); // bP
+selectCodeEditor("cons.xdc", 707, 493); // bP
+selectCodeEditor("cons.xdc", 484, 432); // bP
+selectCodeEditor("cons.xdc", 685, 491); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cons.xdc", 320, 413); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 14:10:17 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 14:10:17 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("cons.xdc", 652, 419); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LAB6_slot_machine_sample_code.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // m
+// Device view-level: 0.0
+unMinimizeFrame(PAResourceOtoP.PAViews_IO_PORTS, "I/O Ports"); // az
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4); // A
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4); // A
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4, "Scalar ports (6)", 0, true, false, false, false, false, true); // A - Double Click - Node
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LAB6_slot_machine_sample_code.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,507 MB. GUI used memory: 124 MB. Current time: 12/16/21, 2:11:07 PM CST
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 108 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 281, 177); // q
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 410, 189); // q
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 513, 190); // q
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 749, 163); // q
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 780, 163); // q
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h
+// TclEventType: DESIGN_CLOSE
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 3,507 MB. GUI used memory: 95 MB. Current time: 12/16/21, 2:12:49 PM CST
+// Engine heap size: 3,507 MB. GUI used memory: 95 MB. Current time: 12/16/21, 2:12:49 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1082 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bz (cr):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bz
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 416, 474); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,507 MB. GUI used memory: 94 MB. Current time: 12/16/21, 2:12:55 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1482 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 3646.332 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.156 . Memory (MB): peak = 3646.332 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.157 . Memory (MB): peak = 3646.332 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3646.332 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dV' command handler elapsed time: 8 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1969 ms.
+selectTab((HResource) null, (HResource) null, "I/O Ports", 10); // aK
+dismissDialog("Open Implemented Design"); // bz
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LAB6_slot_machine_sample_code.v", 2); // m
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 496, 224); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 395, 326); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 381, 425); // bP
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // az
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is OP2/s_op_reg_4. Please evaluate your design. The cells in the loop are: OP2/v_cnt_new0_carry_i_7.. ]", 21, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "inst;-;OP2/v_cnt_new0_carry_i_7;-;;-;10;-;"); // ah
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 396, 179); // bP
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4); // A
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "down ; IN ;  ; A18 ; false ; 16 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 6, "default (LVCMOS18)", 6, false); // A
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list down]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "up ; IN ;  ; B18 ; false ; 16 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 9, "default (LVCMOS18)", 6, false); // A
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list up]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "up ; IN ;  ; B18 ; false ; 16 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 9, "B18", 3, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports up W19 
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "down ; IN ;  ; A18 ; false ; 16 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 6, "A18", 3, false); // A
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports down T17 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4, "Scalar ports (6)", 0, true); // A - Node
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+// A (cr): Out of Date Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Out of Date Design"); // A
+// TclEventType: DESIGN_SAVE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: save_constraints 
+dismissDialog("Save Constraints"); // bz
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h
+selectButton((HResource) null, "cons.xdc"); // h
+selectCodeEditor("cons.xdc", 232, 265); // bP
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+selectCodeEditor("cons.xdc", 633, 495); // bP
+selectCodeEditor("cons.xdc", 644, 494); // bP
+typeControlKey((HResource) null, "cons.xdc", 'c'); // bP
+selectCodeEditor("cons.xdc", 760, 497); // bP
+typeControlKey((HResource) null, "cons.xdc", 'v'); // bP
+typeControlKey((HResource) null, "cons.xdc", 'v'); // bP
+selectCodeEditor("cons.xdc", 349, 492); // bP
+selectCodeEditor("cons.xdc", 388, 529); // bP
+selectCodeEditor("cons.xdc", 560, 518); // bP
+selectCodeEditor("cons.xdc", 355, 553); // bP
+selectCodeEditor("cons.xdc", 389, 550); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cons.xdc", 523, 309); // bP
+selectCodeEditor("cons.xdc", 711, 189); // bP
+typeControlKey((HResource) null, "cons.xdc", 'c'); // bP
+selectCodeEditor("cons.xdc", 774, 192); // bP
+typeControlKey((HResource) null, "cons.xdc", 'v'); // bP
+typeControlKey((HResource) null, "cons.xdc", 'v'); // bP
+selectCodeEditor("cons.xdc", 625, 223); // bP
+selectCodeEditor("cons.xdc", 619, 225); // bP
+selectCodeEditor("cons.xdc", 798, 262); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LAB6_slot_machine_sample_code.v", 2); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 14:15:00 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 14:15:00 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cons.xdc", 3); // m
+selectCodeEditor("cons.xdc", 701, 277); // bP
+selectCodeEditor("cons.xdc", 689, 447); // bP
+selectCodeEditor("cons.xdc", 679, 412); // bP
+selectCodeEditor("cons.xdc", 665, 374); // bP
+selectCodeEditor("cons.xdc", 677, 349); // bP
+selectCodeEditor("cons.xdc", 676, 307); // bP
+selectCodeEditor("cons.xdc", 824, 403); // bP
+selectCodeEditor("cons.xdc", 824, 403); // bP
+selectCodeEditor("cons.xdc", 813, 396); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LAB6_slot_machine_sample_code.v", 2); // m
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 564, 259); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 110 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+// [GUI Memory]: 197 MB (+1105kb) [02:26:59]
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.. ]", 22, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is OP2/s_op_reg_4. Please evaluate your design. The cells in the loop are: OP2/v_cnt_new0_carry_i_7.. ]", 21, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is OP2/s_op_reg_4. Please evaluate your design. The cells in the loop are: OP2/v_cnt_new0_carry_i_7.. ]", 21, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is OP2/s_op_reg_4. Please evaluate your design. The cells in the loop are: OP2/v_cnt_new0_carry_i_7.. ]", 21, false, false, false, false, false, true); // ah - Double Click
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is OP2/s_op_reg_4. Please evaluate your design. The cells in the loop are: OP2/v_cnt_new0_carry_i_7.. ]", 21, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "net;-;OP2/s_op_reg_4;-;;-;10;-;"); // ah
+// Elapsed time: 21 seconds
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h
+// TclEventType: DESIGN_CLOSE
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 3,507 MB. GUI used memory: 103 MB. Current time: 12/16/21, 2:17:57 PM CST
+// Engine heap size: 3,507 MB. GUI used memory: 103 MB. Current time: 12/16/21, 2:17:57 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1231 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bz (cr):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bz
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 484, 342); // bP
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // az
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is OP2/s_op_reg_4. Please evaluate your design. The cells in the loop are: OP2/v_cnt_new0_carry_i_7.. ]", 21, false); // ah
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (LAB6_slot_machine_sample_code.v), BMG0 : blk_mem_gen_0 (blk_mem_gen_0.xci)]", 31); // D
+// A (cr): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Show IP Hierarchy"); // A
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Coefficient Files]", 33); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Coefficient Files]", 33); // D
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; write_bitstream ERROR ; NA ; NA ; NA ; NA ; NA ; 19.937162399291992 ; 0 ; 318 ; 118 ; 26.5 ; 0 ; 1 ; Thu Dec 16 14:15:57 CST 2021 ; 00:01:00 ; Vivado Implementation Defaults (Vivado Implementation 2020) ; Vivado Implementation Default Reports (Vivado Implementation 2020) ; xc7a35tcpg236-1 ; Default settings for Implementation.", 1, "write_bitstream ERROR", 2, false); // az
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.3s
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Netlist, Design Level, Combinatorial Loop, [DRC LUTLP-1] Combinatorial Loop Alert: 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is OP2/s_op_reg_4. Please evaluate your design. The cells in the loop are: OP2/v_cnt_new0_carry_i_7.. ]", 21, false, false, false, false, true, false); // ah - Popup Trigger
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // ah
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LAB6_slot_machine_sample_code.v", 1); // m
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 434, 377); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 169, 139); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 151, 135); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1060, 131); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 350, 467); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 549, 467); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 597, 410); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 375, 401); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 423, 512); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 257, 388); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 230, 377); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 253, 463); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 306, 392); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 324, 358); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 338, 368); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 356, 415); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 416, 384); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 421, 348); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 399, 344); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 489, 389); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 494, 406); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 468, 434); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 500, 417); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 487, 373); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 486, 332); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 267, 219); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 225, 218); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 473, 395); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 467, 374); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 437, 408); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 368, 499); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 375, 535); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 371, 557); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 329, 312); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 306, 284); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 319, 315); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 208, 404); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 683, 187); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 982, 181); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 198, 380); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 407, 193); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 347, 187); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 462, 337); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// ce (cr): Implementation is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_YES, "Yes"); // a
+// bz (cr):  Open Implemented Design : addNotify
+dismissDialog("Implementation is Out-of-date"); // ce
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,507 MB. GUI used memory: 135 MB. Current time: 12/16/21, 2:21:19 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1435 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 3702.938 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 3702.938 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 3702.938 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3702.938 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1031 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dV' command handler elapsed time: 9 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1981 ms.
+dismissDialog("Open Implemented Design"); // bz
+// [GUI Memory]: 210 MB (+3134kb) [02:31:24]
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4); // A
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4, "Scalar ports (6)", 0, true); // A - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4, "Scalar ports (6)", 0, true); // A - Node
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (6) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4); // A
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Dec 16 14:21:41 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 51 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Dec 16 14:22:34 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Elapsed time: 75 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 6 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 14:23:58 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// Elapsed time: 46 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 144, 34); // q
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 271, 130); // q
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 180, 108); // q
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 610, 116); // q
+// Elapsed time: 60 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LAB6_slot_machine_sample_code.v", 2); // m
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 979, 322); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 980, 322); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 928, 381); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 962, 339); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 987, 317); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 916, 327); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 983, 307); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 768, 400); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 771, 379); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 768, 397); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 768, 379); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 62, 495); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 14:26:37 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 14:26:37 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 137 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// Elapsed time: 12 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 590, 211); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1001, 116); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 83, 124); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1023, 139); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 1069, 226); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 271, 241); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 253, 231); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 213, 252); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 183, 131); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 49 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 172, 196); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 689, 197); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 646, 232); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 685, 212); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 244, 220); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 169, 195); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 624, 155); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 741, 266); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 579, 285); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 115, 288); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 102, 227); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 111, 271); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 399, 238); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 633, 226); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 542, 181); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 14:31:46 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 14:31:46 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 79 seconds
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 175, 132); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 381, 132); // bP
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 493, 205); // bP
+selectCodeEditor("LAB6_slot_machine_sample_code.v", 470, 258); // bP
+// TclEventType: RUN_STEP_COMPLETED
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h
+// aU (cr): Cancel Implementation: addNotify
+selectButton(PAResourceQtoS.StateMonitor_RESET_RUN, "Reset Run"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Cancel Implementation"); // aU
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 16 14:33:31 2021] Launched synth_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/synth_1/runme.log [Thu Dec 16 14:33:31 2021] Launched impl_1... Run output will be captured here: D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 104 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/LogicDesignExperiment/LAB06_1202/Slot_Machine_fpga/Slot_Machine_fpga.runs/impl_1/Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 3,507 MB. GUI used memory: 142 MB. Current time: 12/16/21, 2:51:24 PM CST
