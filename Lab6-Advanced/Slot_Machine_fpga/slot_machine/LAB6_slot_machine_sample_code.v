@@ -30,6 +30,7 @@ module Top(clk, rst, down, up, vgaRed, vgaBlue, vgaGreen, hsync, vsync);
 	   if(up_op == 1'b1) dir = 1'b1;
 	   else begin
 	       if(down_op == 1'b1) dir = 1'b0;
+	       else dir = dir;
 	   end
 	end
 	
