@@ -69,7 +69,7 @@ module PosCounter(clk, rst, echo, distance_count);
                     next_count = count;
                 end else begin
                     next_state = curr_state;
-                    next_count = (count > 20'd1000_000 ? count : count + 1'b1);
+                    next_count = (count > 20'd60_0000 ? count : count + 1'b1);
                 end 
             end
             S2: begin
