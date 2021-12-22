@@ -9,3 +9,6 @@
 - Datasets
   - [Horse or human dataset](https://www.tensorflow.org/datasets/catalog/horses_or_humans?hl=zh-tw)
   - [Rock paper scissor](https://www.tensorflow.org/datasets/catalog/rock_paper_scissors?hl=zh-tw)
+
+# How to erase fpga memory configurations
+- [Erase configs](https://support.xilinx.com/s/article/72140?language=en_US)
