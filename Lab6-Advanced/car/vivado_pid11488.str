@@ -1,0 +1,290 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 11488
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Dec 23 15:41:23 CST 2021
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ASUS
+User home directory: C:/Users/ASUS
+User working directory: D:/LogicDesignExperiment/share_repo/Lab6-Advanced/car
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/LogicDesignExperiment/share_repo/Lab6-Advanced/car/vivado.log
+Vivado journal file location: 	D:/LogicDesignExperiment/share_repo/Lab6-Advanced/car/vivado.jou
+Engine tmp dir: 	D:/LogicDesignExperiment/share_repo/Lab6-Advanced/car/.Xil/Vivado-11488-TACO-SUGO-KAWAII
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,019 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\LogicDesignExperiment\share_repo\Lab6-Advanced\car\car.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/LogicDesignExperiment/share_repo/Lab6-Advanced/car/car.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/LogicDesignExperiment/share_repo/Lab6-Advanced/car/car.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/LogicDesignExperiment/LAB06_1202/car' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,019 MB. GUI used memory: 55 MB. Current time: 12/23/21, 3:41:24 PM CST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 73 MB (+73789kb) [00:00:14]
+// [Engine Memory]: 1,019 MB (+916744kb) [00:00:14]
+// [GUI Memory]: 94 MB (+18706kb) [00:00:14]
+// [GUI Memory]: 111 MB (+12756kb) [00:00:15]
+// [GUI Memory]: 120 MB (+3691kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  3151 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Project name: car; location: D:/LogicDesignExperiment/share_repo/Lab6-Advanced/car; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 1016.520 ; gain = 0.000 
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (top.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (top.v), d0 : debounce (top.v)]", 2, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 131 MB (+4851kb) [00:00:32]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 10); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (top.v)]", 12); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (top.v), B : sonic_top (sonic.v)]", 18, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (top.v), B : sonic_top (sonic.v), u1 : TrigSignal (sonic.v)]", 20, false, false, false, false, false, true); // D - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (top.v), B : sonic_top (sonic.v)]", 18); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (top.v), m_right : motor (motor.v)]", 17, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (top.v), m_right : motor (motor.v)]", 17, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (top.v), C : tracker_sensor (tracker_sensor.v)]", 21, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top (top.v), C : tracker_sensor (tracker_sensor.v)]", 21, false, false, false, false, false, true); // D - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // m
+selectCodeEditor("top.v", 428, 302); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor.v", 3); // m
+selectCodeEditor("motor.v", 431, 321); // bP
+selectCodeEditor("motor.v", 428, 333); // bP
+selectCodeEditor("motor.v", 424, 363); // bP
+selectCodeEditor("motor.v", 565, 275); // bP
+selectCodeEditor("motor.v", 560, 257); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tracker_sensor.v", 4); // m
+selectCodeEditor("tracker_sensor.v", 544, 248); // bP
+selectCodeEditor("tracker_sensor.v", 602, 411); // bP
+// [GUI Memory]: 141 MB (+3260kb) [00:08:11]
+// Elapsed time: 459 seconds
+selectCodeEditor("tracker_sensor.v", 351, 180); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tracker_sensor.v", 4); // m
+// Elapsed time: 214 seconds
+selectCodeEditor("tracker_sensor.v", 703, 250); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sonic.v", 2); // m
+selectCodeEditor("sonic.v", 474, 291); // bP
+selectCodeEditor("sonic.v", 478, 246); // bP
+selectCodeEditor("sonic.v", 190, 254); // bP
+selectCodeEditor("sonic.v", 152, 255); // bP
+selectCodeEditor("sonic.v", 481, 402); // bP
+selectCodeEditor("sonic.v", 304, 257); // bP
+selectCodeEditor("sonic.v", 401, 400); // bP
+selectCodeEditor("sonic.v", 308, 158); // bP
+selectCodeEditor("sonic.v", 382, 278); // bP
+selectCodeEditor("sonic.v", 312, 253); // bP
+selectCodeEditor("sonic.v", 257, 253); // bP
+selectCodeEditor("sonic.v", 266, 253); // bP
+selectCodeEditor("sonic.v", 420, 358); // bP
+selectCodeEditor("sonic.v", 768, 338); // bP
+selectCodeEditor("sonic.v", 645, 349); // bP
+selectCodeEditor("sonic.v", 657, 369); // bP
+selectCodeEditor("sonic.v", 260, 338); // bP
+selectCodeEditor("sonic.v", 788, 311); // bP
+selectCodeEditor("sonic.v", 436, 361); // bP
+selectCodeEditor("sonic.v", 466, 350); // bP
+selectCodeEditor("sonic.v", 590, 348); // bP
+selectCodeEditor("sonic.v", 559, 452); // bP
+selectCodeEditor("sonic.v", 538, 507); // bP
+selectCodeEditor("sonic.v", 593, 390); // bP
+selectCodeEditor("sonic.v", 760, 376); // bP
+selectCodeEditor("sonic.v", 491, 415); // bP
+selectCodeEditor("sonic.v", 337, 403); // bP
+selectCodeEditor("sonic.v", 401, 382); // bP
+selectCodeEditor("sonic.v", 671, 419); // bP
+selectCodeEditor("sonic.v", 671, 452); // bP
+selectCodeEditor("sonic.v", 678, 440); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("sonic.v", 595, 436); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("sonic.v", 673, 529); // bP
+selectCodeEditor("sonic.v", 661, 524); // bP
+// Elapsed time: 63 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tracker_sensor.v", 4); // m
+selectCodeEditor("tracker_sensor.v", 538, 376); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // m
+selectCodeEditor("top.v", 855, 583); // bP
+selectCodeEditor("top.v", 579, 446); // bP
+selectCodeEditor("top.v", 588, 424); // bP
+selectCodeEditor("top.v", 596, 395); // bP
+selectCodeEditor("top.v", 612, 375); // bP
+selectCodeEditor("top.v", 590, 402); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 339, 472); // bP
+selectCodeEditor("top.v", 657, 303); // bP
+selectCodeEditor("top.v", 786, 267); // bP
+selectCodeEditor("top.v", 767, 293); // bP
+selectCodeEditor("top.v", 749, 225); // bP
+selectCodeEditor("top.v", 1038, 251); // bP
+selectCodeEditor("top.v", 1025, 295); // bP
+selectCodeEditor("top.v", 1007, 317); // bP
+selectCodeEditor("top.v", 1013, 293); // bP
+selectCodeEditor("top.v", 1033, 276); // bP
+selectCodeEditor("top.v", 1037, 251); // bP
+selectCodeEditor("top.v", 1032, 283); // bP
+selectCodeEditor("top.v", 841, 310); // bP
+selectCodeEditor("top.v", 525, 302); // bP
+selectCodeEditor("top.v", 538, 253); // bP
+selectCodeEditor("top.v", 539, 283); // bP
+selectCodeEditor("top.v", 861, 293); // bP
+selectCodeEditor("top.v", 1025, 275); // bP
+selectCodeEditor("top.v", 1027, 255); // bP
+selectCodeEditor("top.v", 1014, 286); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 1041, 263); // bP
+selectCodeEditor("top.v", 1043, 279); // bP
+selectCodeEditor("top.v", 1044, 251); // bP
+selectCodeEditor("top.v", 996, 297); // bP
+selectCodeEditor("top.v", 234, 283); // bP
+selectCodeEditor("top.v", 310, 267); // bP
+// Elapsed time: 59 seconds
+selectCodeEditor("top.v", 478, 460); // bP
+selectCodeEditor("top.v", 847, 368); // bP
+selectCodeEditor("top.v", 814, 428); // bP
+selectCodeEditor("top.v", 784, 469); // bP
+selectCodeEditor("top.v", 794, 425); // bP
+selectCodeEditor("top.v", 787, 406); // bP
+selectCodeEditor("top.v", 794, 380); // bP
+selectCodeEditor("top.v", 778, 405); // bP
+selectCodeEditor("top.v", 788, 432); // bP
+selectCodeEditor("top.v", 765, 467); // bP
+selectCodeEditor("top.v", 755, 426); // bP
+selectCodeEditor("top.v", 761, 413); // bP
+selectCodeEditor("top.v", 758, 376); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tracker_sensor.v", 4); // m
+selectCodeEditor("tracker_sensor.v", 541, 313); // bP
+selectCodeEditor("tracker_sensor.v", 639, 342); // bP
+selectCodeEditor("tracker_sensor.v", 408, 316); // bP
+selectCodeEditor("tracker_sensor.v", 625, 362); // bP
+selectCodeEditor("tracker_sensor.v", 651, 404); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("tracker_sensor.v", 683, 516); // bP
+selectCodeEditor("tracker_sensor.v", 647, 585); // bP
+selectCodeEditor("tracker_sensor.v", 607, 533); // bP
+selectCodeEditor("tracker_sensor.v", 591, 554); // bP
+selectCodeEditor("tracker_sensor.v", 583, 585); // bP
+selectCodeEditor("tracker_sensor.v", 586, 602); // bP
+selectCodeEditor("tracker_sensor.v", 643, 631); // bP
+selectCodeEditor("tracker_sensor.v", 653, 607); // bP
+selectCodeEditor("tracker_sensor.v", 661, 572); // bP
+selectCodeEditor("tracker_sensor.v", 668, 544); // bP
+selectCodeEditor("tracker_sensor.v", 629, 527); // bP
+selectCodeEditor("tracker_sensor.v", 875, 481); // bP
+selectCodeEditor("tracker_sensor.v", 777, 455); // bP
+selectCodeEditor("tracker_sensor.v", 751, 441); // bP
+selectCodeEditor("tracker_sensor.v", 764, 420); // bP
+selectCodeEditor("tracker_sensor.v", 788, 402); // bP
+selectCodeEditor("tracker_sensor.v", 818, 390); // bP
+selectCodeEditor("tracker_sensor.v", 832, 372); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,019 MB. GUI used memory: 79 MB. Current time: 12/23/21, 4:11:25 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,019 MB. GUI used memory: 70 MB. Current time: 12/23/21, 4:43:43 PM CST
+// Elapsed time: 2749 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // m
+// Elapsed time: 145 seconds
+selectCodeEditor("top.v", 405, 296); // bP
+// Elapsed time: 321 seconds
+selectCodeEditor("top.v", 557, 392); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "motor.v", 3); // m
+selectCodeEditor("motor.v", 570, 438); // bP
+selectCodeEditor("motor.v", 350, 355); // bP
+// Elapsed time: 90 seconds
+selectCodeEditor("motor.v", 224, 228); // bP
+typeControlKey((HResource) null, "motor.v", 'c'); // bP
+// Elapsed time: 446 seconds
+selectCodeEditor("motor.v", 665, 400); // bP
+closeMainWindow("car - [D:/LogicDesignExperiment/share_repo/Lab6-Advanced/car/car.xpr] - Vivado 2020.2"); // cr
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+// A (cr): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Exit Vivado"); // A
+selectCodeEditor("motor.v", 617, 456); // bP
