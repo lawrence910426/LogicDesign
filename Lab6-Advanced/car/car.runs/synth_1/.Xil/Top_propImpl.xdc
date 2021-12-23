@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/LogicDesignExperiment/LAB06_1202/car/car.srcs/constrs_1/new/contraints.xdc rfile:../../../car.srcs/constrs_1/new/contraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/home/github/LogicDesign/Lab6-Advanced/car/car.srcs/constrs_1/new/contraints.xdc rfile:../../../car.srcs/constrs_1/new/contraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN P17 [get_ports {left[1]}]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

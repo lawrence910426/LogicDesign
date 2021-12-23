@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Dec 20 01:34:34 2021
-| Host         : TACO-SUGO-KAWAII running 64-bit major release  (build 9200)
+| Date         : Thu Dec 23 15:42:22 2021
+| Host         : DESKTOP-P0B4VES running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
 | Device       : xc7a35t
@@ -58,8 +58,8 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              11 |            6 |
-| No           | No                    | Yes                    |              52 |           15 |
+| No           | No                    | No                     |              11 |            7 |
+| No           | No                    | Yes                    |              52 |           16 |
 | No           | Yes                   | No                     |               8 |            3 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               1 |            1 |
@@ -77,9 +77,9 @@ Table of Contents
 |  clk_IBUF_BUFG | B/u1/trig0             | d0/rst_pb             |                1 |              1 |         1.00 |
 |  B/clk1/CLK    |                        |                       |                2 |              3 |         1.50 |
 |  clk_IBUF_BUFG |                        | B/clk1/cnt[6]_i_1_n_0 |                2 |              7 |         3.50 |
-|  clk_IBUF_BUFG |                        |                       |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG |                        |                       |                5 |              8 |         1.60 |
 |  B/clk1/CLK    | B/u2/count[19]_i_1_n_0 | d0/rst_pb             |                4 |             20 |         5.00 |
-|  clk_IBUF_BUFG |                        | d0/rst_pb             |               15 |             52 |         3.47 |
+|  clk_IBUF_BUFG |                        | d0/rst_pb             |               16 |             52 |         3.25 |
 +----------------+------------------------+-----------------------+------------------+----------------+--------------+
 
 

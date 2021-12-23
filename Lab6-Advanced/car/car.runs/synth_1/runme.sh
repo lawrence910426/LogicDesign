@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/LogicDesignExperiment/LAB06_1202/car/car.runs/synth_1'
+HD_PWD='C:/home/github/LogicDesign/Lab6-Advanced/car/car.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Dec 20 01:33:56 2021
-| Host         : TACO-SUGO-KAWAII running 64-bit major release  (build 9200)
+| Date         : Thu Dec 23 15:41:37 2021
+| Host         : DESKTOP-P0B4VES running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
 | Design       : Top
 | Device       : 7a35tcpg236-1
@@ -150,13 +150,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  114 |                 LUT |
+| LUT6     |  116 |                 LUT |
 | LUT2     |  114 |                 LUT |
-| LUT4     |   86 |                 LUT |
-| LUT3     |   79 |                 LUT |
+| LUT4     |   84 |                 LUT |
+| LUT3     |   80 |                 LUT |
 | CARRY4   |   67 |          CarryLogic |
 | FDCE     |   53 |        Flop & Latch |
-| LUT5     |   47 |                 LUT |
+| LUT5     |   46 |                 LUT |
 | FDRE     |   39 |        Flop & Latch |
 | OBUF     |   20 |                  IO |
 | LUT1     |    8 |                 LUT |

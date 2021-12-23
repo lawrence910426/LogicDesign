@@ -2,12 +2,12 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Dec 20 01:33:14 2021
-# Process ID: 19212
-# Current directory: D:/LogicDesignExperiment/LAB06_1202/car/car.runs/synth_1
+# Start of session at: Thu Dec 23 15:40:39 2021
+# Process ID: 7244
+# Current directory: C:/home/github/LogicDesign/Lab6-Advanced/car/car.runs/synth_1
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
-# Log file: D:/LogicDesignExperiment/LAB06_1202/car/car.runs/synth_1/Top.vds
-# Journal file: D:/LogicDesignExperiment/LAB06_1202/car/car.runs/synth_1\vivado.jou
+# Log file: C:/home/github/LogicDesign/Lab6-Advanced/car/car.runs/synth_1/Top.vds
+# Journal file: C:/home/github/LogicDesign/Lab6-Advanced/car/car.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Top.tcl -notrace
 Command: synth_design -top Top -part xc7a35tcpg236-1
@@ -17,87 +17,87 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13924
+INFO: [Synth 8-7075] Helper process launched with PID 9160
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1014.895 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.969 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v:1]
-INFO: [Synth 8-6157] synthesizing module 'debounce' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'debounce' (1#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v:71]
-INFO: [Synth 8-6157] synthesizing module 'onepulse' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v:84]
-INFO: [Synth 8-6155] done synthesizing module 'onepulse' (2#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v:84]
-INFO: [Synth 8-6157] synthesizing module 'decoder' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v:97]
-INFO: [Synth 8-6155] done synthesizing module 'decoder' (3#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v:97]
-WARNING: [Synth 8-689] width (32) of port connection 'in' does not match port width (3) of module 'decoder' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v:27]
-INFO: [Synth 8-6157] synthesizing module 'seven_segment' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v:114]
-INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (4#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v:114]
-INFO: [Synth 8-6157] synthesizing module 'motor' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/motor.v:1]
-INFO: [Synth 8-6157] synthesizing module 'motor_pwm' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/motor.v:55]
-INFO: [Synth 8-6157] synthesizing module 'PWM_gen' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/motor.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'PWM_gen' (5#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/motor.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'motor_pwm' (6#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/motor.v:55]
-INFO: [Synth 8-226] default block is never used [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/motor.v:27]
-INFO: [Synth 8-6155] done synthesizing module 'motor' (7#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/motor.v:1]
-INFO: [Synth 8-6157] synthesizing module 'sonic_top' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/sonic.v:1]
-INFO: [Synth 8-6157] synthesizing module 'div' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/sonic.v:123]
-INFO: [Synth 8-6155] done synthesizing module 'div' (8#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/sonic.v:123]
-INFO: [Synth 8-6157] synthesizing module 'TrigSignal' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/sonic.v:93]
-INFO: [Synth 8-6155] done synthesizing module 'TrigSignal' (9#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/sonic.v:93]
-INFO: [Synth 8-6157] synthesizing module 'PosCounter' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/sonic.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (1#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v:71]
+INFO: [Synth 8-6157] synthesizing module 'onepulse' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'onepulse' (2#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v:84]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (3#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v:97]
+WARNING: [Synth 8-689] width (32) of port connection 'in' does not match port width (3) of module 'decoder' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v:27]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (4#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v:114]
+INFO: [Synth 8-6157] synthesizing module 'motor' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/motor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'motor_pwm' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/motor.v:55]
+INFO: [Synth 8-6157] synthesizing module 'PWM_gen' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/motor.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'PWM_gen' (5#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/motor.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'motor_pwm' (6#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/motor.v:55]
+INFO: [Synth 8-226] default block is never used [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/motor.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'motor' (7#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/motor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sonic_top' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/sonic.v:1]
+INFO: [Synth 8-6157] synthesizing module 'div' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/sonic.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'div' (8#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/sonic.v:123]
+INFO: [Synth 8-6157] synthesizing module 'TrigSignal' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/sonic.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'TrigSignal' (9#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/sonic.v:93]
+INFO: [Synth 8-6157] synthesizing module 'PosCounter' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/sonic.v:22]
 	Parameter S0 bound to: 2'b00 
 	Parameter S1 bound to: 2'b01 
 	Parameter S2 bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'PosCounter' (10#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/sonic.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'sonic_top' (11#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/sonic.v:1]
-INFO: [Synth 8-6157] synthesizing module 'tracker_sensor' [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/tracker_sensor.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'tracker_sensor' (12#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/tracker_sensor.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'Top' (13#1) [D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PosCounter' (10#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/sonic.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sonic_top' (11#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/sonic.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tracker_sensor' [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/tracker_sensor.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'tracker_sensor' (12#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/tracker_sensor.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (13#1) [C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v:1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.895 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.969 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.895 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.969 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.895 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.969 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1014.895 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1015.969 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/LogicDesignExperiment/LAB06_1202/car/car.srcs/constrs_1/new/contraints.xdc]
-Finished Parsing XDC File [D:/LogicDesignExperiment/LAB06_1202/car/car.srcs/constrs_1/new/contraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/LogicDesignExperiment/LAB06_1202/car/car.srcs/constrs_1/new/contraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Parsing XDC File [C:/home/github/LogicDesign/Lab6-Advanced/car/car.srcs/constrs_1/new/contraints.xdc]
+Finished Parsing XDC File [C:/home/github/LogicDesign/Lab6-Advanced/car/car.srcs/constrs_1/new/contraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/home/github/LogicDesign/Lab6-Advanced/car/car.srcs/constrs_1/new/contraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1040.305 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1040.309 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1040.305 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1040.309 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1040.305 ; gain = 25.410
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1040.309 ; gain = 24.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1040.305 ; gain = 25.410
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1040.309 ; gain = 24.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1040.305 ; gain = 25.410
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1040.309 ; gain = 24.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1040.305 ; gain = 25.410
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1040.309 ; gain = 24.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -149,7 +149,7 @@ DSP Report: Generating DSP B/u2/distance_count0, operation Mode is: A2*(B:0x64).
 DSP Report: register B/u2/distance_register_reg is absorbed into DSP B/u2/distance_count0.
 DSP Report: operator B/u2/distance_count0 is absorbed into DSP B/u2/distance_count0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1040.305 ; gain = 25.410
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1040.309 ; gain = 24.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -172,19 +172,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1069.855 ; gain = 54.961
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1069.727 ; gain = 53.758
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1070.301 ; gain = 55.406
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1070.098 ; gain = 54.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1089.398 ; gain = 74.504
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1089.184 ; gain = 73.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -202,37 +202,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1098.449 ; gain = 83.555
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1098.262 ; gain = 82.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1098.449 ; gain = 83.555
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1098.262 ; gain = 82.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1098.449 ; gain = 83.555
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1098.262 ; gain = 82.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1098.449 ; gain = 83.555
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1098.262 ; gain = 82.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1098.449 ; gain = 83.555
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1098.262 ; gain = 82.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1098.449 ; gain = 83.555
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1098.262 ; gain = 82.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -253,10 +253,10 @@ Report Cell Usage:
 |3     |DSP48E1 |     3|
 |4     |LUT1    |     8|
 |5     |LUT2    |   114|
-|6     |LUT3    |    79|
-|7     |LUT4    |    86|
-|8     |LUT5    |    47|
-|9     |LUT6    |   114|
+|6     |LUT3    |    80|
+|7     |LUT4    |    84|
+|8     |LUT5    |    46|
+|9     |LUT6    |   116|
 |10    |FDCE    |    53|
 |11    |FDRE    |    39|
 |12    |IBUF    |     6|
@@ -264,25 +264,25 @@ Report Cell Usage:
 |14    |OBUFT   |     2|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1098.449 ; gain = 83.555
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1098.262 ; gain = 82.293
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1098.449 ; gain = 58.145
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1098.449 ; gain = 83.555
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 1098.262 ; gain = 57.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1098.262 ; gain = 82.293
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1109.500 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1110.320 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1109.500 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1110.320 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 42 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1109.500 ; gain = 94.605
-INFO: [Common 17-1381] The checkpoint 'D:/LogicDesignExperiment/LAB06_1202/car/car.runs/synth_1/Top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 1110.320 ; gain = 94.352
+INFO: [Common 17-1381] The checkpoint 'C:/home/github/LogicDesign/Lab6-Advanced/car/car.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 20 01:33:56 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 23 15:41:37 2021...

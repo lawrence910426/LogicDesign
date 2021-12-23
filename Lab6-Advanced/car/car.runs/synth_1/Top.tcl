@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/LogicDesignExperiment/LAB06_1202/car/car.runs/synth_1/Top.tcl"
+  variable script "C:/home/github/LogicDesign/Lab6-Advanced/car/car.runs/synth_1/Top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
 set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
@@ -78,19 +77,19 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/LogicDesignExperiment/LAB06_1202/car/car.cache/wt [current_project]
-set_property parent.project_path D:/LogicDesignExperiment/LAB06_1202/car/car.xpr [current_project]
+set_property webtalk.parent_dir C:/home/github/LogicDesign/Lab6-Advanced/car/car.cache/wt [current_project]
+set_property parent.project_path C:/home/github/LogicDesign/Lab6-Advanced/car/car.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/LogicDesignExperiment/LAB06_1202/car/car.cache/ip [current_project]
+set_property ip_output_repo c:/home/github/LogicDesign/Lab6-Advanced/car/car.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/LogicDesignExperiment/LAB06_1202/car/sample_code/motor.v
-  D:/LogicDesignExperiment/LAB06_1202/car/sample_code/sonic.v
-  D:/LogicDesignExperiment/LAB06_1202/car/sample_code/tracker_sensor.v
-  D:/LogicDesignExperiment/LAB06_1202/car/sample_code/top.v
+  C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/motor.v
+  C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/sonic.v
+  C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/tracker_sensor.v
+  C:/home/github/LogicDesign/Lab6-Advanced/car/sample_code/top.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -101,8 +100,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/LogicDesignExperiment/LAB06_1202/car/car.srcs/constrs_1/new/contraints.xdc
-set_property used_in_implementation false [get_files D:/LogicDesignExperiment/LAB06_1202/car/car.srcs/constrs_1/new/contraints.xdc]
+read_xdc C:/home/github/LogicDesign/Lab6-Advanced/car/car.srcs/constrs_1/new/contraints.xdc
+set_property used_in_implementation false [get_files C:/home/github/LogicDesign/Lab6-Advanced/car/car.srcs/constrs_1/new/contraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
