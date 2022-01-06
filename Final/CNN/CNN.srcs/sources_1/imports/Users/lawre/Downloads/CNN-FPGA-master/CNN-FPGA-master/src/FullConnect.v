@@ -50,7 +50,8 @@ module FullConnect#(
                 Mult#(BITWIDTH) mult(
                     data[(j + 1) * BITWIDTH - 1:j * BITWIDTH], 
                     weight[(i * LENGTH + j) * BITWIDTH + BITWIDTH - 1 : (i * LENGTH + j) * BITWIDTH], 
-                    out[(j + 1) * BITWIDTH:j * BITWIDTH][i]
+                    clk,
+                    out[i][(j + 1) * BITWIDTH:j * BITWIDTH]
                 );
             end
         end

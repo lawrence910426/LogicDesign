@@ -38,7 +38,7 @@ module Conv2d #(
     parameter integer PADDINGENABLE = 0
 )(
     input [BITWIDTH * DATAWIDTH * DATAHEIGHT * DATACHANNEL - 1 : 0]data,
-    input [BITWIDTH * FILTERHEIGHT * FILTERWIDTH * DATACHANNEL * FILTERBATCH - 1 : 0]filterWeight,
+    input [BITWIDTH * FILTERHEIGHT * FILTERWIDTH * DATACHANNEL * FILTERBATCH - 1 : 0] filterWeight,
     input [BITWIDTH * FILTERBATCH - 1 : 0] filterBias,
     input clk,
     output [
@@ -111,8 +111,8 @@ module Conv2d #(
             for(j = FILTERHEIGHT / 2; j < (PADDINGENABLE == 1 ? DATAHEIGHT + FILTERHEIGHT - 1 - FILTERHEIGHT / 2: DATAHEIGHT - FILTERHEIGHT / 2); j = j + STRIDEHEIGHT) begin
                 for(k = FILTERWIDTH / 2; k < (PADDINGENABLE == 1 ? DATAWIDTH + FILTERWIDTH - 1 - FILTERWIDTH / 2 : DATAWIDTH - FILTERWIDTH / 2); k = k + STRIDEWIDTH) begin
                     for(i = 0; i < DATACHANNEL; i = i + 1) begin
-                        for(m = j - FILTERHEIGHT / 2; m <= j + FILTERHEIGHT / 2; m = m + 1) begin
-                            for(n = k - FILTERWIDTH / 2; n <= k + FILTERWIDTH / 2; n = n + 1) begin
+                        for(m = j - FILTERHEIGHT / 2; m < j + FILTERHEIGHT / 2; m = m + 1) begin
+                            for(n = k - FILTERWIDTH / 2; n < k + FILTERWIDTH / 2; n = n + 1) begin
                                 assign paramArray[
                                     (j - FILTERHEIGHT / 2) / STRIDEHEIGHT
                                 ][
@@ -153,23 +153,25 @@ module Conv2d #(
                                         PADDINGENABLE == 1 ? DATAHEIGHT / STRIDEHEIGHT: (DATAHEIGHT - FILTERHEIGHT + 1) / STRIDEHEIGHT
                                     ) * (
                                         PADDINGENABLE == 1 ? DATAWIDTH / STRIDEWIDTH : (DATAWIDTH - FILTERWIDTH + 1) / STRIDEWIDTH
-                                    ) * BITWIDTH * 2 + 
+                                    ) * BITWIDTH + 
                                     m * (
                                         PADDINGENABLE == 1 ? DATAWIDTH / STRIDEWIDTH : (DATAWIDTH - FILTERWIDTH + 1) / STRIDEWIDTH
-                                    ) * BITWIDTH * 2 + n
-                                ) * 2 * BITWIDTH + 2 * BITWIDTH - 1
+                                    ) * BITWIDTH + 
+                                    n * BITWIDTH
+                                ) + BITWIDTH - 1
                                 :
                                 (
                                     i * (
                                         PADDINGENABLE == 1 ? DATAHEIGHT / STRIDEHEIGHT: (DATAHEIGHT - FILTERHEIGHT + 1) / STRIDEHEIGHT
                                     ) * (
                                         PADDINGENABLE == 1 ? DATAWIDTH / STRIDEWIDTH : (DATAWIDTH - FILTERWIDTH + 1) / STRIDEWIDTH
-                                    ) * BITWIDTH * 2 + 
+                                    ) * BITWIDTH + 
                                     m * (
                                         PADDINGENABLE == 1 ? DATAWIDTH / STRIDEWIDTH : (DATAWIDTH - FILTERWIDTH + 1) / STRIDEWIDTH
-                                    ) * BITWIDTH * 2 + 
-                                    n * 2 * BITWIDTH
-                                )]
+                                    ) * BITWIDTH + 
+                                    n * BITWIDTH
+                                )
+                            ]
                         );
                 end
             end            

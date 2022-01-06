@@ -55,8 +55,8 @@ module Max_pool#(
         for(i = 0; i < DATACHANNEL; i = i + 1) begin
             for(j = 0; j < DATAHEIGHT / KHEIGHT; j = j + 1) begin
                 for(k = 0; k < DATAWIDTH / KWIDTH; k = k + 1) begin
-                    for(m = j * 2; m < j * 2 + KHEIGHT; m = m + 1) begin
-                        for(n = k * 2; n < k * 2 + KWIDTH; n = n + 1) begin
+                    for(m = j * KHEIGHT; m < j * KHEIGHT + KHEIGHT; m = m + 1) begin
+                        for(n = k * KWIDTH; n < k * KWIDTH + KWIDTH; n = n + 1) begin
                             assign paramArray[i][j][k][
                                 ((m - j * 2) * KWIDTH + n - k * 2) * BITWIDTH + BITWIDTH - 1:
                                 ((m - j * 2) * KWIDTH + n - k * 2) * BITWIDTH
