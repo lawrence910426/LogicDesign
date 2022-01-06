@@ -12,3 +12,10 @@
 
 # How to erase fpga memory configurations
 - [Erase configs](https://support.xilinx.com/s/article/72140?language=en_US)
+
+# 緊急須知
+- 位元深度
+- 尺寸
+- Output 是什麼東西（每個位元組對應到鏡頭上的哪個座標）
+- Emergency !!!
+- Deadline: 1/6 midnight
