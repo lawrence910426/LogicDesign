@@ -15,7 +15,7 @@
 
 # 緊急須知
 - 位元深度
-- 尺寸
-- Output 是什麼東西（每個位元組對應到鏡頭上的哪個座標）
+- 尺寸：640X480
+- Output 是什麼東西（每個位元組對應到鏡頭上的哪個座標）：YUV/YCbCr4:2:2、RGB565/555/444、GRB4:2:2、Raw RGB Data
 - Emergency !!!
 - Deadline: 1/6 midnight
