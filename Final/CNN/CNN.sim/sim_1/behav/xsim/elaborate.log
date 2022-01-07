@@ -1,0 +1,19 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 705416086e474affb6bb262bfe90511d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CNN_T_behav xil_defaultlib.CNN_T xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 15000 differs from formal bit length 1 for port 'clk' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/CNN_T.v:31]
+WARNING: [VRFC 10-3091] actual bit length 36864 differs from formal bit length 36875 for port 'Model_Output' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:56]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 96 for port 'data' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:62]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'c' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:44]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'a' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:54]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'a' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:55]
+WARNING: [VRFC 10-3091] actual bit length 36865 differs from formal bit length 36864 for port 'result' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:42]
+WARNING: [VRFC 10-3091] actual bit length 16000 differs from formal bit length 16011 for port 'Model_Output' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:67]
+WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 32 for port 'result' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v:17]
+WARNING: [VRFC 10-3091] actual bit length 128000 differs from formal bit length 16000 for port 'weight' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v:18]
+WARNING: [VRFC 10-3091] actual bit length 256 differs from formal bit length 16000 for port 'data' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v:26]
+Completed static elaboration
+Starting simulation data flow analysis
