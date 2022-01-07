@@ -1,0 +1,24 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/CNN_T.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/SumTree.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD_PIPELINE.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL_PIPELINE.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Mult.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v
+/users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v

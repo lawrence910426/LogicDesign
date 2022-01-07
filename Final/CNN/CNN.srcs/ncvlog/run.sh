@@ -1,0 +1,1 @@
+ncverilog +nc64bit ../sim_1/new/CNN_T.v ../sources_1/new/* ../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/* ../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/*

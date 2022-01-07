@@ -1,0 +1,98 @@
+ncverilog(64): 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Jan 07, 2022 at 20:22:17 CST
+ncverilog
+	+nc64bit
+	../sim_1/new/CNN_T.v
+	../sources_1/new/CNN.v
+	../sources_1/new/Convolution_Layer.v
+	../sources_1/new/Dense_Layer.v
+	../sources_1/new/SumTree.v
+	../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v
+	../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD_PIPELINE.v
+	../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v
+	../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL_PIPELINE.v
+	../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v
+	../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v
+	../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v
+	../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v
+	../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v
+	../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v
+	../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v
+	../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v
+	../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Mult.v
+	../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v
+	../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v
+file: ../sim_1/new/CNN_T.v
+	module worklib.CNN_T:v
+		errors: 0, warnings: 0
+file: ../sources_1/new/CNN.v
+	module worklib.CNN:v
+		errors: 0, warnings: 0
+file: ../sources_1/new/Convolution_Layer.v
+	module worklib.Convolution_Layer:v
+		errors: 0, warnings: 0
+file: ../sources_1/new/Dense_Layer.v
+	module worklib.Dense_Layer:v
+		errors: 0, warnings: 0
+file: ../sources_1/new/SumTree.v
+	module worklib.SumTree:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v
+	module worklib.ENCODER_64:v
+		errors: 0, warnings: 0
+	module worklib.ENCODER_32:v
+		errors: 0, warnings: 0
+	module worklib.ENCODER_16:v
+		errors: 0, warnings: 0
+	module worklib.ENCODER_8:v
+		errors: 0, warnings: 0
+	module worklib.ENCODER_4:v
+		errors: 0, warnings: 0
+	module worklib.ENCODER_2:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD_PIPELINE.v
+	module worklib.FLOAT32_ADD_PIPELINE:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v
+	module worklib.FLOAT32_ADD:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL_PIPELINE.v
+	module worklib.FLOAT32_MUL_PIPELINE:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v
+	module worklib.FLOAT32_MUL:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v
+	module worklib.FLOAT_TO_INT:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v
+	module worklib.INT_TO_FLOAT:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v
+	module worklib.Conv2d:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v
+	module worklib.ConvKernel:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v
+	module worklib.FullConnect:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v
+	module worklib.Max_pool:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v
+	module worklib.Max:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Mult.v
+	module worklib.Mult:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v
+	module worklib.Relu_activation:v
+		errors: 0, warnings: 0
+file: ../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v
+	module worklib.Relu:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncverilog: *E,ELBERR: Error during elaboration (status 245), exiting.
+TOOL:	ncverilog	15.20-s039: Exiting on Jan 07, 2022 at 20:22:52 CST  (total: 00:00:35)

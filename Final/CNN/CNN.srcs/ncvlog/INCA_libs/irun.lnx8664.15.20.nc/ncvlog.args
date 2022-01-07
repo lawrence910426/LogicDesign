@@ -1,0 +1,36 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+../sim_1/new/CNN_T.v
+../sources_1/new/CNN.v
+../sources_1/new/Convolution_Layer.v
+../sources_1/new/Dense_Layer.v
+../sources_1/new/SumTree.v
+../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v
+../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD_PIPELINE.v
+../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v
+../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL_PIPELINE.v
+../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v
+../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v
+../sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v
+../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v
+../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v
+../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v
+../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v
+../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v
+../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Mult.v
+../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v
+../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

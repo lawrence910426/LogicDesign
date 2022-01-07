@@ -33,31 +33,21 @@ module SumTree#(
 );
 
     // Wasted 1 wire. SumTree[0]
-    wire [BITWIDTH - 1:0] SumTree [VALUES_POWER - 1:0];
+    wire [BITWIDTH - 1:0] SumTree [VALUES_POWER * 2 - 1:0];
     generate
         genvar i;
+	for(i = 0; i < VALUES; i = i + 1) begin
+		assign SumTree[i + VALUES_POWER] = data[i * BITWIDTH + BITWIDTH - 1:i * BITWIDTH];
+	end
+
+	for(i = VALUES; i < VALUES_POWER; i = i + 1) begin
+		assign SumTree[i + VALUES_POWER] = 32'd0;
+	end
+
         for(i = 1; i < VALUES_POWER; i = i + 1) begin
             FLOAT32_ADD_PIPELINE finalize (
-                .a(
-                    0 <= i * 2 - VALUES_POWER && i * 2 - VALUES_POWER < VALUES ? 
-                        data[
-                            (i * 2 - VALUES_POWER + 1) * BITWIDTH - 1:
-                            (i * 2 - VALUES_POWER) * BITWIDTH
-                        ] :
-                    0 <= i * 2 - VALUES_POWER && VALUES <= i * 2 - VALUES_POWER ? 32'b0000_0000_0000_0000_0000_0000_0000_0000 :
-                    SumTree[i * 2]
-                ), 
-                .b(
-                    0 <= i * 2 + 1 - VALUES_POWER && i * 2 + 1 - VALUES_POWER < VALUES ? 
-                        data[
-                            (i * 2 + 1 - VALUES_POWER + 1) * BITWIDTH - 1:
-                            (i * 2 + 1 - VALUES_POWER) * BITWIDTH
-                        ] :
-                    0 <= i * 2 + 1 - VALUES_POWER && VALUES <= i * 2 + 1 - VALUES_POWER ? 32'b0000_0000_0000_0000_0000_0000_0000_0000 :
-                    SumTree[i * 2 + 1]
-                ),
-                .out(SumTree[i]),
-                .clk(clk)
+                .a(SumTree[i * 2]), .b(SumTree[i * 2 + 1]),
+                .out(SumTree[i]), .clk(clk)
             );
         end
     endgenerate
