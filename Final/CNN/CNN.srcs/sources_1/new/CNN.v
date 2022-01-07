@@ -50,7 +50,11 @@ module CNN(
     // 1st Convolution
     wire [32 * 12 * 12 * 8 - 1:0] conv_1_out;
     Convolution_Layer #(
-        25, 25, 3, 4, 8
+        .DATAWIDTH(25),
+        .DATAHEIGHT(25),
+        .DATACHANNEL(3),
+        .DATACHANNEL_POWER(4),
+        .FILTERBATCH(8)
     ) conv_1 (
         .clk(clk),
         .Model_Input(Model_Input), .Model_Output(conv_1_out),
@@ -61,7 +65,11 @@ module CNN(
     // 2nd Convolution
     wire [32 * 5 * 5 * 20 - 1:0] conv_2_out;
     Convolution_Layer #(
-        12, 12, 8, 8, 20
+        .DATAWIDTH(12),
+        .DATAHEIGHT(12),
+        .DATACHANNEL(8),
+        .DATACHANNEL_POWER(8),
+        .FILTERBATCH(20)
     ) conv_2 (
         .clk(clk),
         .Model_Input(conv_1_out), .Model_Output(conv_2_out),
@@ -72,7 +80,9 @@ module CNN(
     //  First dense
     wire [32 * 8 - 1:0] dense_1_out;
     Dense_Layer #(
-        500, 512, 8
+        .LENGTH(500),
+        .LENGTH_PLUS_1_POWER(512),
+        .UNITS(8)
     ) dense_1 (
         .Model_Input(conv_2_out), .Model_Output(dense_1_out),
         .weight(weight_3), .bias(bias_3), .clk(clk)
@@ -81,7 +91,9 @@ module CNN(
     // Second dense
     wire [32 * 3 - 1:0] dense_2_out;
     Dense_Layer #(
-        8, 16, 3
+        .LENGTH(8),
+        .LENGTH_PLUS_1_POWER(16),
+        .UNITS(3)
     ) dense_2 (
         .Model_Input(dense_1_out), .Model_Output(dense_2_out),
         .weight(weight_4), .bias(bias_4), .clk(clk)
