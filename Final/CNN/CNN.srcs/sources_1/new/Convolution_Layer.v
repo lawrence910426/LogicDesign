@@ -14,11 +14,12 @@ module Convolution_Layer#(
     // Convolution
     wire [32 * (DATAWIDTH - 1) * (DATAHEIGHT - 1) * FILTERBATCH - 1:0] conv_out;
     Conv2d #(
-        32,
-        DATAWIDTH, DATAHEIGHT, DATACHANNEL, DATACHANNEL_POWER,
-        2, 2, FILTERBATCH,
-        1, 1,
-        0
+        .BITWIDTH(32),
+        .DATAWIDTH(DATAWIDTH), .DATAHEIGHT(DATAHEIGHT), 
+        .DATACHANNEL(DATACHANNEL), .DATACHANNEL_POWER(DATACHANNEL_POWER),
+        .FILTERHEIGHT(2), .FILTERWIDTH(2), .FILTERBATCH(FILTERBATCH),
+        .STRIDEHEIGHT(1), .STRIDEWIDTH(1),
+        .PADDINGENABLE(0)
     ) conv ( 
         .data(Model_Input),  .clk(clk),
         .filterWeight(weight), .filterBias(bias), 
@@ -28,16 +29,17 @@ module Convolution_Layer#(
     // Activation
     wire [32 * (DATAWIDTH - 1) * (DATAHEIGHT - 1) * FILTERBATCH - 1:0] relu_out;
     Relu_activation #(
-        32,
-        DATAWIDTH - 1, DATAHEIGHT - 1, FILTERBATCH
+        .BITWIDTH(32),
+        .DATAWIDTH(DATAWIDTH - 1), .DATAHEIGHT(DATAHEIGHT - 1), 
+        .DATACHANNEL(FILTERBATCH)
     ) relu ( .data(conv_out), .result(relu_out) );
     
     // Max pool
     wire [32 * ((DATAWIDTH - 1) / 2) * ((DATAHEIGHT - 1) / 2) * FILTERBATCH:0] max_pool_out;
     Max_pool #(
-        32,
-        DATAWIDTH - 1, DATAHEIGHT - 1, FILTERBATCH,
-        2, 2
+        .BITWIDTH(32),
+        .DATAWIDTH(DATAWIDTH - 1), .DATAHEIGHT(DATAHEIGHT - 1), .DATACHANNEL(FILTERBATCH),
+        .KWIDTH(2), .KHEIGHT(2)
     )
     max_pool ( .data(relu_out), .result(max_pool_out) );
 

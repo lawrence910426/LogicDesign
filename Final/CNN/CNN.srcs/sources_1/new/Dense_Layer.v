@@ -12,7 +12,9 @@ module Dense_Layer#(
     // Matrix multiplication
     wire [32 * UNITS - 1:0] full_output;
     FullConnect #(
-        32, LENGTH, LENGTH_PLUS_1_POWER, 1
+        .BITWIDTH(32),
+        .LENGTH(LENGTH), .LENGTH_PLUS_1_POWER(LENGTH_PLUS_1_POWER),
+        .FILTERBATCH(1)
     ) full (
         .data(Model_Input), .result(full_output),
         .weight(weight), .bias(bias),
@@ -21,7 +23,8 @@ module Dense_Layer#(
 
     // Activation
     Relu_activation #(
-        32, 1, 1, LENGTH
+        .BITWIDTH(32),
+        .DATAWIDTH(1), .DATAHEIGHT(1), .DATACHANNEL(LENGTH)
     ) relu (
         .data(full_output), .result(Model_Output)
     );
