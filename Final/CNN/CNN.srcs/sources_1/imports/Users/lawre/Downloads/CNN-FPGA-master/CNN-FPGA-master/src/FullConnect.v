@@ -34,13 +34,13 @@ module FullConnect#(
 );
     wire [BITWIDTH * LENGTH - 1:0] out [0:FILTERBATCH - 1];
     wire [BITWIDTH - 1:0] biasArray [0:FILTERBATCH - 1];
-    reg [BITWIDTH * 2 - 1:0] resultArray [0:FILTERBATCH - 1];
+    wire [BITWIDTH - 1:0] resultArray [0:FILTERBATCH - 1];
     
     genvar i, j;
     generate
         for(i = 0; i < FILTERBATCH; i = i + 1) begin
             assign biasArray[i] = bias[(i + 1) * BITWIDTH - 1: i * BITWIDTH];
-            assign result[(i + 1) * BITWIDTH * 2 - 1: i * BITWIDTH * 2] = resultArray[i];
+            assign result[(i + 1) * BITWIDTH - 1: i * BITWIDTH] = resultArray[i];
         end
     endgenerate
     
@@ -51,7 +51,7 @@ module FullConnect#(
                     data[(j + 1) * BITWIDTH - 1:j * BITWIDTH], 
                     weight[(i * LENGTH + j) * BITWIDTH + BITWIDTH - 1 : (i * LENGTH + j) * BITWIDTH], 
                     clk,
-                    out[i][(j + 1) * BITWIDTH:j * BITWIDTH]
+                    out[i][j * BITWIDTH + BITWIDTH - 1:j * BITWIDTH]
                 );
             end
         end
