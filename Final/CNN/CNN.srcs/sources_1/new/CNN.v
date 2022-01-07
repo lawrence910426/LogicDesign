@@ -22,9 +22,9 @@
 module CNN(
     input clk,
     input [25 * 25 * 3 * 8 - 1:0] CAM,
-    output [7 - 1:0] Rock,
-    output [7 - 1:0] Paper,
-    output [7 - 1:0] Scissors,
+    output [32 - 1:0] Rock,
+    output [32 - 1:0] Paper,
+    output [32 - 1:0] Scissors,
     output reg [4 - 1:0] Highest
 );
     // Make CAM information to float
@@ -88,7 +88,10 @@ module CNN(
     );
 
     // Find the maximum and output Highest
-    assign Rock = 7'd0, Scissors = 7'd0, Paper = 7'd0;
+    assign 
+        Rock = dense_2_out[0], 
+        Scissors = dense_2_out[1], 
+        Paper = dense_2_out[2];
     
     always @ (posedge clk) begin
         if (dense_2_out[0] > dense_2_out[1]) begin
