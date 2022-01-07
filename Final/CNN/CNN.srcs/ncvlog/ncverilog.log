@@ -1,5 +1,5 @@
 ncverilog(64): 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Jan 07, 2022 at 20:22:17 CST
+TOOL:	ncverilog	15.20-s039: Started on Jan 07, 2022 at 21:04:18 CST
 ncverilog
 	+nc64bit
 	../sim_1/new/CNN_T.v
@@ -94,5 +94,53 @@ file: ../sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
+        CAM, clk, Rock, Paper, Scissors, Highest
+          |
+ncelab: *W,CUVMPW (../sim_1/new/CNN_T.v,31|10): port sizes differ in port connection (15000/1).
+        CAM, clk, Rock, Paper, Scissors, Highest
+               |
+ncelab: *W,CUVMPW (../sim_1/new/CNN_T.v,31|15): port sizes differ in port connection (1/15000).
+        .Model_Input(Model_Input), .Model_Output(conv_1_out),
+                                                          |
+ncelab: *W,CUVMPW (../sources_1/new/CNN.v,56|58): port sizes differ in port connection (36864/36875).
+    max_pool ( .data(relu_out), .result(max_pool_out) );
+                                                   |
+ncelab: *W,CUVMPW (../sources_1/new/Convolution_Layer.v,42|51): port sizes differ in port connection (36865/36864).
+        .Model_Input(conv_1_out), .Model_Output(conv_2_out),
+                                                         |
+ncelab: *W,CUVMPW (../sources_1/new/CNN.v,67|57): port sizes differ in port connection (16000/16011).
+    max_pool ( .data(relu_out), .result(max_pool_out) );
+                                                   |
+ncelab: *W,CUVMPW (../sources_1/new/Convolution_Layer.v,42|51): port sizes differ in port connection (16001/19360).
+        .data(Model_Input), .result(full_output),
+                                              |
+ncelab: *W,CUVMPW (../sources_1/new/Dense_Layer.v,17|46): port sizes differ in port connection (256/32).
+        .weight(weight), .bias(bias),
+                     |
+ncelab: *W,CUVMPW (../sources_1/new/Dense_Layer.v,18|21): port sizes differ in port connection (128000/16000).
+        .weight(weight), .bias(bias),
+                                  |
+ncelab: *W,CUVMPW (../sources_1/new/Dense_Layer.v,18|34): port sizes differ in port connection (256/32).
+        .data(full_output), .result(Model_Output)
+                        |
+ncelab: *W,CUVMPW (../sources_1/new/Dense_Layer.v,26|24): port sizes differ in port connection (256/16000).
+        .data(full_output), .result(Model_Output)
+                                               |
+ncelab: *W,CUVMPW (../sources_1/new/Dense_Layer.v,26|47): port sizes differ in port connection (256/16000).
+        .data(Model_Input), .result(full_output),
+                                              |
+ncelab: *W,CUVMPW (../sources_1/new/Dense_Layer.v,17|46): port sizes differ in port connection (96/32).
+        .weight(weight), .bias(bias),
+                     |
+ncelab: *W,CUVMPW (../sources_1/new/Dense_Layer.v,18|21): port sizes differ in port connection (768/256).
+        .weight(weight), .bias(bias),
+                                  |
+ncelab: *W,CUVMPW (../sources_1/new/Dense_Layer.v,18|34): port sizes differ in port connection (96/32).
+        .data(full_output), .result(Model_Output)
+                        |
+ncelab: *W,CUVMPW (../sources_1/new/Dense_Layer.v,26|24): port sizes differ in port connection (96/256).
+        .data(full_output), .result(Model_Output)
+                                               |
+ncelab: *W,CUVMPW (../sources_1/new/Dense_Layer.v,26|47): port sizes differ in port connection (96/256).
 ncverilog: *E,ELBERR: Error during elaboration (status 245), exiting.
-TOOL:	ncverilog	15.20-s039: Exiting on Jan 07, 2022 at 20:22:52 CST  (total: 00:00:35)
+TOOL:	ncverilog	15.20-s039: Exiting on Jan 07, 2022 at 21:08:32 CST  (total: 00:04:14)

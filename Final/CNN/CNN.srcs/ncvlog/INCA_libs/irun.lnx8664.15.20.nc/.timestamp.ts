@@ -15,6 +15,6 @@
 1641538718 /users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v
 1641538718 /users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Mult.v
 1641538718 /users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD_PIPELINE.v
-1641538718 /users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v
+1641560743 /users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v
 1641538718 /users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v
 1641538718 /users/course/2021F/ldl12200000/u109062328/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v
