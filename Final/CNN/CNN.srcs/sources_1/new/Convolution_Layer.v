@@ -35,7 +35,7 @@ module Convolution_Layer#(
     ) relu ( .data(conv_out), .result(relu_out) );
     
     // Max pool
-    wire [32 * ((DATAWIDTH - 1) / 2) * ((DATAHEIGHT - 1) / 2) * FILTERBATCH:0] max_pool_out;
+    wire [32 * ((DATAWIDTH - 1) / 2) * ((DATAHEIGHT - 1) / 2) * FILTERBATCH - 1:0] max_pool_out;
     Max_pool #(
         .BITWIDTH(32),
         .DATAWIDTH(DATAWIDTH - 1), .DATAHEIGHT(DATAHEIGHT - 1), .DATACHANNEL(FILTERBATCH),
