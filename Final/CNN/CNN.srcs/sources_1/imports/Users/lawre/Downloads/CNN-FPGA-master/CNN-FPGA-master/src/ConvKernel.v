@@ -32,7 +32,7 @@ module ConvKernel#(
     output [BITWIDTH - 1 : 0] result
 );
     
-    wire [BITWIDTH * 2 - 1 : 0] out [2 * 2 * DATACHANNEL - 1 : 0];
+    wire [BITWIDTH - 1 : 0] out [2 * 2 * DATACHANNEL - 1 : 0];
     
     generate
         genvar i;
@@ -46,20 +46,27 @@ module ConvKernel#(
         end
     endgenerate
     
-    wire [BITWIDTH - 1:0] channels [DATACHANNEL - 1:0];
+    wire [BITWIDTH * DATACHANNEL - 1:0] channels;
     generate
         wire [BITWIDTH - 1:0] x, y;
         for(i = 0; i < DATACHANNEL; i = i + 1) begin
             FLOAT32_ADD_PIPELINE
                 X ( .a(out[i * 4 + 0]), .b(out[i * 4 + 1]), .out(x), .clk(clk) ),
                 Y ( .a(out[i * 4 + 2]), .b(out[i * 4 + 3]), .out(y), .clk(clk) ),
-                Z ( .a(x), .b(y), .out(channels[i]), .clk(clk) );
+                Z ( 
+			.a(x), .b(y), 
+			.out(channels[
+				i * BITWIDTH - BITWIDTH - 1:
+				i * BITWIDTH
+			]), 
+			.clk(clk) 
+		);
         end
     endgenerate
     
     wire [BITWIDTH - 1:0] ValueSum;
     SumTree #(BITWIDTH, DATACHANNEL, DATACHANNEL_POWER) SumUp (
-        .data(ValueSum), .clk(clk), .result(ValueSum)
+        .data(channels), .clk(clk), .result(ValueSum)
     );
     
     assign result = ValueSum;
