@@ -36,16 +36,16 @@ module SumTree#(
     wire [BITWIDTH - 1:0] SumTree [VALUES_POWER * 2 - 1:0];
     generate
         genvar i;
-	for(i = 0; i < VALUES; i = i + 1) begin
-		assign SumTree[i + VALUES_POWER] = data[i * BITWIDTH + BITWIDTH - 1:i * BITWIDTH];
-	end
+        for(i = 0; i < VALUES; i = i + 1) begin
+            assign SumTree[i + VALUES_POWER] = data[i * BITWIDTH + BITWIDTH - 1:i * BITWIDTH];
+        end
 
-	for(i = VALUES; i < VALUES_POWER; i = i + 1) begin
-		assign SumTree[i + VALUES_POWER] = 32'd0;
-	end
+        for(i = VALUES; i < VALUES_POWER; i = i + 1) begin
+            assign SumTree[i + VALUES_POWER] = 32'd0;
+        end
 
         for(i = 1; i < VALUES_POWER; i = i + 1) begin
-            FLOAT32_ADD_PIPELINE finalize (
+            FLOAT32_ADD_PIPELINE SumUp (
                 .a(SumTree[i * 2]), .b(SumTree[i * 2 + 1]),
                 .out(SumTree[i]), .clk(clk)
             );

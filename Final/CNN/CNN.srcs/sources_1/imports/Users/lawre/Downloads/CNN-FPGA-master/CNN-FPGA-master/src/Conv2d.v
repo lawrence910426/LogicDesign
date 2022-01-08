@@ -142,7 +142,11 @@ module Conv2d #(
         for(i = 0; i < FILTERBATCH; i = i + 1) begin
             for(m = 0; m < (PADDINGENABLE == 1 ? DATAHEIGHT / STRIDEHEIGHT: (DATAHEIGHT - FILTERHEIGHT + 1) / STRIDEHEIGHT); m = m + 1) begin
                 for(n = 0; n < (PADDINGENABLE == 1 ? DATAWIDTH / STRIDEWIDTH : (DATAWIDTH - FILTERWIDTH + 1) / STRIDEWIDTH); n = n + 1) begin
-                        ConvKernel#(BITWIDTH, DATACHANNEL, DATACHANNEL_POWER) convKernel(
+                        ConvKernel#(
+                            .BITWIDTH(BITWIDTH), 
+                            .DATACHANNEL(DATACHANNEL),
+                            .DATACHANNEL_POWER(DATACHANNEL_POWER)
+                        ) convKernel (
                             paramArray[m][n], 
                             filterWeightArray[i], 
                             filterBias[(i + 1) * BITWIDTH - 1 :i * BITWIDTH],
