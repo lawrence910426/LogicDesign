@@ -28,7 +28,7 @@ module CNN_T();
     wire [32 - 1:0] Scissors;
     wire [4 - 1:0] Highest;
     CNN chip (
-        CAM, clk, Rock, Paper, Scissors, Highest
+        clk, CAM, Rock, Paper, Scissors, Highest
     );
     
     always #1 clk = 1 - clk;

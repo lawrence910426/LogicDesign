@@ -9,7 +9,7 @@ module Convolution_Layer#(
     input [DATAWIDTH * DATAHEIGHT * DATACHANNEL * 32 - 1:0] Model_Input,
     input [32 * 2 * 2 * DATACHANNEL * FILTERBATCH - 1:0] weight,
     input [32 * FILTERBATCH - 1:0] bias,
-    output [32 * ((DATAWIDTH - 1) / 2) * ((DATAHEIGHT - 1) / 2) * FILTERBATCH: - 10] Model_Output
+    output [32 * ((DATAWIDTH - 1) / 2) * ((DATAHEIGHT - 1) / 2) * FILTERBATCH - 1:0] Model_Output
 );
     // Convolution
     wire [32 * (DATAWIDTH - 1) * (DATAHEIGHT - 1) * FILTERBATCH - 1:0] conv_out;
