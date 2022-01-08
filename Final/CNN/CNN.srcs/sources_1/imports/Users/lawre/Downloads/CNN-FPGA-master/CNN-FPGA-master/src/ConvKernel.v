@@ -58,7 +58,7 @@ module ConvKernel#(
                 Z ( 
 			.a(x), .b(y), 
 			.out(channels[
-				i * BITWIDTH - BITWIDTH - 1:
+				i * BITWIDTH + BITWIDTH - 1:
 				i * BITWIDTH
 			]), 
 			.clk(clk) 
