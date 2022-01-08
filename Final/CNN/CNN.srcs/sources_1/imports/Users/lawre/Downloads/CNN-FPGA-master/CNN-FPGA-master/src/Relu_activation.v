@@ -36,7 +36,10 @@ module Relu_activation#(
         for(i = 0; i < DATACHANNEL; i = i + 1) begin
             for(j = 0; j < DATAHEIGHT; j = j + 1) begin
                 for(k = 0; k < DATAWIDTH; k = k + 1) begin
-                    Relu#(BITWIDTH) relu(
+                    Relu#(
+                        .BITWIDTH(BITWIDTH),
+                        .THRESHOLD(32'd0)
+                    ) relu (
                         data[
                             (i * DATAHEIGHT * DATAWIDTH + j * DATAWIDTH + k) * BITWIDTH + BITWIDTH - 1:
                             (i * DATAHEIGHT * DATAWIDTH + j * DATAWIDTH + k) * BITWIDTH

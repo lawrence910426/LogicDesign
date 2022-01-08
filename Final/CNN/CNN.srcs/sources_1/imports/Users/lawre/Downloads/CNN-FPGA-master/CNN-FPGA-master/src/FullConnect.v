@@ -47,7 +47,7 @@ module FullConnect#(
     generate 
         for(i = 0; i < FILTERBATCH; i = i + 1) begin
             for(j = 0; j < LENGTH; j = j + 1) begin
-                Mult#(BITWIDTH) mult(
+                Mult#( .BITWIDTH(BITWIDTH) ) mult(
                     data[(j + 1) * BITWIDTH - 1:j * BITWIDTH], 
                     weight[(i * LENGTH + j) * BITWIDTH + BITWIDTH - 1 : (i * LENGTH + j) * BITWIDTH], 
                     clk,
@@ -59,7 +59,11 @@ module FullConnect#(
 
     generate
         for(i = 0; i < FILTERBATCH; i = i + 1) begin
-            SumTree#(BITWIDTH, LENGTH + 1, LENGTH_PLUS_1_POWER) SumUp (
+            SumTree#(
+                .BITWIDTH(BITWIDTH),   
+                .VALUES(LENGTH + 1),
+                .VALUES_POWER(LENGTH_PLUS_1_POWER)
+            ) SumUp (
                 .data({out[i], biasArray[i]}),
                 .clk(clk),
                 .result(resultArray[i])

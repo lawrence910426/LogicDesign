@@ -37,7 +37,9 @@ module ConvKernel#(
     generate
         genvar i;
         for(i = 0; i < 2 * 2 * DATACHANNEL; i = i + 1) begin
-            Mult #(BITWIDTH) mult (
+            Mult #(
+                .BITWIDTH(BITWIDTH)
+            ) mult (
                 data[(i + 1) * BITWIDTH - 1 : i * BITWIDTH], 
                 weight[(i + 1) * BITWIDTH - 1 : i * BITWIDTH], 
                 clk,
@@ -65,7 +67,11 @@ module ConvKernel#(
     endgenerate
     
     wire [BITWIDTH - 1:0] ValueSum;
-    SumTree #(BITWIDTH, DATACHANNEL, DATACHANNEL_POWER) SumUp (
+    SumTree #(
+        .BITWIDTH(BITWIDTH),   
+        .VALUES(DATACHANNEL),
+        .VALUES_POWER(DATACHANNEL_POWER)
+    ) SumUp (
         .data(channels), .clk(clk), .result(ValueSum)
     );
     

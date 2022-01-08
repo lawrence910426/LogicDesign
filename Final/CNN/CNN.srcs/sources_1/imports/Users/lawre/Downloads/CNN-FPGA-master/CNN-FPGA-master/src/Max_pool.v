@@ -72,7 +72,10 @@ module Max_pool#(
         for(i = 0; i < DATACHANNEL; i = i + 1) begin
             for(j = 0; j < DATAHEIGHT / KHEIGHT; j = j + 1) begin
                 for(k = 0; k < DATAWIDTH / KWIDTH; k = k + 1) begin
-                    Max#(BITWIDTH, KHEIGHT * KWIDTH) max(
+                    Max#(
+                        .BITWIDTH(BITWIDTH),
+                        .LENGTH(KHEIGHT * KWIDTH)
+                    ) max(
                         paramArray[i][j][k], 
                         result[
                             (i * DATAHEIGHT / KHEIGHT * DATAWIDTH / KWIDTH + j * DATAWIDTH / KWIDTH + k) * BITWIDTH + BITWIDTH - 1:
