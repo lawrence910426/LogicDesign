@@ -56,13 +56,13 @@ module ConvKernel#(
                 X ( .a(out[i * 4 + 0]), .b(out[i * 4 + 1]), .out(x), .clk(clk) ),
                 Y ( .a(out[i * 4 + 2]), .b(out[i * 4 + 3]), .out(y), .clk(clk) ),
                 Z ( 
-			.a(x), .b(y), 
-			.out(channels[
-				i * BITWIDTH + BITWIDTH - 1:
-				i * BITWIDTH
-			]), 
-			.clk(clk) 
-		);
+                    .a(x), .b(y), 
+                    .out(channels[
+                        i * BITWIDTH + BITWIDTH - 1:
+                        i * BITWIDTH
+                    ]), 
+                    .clk(clk) 
+		        );
         end
     endgenerate
     
