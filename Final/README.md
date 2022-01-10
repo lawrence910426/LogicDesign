@@ -35,11 +35,16 @@
   - inputs
     - clk
     - CAM (25x25)
+    - Start
   - outputs
+    - Finish
     - Rock
     - Paper
     - Scissors
     - Highest
+   - Behavior
+    - when start = 1 and posedge clk, the module will scan the inputs
+    - finish will be set to high for 1 cycle. Rock & Paper & Scissors & Highest will be set for 1 cycle at the same time.
  
 # Presentation
 10 minuites.
