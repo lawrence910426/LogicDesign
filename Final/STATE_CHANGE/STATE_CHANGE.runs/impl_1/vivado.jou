@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 13 18:00:14 2022
+# Process ID: 13516
+# Current directory: D:/LogicDesignExperiment/final_project/STATE_CHANGE/STATE_CHANGE.runs/impl_1
+# Command line: vivado.exe -log STATE_CHANGE.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source STATE_CHANGE.tcl -notrace
+# Log file: D:/LogicDesignExperiment/final_project/STATE_CHANGE/STATE_CHANGE.runs/impl_1/STATE_CHANGE.vdi
+# Journal file: D:/LogicDesignExperiment/final_project/STATE_CHANGE/STATE_CHANGE.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source STATE_CHANGE.tcl -notrace
