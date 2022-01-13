@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../camera_try.gen/sources_1/ip/frame_buffer_1/sim/frame_buffer.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

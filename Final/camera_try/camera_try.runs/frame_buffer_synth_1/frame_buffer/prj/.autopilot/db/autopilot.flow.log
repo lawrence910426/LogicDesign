@@ -1,0 +1,152 @@
+INFO-FLOW: Workspace D:/LogicDesignExperiment/final_project/camera_try/camera_try.runs/frame_buffer_synth_1/frame_buffer/prj opened at Thu Jan 13 16:04:09 +0800 2022
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -default_interface 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_rtl -register_reset_num 
+Execute     set_part xc7a35tcpg236-1 
+INFO: [HLS 200-1510] Running: set_part xc7a35tcpg236-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xc7a35tcpg236-1 -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 0.768 sec.
+Execute       ap_part_info -name xc7a35tcpg236-1 -data info 
+Execute       add_library xilinx/artix7/artix7:xc7a35t:-cpg236:-1 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xc7a35t-cpg236-1 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data resources 
+Execute         config_chip_info -resource {SLICE 8150} {LUT 20800} {FF 41600} {DSP 90} {BRAM 100} {URAM 0} 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute         config_chip_info -speed slow 
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute         config_library_info -library artix7_slow 
+Execute         config_library_info -family artix7 
+Execute         config_library_info -part xc7a35t:-cpg236:-1 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/artix7/artix7 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/artix7_dsp48e1.hlp 
+Command         import_lib done; 0.108 sec.
+Execute         ap_family_info -name artix7 -data parts 
+Execute         ap_part_info -name xc7a12ticsg325-1L -data info 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.108 sec.
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.233 sec.
+Command       add_library done; 0.381 sec.
+INFO: [HLS 200-10] Setting target device to 'xc7a35t-cpg236-1'
+Execute       ap_part_info -name xc7a35t-cpg236-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.169 sec.
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/v_frmbuf_rd_config.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/v_frmbuf_rd_config.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/v_frmbuf_rd_config.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/v_frmbuf_rd.cpp 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/v_frmbuf_rd.cpp 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/v_frmbuf_rd.cpp' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/v_frmbuf_rd.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/v_frmbuf_rd.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/v_frmbuf_rd.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls_video.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls_video.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls_video.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls_opencv.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls_opencv.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls_opencv.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_axi_io.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_axi_io.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_axi_io.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_arithm.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_arithm.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_arithm.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_core.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_core.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_core.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_fast.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_fast.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_fast.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_haar.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_haar.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_haar.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_harris.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_harris.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_harris.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_histogram.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_histogram.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_histogram.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_hough.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_hough.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_hough.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_imgbase.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_imgbase.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_imgbase.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_imgproc.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_imgproc.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_imgproc.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_io.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_io.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_io.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_mem.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_mem.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_mem.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_stereobm.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_stereobm.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_stereobm.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_types.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_types.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_types.h' to the project
+Execute     add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_undistort.h 
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls -I d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src  d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_undistort.h 
+INFO: [HLS 200-10] Adding design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/hls/hls_video_undistort.h' to the project
+Execute     create_clock -period 6.667 -name ap_clk 
+INFO: [HLS 200-1510] Running: create_clock -period 6.667 -name ap_clk 
+Execute       ap_set_clock -name ap_clk -period 6.667 -default=false 
+INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 6.667ns.
+Execute     config_interface -m_axi_flush_mode 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_flush_mode 
+Execute     config_interface -m_axi_conservative_mode 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_conservative_mode 
+Execute     config_interface -m_axi_addr64=false 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=false 
+Execute     config_rtl -prefix frame_buffer_ 
+INFO: [HLS 200-1510] Running: config_rtl -prefix frame_buffer_ 
+WARNING: [HLS 200-483] The 'config_rtl -prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_prefix' as its replacement.
+Execute     csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute       get_config_compile -effort 
+Execute       get_config_compile -enable_clang39 
+Execute       get_config_compile -g 
+Execute       get_config_compile -ng 
+Execute       get_config_compile -opt_fp 
+Execute       get_config_compile -skip_cdt 
+Execute       get_config_compile -skip_syncheck 
+Execute       get_config_compile -skip_transform 
+Execute       get_config_compile -keep_printf 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 876.328 MB.
+INFO: [HLS 200-10] Analyzing design file 'd:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/v_frmbuf_rd.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute         get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling d:/LogicDesignExperiment/final_project/camera_try/camera_try.gen/sources_1/ip/frame_buffer/src/v_frmbuf_rd.cpp as C++
+Execute         ap_part_info -name xc7a35t-cpg236-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
