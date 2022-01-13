@@ -138,7 +138,7 @@ OPTRACE "set parameters" START { }
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1/top.dcp
-  read_ip -quiet d:/LogicDesignExperiment/final_project/VGA/VGA.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  read_ip -quiet D:/LogicDesignExperiment/final_project/VGA/VGA.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc D:/LogicDesignExperiment/final_project/VGA/VGA.srcs/constrs_2/new/cons.xdc
 OPTRACE "read constraints: implementation" END { }

@@ -4,7 +4,6 @@ module top(
    input [1:0] state,
    input [1:0] com_hand,
    input [1:0] player_hand,
-   input [1:0] result,
    output [3:0] vgaRed,
    output [3:0] vgaGreen,
    output [3:0] vgaBlue,
@@ -30,12 +29,11 @@ module top(
     );
 
     mem_addr_gen mem_addr_gen_inst_0(
-    .clk(clk_22),
+    .clk(clk),
     .rst(rst),
     .state(state),//
     .com_hand(com_hand),//
     .player_hand(player_hand),//
-    .result(result),//
     .h_cnt(h_cnt),
     .v_cnt(v_cnt),
     .pixel_addr(pixel_addr)

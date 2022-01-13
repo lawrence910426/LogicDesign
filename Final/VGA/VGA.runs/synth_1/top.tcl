@@ -88,14 +88,14 @@ set_property ip_output_repo d:/LogicDesignExperiment/final_project/VGA/VGA.cache
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files d:/LogicDesignExperiment/final_project/VGA/PIC/full_pic.coe
+add_files D:/LogicDesignExperiment/final_project/VGA/PIC/full_pic.coe
 read_verilog -library xil_defaultlib {
   D:/LogicDesignExperiment/final_project/VGA/CODE/clock_divisor.v
   D:/LogicDesignExperiment/final_project/VGA/CODE/mem_addr_gen.v
   D:/LogicDesignExperiment/final_project/VGA/CODE/vga.v
   D:/LogicDesignExperiment/final_project/VGA/CODE/top.v
 }
-read_ip -quiet d:/LogicDesignExperiment/final_project/VGA/VGA.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+read_ip -quiet D:/LogicDesignExperiment/final_project/VGA/VGA.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all d:/LogicDesignExperiment/final_project/VGA/VGA.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
