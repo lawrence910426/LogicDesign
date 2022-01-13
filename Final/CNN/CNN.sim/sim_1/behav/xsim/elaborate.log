@@ -1,45 +1,8 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 705416086e474affb6bb262bfe90511d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CNN_T_behav xil_defaultlib.CNN_T xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 705416086e474affb6bb262bfe90511d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ConvKernel_T_behav xil_defaultlib.ConvKernel_T xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-2861] module 'Conv2d' does not have a parameter named LOG_DATACHANNEL [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:25]
-WARNING: [VRFC 10-2861] module 'Dense_Layer' does not have a parameter named LENGTH_PLUS_1_POWER [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:92]
-WARNING: [VRFC 10-2861] module 'Dense_Layer' does not have a parameter named LENGTH_PLUS_1_POWER [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:106]
-WARNING: [VRFC 10-3091] actual bit length 15000 differs from formal bit length 1 for port 'start' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/CNN_T.v:31]
-WARNING: [VRFC 10-3091] actual bit length 16000 differs from formal bit length 19360 for port 'result' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:59]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.ENCODER_2
-Compiling module xil_defaultlib.ENCODER_4
-Compiling module xil_defaultlib.ENCODER_8
-Compiling module xil_defaultlib.ENCODER_16
-Compiling module xil_defaultlib.ENCODER_32
-Compiling module xil_defaultlib.FLOAT32_ADD
-Compiling module xil_defaultlib.ENCODER_64
-Compiling module xil_defaultlib.FLOAT32_MUL
-Compiling module xil_defaultlib.ConvKernel(LATENCY_MAX=10)
-Compiling module xil_defaultlib.Conv2d(DATACHANNEL=3,FILTERBATCH...
-Compiling module xil_defaultlib.Relu(BITWIDTH=32,THRESHOLD=32'b0...
-Compiling module xil_defaultlib.Relu_activation(BITWIDTH=32,DATA...
-Compiling module xil_defaultlib.Max(BITWIDTH=32)
-Compiling module xil_defaultlib.Max_pool(BITWIDTH=32,DATAWIDTH=2...
-Compiling module xil_defaultlib.Convolution_Layer
-Compiling module xil_defaultlib.ConvKernel(DATACHANNEL=8,LATENCY...
-Compiling module xil_defaultlib.Conv2d(DATAWIDTH=12,DATAHEIGHT=1...
-Compiling module xil_defaultlib.Relu_activation(BITWIDTH=32,DATA...
-Compiling module xil_defaultlib.Max_pool(BITWIDTH=32,DATAWIDTH=1...
-Compiling module xil_defaultlib.Convolution_Layer(DATAWIDTH=12,D...
-Compiling module xil_defaultlib.FullConnect(LENGTH=500,FILTERBAT...
-Compiling module xil_defaultlib.Relu_activation(BITWIDTH=32,DATA...
-Compiling module xil_defaultlib.Dense_Layer(LENGTH=500)
-Compiling module xil_defaultlib.FullConnect(LENGTH=8,FILTERBATCH...
-Compiling module xil_defaultlib.Relu_activation(BITWIDTH=32,DATA...
-Compiling module xil_defaultlib.Dense_Layer(LENGTH=8,UNITS=3)
-Compiling module xil_defaultlib.CNN
-Compiling module xil_defaultlib.CNN_T
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot CNN_T_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

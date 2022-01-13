@@ -1,7 +1,7 @@
 module ConvKernel_T();
-    reg [32 * 2 * 2 * 10 - 1 : 0] _paramArray = 0;
-    reg [32 * 2 * 2 * 10 - 1 : 0] _filterWeightArray = 1;
-    reg [32 - 1 : 0] _filterBiasArray = 4;
+    reg [32 * 2 * 2 * 10 - 1 : 0] _paramArray = {40{32'b0_10000000_10000000000000000000001}};
+    reg [32 * 2 * 2 * 10 - 1 : 0] _filterWeightArray = {40{32'b0_10000000_10000000000000000000001}};
+    reg [32 - 1 : 0] _filterBiasArray = 32'b0_00000000_00000000000000000000000;
     wire [32 - 1:0] ConvKernel_Result;
     reg ConvKernel_Start;
     wire ConvKernel_Finish;
@@ -24,6 +24,8 @@ module ConvKernel_T();
     always #1 clk = 1 - clk;
     initial begin
         ConvKernel_Start = 1;
+        #2;
+        ConvKernel_Start = 0;
         #1000;
         $finish;
     end

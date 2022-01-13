@@ -64,5 +64,5 @@ module Convolution_Layer#(
     )
     max_pool ( .data(relu_out), .result(max_pool_out) );
 
-    assign Model_Output = max_pool_out;
+    assign Model_Output = relu_out;
 endmodule
