@@ -1,5 +1,5 @@
 module Dense_Layer#(
-    parameter LENGTH = 100,
+    parameter LENGTH = 500,
     parameter UNITS = 8
 )(
     input clk,
@@ -29,7 +29,14 @@ module Dense_Layer#(
         if (start == 1'b1) begin
             Model_Input_reg <= Model_Input;
             full_start <= 1;
-        end else if(full_finish == 1'b1) begin
+            finish <= 0;
+        end else if(full_start == 1) begin
+            Model_Input_reg <= Model_Input;
+            full_start <= 0;
+            finish <= 0;
+        end if(full_finish == 1'b1) begin
+            Model_Input_reg <= Model_Input_reg;
+            full_start <= 0;
             finish <= 1;
         end
     end

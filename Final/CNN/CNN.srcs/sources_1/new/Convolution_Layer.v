@@ -35,7 +35,14 @@ module Convolution_Layer#(
         if (start == 1'b1) begin
             Model_Input_reg <= Model_Input;
             Conv2d_Start <= 1;
+            finish <= 0;
+        end else if(Conv2d_Start == 1) begin
+            Model_Input_reg <= Model_Input_reg;
+            Conv2d_Start <= 0;
+            finish <= 0;
         end else if(Conv2d_Finish == 1'b1) begin
+            Model_Input_reg <= Model_Input_reg;
+            Conv2d_Start <= 0;
             finish <= 1;
         end
     end

@@ -76,6 +76,8 @@ module FullConnect#(
             Latency <= 0;
             Finish <= 0;
             Reset_Sum_Required <= 1;
+            
+            resultArray[0][0] <= 0;
         end else if (Finish == 1'b1) begin
             _i <= 0;
             _j <= 0;
