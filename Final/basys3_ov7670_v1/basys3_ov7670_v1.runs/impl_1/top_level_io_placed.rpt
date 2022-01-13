@@ -1,12 +1,12 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date                      : Fri Jan 14 01:19:47 2022
-| Host                      : DESKTOP-P0B4VES running 64-bit major release  (build 9200)
+| Date                      : Fri Jan 14 02:10:04 2022
+| Host                      : TACO-SUGO-KAWAII running 64-bit major release  (build 9200)
 | Command                   : report_io -file top_level_io_placed.rpt
 | Design                    : top_level
 | Device                    : xc7a35t
-| Speed File                : -1
+| Speed File                : -3
 | Package                   : cpg236
 | Package Version           : FINAL 2014-02-19
 | Package Pin Delay Version : VERS. 2.0 2014-02-19

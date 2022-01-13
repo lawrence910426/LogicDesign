@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1642094345">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1642097311">
   <File Type="BITSTR-BMM" Name="top_level_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="top_level_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="top_level_timing_summary_init.rpt"/>
@@ -79,7 +79,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/ov7670_fr/RGB.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/RGB.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/RGB.vhd"/>
         <Attr Name="ImportTime" Val="1368924184"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -87,7 +87,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/ov7670_fr/address_Generator.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/address_Generator.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/address_Generator.vhd"/>
         <Attr Name="ImportTime" Val="1374524771"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -103,7 +103,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/ov7670_fr/debounce.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/debounce.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/debounce.vhd"/>
         <Attr Name="ImportTime" Val="1353448322"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -119,7 +119,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/ov7670_fr/ov7670_capture.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/ov7670_capture.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/ov7670_capture.vhd"/>
         <Attr Name="ImportTime" Val="1374659213"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -127,7 +127,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/ov7670_fr/ov7670_controller.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/ov7670_controller.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/ov7670_controller.vhd"/>
         <Attr Name="ImportTime" Val="1369859174"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -143,7 +143,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/ov7670_fr/vga.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/vga.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/vga.vhd"/>
         <Attr Name="ImportTime" Val="1374576360"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -151,7 +151,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/ov7670_fr/top_level.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/top_level.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/top_level.vhd"/>
         <Attr Name="ImportTime" Val="1374658043"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -160,7 +160,7 @@
     <File Path="$PSRCDIR/sources_1/imports/ov7670_fr/i3c2.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/i3c2.vhd"/>
+        <Attr Name="ImportPath" Val="C:/Users/admin/Downloads/Ov7670_fr_zedboard/ov7670_fr/i3c2.vhd"/>
         <Attr Name="ImportTime" Val="1369833406"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

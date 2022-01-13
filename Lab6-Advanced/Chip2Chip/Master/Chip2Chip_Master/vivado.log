@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 14 01:53:38 2022
+# Process ID: 20916
+# Current directory: D:/LogicDesignExperiment/share_repo/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13616 D:\LogicDesignExperiment\share_repo\Lab6-Advanced\Chip2Chip\Master\Chip2Chip_Master\Chip2Chip_Master.xpr
+# Log file: D:/LogicDesignExperiment/share_repo/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/vivado.log
+# Journal file: D:/LogicDesignExperiment/share_repo/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/share_repo/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/LogicDesignExperiment/share_repo/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master'
+INFO: [Project 1-313] Project file moved from 'C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/LogicDesignExperiment/share_repo/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.gen/sources_1', nor could it be found using path 'C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.gen/sources_1'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/../Users/lawre/Downloads/chip2chip/chip2chip/chip2chip_master/constraint.xdc', nor could it be found using path 'C:/Users/lawre/Downloads/chip2chip/chip2chip/chip2chip_master/constraint.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 14 01:53:58 2022...

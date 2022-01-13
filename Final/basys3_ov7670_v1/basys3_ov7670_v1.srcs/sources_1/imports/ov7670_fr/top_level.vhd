@@ -74,10 +74,10 @@ architecture Behavioral of top_level is
   PORT (
       clka : IN STD_LOGIC;
       wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      addra : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+      addra : IN STD_LOGIC_VECTOR(16 DOWNTO 0);
       dina : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
       clkb : IN STD_LOGIC;
-      addrb : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+      addrb : IN STD_LOGIC_VECTOR(16 DOWNTO 0);
       doutb : OUT STD_LOGIC_VECTOR(11 DOWNTO 0)
     );
 	END COMPONENT;
@@ -90,7 +90,7 @@ architecture Behavioral of top_level is
 		vsync : IN std_logic;
 		href : IN std_logic;
 		d : IN std_logic_vector(7 downto 0);          
-		addr : OUT std_logic_vector(16 downto 0);
+		addr : OUT std_logic_vector(18 downto 0);
 		dout : OUT std_logic_vector(11 downto 0);
 		we : OUT std_logic
 		);
@@ -129,7 +129,7 @@ architecture Behavioral of top_level is
       rez_320x240 : IN std_logic;
 		enable      : IN  std_logic;       
       vsync       : in  STD_LOGIC;
-		address     : OUT std_logic_vector(16 downto 0)
+		address     : OUT std_logic_vector(18 downto 0)
 		);
 	END COMPONENT;
 
@@ -143,10 +143,10 @@ architecture Behavioral of top_level is
    signal vSync      : std_logic;
    signal nSync      : std_logic;
    
-   signal wraddress  : std_logic_vector(16 downto 0);
+   signal wraddress  : std_logic_vector(18 downto 0);
    signal wrdata     : std_logic_vector(11 downto 0);
    
-   signal rdaddress  : std_logic_vector(16 downto 0);
+   signal rdaddress  : std_logic_vector(18 downto 0);
    signal rddata     : std_logic_vector(11 downto 0);
    signal red,green,blue : std_logic_vector(7 downto 0);
    signal activeArea : std_logic;
@@ -154,7 +154,7 @@ architecture Behavioral of top_level is
    signal rez_160x120 : std_logic;
    signal rez_320x240 : std_logic;
    signal size_select: std_logic_vector(1 downto 0);
-   signal rd_addr,wr_addr  : std_logic_vector(14 downto 0);
+   signal rd_addr,wr_addr  : std_logic_vector(16 downto 0);
 begin
    vga_r <= red(7 downto 4);
    vga_g <= green(7 downto 4);
@@ -203,15 +203,15 @@ begin
 	size_select <= btnl&btnr;
 	
     with size_select select 
-    rd_addr <= rdaddress(16 downto 2) when "00",
-        rdaddress(14 downto 0) when "01",
-        rdaddress(14 downto 0) when "10",
-        rdaddress(14 downto 0) when "11";
+    rd_addr <= rdaddress(18 downto 2) when "00",
+        rdaddress(16 downto 0) when "01",
+        rdaddress(16 downto 0) when "10",
+        rdaddress(16 downto 0) when "11";
    with size_select select 
-    wr_addr <= wraddress(16 downto 2) when "00",
-            wraddress(14 downto 0) when "01",
-            wraddress(14 downto 0) when "10",
-            wraddress(14 downto 0) when "11";
+    wr_addr <= wraddress(18 downto 2) when "00",
+            wraddress(16 downto 0) when "01",
+            wraddress(16 downto 0) when "10",
+            wraddress(16 downto 0) when "11";
 	Inst_frame_buffer: frame_buffer PORT MAP(
 		addrb => rd_addr,
 		clkb   => clk_vga,

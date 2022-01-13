@@ -1,13 +1,13 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Fri Jan 14 01:20:09 2022
-| Host             : DESKTOP-P0B4VES running 64-bit major release  (build 9200)
+| Date             : Fri Jan 14 02:10:30 2022
+| Host             : TACO-SUGO-KAWAII running 64-bit major release  (build 9200)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx
 | Design           : top_level
-| Device           : xc7a35tcpg236-1
+| Device           : xc7a35tcpg236-3
 | Design State     : routed
-| Grade            : commercial
+| Grade            : extended
 | Process          : typical
 | Characterization : Production
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -30,13 +30,13 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.186        |
+| Total On-Chip Power (W)  | 0.188        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.114        |
-| Device Static (W)        | 0.072        |
+| Dynamic (W)              | 0.115        |
+| Device Static (W)        | 0.073        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.1         |
+| Max Ambient (C)          | 99.1         |
 | Junction Temperature (C) | 25.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      545 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      172 |     20800 |            0.83 |
-|   CARRY4       |    <0.001 |       20 |      8150 |            0.25 |
-|   Register     |    <0.001 |      211 |     41600 |            0.51 |
+| Slice Logic    |    <0.001 |      836 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      315 |     20800 |            1.51 |
+|   CARRY4       |    <0.001 |       21 |      8150 |            0.26 |
+|   Register     |    <0.001 |      221 |     41600 |            0.53 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |        9 |     32600 |            0.03 |
-|   Others       |     0.000 |       55 |       --- |             --- |
-| Signals        |    <0.001 |      465 |       --- |             --- |
-| Block RAM      |     0.002 |     11.5 |        50 |           23.00 |
+|   F7/F8 Muxes  |    <0.001 |       36 |     32600 |            0.11 |
+|   Others       |     0.000 |      138 |       --- |             --- |
+| Signals        |     0.001 |      843 |       --- |             --- |
+| Block RAM      |     0.003 |     44.5 |        50 |           89.00 |
 | MMCM           |     0.106 |        1 |         5 |           20.00 |
-| I/O            |     0.005 |       35 |       106 |           33.02 |
-| Static Power   |     0.072 |          |           |                 |
-| Total          |     0.186 |          |           |                 |
+| I/O            |     0.004 |       35 |       106 |           33.02 |
+| Static Power   |     0.073 |          |           |                 |
+| Total          |     0.188 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.014 |       0.004 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.016 |       0.006 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -84,7 +84,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
@@ -147,10 +147,10 @@ Table of Contents
 +------------------------+-----------+
 | Name                   | Power (W) |
 +------------------------+-----------+
-| top_level              |     0.114 |
-|   Inst_frame_buffer    |     0.002 |
-|     U0                 |     0.002 |
-|       inst_blk_mem_gen |     0.002 |
+| top_level              |     0.115 |
+|   Inst_frame_buffer    |     0.003 |
+|     U0                 |     0.003 |
+|       inst_blk_mem_gen |     0.003 |
 |   your_instance_name   |     0.106 |
 +------------------------+-----------+
 

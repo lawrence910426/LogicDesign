@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:ip:blk_mem_gen:8.4
-// IP Revision: 4
+// IP Revision: 0
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -57,10 +57,10 @@
 frame_buffer your_instance_name (
   .clka(clka),    // input wire clka
   .wea(wea),      // input wire [0 : 0] wea
-  .addra(addra),  // input wire [14 : 0] addra
+  .addra(addra),  // input wire [16 : 0] addra
   .dina(dina),    // input wire [11 : 0] dina
   .clkb(clkb),    // input wire clkb
-  .addrb(addrb),  // input wire [14 : 0] addrb
+  .addrb(addrb),  // input wire [16 : 0] addrb
   .doutb(doutb)  // output wire [11 : 0] doutb
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------

@@ -1,7 +1,7 @@
 onbreak {quit -f}
 onerror {quit -f}
 
-vsim -lib xil_defaultlib frame_buffer_opt
+vsim -t 1ps -lib xil_defaultlib frame_buffer_opt
 
 do {wave.do}
 

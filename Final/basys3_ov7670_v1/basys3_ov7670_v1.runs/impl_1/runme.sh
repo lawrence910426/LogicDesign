@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1'
+HD_PWD='D:/LogicDesignExperiment/final_project/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
