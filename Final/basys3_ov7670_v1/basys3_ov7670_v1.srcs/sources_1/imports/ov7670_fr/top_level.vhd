@@ -15,8 +15,8 @@ entity top_level is
            btnr            : in  STD_LOGIC;
            config_finished : out STD_LOGIC;
            
-           rd_addr  : std_logic_vector(16 downto 0);
-           rddata     : std_logic_vector(11 downto 0);
+           rd_addr         : in std_logic_vector(16 downto 0);
+           rddata          : out std_logic_vector(11 downto 0);
            
            ov7670_pclk  : in  STD_LOGIC;
            ov7670_xclk  : out STD_LOGIC;
@@ -184,7 +184,9 @@ begin
     wr_addr <= wraddress(18 downto 2) when "00",
             wraddress(16 downto 0) when "01",
             wraddress(16 downto 0) when "10",
-            wraddress(16 downto 0) when "11";
+            wraddress(16 downto 0) when "11",
+            wraddress(16 downto 0) when others;
+            
 	Inst_frame_buffer: frame_buffer PORT MAP(
 		addrb => rd_addr,
 		clkb   => clk_vga,
@@ -206,14 +208,6 @@ begin
 		addr  => wraddress,
 		dout  => wrdata,
 		we    => wren(0)
-	);
-
-	Inst_RGB: RGB PORT MAP(
-		Din => rddata,
-		Nblank => activeArea,
-		R => red,
-		G => green,
-		B => blue
 	);
 
 	Inst_Address_Generator: Address_Generator PORT MAP(

@@ -10,25 +10,500 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source TopMaster.tcl -notrace
-Command: synth_design -top TopMaster -part xc7a35tcpg236-1
+Command: synth_design -top TopMaster -part xc7a35tcpg236-1 -assert -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14488
+INFO: [Synth 8-7075] Helper process launched with PID 16576
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.230 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1019.715 ; gain = 0.000
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-2040] formal port doutb of mode out cannot be associated with actual port rddata of mode in [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:191]
-ERROR: [Synth 8-1084] rddata with mode 'in' cannot be updated [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:191]
-INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:33]
+INFO: [Synth 8-6157] synthesizing module 'TopMaster' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:36]
+INFO: [Synth 8-6157] synthesizing module 'encoder' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'encoder' (1#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v:16]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'onepulse' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'onepulse' (3#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:25]
+INFO: [Synth 8-6157] synthesizing module 'master_control' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v:24]
+	Parameter state_wait_rqst bound to: 3'b000 
+	Parameter state_wait_ack bound to: 3'b001 
+	Parameter state_wait_to_send_data bound to: 3'b100 
+	Parameter state_send_data bound to: 3'b101 
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'master_control' (5#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v:24]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (6#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:11]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (7#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'top' (8#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:36]
+WARNING: [Synth 8-7071] port 'seven_seg' of module 'top' is unconnected for instance 'Messenger' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
+WARNING: [Synth 8-7071] port 'AN' of module 'top' is unconnected for instance 'Messenger' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
+WARNING: [Synth 8-7023] instance 'Messenger' of module 'top' has 11 connections declared, but only 9 given [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
+INFO: [Synth 8-638] synthesizing module 'top_level' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:33]
+INFO: [Synth 8-3491] module 'clocking' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:75' bound to instance 'your_instance_name' of component 'clocking' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'clocking' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:85]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:119]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:130]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:193]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:199]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:206]
+INFO: [Synth 8-256] done synthesizing module 'clocking' (9#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:85]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:11' bound to instance 'Inst_debounce' of component 'debounce' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_debounce' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_debounce' (10#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:17]
+INFO: [Synth 8-3491] module 'ov7670_controller' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:11' bound to instance 'Inst_ov7670_controller' of component 'ov7670_controller' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:23]
+INFO: [Synth 8-3491] module 'i2c_sender' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'i2c_sender' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (11#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
+INFO: [Synth 8-3491] module 'ov7670_registers' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:12' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (12#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (13#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:23]
+INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-17796-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6' bound to instance 'Inst_frame_buffer' of component 'frame_buffer' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:188]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-17796-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (14#1) [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-17796-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:17' bound to instance 'Inst_ov7670_capture' of component 'ov7670_capture' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (15#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:29]
+INFO: [Synth 8-3491] module 'Address_Generator' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:8' bound to instance 'Inst_Address_Generator' of component 'Address_Generator' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'Address_Generator' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Address_Generator' (16#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (17#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:33]
+WARNING: [Synth 8-7071] port 'btnl' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
+WARNING: [Synth 8-7071] port 'btnc' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
+WARNING: [Synth 8-7071] port 'btnr' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
+WARNING: [Synth 8-7071] port 'config_finished' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
+WARNING: [Synth 8-7023] instance 'Camera' of module 'top_level' has 16 connections declared, but only 12 given [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
+INFO: [Synth 8-6157] synthesizing module 'CNN' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CAM_Preprocess' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v:1]
+	Parameter divisor bound to: 939524096 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FLOAT_TO_INT' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FLOAT_TO_INT' (18#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FLOAT32_MUL' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_64' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_32' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:26]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_16' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:50]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_8' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:74]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_4' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:98]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_2' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_2' (19#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_4' (20#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_8' (21#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_16' (22#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_32' (23#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_64' (24#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'FLOAT32_MUL' (25#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CAM_Preprocess' (26#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v:1]
+WARNING: [Synth 8-689] width (15000) of port connection 'in' does not match port width (7500) of module 'CAM_Preprocess' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:18]
+INFO: [Synth 8-6157] synthesizing module 'conv1_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'conv1_params' (27#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v:1]
+INFO: [Synth 8-6157] synthesizing module 'conv2_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'conv2_params' (28#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dense1_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dense1_params' (29#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dense2_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dense2_params' (30#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Convolution_Layer' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:1]
+	Parameter DATAWIDTH bound to: 25 - type: integer 
+	Parameter DATAHEIGHT bound to: 25 - type: integer 
+	Parameter DATACHANNEL bound to: 3 - type: integer 
+	Parameter FILTERBATCH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv2d' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATAWIDTH bound to: 25 - type: integer 
+	Parameter DATAHEIGHT bound to: 25 - type: integer 
+	Parameter DATACHANNEL bound to: 3 - type: integer 
+	Parameter FILTERHEIGHT bound to: 2 - type: integer 
+	Parameter FILTERWIDTH bound to: 2 - type: integer 
+	Parameter FILTERBATCH bound to: 8 - type: integer 
+	Parameter STRIDEHEIGHT bound to: 1 - type: integer 
+	Parameter STRIDEWIDTH bound to: 1 - type: integer 
+	Parameter PADDINGENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ConvKernel' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATACHANNEL bound to: 3 - type: integer 
+	Parameter LATENCY_MAX bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FLOAT32_ADD' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FLOAT32_ADD' (31#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ConvKernel' (32#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
+
+*** Running vivado
+    with args -log TopMaster.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopMaster.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source TopMaster.tcl -notrace
+Command: synth_design -top TopMaster -part xc7a35tcpg236-1 -assert -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5892
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.230 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.773 ; gain = 0.000
 ---------------------------------------------------------------------------------
-synthesize failed
-INFO: [Common 17-83] Releasing license: Synthesis
-6 Infos, 1 Warnings, 0 Critical Warnings and 2 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
-INFO: [Common 17-206] Exiting Vivado at Fri Jan 14 05:12:21 2022...
+INFO: [Synth 8-6157] synthesizing module 'TopMaster' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:23]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:36]
+INFO: [Synth 8-6157] synthesizing module 'encoder' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'encoder' (1#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v:16]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'onepulse' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'onepulse' (3#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:25]
+INFO: [Synth 8-6157] synthesizing module 'master_control' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v:24]
+	Parameter state_wait_rqst bound to: 3'b000 
+	Parameter state_wait_ack bound to: 3'b001 
+	Parameter state_wait_to_send_data bound to: 3'b100 
+	Parameter state_send_data bound to: 3'b101 
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'master_control' (5#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v:24]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (6#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:11]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (7#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'top' (8#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:36]
+WARNING: [Synth 8-7071] port 'seven_seg' of module 'top' is unconnected for instance 'Messenger' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
+WARNING: [Synth 8-7071] port 'AN' of module 'top' is unconnected for instance 'Messenger' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
+WARNING: [Synth 8-7023] instance 'Messenger' of module 'top' has 11 connections declared, but only 9 given [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
+INFO: [Synth 8-638] synthesizing module 'top_level' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:33]
+INFO: [Synth 8-3491] module 'clocking' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:75' bound to instance 'your_instance_name' of component 'clocking' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'clocking' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:85]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:119]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:130]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:193]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:199]
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:206]
+INFO: [Synth 8-256] done synthesizing module 'clocking' (9#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:85]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:11' bound to instance 'Inst_debounce' of component 'debounce' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_debounce' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_debounce' (10#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:17]
+INFO: [Synth 8-3491] module 'ov7670_controller' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:11' bound to instance 'Inst_ov7670_controller' of component 'ov7670_controller' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:23]
+INFO: [Synth 8-3491] module 'i2c_sender' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'i2c_sender' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (11#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
+INFO: [Synth 8-3491] module 'ov7670_registers' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:12' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (12#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (13#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:23]
+INFO: [Synth 8-226] default block is never used [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:184]
+INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-5980-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6' bound to instance 'Inst_frame_buffer' of component 'frame_buffer' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:190]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-5980-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (14#1) [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-5980-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6]
+INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:17' bound to instance 'Inst_ov7670_capture' of component 'ov7670_capture' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (15#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:29]
+INFO: [Synth 8-3491] module 'Address_Generator' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:8' bound to instance 'Inst_Address_Generator' of component 'Address_Generator' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'Address_Generator' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Address_Generator' (16#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (17#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:33]
+WARNING: [Synth 8-7071] port 'btnl' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
+WARNING: [Synth 8-7071] port 'btnc' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
+WARNING: [Synth 8-7071] port 'btnr' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
+WARNING: [Synth 8-7071] port 'config_finished' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
+WARNING: [Synth 8-7023] instance 'Camera' of module 'top_level' has 16 connections declared, but only 12 given [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
+INFO: [Synth 8-6157] synthesizing module 'CNN' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CAM_Preprocess' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v:1]
+	Parameter divisor bound to: 939524096 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FLOAT_TO_INT' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FLOAT_TO_INT' (18#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FLOAT32_MUL' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_64' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_32' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:26]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_16' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:50]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_8' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:74]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_4' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:98]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER_2' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_2' (19#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_4' (20#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_8' (21#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_16' (22#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_32' (23#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER_64' (24#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'FLOAT32_MUL' (25#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CAM_Preprocess' (26#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v:1]
+WARNING: [Synth 8-689] width (15000) of port connection 'in' does not match port width (7500) of module 'CAM_Preprocess' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:18]
+INFO: [Synth 8-6157] synthesizing module 'conv1_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'conv1_params' (27#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v:1]
+INFO: [Synth 8-6157] synthesizing module 'conv2_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'conv2_params' (28#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dense1_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dense1_params' (29#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dense2_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dense2_params' (30#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Convolution_Layer' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:1]
+	Parameter DATAWIDTH bound to: 25 - type: integer 
+	Parameter DATAHEIGHT bound to: 25 - type: integer 
+	Parameter DATACHANNEL bound to: 3 - type: integer 
+	Parameter FILTERBATCH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv2d' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATAWIDTH bound to: 25 - type: integer 
+	Parameter DATAHEIGHT bound to: 25 - type: integer 
+	Parameter DATACHANNEL bound to: 3 - type: integer 
+	Parameter FILTERHEIGHT bound to: 2 - type: integer 
+	Parameter FILTERWIDTH bound to: 2 - type: integer 
+	Parameter FILTERBATCH bound to: 8 - type: integer 
+	Parameter STRIDEHEIGHT bound to: 1 - type: integer 
+	Parameter STRIDEWIDTH bound to: 1 - type: integer 
+	Parameter PADDINGENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ConvKernel' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATACHANNEL bound to: 3 - type: integer 
+	Parameter LATENCY_MAX bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FLOAT32_ADD' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FLOAT32_ADD' (31#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ConvKernel' (32#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Conv2d' (33#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v:23]
+WARNING: [Synth 8-7071] port 'debug' of module 'Conv2d' is unconnected for instance 'conv' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:28]
+WARNING: [Synth 8-7023] instance 'conv' of module 'Conv2d' has 8 connections declared, but only 7 given [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:28]
+INFO: [Synth 8-6157] synthesizing module 'Relu_activation' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATAWIDTH bound to: 24 - type: integer 
+	Parameter DATAHEIGHT bound to: 24 - type: integer 
+	Parameter DATACHANNEL bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Relu' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter THRESHOLD bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Relu' (34#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Relu_activation' (35#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Max_pool' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATAWIDTH bound to: 24 - type: integer 
+	Parameter DATAHEIGHT bound to: 24 - type: integer 
+	Parameter DATACHANNEL bound to: 8 - type: integer 
+	Parameter KWIDTH bound to: 2 - type: integer 
+	Parameter KHEIGHT bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Max' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Max' (36#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Max_pool' (37#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Convolution_Layer' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Convolution_Layer__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:1]
+	Parameter DATAWIDTH bound to: 12 - type: integer 
+	Parameter DATAHEIGHT bound to: 12 - type: integer 
+	Parameter DATACHANNEL bound to: 8 - type: integer 
+	Parameter FILTERBATCH bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv2d__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATAWIDTH bound to: 12 - type: integer 
+	Parameter DATAHEIGHT bound to: 12 - type: integer 
+	Parameter DATACHANNEL bound to: 8 - type: integer 
+	Parameter FILTERHEIGHT bound to: 2 - type: integer 
+	Parameter FILTERWIDTH bound to: 2 - type: integer 
+	Parameter FILTERBATCH bound to: 20 - type: integer 
+	Parameter STRIDEHEIGHT bound to: 1 - type: integer 
+	Parameter STRIDEWIDTH bound to: 1 - type: integer 
+	Parameter PADDINGENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ConvKernel__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATACHANNEL bound to: 8 - type: integer 
+	Parameter LATENCY_MAX bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ConvKernel__parameterized0' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Conv2d__parameterized0' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v:23]
+WARNING: [Synth 8-7071] port 'debug' of module 'Conv2d' is unconnected for instance 'conv' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:28]
+WARNING: [Synth 8-7023] instance 'conv' of module 'Conv2d' has 8 connections declared, but only 7 given [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:28]
+INFO: [Synth 8-6157] synthesizing module 'Relu_activation__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATAWIDTH bound to: 11 - type: integer 
+	Parameter DATAHEIGHT bound to: 11 - type: integer 
+	Parameter DATACHANNEL bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Relu_activation__parameterized0' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Max_pool__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATAWIDTH bound to: 11 - type: integer 
+	Parameter DATAHEIGHT bound to: 11 - type: integer 
+	Parameter DATACHANNEL bound to: 20 - type: integer 
+	Parameter KWIDTH bound to: 2 - type: integer 
+	Parameter KHEIGHT bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Max_pool__parameterized0' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v:23]
+WARNING: [Synth 8-689] width (16000) of port connection 'result' does not match port width (19360) of module 'Max_pool__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'Convolution_Layer__parameterized0' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Dense_Layer' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v:1]
+	Parameter LENGTH bound to: 500 - type: integer 
+	Parameter UNITS bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FullConnect' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter LENGTH bound to: 500 - type: integer 
+	Parameter FILTERBATCH bound to: 8 - type: integer 
+	Parameter LATENCY_MAX bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FullConnect' (39#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Relu_activation__parameterized1' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATAWIDTH bound to: 1 - type: integer 
+	Parameter DATAHEIGHT bound to: 1 - type: integer 
+	Parameter DATACHANNEL bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Relu_activation__parameterized1' (39#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Dense_Layer' (40#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Dense_Layer__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v:1]
+	Parameter LENGTH bound to: 8 - type: integer 
+	Parameter UNITS bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FullConnect__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter LENGTH bound to: 8 - type: integer 
+	Parameter FILTERBATCH bound to: 3 - type: integer 
+	Parameter LATENCY_MAX bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FullConnect__parameterized0' (40#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Relu_activation__parameterized2' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
+	Parameter BITWIDTH bound to: 32 - type: integer 
+	Parameter DATAWIDTH bound to: 1 - type: integer 
+	Parameter DATAHEIGHT bound to: 1 - type: integer 
+	Parameter DATACHANNEL bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Relu_activation__parameterized2' (40#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Dense_Layer__parameterized0' (40#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CNN' (41#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:1]
+WARNING: [Synth 8-7071] port 'Rock' of module 'CNN' is unconnected for instance 'Neuron' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:80]
+WARNING: [Synth 8-7071] port 'Paper' of module 'CNN' is unconnected for instance 'Neuron' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:80]
+WARNING: [Synth 8-7071] port 'Scissors' of module 'CNN' is unconnected for instance 'Neuron' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:80]
+WARNING: [Synth 8-7023] instance 'Neuron' of module 'CNN' has 8 connections declared, but only 5 given [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'TopMaster' (42#1) [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:11 ; elapsed = 00:05:21 . Memory (MB): peak = 3378.223 ; gain = 2360.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:34 ; elapsed = 00:05:46 . Memory (MB): peak = 3378.223 ; gain = 2360.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:34 ; elapsed = 00:05:46 . Memory (MB): peak = 3378.223 ; gain = 2360.449
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 4500.793 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'Camera/your_instance_name/clkin1_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/home/github/LogicDesign/Final/TopMaster/TopMaster.gen/sources_1/ip/frame_buffer/frame_buffer/frame_buffer_in_context.xdc] for cell 'Camera/Inst_frame_buffer'
+Finished Parsing XDC File [c:/home/github/LogicDesign/Final/TopMaster/TopMaster.gen/sources_1/ip/frame_buffer/frame_buffer/frame_buffer_in_context.xdc] for cell 'Camera/Inst_frame_buffer'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.189 . Memory (MB): peak = 6416.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 6829.059 ; gain = 412.914

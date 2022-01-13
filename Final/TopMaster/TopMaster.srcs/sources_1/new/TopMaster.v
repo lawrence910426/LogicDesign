@@ -60,8 +60,8 @@ module TopMaster(
     top_level Camera(
         .clk100(clk),
         
-        .raddr(raddr),
-        .rdata(rdata),
+        .rd_addr(raddr),
+        .rddata(rdata),
         
         .ov7670_pclk(ov7670_pclk),
         .ov7670_xclk(ov7670_xclk),
