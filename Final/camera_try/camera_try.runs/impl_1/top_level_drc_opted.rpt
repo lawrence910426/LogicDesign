@@ -1,0 +1,82 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Jan 13 22:46:57 2022
+| Host         : DESKTOP-P0B4VES running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_level_drc_opted.rpt -pb top_level_drc_opted.pb -rpx top_level_drc_opted.rpx
+| Design       : top_level
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 6
++----------+------------------+-----------------------------------------------------+------------+
+| Rule     | Severity         | Description                                         | Violations |
++----------+------------------+-----------------------------------------------------+------------+
+| AVAL-139 | Error            | Phase shift check                                   | 3          |
+| AVAL-46  | Critical Warning | v7v8_mmcm_fvco_rule1                                | 1          |
+| CFGBVS-1 | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| RPBF-3   | Warning          | IO port buffering is incomplete                     | 1          |
++----------+------------------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+AVAL-139#1 Error
+Phase shift check  
+The MMCME2_ADV cell your_instance_name/mmcm_adv_inst has a CLKOUT0_PHASE value (20.000)  with CLKOUT0_USE_FINE_PS set to FALSE. It should be a multiple of [45 / CLKOUT0_DIVIDE_F] = [45 / 1.000] = 45.000.
+Related violations: <none>
+
+AVAL-139#2 Error
+Phase shift check  
+The MMCME2_ADV cell your_instance_name/mmcm_adv_inst has a CLKOUT1_PHASE value (40.000)  with CLKOUT1_USE_FINE_PS set to FALSE. It should be a multiple of [45 / CLKOUT1_DIVIDE] = [45 / 1] = 45.000.
+Related violations: <none>
+
+AVAL-139#3 Error
+Phase shift check  
+The MMCME2_ADV cell your_instance_name/mmcm_adv_inst has a CLKOUT2_PHASE value (10.000)  with CLKOUT2_USE_FINE_PS set to FALSE. It should be a multiple of [45 / CLKOUT2_DIVIDE] = [45 / 1] = 45.000.
+Related violations: <none>
+
+AVAL-46#1 Critical Warning
+v7v8_mmcm_fvco_rule1  
+The current computed target frequency, FVCO, is out of range for cell your_instance_name/mmcm_adv_inst. The computed FVCO is 500.000 MHz. The valid FVCO range for speed grade -1 is 600MHz to 1200MHz. The cell attribute values used to compute FVCO are CLKFBOUT_MULT_F = 5.000, CLKIN1_PERIOD = 10.00000, and DIVCLK_DIVIDE = 1 (FVCO = 1000 * CLKFBOUT_MULT_F/(CLKIN1_PERIOD * DIVCLK_DIVIDE)).
+This violation may be corrected by:
+  1. The timer uses timing constraints for clock period or clock frequency that affect CLKIN1 to set cell attribute CLKIN1_PERIOD, over-riding any previous value. This may already be in place and, if so this violation will be resolved once Timing is run.  Otherwise, consider modifying timing constraints to adjust the CLKIN1_PERIOD and bring FVCO into the allowed range.
+  2. In the absence of timing constraints that affect CLKIN1, consider modifying the cell CLKIN1_PERIOD to bring FVCO into the allowed range.
+  3. If CLKIN1_PERIOD is satisfactory, modify the CLKFBOUT_MULT_F or DIVCLK_DIVIDE cell attributes to bring FVCO into the allowed range.
+  4. The MMCM configuration may be dynamically modified by use of DRP which is recognized by an ACTIVE signal on DCLK pin.
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port ov7670_siod expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+

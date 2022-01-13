@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/LogicDesignExperiment/final_project/camera_try/camera_try.runs/frame_buffer_synth_1'
+HD_PWD='C:/home/github/LogicDesign/Final/camera_try/camera_try.runs/frame_buffer_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

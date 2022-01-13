@@ -54,3 +54,39 @@ source Convolution_Layer_T.tcl
 close_sim
 launch_simulation
 source Convolution_Layer_T.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MockUpPlacement [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+close [ open C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_param.v w ]
+add_files C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_param.v
+close [ open C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v w ]
+add_files C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v
+close [ open C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v w ]
+add_files C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v
+close [ open C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v w ]
+add_files C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v w ]
+add_files C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/Conv2d_T.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/Dense_T.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/FullConnect_T.v] -no_script -reset -force -quiet
+remove_files  {C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/Conv2d_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/Dense_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/FullConnect_T.v}
+export_ip_user_files -of_objects  [get_files C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_param.v] -no_script -reset -force -quiet
+remove_files  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_param.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

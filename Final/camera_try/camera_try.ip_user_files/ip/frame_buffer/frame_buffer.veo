@@ -59,7 +59,10 @@ frame_buffer your_instance_name (
   .wea(wea),      // input wire [0 : 0] wea
   .addra(addra),  // input wire [16 : 0] addra
   .dina(dina),    // input wire [11 : 0] dina
-  .douta(douta)  // output wire [11 : 0] douta
+  .clkb(clkb),    // input wire clkb
+  .enb(enb),      // input wire enb
+  .addrb(addrb),  // input wire [16 : 0] addrb
+  .doutb(doutb)  // output wire [11 : 0] doutb
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

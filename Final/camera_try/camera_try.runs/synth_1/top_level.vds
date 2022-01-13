@@ -1,0 +1,334 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 13 22:44:52 2022
+# Process ID: 15200
+# Current directory: C:/home/github/LogicDesign/Final/camera_try/camera_try.runs/synth_1
+# Command line: vivado.exe -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+# Log file: C:/home/github/LogicDesign/Final/camera_try/camera_try.runs/synth_1/top_level.vds
+# Journal file: C:/home/github/LogicDesign/Final/camera_try/camera_try.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl -notrace
+Command: synth_design -top top_level -part xc7a35tcpg236-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16408
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1018.070 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_level' [C:/home/github/LogicDesign/Final/camera_try/top_level.v:16]
+INFO: [Synth 8-6157] synthesizing module 'clocking' [C:/home/github/LogicDesign/Final/camera_try/clocking.v:17]
+INFO: [Synth 8-6157] synthesizing module 'IBUFG' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33448]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFG' (1#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33448]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 387760213060.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 1'b0 
+	Parameter CLKIN1_PERIOD bound to: 1.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 20.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 40.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 10.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0.010000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'clocking' (4#1) [C:/home/github/LogicDesign/Final/camera_try/clocking.v:17]
+INFO: [Synth 8-6157] synthesizing module 'VGA' [C:/home/github/LogicDesign/Final/camera_try/vga.v:17]
+	Parameter HM bound to: 799 - type: integer 
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VM bound to: 524 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'VGA' (5#1) [C:/home/github/LogicDesign/Final/camera_try/vga.v:17]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/home/github/LogicDesign/Final/camera_try/debounce.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (6#1) [C:/home/github/LogicDesign/Final/camera_try/debounce.v:17]
+INFO: [Synth 8-6157] synthesizing module 'ov7670_controller' [C:/home/github/LogicDesign/Final/camera_try/ov7670_controller.v:17]
+	Parameter camera_address bound to: 8'b01000010 
+INFO: [Synth 8-6157] synthesizing module 'i2c_sender' [C:/home/github/LogicDesign/Final/camera_try/i2c_sender.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_sender' (7#1) [C:/home/github/LogicDesign/Final/camera_try/i2c_sender.v:17]
+INFO: [Synth 8-6157] synthesizing module 'ov7670_registers' [C:/home/github/LogicDesign/Final/camera_try/ov7670_registers.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_registers' (8#1) [C:/home/github/LogicDesign/Final/camera_try/ov7670_registers.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_controller' (9#1) [C:/home/github/LogicDesign/Final/camera_try/ov7670_controller.v:17]
+INFO: [Synth 8-6157] synthesizing module 'ov7670_capture' [C:/home/github/LogicDesign/Final/camera_try/ov7670_capture.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_capture' (10#1) [C:/home/github/LogicDesign/Final/camera_try/ov7670_capture.v:17]
+INFO: [Synth 8-6157] synthesizing module 'RGB' [C:/home/github/LogicDesign/Final/camera_try/rgb.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'RGB' (11#1) [C:/home/github/LogicDesign/Final/camera_try/rgb.v:17]
+INFO: [Synth 8-6157] synthesizing module 'Address_Generator' [C:/home/github/LogicDesign/Final/camera_try/address_generator.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'Address_Generator' (12#1) [C:/home/github/LogicDesign/Final/camera_try/address_generator.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'top_level' (13#1) [C:/home/github/LogicDesign/Final/camera_try/top_level.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1018.070 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1018.070 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1018.070 ; gain = 0.000
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0.000000' specified for property 'CLKFBOUT_MULT_F'. Expecting type 'double' with possible values of '2 to 64'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '387760213060.000000' specified for property 'CLKFBOUT_PHASE'. Expecting type 'double' with possible values of '-360 to 360'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Common 17-130] Wrong Boolean value '1'b0'. Setting it to default value '0'.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0.000000' specified for property 'CLKOUT0_DIVIDE_F'. Expecting type 'double' with possible values of '1 to 128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0.000000' specified for property 'CLKOUT0_DUTY_CYCLE'. Expecting type 'double' with possible values of '0.001 to 0.999'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Common 17-130] Wrong Boolean value '0.000000'. Setting it to default value '0'.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0.000000' specified for property 'CLKOUT1_DUTY_CYCLE'. Expecting type 'double' with possible values of '0.001 to 0.999'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Common 17-130] Wrong Boolean value '0.000000'. Setting it to default value '0'.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0.000000' specified for property 'CLKOUT2_DUTY_CYCLE'. Expecting type 'double' with possible values of '0.001 to 0.999'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Common 17-130] Wrong Boolean value '0.010000'. Setting it to default value '0'.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1018.070 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'your_instance_name/clkin1_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/home/github/LogicDesign/Final/camera_try/camera_try.srcs/constrs_1/new/constraint.xdc]
+WARNING: [Vivado 12-507] No nets matched 'ov7670_pclk_IBUF'. [C:/home/github/LogicDesign/Final/camera_try/camera_try.srcs/constrs_1/new/constraint.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/home/github/LogicDesign/Final/camera_try/camera_try.srcs/constrs_1/new/constraint.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/home/github/LogicDesign/Final/camera_try/camera_try.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/home/github/LogicDesign/Final/camera_try/camera_try.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1053.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1053.570 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1053.570 ; gain = 35.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1053.570 ; gain = 35.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1053.570 ; gain = 35.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1053.570 ; gain = 35.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 5     
+	   7 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 9     
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1053.570 ; gain = 35.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1053.570 ; gain = 35.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1053.570 ; gain = 35.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1053.570 ; gain = 35.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1053.570 ; gain = 35.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1053.570 ; gain = 35.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |LUT1       |     9|
+|3     |LUT2       |    11|
+|4     |LUT3       |    53|
+|5     |LUT4       |    11|
+|6     |LUT5       |    14|
+|7     |LUT6       |    26|
+|8     |MMCME2_ADV |     1|
+|9     |RAMB18E1   |     1|
+|10    |FDRE       |   103|
+|11    |FDSE       |     1|
+|12    |IBUFG      |     1|
+|13    |OBUF       |    19|
+|14    |OBUFT      |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1053.570 ; gain = 35.500
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1053.570 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1053.570 ; gain = 35.500
+INFO: [Project 1-571] Translating synthesized netlist
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0.000000' specified for property 'CLKFBOUT_MULT_F'. Expecting type 'double' with possible values of '2 to 64'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '387760213060.000000' specified for property 'CLKFBOUT_PHASE'. Expecting type 'double' with possible values of '-360 to 360'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Common 17-130] Wrong Boolean value '1'b0'. Setting it to default value '0'.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0.000000' specified for property 'CLKOUT0_DIVIDE_F'. Expecting type 'double' with possible values of '1 to 128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0.000000' specified for property 'CLKOUT0_DUTY_CYCLE'. Expecting type 'double' with possible values of '0.001 to 0.999'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Common 17-130] Wrong Boolean value '0.000000'. Setting it to default value '0'.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0.000000' specified for property 'CLKOUT1_DUTY_CYCLE'. Expecting type 'double' with possible values of '0.001 to 0.999'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Common 17-130] Wrong Boolean value '0.000000'. Setting it to default value '0'.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0.000000' specified for property 'CLKOUT2_DUTY_CYCLE'. Expecting type 'double' with possible values of '0.001 to 0.999'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/home/github/LogicDesign/Final/camera_try/clocking.v:48]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Common 17-130] Wrong Boolean value '0.010000'. Setting it to default value '0'.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1053.570 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+WARNING: [Netlist 29-432] The IBUFG primitive 'your_instance_name/clkin1_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1072.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFG => IBUF: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 3 Warnings, 21 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1072.371 ; gain = 54.301
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/home/github/LogicDesign/Final/camera_try/camera_try.runs/synth_1/top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 13 22:45:28 2022...
