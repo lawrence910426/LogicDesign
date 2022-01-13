@@ -1,24 +1,3 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 01/05/2022 10:50:39 PM
-// Design Name: 
-// Module Name: CNN
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 module CNN(
     input clk,
     input start,
@@ -29,32 +8,33 @@ module CNN(
     output reg [4 - 1:0] Highest,
     output reg finish
 );
+    reg [25 * 25 * 3 * 8 - 1:0] CAM_reg;
+    
     // Make CAM information to float
     wire [32 * 25 * 25 * 3 - 1:0] Model_Input;
-    assign Model_Input = 0;
+    reg Preprocess_Start;
+    wire Preprocess_Finish;
+    CAM_Preprocess converter (
+        .in(CAM_reg), .start(Preprocess_Start), .clk(clk),
+        .out(Model_Input), .finish(Preprocess_Finish)
+    );
 
     // Weights definition
     wire [32 * 2 * 2 * 3 * 8 - 1:0] weight_1;
     wire [32 * 8 - 1:0] bias_1;
-    conv1_params ( .weight(weight_1), .bias(bias_1) );
+    conv1_params _p1 ( .weight(weight_1), .bias(bias_1) );
     
     wire [32 * 2 * 2 * 8 * 20 - 1:0] weight_2;
     wire [32 * 20 - 1:0] bias_2;
-    conv2_params ( .weight(weight_2), .bias(bias_2) );
+    conv2_params _p2 ( .weight(weight_2), .bias(bias_2) );
     
     wire [32 * 500 * 8 - 1:0] weight_3;
     wire [32 * 8 - 1:0] bias_3;
-    dense1_params ( .weight(weight_3), .bias(bias_3) );
+    dense1_params _p3 ( .weight(weight_3), .bias(bias_3) );
     
     wire [32 * 8 * 3 - 1:0] weight_4;
     wire [32 * 3 - 1:0] bias_4;  
-    dense2_params ( .weight(weight_4), .bias(bias_4) );
-    
-    assign 
-        weight_1 = 0, bias_1 = 0,
-        weight_2 = 0, bias_2 = 0,
-        weight_3 = 0, bias_3 = 0,
-        weight_4 = 0, bias_4 = 0;
+    dense2_params _p4 ( .weight(weight_4), .bias(bias_4) );
     
     // 1st Convolution
     wire [32 * 12 * 12 * 8 - 1:0] conv_1_out;
@@ -114,44 +94,59 @@ module CNN(
         .start(dense_2_start), .finish(dense_2_finish)
     );
     
+    always @ (posedge clk) if (start == 1'b1) CAM_reg <= CAM;
+    
     // Module controller
     always @ (posedge clk) begin
         if (start == 1'b1) begin
-            conv_1_start = 1;
-            conv_2_start = 0;
-            dense_1_start = 0;
-            dense_2_start = 0;
-            finish = 0;
+            Preprocess_Start <= 1;
+            conv_1_start <= 0;
+            conv_2_start <= 0;
+            dense_1_start <= 0;
+            dense_2_start <= 0;
+            finish <= 0;
+        end else if (Preprocess_Finish == 1'b1) begin
+            Preprocess_Start <= 0;
+            conv_1_start <= 1;
+            conv_2_start <= 0;
+            dense_1_start <= 0;
+            dense_2_start <= 0;
+            finish <= 0;
         end else if (conv_1_finish == 1'b1) begin
-            conv_1_start = 0;
-            conv_2_start = 1;
-            dense_1_start = 0;
-            dense_2_start = 0;   
-            finish = 0;         
+            Preprocess_Start <= 0;
+            conv_1_start <= 0;
+            conv_2_start <= 1;
+            dense_1_start <= 0;
+            dense_2_start <= 0;   
+            finish <= 0;         
         end else if (conv_2_finish == 1'b1) begin
-            conv_1_start = 0;
-            conv_2_start = 0;
-            dense_1_start = 1;
-            dense_2_start = 0;
-            finish = 0;
+            Preprocess_Start <= 0;
+            conv_1_start <= 0;
+            conv_2_start <= 0;
+            dense_1_start <= 1;
+            dense_2_start <= 0;
+            finish <= 0;
         end else if (dense_1_finish == 1'b1) begin
-            conv_1_start = 0;
-            conv_2_start = 0;
-            dense_1_start = 0;
-            dense_2_start = 1;
-            finish = 0;
+            Preprocess_Start <= 1;
+            conv_1_start <= 0;
+            conv_2_start <= 0;
+            dense_1_start <= 0;
+            dense_2_start <= 1;
+            finish <= 0;
         end else if (dense_2_finish == 1'b1) begin
-            conv_1_start = 0;
-            conv_2_start = 0;
-            dense_1_start = 0;
-            dense_2_start = 0;
-            finish = 1;
+            Preprocess_Start <= 0;
+            conv_1_start <= 0;
+            conv_2_start <= 0;
+            dense_1_start <= 0;
+            dense_2_start <= 0;
+            finish <= 1;
         end else begin
-            conv_1_start = 0;
-            conv_2_start = 0;
-            dense_1_start = 0;
-            dense_2_start = 0;
-            finish = 0;
+            Preprocess_Start <= 0;
+            conv_1_start <= 0;
+            conv_2_start <= 0;
+            dense_1_start <= 0;
+            dense_2_start <= 0;
+            finish <= 0;
         end
     end
 
