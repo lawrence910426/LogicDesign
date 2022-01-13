@@ -87,7 +87,7 @@ module top_level(clk100, btnl, btnc, btnr, config_finished, vga_hsync, vga_vsync
                     (size_select == 2'b10) ? wraddress[16:0] : 
                     wraddress[16:0];
    
-   // frame_buffer Inst_frame_buffer(.addrb(rd_addr), .clkb(clk_vga), .doutb(rddata), .clka(ov7670_pclk), .addra(wr_addr), .dina(wrdata), .wea(wren));
+   frame_buffer Inst_frame_buffer(.addrb(rd_addr), .clkb(clk_vga), .doutb(rddata), .clka(ov7670_pclk), .addra(wr_addr), .dina(wrdata), .wea(wren));
    
    ov7670_capture Inst_ov7670_capture(.pclk(ov7670_pclk), .rez_160x120(rez_160x120), .rez_320x240(rez_320x240), .vsync(ov7670_vsync), .href(ov7670_href), .d(ov7670_data), .addr(wraddress), .dout(wrdata), .we(wren[0]));
    
