@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2017.3 (64-bit)
-# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
-# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Wed Aug  8 17:16:06 2018
-# Process ID: 8972
-# Current directory: D:/basys3_ov7670_full/basys3_ov7670_full.runs/frame_buffer_synth_1
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 14 00:44:35 2022
+# Process ID: 17540
+# Current directory: C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.runs/frame_buffer_synth_1
 # Command line: vivado.exe -log frame_buffer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source frame_buffer.tcl
-# Log file: D:/basys3_ov7670_full/basys3_ov7670_full.runs/frame_buffer_synth_1/frame_buffer.vds
-# Journal file: D:/basys3_ov7670_full/basys3_ov7670_full.runs/frame_buffer_synth_1\vivado.jou
+# Log file: C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.runs/frame_buffer_synth_1/frame_buffer.vds
+# Journal file: C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.runs/frame_buffer_synth_1\vivado.jou
 #-----------------------------------------------------------
 source frame_buffer.tcl -notrace

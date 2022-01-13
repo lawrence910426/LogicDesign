@@ -1,8 +1,8 @@
-Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Wed Aug  8 17:53:12 2018
-| Host         : EEEvirtus14pc19 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Jan 14 01:19:47 2022
+| Host         : DESKTOP-P0B4VES running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
 | Design       : top_level
 | Device       : xc7a35t
@@ -13,8 +13,9 @@ Control Set Information
 Table of Contents
 -----------------
 1. Summary
-2. Flip-Flop Distribution
-3. Detailed Control Set Information
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
 
 1. Summary
 ----------
@@ -22,65 +23,75 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    18 |
-| Unused register locations in slices containing registers |    60 |
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    77 |
 +----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
 
 
-2. Flip-Flop Distribution
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
 -------------------------
 
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              35 |           28 |
+| No           | No                    | No                     |              29 |           20 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              43 |           12 |
-| Yes          | No                    | No                     |              44 |           18 |
+| No           | Yes                   | No                     |              43 |           14 |
+| Yes          | No                    | No                     |              74 |           23 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             106 |           27 |
+| Yes          | Yes                   | No                     |              65 |           22 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
-3. Detailed Control Set Information
+4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------+----------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
-|        Clock Signal        |                          Enable Signal                         |                      Set/Reset Signal                      | Slice Load Count | Bel Load Count |
-+----------------------------+----------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
-|  your_instance_name/CLK_25 |                                                                | Inst_VGA/Hsync0                                            |                1 |              1 |
-|  your_instance_name/CLK_50 |                                                                | Inst_ov7670_controller/Inst_i2c_sender/sioc_i_1_n_0        |                1 |              1 |
-|  your_instance_name/CLK_50 |                                                                |                                                            |                3 |              4 |
-|  ov7670_pclk_IBUF_BUFG     |                                                                |                                                            |                4 |              6 |
-|  ov7670_pclk_IBUF_BUFG     |                                                                | Inst_ov7670_capture/href_last[2]_i_1_n_0                   |                1 |              7 |
-|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_ov7670_registers/divider_reg[0][0] |                                                            |                3 |              8 |
-|  your_instance_name/CLK_25 |                                                                | Inst_VGA/eqOp                                              |                3 |             10 |
-|  your_instance_name/CLK_25 | Inst_VGA/eqOp                                                  | Inst_VGA/Vcnt                                              |                4 |             10 |
-| ~ov7670_pclk_IBUF_BUFG     |                                                                |                                                            |               10 |             10 |
-|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/busy_sr0                | Inst_ov7670_controller/Inst_i2c_sender/data_sr[30]_i_1_n_0 |                3 |             11 |
-|  ov7670_pclk_IBUF_BUFG     | Inst_ov7670_capture/latched_href                               |                                                            |               11 |             15 |
-|  your_instance_name/CLK_25 |                                                                |                                                            |               12 |             16 |
-|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/E[0]                    | Inst_debounce/SR[0]                                        |                5 |             16 |
-|  your_instance_name/CLK_25 | Inst_Address_Generator/val                                     | Inst_VGA/val_reg[18]                                       |                5 |             19 |
-|  ov7670_pclk_IBUF_BUFG     | Inst_ov7670_capture/wren                                       | Inst_ov7670_capture/latched_vsync                          |                5 |             19 |
-|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/busy_sr0                |                                                            |                4 |             21 |
-|  your_instance_name/CLK_25 |                                                                | Inst_debounce/clear                                        |                6 |             24 |
-|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/busy_sr0                | Inst_ov7670_controller/Inst_i2c_sender/busy_sr[31]_i_1_n_0 |                5 |             31 |
-+----------------------------+----------------------------------------------------------------+------------------------------------------------------------+------------------+----------------+
-
-
-+--------+-----------------------+
-| Fanout | Number of ControlSets |
-+--------+-----------------------+
-| 1      |                     2 |
-| 4      |                     1 |
-| 6      |                     1 |
-| 7      |                     1 |
-| 8      |                     1 |
-| 10     |                     3 |
-| 11     |                     1 |
-| 15     |                     1 |
-| 16+    |                     7 |
-+--------+-----------------------+
++----------------------------+-----------------------------------------------------------+------------------------------------------------------------+------------------+----------------+--------------+
+|        Clock Signal        |                       Enable Signal                       |                      Set/Reset Signal                      | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------+-----------------------------------------------------------+------------------------------------------------------------+------------------+----------------+--------------+
+|  your_instance_name/CLK_50 |                                                           | Inst_ov7670_controller/Inst_i2c_sender/sioc_i_1_n_0        |                1 |              1 |         1.00 |
+|  your_instance_name/CLK_25 |                                                           | Inst_VGA/Hsync0                                            |                1 |              1 |         1.00 |
+|  ov7670_pclk_IBUF_BUFG     |                                                           |                                                            |                1 |              2 |         2.00 |
+|  your_instance_name/CLK_25 | Inst_VGA/eqOp                                             |                                                            |                1 |              2 |         2.00 |
+|  ov7670_pclk_IBUF_BUFG     | Inst_ov7670_capture/line0                                 | Inst_ov7670_capture/latched_vsync                          |                1 |              4 |         4.00 |
+|  ov7670_pclk_IBUF_BUFG     |                                                           | Inst_ov7670_capture/href_last[6]_i_1_n_0                   |                2 |              7 |         3.50 |
+|  your_instance_name/CLK_50 |                                                           |                                                            |                4 |              7 |         1.75 |
+|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/divider[7]_i_1_n_0 |                                                            |                2 |              8 |         4.00 |
+|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/taken              | Inst_debounce/o                                            |                3 |              8 |         2.67 |
+|  your_instance_name/CLK_25 | Inst_VGA/eqOp                                             | Inst_VGA/Vcnt                                              |                4 |              8 |         2.00 |
+| ~ov7670_pclk_IBUF_BUFG     |                                                           |                                                            |                9 |             10 |         1.11 |
+|  your_instance_name/CLK_25 |                                                           |                                                            |                6 |             10 |         1.67 |
+|  your_instance_name/CLK_25 |                                                           | Inst_VGA/eqOp                                              |                4 |             10 |         2.50 |
+|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/busy_sr0           | Inst_ov7670_controller/Inst_i2c_sender/data_sr[30]_i_1_n_0 |                4 |             11 |         2.75 |
+|  ov7670_pclk_IBUF_BUFG     | Inst_ov7670_capture/latched_href                          |                                                            |               10 |             15 |         1.50 |
+|  ov7670_pclk_IBUF_BUFG     | Inst_ov7670_capture/wren                                  | Inst_ov7670_capture/latched_vsync                          |                5 |             17 |         3.40 |
+|  your_instance_name/CLK_25 | Inst_Address_Generator/val                                | Inst_VGA/Vsync_reg_0                                       |                5 |             17 |         3.40 |
+|  your_instance_name/CLK_25 |                                                           | Inst_debounce/clear                                        |                6 |             24 |         4.00 |
+|  your_instance_name/CLK_50 | Inst_ov7670_controller/Inst_i2c_sender/busy_sr0           |                                                            |               10 |             49 |         4.90 |
++----------------------------+-----------------------------------------------------------+------------------------------------------------------------+------------------+----------------+--------------+
 
 
