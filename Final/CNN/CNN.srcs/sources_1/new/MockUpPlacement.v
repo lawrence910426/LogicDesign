@@ -25,16 +25,14 @@ module MockUpPlacement(
     input start,
     output finish
 );
-    wire [32 * 5 * 5 * 20 - 1:0] conv_2_out;
-    
-    Convolution_Layer #(
-        .DATAWIDTH(12),
-        .DATAHEIGHT(12),
-        .DATACHANNEL(8),
-        .FILTERBATCH(20)
-    ) conv_2 (
-        .clk(clk), .start(start),
-        .Model_Input(conv_1_out), .Model_Output(conv_2_out),
-        .weight(0), .bias(0), .finish(finish)
+    wire [32 - 1:0] r, p, s;
+    wire [4 - 1:0] h;
+        
+    CNN chip (
+        clk,
+        start,
+        0,
+        r, p, s, h,
+        finish
     );
 endmodule
