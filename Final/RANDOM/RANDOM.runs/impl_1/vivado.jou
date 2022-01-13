@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 13 20:49:34 2022
+# Process ID: 21000
+# Current directory: D:/LogicDesignExperiment/final_project/RANDOM/RANDOM.runs/impl_1
+# Command line: vivado.exe -log RANDOM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RANDOM.tcl -notrace
+# Log file: D:/LogicDesignExperiment/final_project/RANDOM/RANDOM.runs/impl_1/RANDOM.vdi
+# Journal file: D:/LogicDesignExperiment/final_project/RANDOM/RANDOM.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source RANDOM.tcl -notrace
