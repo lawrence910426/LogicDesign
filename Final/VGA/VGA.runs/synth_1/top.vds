@@ -1,0 +1,262 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 13 22:44:15 2022
+# Process ID: 544
+# Current directory: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1/top.vds
+# Journal file: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20644
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.426 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/LogicDesignExperiment/final_project/VGA/CODE/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clock_divisor' [D:/LogicDesignExperiment/final_project/VGA/CODE/clock_divisor.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divisor' (1#1) [D:/LogicDesignExperiment/final_project/VGA/CODE/clock_divisor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_addr_gen' [D:/LogicDesignExperiment/final_project/VGA/CODE/mem_addr_gen.v:1]
+	Parameter READY bound to: 2'b00 
+	Parameter COUNTDOWN bound to: 2'b00 
+	Parameter WAITING bound to: 2'b00 
+	Parameter RESULT bound to: 2'b00 
+WARNING: [Synth 8-151] case item 2'b00 is unreachable [D:/LogicDesignExperiment/final_project/VGA/CODE/mem_addr_gen.v:29]
+WARNING: [Synth 8-151] case item 2'b00 is unreachable [D:/LogicDesignExperiment/final_project/VGA/CODE/mem_addr_gen.v:29]
+WARNING: [Synth 8-151] case item 2'b00 is unreachable [D:/LogicDesignExperiment/final_project/VGA/CODE/mem_addr_gen.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'mem_addr_gen' (2#1) [D:/LogicDesignExperiment/final_project/VGA/CODE/mem_addr_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1/.Xil/Vivado-544-TACO-SUGO-KAWAII/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (3#1) [D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1/.Xil/Vivado-544-TACO-SUGO-KAWAII/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [D:/LogicDesignExperiment/final_project/VGA/CODE/vga.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (4#1) [D:/LogicDesignExperiment/final_project/VGA/CODE/vga.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top' (5#1) [D:/LogicDesignExperiment/final_project/VGA/CODE/top.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.426 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.426 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.426 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1017.426 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/LogicDesignExperiment/final_project/VGA/VGA.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
+Finished Parsing XDC File [d:/LogicDesignExperiment/final_project/VGA/VGA.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
+Parsing XDC File [D:/LogicDesignExperiment/final_project/VGA/VGA.srcs/constrs_2/new/cons.xdc]
+Finished Parsing XDC File [D:/LogicDesignExperiment/final_project/VGA/VGA.srcs/constrs_2/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/LogicDesignExperiment/final_project/VGA/VGA.srcs/constrs_2/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1041.898 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1041.898 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1041.898 ; gain = 24.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1041.898 ; gain = 24.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for blk_mem_gen_0_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1041.898 ; gain = 24.473
+---------------------------------------------------------------------------------
+DSP Debug: swapped A/B pins for adder 000001A4B8BF6570
+DSP Debug: swapped A/B pins for adder 000001A4B8BF7110
+WARNING: [Synth 8-327] inferring latch for variable 'pixel_addr_reg' [D:/LogicDesignExperiment/final_project/VGA/CODE/mem_addr_gen.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1041.898 ; gain = 24.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input   17 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	               7x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   17 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1041.898 ; gain = 24.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1041.898 ; gain = 24.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1041.898 ; gain = 24.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1059.270 ; gain = 41.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module blk_mem_gen_0_inst has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1074.020 ; gain = 56.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1074.020 ; gain = 56.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1074.020 ; gain = 56.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1074.020 ; gain = 56.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1074.020 ; gain = 56.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1074.020 ; gain = 56.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     1|
+|2     |BUFG        |     1|
+|3     |CARRY4      |   122|
+|4     |LUT1        |    55|
+|5     |LUT2        |   134|
+|6     |LUT3        |   173|
+|7     |LUT4        |   206|
+|8     |LUT5        |    87|
+|9     |LUT6        |   166|
+|10    |MUXF7       |     2|
+|11    |FDRE        |    22|
+|12    |FDSE        |     2|
+|13    |LD          |    17|
+|14    |IBUF        |     4|
+|15    |OBUF        |    14|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1074.020 ; gain = 56.594
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 12 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1074.020 ; gain = 32.121
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1074.020 ; gain = 56.594
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1085.016 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 141 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1085.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  LD => LDCE: 17 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 4 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1085.016 ; gain = 67.590
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 13 22:44:56 2022...

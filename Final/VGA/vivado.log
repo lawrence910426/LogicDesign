@@ -1,0 +1,232 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 13 21:37:36 2022
+# Process ID: 20836
+# Current directory: D:/LogicDesignExperiment/final_project/VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3888 D:\LogicDesignExperiment\final_project\VGA\VGA.xpr
+# Log file: D:/LogicDesignExperiment/final_project/VGA/vivado.log
+# Journal file: D:/LogicDesignExperiment/final_project/VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/final_project/VGA/VGA.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/LogicDesignExperiment/final_project/VGA/VGA.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Thu Jan 13 22:14:45 2022] Launched synth_1...
+Run output will be captured here: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/LogicDesignExperiment/final_project/VGA/PIC/full_pic.coe' provided. It will be converted relative to IP Instance files '../../../../PIC/full_pic.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0
+set_property -dict [list CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {98200} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {D:/LogicDesignExperiment/final_project/VGA/PIC/full_pic.coe}] [get_ips blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/LogicDesignExperiment/final_project/VGA/PIC/full_pic.coe' provided. It will be converted relative to IP Instance files '../../../../PIC/full_pic.coe'
+generate_target {instantiation_template} [get_files d:/LogicDesignExperiment/final_project/VGA/VGA.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/LogicDesignExperiment/final_project/VGA/VGA.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.789 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files d:/LogicDesignExperiment/final_project/VGA/VGA.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/LogicDesignExperiment/final_project/VGA/VGA.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs blk_mem_gen_0_synth_1 -jobs 8
+[Thu Jan 13 22:19:35 2022] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/LogicDesignExperiment/final_project/VGA/VGA.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory D:/LogicDesignExperiment/final_project/VGA/VGA.ip_user_files/sim_scripts -ip_user_files_dir D:/LogicDesignExperiment/final_project/VGA/VGA.ip_user_files -ipstatic_source_dir D:/LogicDesignExperiment/final_project/VGA/VGA.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/LogicDesignExperiment/final_project/VGA/VGA.cache/compile_simlib/modelsim} {questa=D:/LogicDesignExperiment/final_project/VGA/VGA.cache/compile_simlib/questa} {riviera=D:/LogicDesignExperiment/final_project/VGA/VGA.cache/compile_simlib/riviera} {activehdl=D:/LogicDesignExperiment/final_project/VGA/VGA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Thu Jan 13 22:19:43 2022] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/blk_mem_gen_0_synth_1/runme.log
+[Thu Jan 13 22:19:43 2022] Launched synth_1...
+Run output will be captured here: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Thu Jan 13 22:22:09 2022] Launched impl_1...
+Run output will be captured here: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1225.750 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 216 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.232 . Memory (MB): peak = 1312.941 ; gain = 2.766
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.233 . Memory (MB): peak = 1312.941 ; gain = 2.766
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1721.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 1841.605 ; gain = 823.816
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list {com_hand[1]} {com_hand[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {player_hand[1]} {player_hand[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {result[1]} {result[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {state[1]} {state[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {vgaBlue[3]} {vgaBlue[2]} {vgaBlue[1]} {vgaBlue[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {vgaGreen[3]} {vgaGreen[2]} {vgaGreen[1]} {vgaGreen[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {vgaRed[3]} {vgaRed[2]} {vgaRed[1]} {vgaRed[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list hsync]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list vsync]]
+set_property package_pin "" [get_ports [list  {com_hand[1]}]]
+set_property package_pin "" [get_ports [list  {com_hand[0]}]]
+startgroup
+set_property package_pin "" [get_ports [list  hsync]]
+place_ports {state[1]} V16
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {vgaRed[3]}]]
+place_ports {state[0]} V17
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {vgaRed[1]}]]
+place_ports {result[1]} W17
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {vgaRed[2]}]]
+place_ports {result[0]} W16
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {vgaRed[0]}]]
+place_ports {com_hand[1]} V15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {vgaGreen[3]}]]
+place_ports {com_hand[0]} W15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {vgaGreen[2]}]]
+place_ports {player_hand[1]} W13
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {vgaGreen[1]}]]
+place_ports {player_hand[0]} W14
+endgroup
+place_ports clk W5
+file mkdir D:/LogicDesignExperiment/final_project/VGA/VGA.srcs/constrs_1/new
+close [ open D:/LogicDesignExperiment/final_project/VGA/VGA.srcs/constrs_1/new/cons.xdc w ]
+add_files -fileset constrs_1 D:/LogicDesignExperiment/final_project/VGA/VGA.srcs/constrs_1/new/cons.xdc
+set_property target_constrs_file D:/LogicDesignExperiment/final_project/VGA/VGA.srcs/constrs_1/new/cons.xdc [current_fileset -constrset]
+save_constraints -force
+place_ports {vgaRed[0]} G19
+place_ports {vgaRed[1]} H19
+place_ports {vgaRed[2]} J19
+place_ports {vgaRed[3]} N19
+place_ports {vgaBlue[0]} N18
+place_ports {vgaBlue[1]} L18
+place_ports {vgaBlue[2]} K18
+place_ports {vgaBlue[3]} J18
+place_ports {vgaGreen[0]} J17
+place_ports {vgaGreen[1]} H17
+place_ports {vgaGreen[2]} G17
+place_ports {vgaGreen[3]} D17
+place_ports hsync P19
+place_ports rst R19
+startgroup
+set_property package_pin "" [get_ports [list  rst]]
+place_ports vsync R19
+endgroup
+place_ports rst U17
+save_constraints -force
+ERROR: [Common 17-53] User Exception: A file was added to constraint set constrs_1 after the  implementation design was open. Doing "Save Constraints" will overwrite these files. Use "Save Constraints As" to avoid losing any data on disk.
+save_constraints_as constrs_2
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jan 13 22:32:27 2022] Launched synth_1...
+Run output will be captured here: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1/runme.log
+[Thu Jan 13 22:32:27 2022] Launched impl_1...
+Run output will be captured here: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-05:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2016.980 ; gain = 0.289
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183711944A
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3566.633 ; gain = 1549.652
+set_property PROGRAM.FILE {D:/LogicDesignExperiment/final_project/VGA/VGA.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/LogicDesignExperiment/final_project/VGA/VGA.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jan 13 22:39:50 2022] Launched synth_1...
+Run output will be captured here: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1/runme.log
+[Thu Jan 13 22:39:50 2022] Launched impl_1...
+Run output will be captured here: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/LogicDesignExperiment/final_project/VGA/VGA.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jan 13 22:44:12 2022] Launched synth_1...
+Run output will be captured here: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/synth_1/runme.log
+[Thu Jan 13 22:44:12 2022] Launched impl_1...
+Run output will be captured here: D:/LogicDesignExperiment/final_project/VGA/VGA.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/LogicDesignExperiment/final_project/VGA/VGA.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 13 22:50:28 2022...
