@@ -1,12 +1,12 @@
-Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Wed Aug  8 17:53:07 2018
-| Host         : EEEvirtus14pc19 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Jan 14 01:19:41 2022
+| Host         : DESKTOP-P0B4VES running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_level_drc_opted.rpt -pb top_level_drc_opted.pb -rpx top_level_drc_opted.rpx
 | Design       : top_level
-| Device       : xc7a35tcpg236-3
-| Speed File   : -3
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
 | Design State : Synthesized
 ------------------------------------------------------------------------------------------------------------------
 

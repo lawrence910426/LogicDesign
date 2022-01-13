@@ -16,6 +16,58 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+namespace eval ::optrace {
+  variable script "C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.runs/impl_1/top_level.tcl"
+  variable category "vivado_impl"
+}
+
+# Try to connect to running dispatch if we haven't done so already.
+# This code assumes that the Tcl interpreter is not using threads,
+# since the ::dispatch::connected variable isn't mutex protected.
+if {![info exists ::dispatch::connected]} {
+  namespace eval ::dispatch {
+    variable connected false
+    if {[llength [array get env XILINX_CD_CONNECT_ID]] > 0} {
+      set result "true"
+      if {[catch {
+        if {[lsearch -exact [package names] DispatchTcl] < 0} {
+          set result [load librdi_cd_clienttcl[info sharedlibextension]] 
+        }
+        if {$result eq "false"} {
+          puts "WARNING: Could not load dispatch client library"
+        }
+        set connect_id [ ::dispatch::init_client -mode EXISTING_SERVER ]
+        if { $connect_id eq "" } {
+          puts "WARNING: Could not initialize dispatch client"
+        } else {
+          puts "INFO: Dispatch client connection id - $connect_id"
+          set connected true
+        }
+      } catch_res]} {
+        puts "WARNING: failed to connect to dispatch server - $catch_res"
+      }
+    }
+  }
+}
+if {$::dispatch::connected} {
+  # Remove the dummy proc if it exists.
+  if { [expr {[llength [info procs ::OPTRACE]] > 0}] } {
+    rename ::OPTRACE ""
+  }
+  proc ::OPTRACE { task action {tags {} } } {
+    ::vitis_log::op_trace "$task" $action -tags $tags -script $::optrace::script -category $::optrace::category
+  }
+  # dispatch is generic. We specifically want to attach logging.
+  ::vitis_log::connect_client
+} else {
+  # Add dummy proc if it doesn't exist.
+  if { [expr {[llength [info procs ::OPTRACE]] == 0}] } {
+    proc ::OPTRACE {{arg1 \"\" } {arg2 \"\"} {arg3 \"\" } {arg4 \"\"} {arg5 \"\" } {arg6 \"\"}} {
+        # Do nothing
+    }
+  }
+}
+
 proc start_step { step } {
   set stopFile ".stop.rst"
   if {[file isfile .stop.rst]} {
@@ -33,6 +85,8 @@ proc start_step { step } {
   if { [string equal $platform unix] } {
     if { [info exist ::env(HOSTNAME)] } {
       set host $::env(HOSTNAME)
+    } elseif { [info exist ::env(HOST)] } {
+      set host $::env(HOST)
     }
   } else {
     if { [info exist ::env(COMPUTERNAME)] } {
@@ -58,26 +112,45 @@ proc step_failed { step } {
   set endFile ".$step.error.rst"
   set ch [open $endFile w]
   close $ch
+OPTRACE "impl_1" END { }
 }
 
 
+OPTRACE "impl_1" START { ROLLUP_1 }
+OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
-  create_project -in_memory -part xc7a35tcpg236-3
+  set_param chipscope.maxJobs 1
+OPTRACE "create in-memory project" START { }
+  create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/basys3_ov7670_full/basys3_ov7670_full.cache/wt [current_project]
-  set_property parent.project_path D:/basys3_ov7670_full/basys3_ov7670_full.xpr [current_project]
-  set_property ip_output_repo D:/basys3_ov7670_full/basys3_ov7670_full.cache/ip [current_project]
+OPTRACE "create in-memory project" END { }
+OPTRACE "set parameters" START { }
+  set_property webtalk.parent_dir C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.cache/wt [current_project]
+  set_property parent.project_path C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.xpr [current_project]
+  set_property ip_output_repo C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  add_files -quiet D:/basys3_ov7670_full/basys3_ov7670_full.runs/synth_1/top_level.dcp
-  read_ip -quiet d:/basys3_ov7670_full/basys3_ov7670_full.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
-  read_xdc D:/basys3_ov7670_full/basys3_ov7670_full.srcs/constrs_1/imports/new/basys3_xdc.xdc
-  link_design -top top_level -part xc7a35tcpg236-3
+OPTRACE "set parameters" END { }
+OPTRACE "add files" START { }
+  add_files -quiet C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.runs/synth_1/top_level.dcp
+  read_ip -quiet C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
+OPTRACE "read constraints: implementation" START { }
+  read_xdc C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/constrs_1/imports/new/basys3_xdc.xdc
+OPTRACE "read constraints: implementation" END { }
+OPTRACE "add files" END { }
+OPTRACE "link_design" START { }
+  link_design -top top_level -part xc7a35tcpg236-1
+OPTRACE "link_design" END { }
+OPTRACE "gray box cells" START { }
+OPTRACE "gray box cells" END { }
+OPTRACE "init_design_reports" START { REPORT }
+OPTRACE "init_design_reports" END { }
+OPTRACE "init_design_write_hwdef" START { }
+OPTRACE "init_design_write_hwdef" END { }
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -88,13 +161,25 @@ if {$rc} {
   unset ACTIVE_STEP 
 }
 
+OPTRACE "Phase: Init Design" END { }
+OPTRACE "Phase: Opt Design" START { ROLLUP_AUTO }
 start_step opt_design
 set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
+OPTRACE "read constraints: opt_design" START { }
+OPTRACE "read constraints: opt_design" END { }
+OPTRACE "opt_design" START { }
   opt_design 
+OPTRACE "opt_design" END { }
+OPTRACE "read constraints: opt_design_post" START { }
+OPTRACE "read constraints: opt_design_post" END { }
+OPTRACE "Opt Design: write_checkpoint" START { CHECKPOINT }
   write_checkpoint -force top_level_opt.dcp
+OPTRACE "Opt Design: write_checkpoint" END { }
+OPTRACE "opt_design reports" START { REPORT }
   create_report "impl_1_opt_report_drc_0" "report_drc -file top_level_drc_opted.rpt -pb top_level_drc_opted.pb -rpx top_level_drc_opted.rpx"
+OPTRACE "opt_design reports" END { }
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
@@ -105,16 +190,32 @@ if {$rc} {
   unset ACTIVE_STEP 
 }
 
+OPTRACE "Phase: Opt Design" END { }
+OPTRACE "Phase: Place Design" START { ROLLUP_AUTO }
 start_step place_design
 set ACTIVE_STEP place_design
 set rc [catch {
   create_msg_db place_design.pb
-  implement_debug_core 
+OPTRACE "read constraints: place_design" START { }
+OPTRACE "read constraints: place_design" END { }
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+OPTRACE "implement_debug_core" START { }
+    implement_debug_core 
+OPTRACE "implement_debug_core" END { }
+  } 
+OPTRACE "place_design" START { }
   place_design 
+OPTRACE "place_design" END { }
+OPTRACE "read constraints: place_design_post" START { }
+OPTRACE "read constraints: place_design_post" END { }
+OPTRACE "Place Design: write_checkpoint" START { CHECKPOINT }
   write_checkpoint -force top_level_placed.dcp
+OPTRACE "Place Design: write_checkpoint" END { }
+OPTRACE "place_design reports" START { REPORT }
   create_report "impl_1_place_report_io_0" "report_io -file top_level_io_placed.rpt"
   create_report "impl_1_place_report_utilization_0" "report_utilization -file top_level_utilization_placed.rpt -pb top_level_utilization_placed.pb"
   create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file top_level_control_sets_placed.rpt"
+OPTRACE "place_design reports" END { }
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -125,20 +226,35 @@ if {$rc} {
   unset ACTIVE_STEP 
 }
 
+OPTRACE "Phase: Place Design" END { }
+OPTRACE "Phase: Route Design" START { ROLLUP_AUTO }
 start_step route_design
 set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
+OPTRACE "read constraints: route_design" START { }
+OPTRACE "read constraints: route_design" END { }
+OPTRACE "route_design" START { }
   route_design 
+OPTRACE "route_design" END { }
+OPTRACE "read constraints: route_design_post" START { }
+OPTRACE "read constraints: route_design_post" END { }
+OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }
   write_checkpoint -force top_level_routed.dcp
+OPTRACE "Route Design: write_checkpoint" END { }
+OPTRACE "route_design reports" START { REPORT }
   create_report "impl_1_route_report_drc_0" "report_drc -file top_level_drc_routed.rpt -pb top_level_drc_routed.pb -rpx top_level_drc_routed.rpx"
   create_report "impl_1_route_report_methodology_0" "report_methodology -file top_level_methodology_drc_routed.rpt -pb top_level_methodology_drc_routed.pb -rpx top_level_methodology_drc_routed.rpx"
   create_report "impl_1_route_report_power_0" "report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx"
   create_report "impl_1_route_report_route_status_0" "report_route_status -file top_level_route_status.rpt -pb top_level_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file top_level_timing_summary_routed.rpt -warn_on_violation  -rpx top_level_timing_summary_routed.rpx"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file top_level_timing_summary_routed.rpt -pb top_level_timing_summary_routed.pb -rpx top_level_timing_summary_routed.rpx -warn_on_violation "
   create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file top_level_incremental_reuse_routed.rpt"
   create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file top_level_clock_utilization_routed.rpt"
+OPTRACE "route_design reports" END { }
+OPTRACE "route_design misc" START { }
   close_msg_db -file route_design.pb
+OPTRACE "route_design write_checkpoint" START { CHECKPOINT }
+OPTRACE "route_design write_checkpoint" END { }
 } RESULT]
 if {$rc} {
   write_checkpoint -force top_level_routed_error.dcp
@@ -149,22 +265,6 @@ if {$rc} {
   unset ACTIVE_STEP 
 }
 
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
-  catch { write_mem_info -force top_level.mmi }
-  write_bitstream -force top_level.bit 
-  catch {write_debug_probes -quiet -force top_level}
-  catch {file copy -force top_level.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
-  unset ACTIVE_STEP 
-}
-
+OPTRACE "route_design misc" END { }
+OPTRACE "Phase: Route Design" END { }
+OPTRACE "impl_1" END { }
