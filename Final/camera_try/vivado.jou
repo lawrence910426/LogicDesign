@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 13 11:37:28 2022
+# Process ID: 15912
+# Current directory: D:/LogicDesignExperiment/final_project/camera_try
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11984 D:\LogicDesignExperiment\final_project\camera_try\camera_try.xpr
+# Log file: D:/LogicDesignExperiment/final_project/camera_try/vivado.log
+# Journal file: D:/LogicDesignExperiment/final_project/camera_try\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LogicDesignExperiment/final_project/camera_try/camera_try.xpr
+update_compile_order -fileset sources_1
