@@ -23,57 +23,81 @@
 module ConvKernel#(
     parameter BITWIDTH = 32,   
     parameter DATACHANNEL = 3,
-    parameter DATACHANNEL_POWER = 4
+    parameter LATENCY_MAX = 4
 )(
     input [BITWIDTH * DATACHANNEL * 2 * 2 - 1 : 0] data,
     input [BITWIDTH * DATACHANNEL * 2 * 2 - 1 : 0] weight,
     input [BITWIDTH - 1 : 0] bias,
+    input start,
     input clk,
-    output [BITWIDTH - 1 : 0] result
+    output [BITWIDTH - 1 : 0] result,
+    output finish
 );
-    
-    wire [BITWIDTH - 1 : 0] out [2 * 2 * DATACHANNEL - 1 : 0];
-    
+    wire [BITWIDTH - 1 : 0] data_wire [DATACHANNEL * 2 * 2 - 1:0];
+    wire [BITWIDTH - 1 : 0] weight_wire [DATACHANNEL * 2 * 2 - 1:0];
     generate
-        genvar i;
-        for(i = 0; i < 2 * 2 * DATACHANNEL; i = i + 1) begin
-            Mult #(
-                .BITWIDTH(BITWIDTH)
-            ) mult (
-                data[(i + 1) * BITWIDTH - 1 : i * BITWIDTH], 
-                weight[(i + 1) * BITWIDTH - 1 : i * BITWIDTH], 
-                clk,
-                out[i]
-            );
+        genvar j;
+        for (j = 0; j < DATACHANNEL * 2 * 2; j = j + 1) begin
+            assign data_wire[j] = data[j * BITWIDTH + BITWIDTH - 1:j * BITWIDTH];
+            assign weight_wire[j] = weight[j * BITWIDTH + BITWIDTH - 1:j * BITWIDTH];
         end
     endgenerate
     
-    wire [BITWIDTH * DATACHANNEL - 1:0] channels;
-    generate
-        wire [BITWIDTH - 1:0] x, y;
-        for(i = 0; i < DATACHANNEL; i = i + 1) begin
-            FLOAT32_ADD_PIPELINE
-                X ( .a(out[i * 4 + 0]), .b(out[i * 4 + 1]), .out(x), .clk(clk) ),
-                Y ( .a(out[i * 4 + 2]), .b(out[i * 4 + 3]), .out(y), .clk(clk) ),
-                Z ( 
-                    .a(x), .b(y), 
-                    .out(channels[
-                        i * BITWIDTH + BITWIDTH - 1:
-                        i * BITWIDTH
-                    ]), 
-                    .clk(clk) 
-		        );
+    reg [BITWIDTH - 1:0] Sum, Increment, X, Y;
+    reg [10 - 1:0] Latency;
+    reg [DATACHANNEL - 1:0] i;
+    reg Finish;
+    
+    wire [BITWIDTH - 1:0] Sum_Output, Z;
+    
+    FLOAT32_ADD Summer      ( .a(Sum), .b(Increment), .out(Sum_Output) );
+    FLOAT32_MUL Multipler   ( .a(X),   .b(Y),         .out(Z) );
+    
+    assign 
+        finish = Finish, 
+        result = Sum;
+    
+    always @ (posedge clk) begin
+        if (start == 1'b1) begin
+            Sum <= 0;
+            Increment <= 0;
+            X <= 0;
+            Y <= 0;
+            Latency <= 0;
+            i <= 0;
+            Finish <= 1'b0;
+        end else if (Finish == 1'b1) begin
+            Sum <= Sum;
+            Increment <= 0;
+            X <= 0;
+            Y <= 0;
+            Latency <= 0;
+            i <= 0;
+            Finish <= 1'b1;
+        end else if (Latency == LATENCY_MAX) begin
+            Sum <= Sum_Output;
+            Increment <= Z;
+            i <= i + 1;
+            Latency <= 0;
+            X <= data_wire[i];
+            Y <= weight_wire[i];
+            Finish <= 1'b0;
+        end else if (i == DATACHANNEL * 2 * 2) begin
+            Sum <= Sum;
+            Increment <= Increment;
+            X <= X;
+            Y <= Y;
+            i <= i;
+            Latency <= Latency + 1;
+            Finish <= 1'b1;
+        end else begin
+            Sum <= Sum;
+            Increment <= Increment;
+            X <= X;
+            Y <= Y;
+            i <= i;
+            Latency <= Latency + 1;
+            Finish <= 1'b0;
         end
-    endgenerate
-    
-    wire [BITWIDTH - 1:0] ValueSum;
-    SumTree #(
-        .BITWIDTH(BITWIDTH),   
-        .VALUES(DATACHANNEL),
-        .VALUES_POWER(DATACHANNEL_POWER)
-    ) SumUp (
-        .data(channels), .clk(clk), .result(ValueSum)
-    );
-    
-    assign result = ValueSum;
+    end
 endmodule
