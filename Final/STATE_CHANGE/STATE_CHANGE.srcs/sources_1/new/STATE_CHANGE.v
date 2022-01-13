@@ -20,8 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module STATE_CHANGE(clk, mid_but, img_done, state);
+module STATE_CHANGE(clk, rst, mid_but, img_done, state);
     input clk;
+    input rst;
     input mid_but;
     input img_done;
     output [1:0]state;
@@ -39,7 +40,8 @@ module STATE_CHANGE(clk, mid_but, img_done, state);
     assign state = state_count;
     
     always @(posedge clk) begin
-        state_count <= nxt_state_count;
+        if(rst == 1'b1) state_count <= READY;
+        else state_count <= nxt_state_count;
     end
     
     always @(posedge clk) begin
