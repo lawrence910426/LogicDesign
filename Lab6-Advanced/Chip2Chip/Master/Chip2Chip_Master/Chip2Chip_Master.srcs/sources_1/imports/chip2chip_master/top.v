@@ -56,8 +56,7 @@ module top(clk, rst_n, in, request, notice_master, data_to_slave_o, valid, reque
     assign AN = 4'b1110;
 	assign data_to_slave_o = data_to_slave;
     encoder enc0(.in(in), .out(data_to_slave));
-    debounce db_0(.pb_debounced(db_request), .pb(request), .clk(clk));
-    onepulse op_0(.pb_debounced(db_request), .clock(clk), .pb_one_pulse(op_request));
+    assign op_request = request;
     debounce db_1(.pb_debounced(db_rst_n), .pb(rst_n), .clk(clk));
     onepulse op_1(.pb_debounced(db_rst_n), .clock(clk), .pb_one_pulse(op_rst_n));
     master_control ms_ctrl_0(.clk(clk), .rst_n(rst_n_inv), .request(op_request), .ack(ack), .data_in(data_to_slave), .notice(notice_master), .data(), .valid(valid), .request2s(request2s));

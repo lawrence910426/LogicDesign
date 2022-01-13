@@ -1,0 +1,2 @@
+blk_mem_gen_conv_1_weight.v,verilog,xil_defaultlib,../../../../../CNN/CNN.gen/sources_1/ip/blk_mem_gen_conv_1_weight/sim/blk_mem_gen_conv_1_weight.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

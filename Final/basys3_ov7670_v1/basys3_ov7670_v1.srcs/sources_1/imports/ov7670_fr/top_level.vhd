@@ -15,11 +15,8 @@ entity top_level is
            btnr            : in  STD_LOGIC;
            config_finished : out STD_LOGIC;
            
-           vga_hsync : out  STD_LOGIC;
-           vga_vsync : out  STD_LOGIC;
-           vga_r     : out  STD_LOGIC_vector(3 downto 0);
-           vga_g     : out  STD_LOGIC_vector(3 downto 0);
-           vga_b     : out  STD_LOGIC_vector(3 downto 0);
+           rd_addr  : std_logic_vector(16 downto 0);
+           rddata     : std_logic_vector(11 downto 0);
            
            ov7670_pclk  : in  STD_LOGIC;
            ov7670_xclk  : out STD_LOGIC;
@@ -147,19 +144,14 @@ architecture Behavioral of top_level is
    signal wrdata     : std_logic_vector(11 downto 0);
    
    signal rdaddress  : std_logic_vector(18 downto 0);
-   signal rddata     : std_logic_vector(11 downto 0);
    signal red,green,blue : std_logic_vector(7 downto 0);
    signal activeArea : std_logic;
    
    signal rez_160x120 : std_logic;
    signal rez_320x240 : std_logic;
    signal size_select: std_logic_vector(1 downto 0);
-   signal rd_addr,wr_addr  : std_logic_vector(16 downto 0);
+   signal wr_addr  : std_logic_vector(16 downto 0);
 begin
-   vga_r <= red(7 downto 4);
-   vga_g <= green(7 downto 4);
-   vga_b <= blue(7 downto 4);
-   
    rez_160x120 <= btnl;
    rez_320x240 <= btnr;
  your_instance_name : clocking
@@ -169,20 +161,6 @@ begin
        -- Clock out ports
        CLK_50 => CLK_camera,
        CLK_25 => CLK_vga);
-
-   vga_vsync <= vsync;
-   
-	Inst_VGA: VGA PORT MAP(
-		CLK25      => clk_vga,
-      rez_160x120 => rez_160x120,
-      rez_320x240 => rez_320x240,
-		clkout     => open,
-		Hsync      => vga_hsync,
-		Vsync      => vsync,
-		Nblank     => nBlank,
-		Nsync      => nsync,
-      activeArea => activeArea
-	);
 
 	Inst_debounce: debounce PORT MAP(
 		clk => clk_vga,
@@ -202,11 +180,6 @@ begin
 	);
 	size_select <= btnl&btnr;
 	
-    with size_select select 
-    rd_addr <= rdaddress(18 downto 2) when "00",
-        rdaddress(16 downto 0) when "01",
-        rdaddress(16 downto 0) when "10",
-        rdaddress(16 downto 0) when "11";
    with size_select select 
     wr_addr <= wraddress(18 downto 2) when "00",
             wraddress(16 downto 0) when "01",
@@ -215,7 +188,7 @@ begin
 	Inst_frame_buffer: frame_buffer PORT MAP(
 		addrb => rd_addr,
 		clkb   => clk_vga,
-		doutb        => rddata,
+		doutb  => rddata,
       
 		clka   => ov7670_pclk,
 		addra => wr_addr,
