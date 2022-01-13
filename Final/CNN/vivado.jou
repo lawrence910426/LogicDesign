@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 13 18:01:42 2022
+# Process ID: 9644
+# Current directory: C:/home/github/LogicDesign/Final/CNN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14832 C:\home\github\LogicDesign\Final\CNN\CNN.xpr
+# Log file: C:/home/github/LogicDesign/Final/CNN/vivado.log
+# Journal file: C:/home/github/LogicDesign/Final/CNN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/home/github/LogicDesign/Final/CNN/CNN.xpr
+update_compile_order -fileset sources_1
+add_files {C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/Conv2d_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/FullConnect_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/ip/blk_mem_gen_conv_1_weight/blk_mem_gen_conv_1_weight.xci C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/Convolution_Layer_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Mult.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL_PIPELINE.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/FullConnect_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Conv2d_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/CNN_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/MockUpPlacement.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/ConvKernel_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/ConvKernel_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD_PIPELINE.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/SumTree.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/Dense_T.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v}
+export_ip_user_files -of_objects  [get_files  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/ip/blk_mem_gen_conv_1_weight/blk_mem_gen_conv_1_weight.xci] -lib_map_path [list {modelsim=C:/home/github/LogicDesign/Final/CNN/CNN.cache/compile_simlib/modelsim} {questa=C:/home/github/LogicDesign/Final/CNN/CNN.cache/compile_simlib/questa} {riviera=C:/home/github/LogicDesign/Final/CNN/CNN.cache/compile_simlib/riviera} {activehdl=C:/home/github/LogicDesign/Final/CNN/CNN.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DenseLayer_T [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source DenseLayer_T.tcl
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source DenseLayer_T.tcl
+close_sim
+launch_simulation
+source DenseLayer_T.tcl
+close_sim
+launch_simulation
+source DenseLayer_T.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Convolution_Layer_T [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+close_sim
+launch_simulation
+source Convolution_Layer_T.tcl
+close_sim
+set_property strategy Flow_RuntimeOptimized [get_runs synth_1]
+set_property strategy Flow_Quick [get_runs impl_1]
+launch_simulation
+source Convolution_Layer_T.tcl
+close_sim
+launch_simulation
+source Convolution_Layer_T.tcl
+close_sim
+launch_simulation
+source Convolution_Layer_T.tcl

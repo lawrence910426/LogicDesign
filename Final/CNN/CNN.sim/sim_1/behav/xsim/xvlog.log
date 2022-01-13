@@ -1,13 +1,9 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CNN
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Conv2d
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ConvKernel
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Convolution_Layer
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Dense_Layer
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ENCODER_64
 INFO: [VRFC 10-311] analyzing module ENCODER_32
@@ -19,8 +15,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CN
 INFO: [VRFC 10-311] analyzing module FLOAT32_ADD
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module FLOAT32_MUL
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullConnect
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Max
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v" into library xil_defaultlib
@@ -29,5 +23,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CN
 INFO: [VRFC 10-311] analyzing module Relu
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Relu_activation
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/CNN_T.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CNN_T
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer_T.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Convolution_Layer_T
