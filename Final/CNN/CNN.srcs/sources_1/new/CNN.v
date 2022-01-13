@@ -36,13 +36,20 @@ module CNN(
     // Weights definition
     wire [32 * 2 * 2 * 3 * 8 - 1:0] weight_1;
     wire [32 * 8 - 1:0] bias_1;
+    conv1_params ( .weight(weight_1), .bias(bias_1) );
+    
     wire [32 * 2 * 2 * 8 * 20 - 1:0] weight_2;
     wire [32 * 20 - 1:0] bias_2;
+    conv2_params ( .weight(weight_2), .bias(bias_2) );
+    
     wire [32 * 500 * 8 - 1:0] weight_3;
     wire [32 * 8 - 1:0] bias_3;
+    dense1_params ( .weight(weight_3), .bias(bias_3) );
+    
     wire [32 * 8 * 3 - 1:0] weight_4;
     wire [32 * 3 - 1:0] bias_4;  
-
+    dense2_params ( .weight(weight_4), .bias(bias_4) );
+    
     assign 
         weight_1 = 0, bias_1 = 0,
         weight_2 = 0, bias_2 = 0,
