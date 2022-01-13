@@ -27,7 +27,7 @@ module Max#(
     input [BITWIDTH * LENGTH - 1 : 0] data,
     output [BITWIDTH - 1 : 0] result
 );
-    wire [BITWIDTH - 1:0] dataArray [0:LENGTH - 1];
+    wire [BITWIDTH - 1:0] dataArray[0:LENGTH - 1];
     
     genvar i;
     generate      
@@ -37,7 +37,7 @@ module Max#(
     endgenerate
     
     wire [BITWIDTH - 1:0] x, y;
-    assign x = ($signed(dataArray[0]) > $signed(dataArray[1]) ? dataArray[0] : dataArray[1]); 
-    assign y = ($signed(dataArray[2]) > $signed(dataArray[3]) ? dataArray[0] : dataArray[1]);
-    assign result = ($signed(x) > $signed(y) ? x : y);
+    assign x = (dataArray[0] > dataArray[1] ? dataArray[0] : dataArray[1]); 
+    assign y = (dataArray[0] > dataArray[1] ? dataArray[0] : dataArray[1]);
+    assign result = (x > y ? x : y);
 endmodule

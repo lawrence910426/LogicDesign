@@ -48,11 +48,15 @@ module Conv2d #(
             PADDINGENABLE == 0 ? (DATAHEIGHT - FILTERHEIGHT + 1) / STRIDEHEIGHT : (DATAHEIGHT / STRIDEHEIGHT)
         ) - 1 : 0
     ] result,
-    output reg finish,
-    output [1024 - 1 : 0] debug
+    output reg finish
 );
     
     wire [BITWIDTH - 1 : 0] dataArray [0 : DATACHANNEL - 1][0 : DATAHEIGHT-1][0 : DATAWIDTH - 1];
+    wire [BITWIDTH - 1 : 0] dataArrayWithPadding [0 : DATACHANNEL - 1][
+        0 : (PADDINGENABLE == 1 ? DATAHEIGHT + FILTERHEIGHT - 1 : DATAHEIGHT)-1
+    ][
+        0 : (PADDINGENABLE == 1 ? DATAWIDTH + FILTERWIDTH - 1 : DATAWIDTH)-1
+    ];
     wire [BITWIDTH * FILTERHEIGHT * FILTERWIDTH * DATACHANNEL - 1 : 0] paramArray [
         0: (PADDINGENABLE == 1 ? DATAHEIGHT / STRIDEHEIGHT: (DATAHEIGHT - FILTERHEIGHT + 1) / STRIDEHEIGHT)-1
     ][
@@ -78,21 +82,25 @@ module Conv2d #(
                     ];
                 end
             end
-        end
-        
-        for (i = 0; i < DATACHANNEL; i = i + 1) begin
-            for (j = 0; j < DATAHEIGHT - 1; j = j + 1) begin
-                for (k = 0; k < DATAWIDTH - 1; k = k + 1) begin
-                    assign paramArray[j][k]
-                        [
-                            (i + 1) * FILTERHEIGHT * FILTERWIDTH * BITWIDTH - 1:
-                            i * FILTERHEIGHT * FILTERWIDTH * BITWIDTH
-                        ] = {
-                            dataArray[i][j + 0][k + 0],
-                            dataArray[i][j + 0][k + 1],
-                            dataArray[i][j + 1][k + 0],
-                            dataArray[i][j + 1][k + 1]
-                        };
+        end      
+
+        for(j = FILTERHEIGHT / 2; j < (DATAHEIGHT - FILTERHEIGHT / 2); j = j + STRIDEHEIGHT) begin
+            for(k = FILTERWIDTH / 2; k < (DATAWIDTH - FILTERWIDTH / 2); k = k + STRIDEWIDTH) begin
+                for(i = 0; i < DATACHANNEL; i = i + 1) begin
+                    for(m = j - FILTERHEIGHT / 2; m < j + FILTERHEIGHT / 2; m = m + 1) begin
+                        for(n = k - FILTERWIDTH / 2; n < k + FILTERWIDTH / 2; n = n + 1) begin
+                            assign paramArray[
+                                (j - FILTERHEIGHT / 2) / STRIDEHEIGHT
+                            ][
+                                (k - FILTERWIDTH / 2) / STRIDEWIDTH
+                            ][
+                                (i * FILTERHEIGHT * FILTERWIDTH + (m - j + FILTERHEIGHT / 2) * FILTERWIDTH + 
+                                    (n - k + FILTERWIDTH / 2)) * BITWIDTH + BITWIDTH - 1:
+                                (i * FILTERHEIGHT * FILTERWIDTH + (m - j + FILTERHEIGHT / 2) * FILTERWIDTH + 
+                                    (n - k + FILTERWIDTH / 2)) * BITWIDTH
+                            ] = dataArray[i][m][n];
+                        end
+                    end
                 end
             end
         end
@@ -159,8 +167,6 @@ module Conv2d #(
     wire [BITWIDTH - 1:0] ConvKernel_Result;
     reg ConvKernel_Start;
     wire ConvKernel_Finish;
-    
-    wire [1024 - 1 : 0] ConvKernel_debug;
 
     ConvKernel#(
         .BITWIDTH(BITWIDTH),
@@ -173,14 +179,13 @@ module Conv2d #(
         .start(ConvKernel_Start),
         .clk(clk),
         .result(ConvKernel_Result),
-        .finish(ConvKernel_Finish),
-        .debug(ConvKernel_debug)
+        .finish(ConvKernel_Finish)
     );
     
     reg [FILTERBATCH:0] _i;
     reg [(DATAHEIGHT - FILTERHEIGHT + 1) / STRIDEHEIGHT:0] _m;
     reg [(DATAWIDTH - FILTERWIDTH + 1) / STRIDEWIDTH:0] _n;
-    reg external_calculation_finished, external_calculation_started;
+    reg external_calculation_finished;
     
     always @ (posedge clk) begin
         if (start == 1'b1) begin
@@ -189,93 +194,49 @@ module Conv2d #(
             _n <= 0;
             finish <= 0;
             external_calculation_finished <= 0;
-            external_calculation_started <= 0;
-            
-            _paramArray <= _paramArray;
-            _filterWeightArray <= _filterWeightArray;
-            _filterBiasArray <= _filterBiasArray;
-            ConvKernel_Start <= 0;
         end else if (finish == 1'b1) begin
             _i <= _i;
             _m <= _m;
             _n <= _n;
             finish <= 1'b1;
             external_calculation_finished <= 0;
-            external_calculation_started <= 0;
-            
-            _paramArray <= _paramArray;
-            _filterWeightArray <= _filterWeightArray;
-            _filterBiasArray <= _filterBiasArray;
-            ConvKernel_Start <= 0;
         end else if (_i == FILTERBATCH) begin
             _i <= 0;
             _m <= 0;
             _n <= 0;
             finish <= 1'b1;
             external_calculation_finished <= 0;
-            external_calculation_started <= 0;
-            
-            _paramArray <= _paramArray;
-            _filterWeightArray <= _filterWeightArray;
-            _filterBiasArray <= _filterBiasArray;
-            ConvKernel_Start <= 0;
         end else if (_m == (DATAHEIGHT - FILTERHEIGHT + 1) / STRIDEHEIGHT) begin
             _i <= _i + 1;
             _m <= 0;
             _n <= _n;
             finish <= 1'b0;
             external_calculation_finished <= 0;
-            external_calculation_started <= 0;
-            
-            _paramArray <= _paramArray;
-            _filterWeightArray <= _filterWeightArray;
-            _filterBiasArray <= _filterBiasArray;
-            ConvKernel_Start <= 0;
         end else if (_n == (DATAWIDTH - FILTERWIDTH + 1) / STRIDEWIDTH) begin
             _i <= _i;
             _m <= _m + 1;
             _n <= 0;
             finish <= 1'b0;
             external_calculation_finished <= 0;
-            external_calculation_started <= 0;
-            
-            _paramArray <= _paramArray;
-            _filterWeightArray <= _filterWeightArray;
-            _filterBiasArray <= _filterBiasArray;
-            ConvKernel_Start <= 0;
-        end else if (ConvKernel_Finish == 1 && external_calculation_started == 1 && external_calculation_finished == 0) begin
+        end else if (ConvKernel_Finish == 1 && external_calculation_finished == 0) begin
             _i <= _i;
             _m <= _m;
             _n <= _n + 1;
             finish <= 1'b0;
             external_calculation_finished <= 1;
-            external_calculation_started <= 0;
             
             resultArray[_i][_m][_n] <= ConvKernel_Result;
-        end else if(external_calculation_started == 0) begin
-            _i <= _i;
-            _m <= _m;
-            _n <= _n;
-            finish <= 1'b0;
-            external_calculation_finished <= 0;
-            external_calculation_started <= 1;
-            
-            _paramArray <= paramArray[_m][_n];
-            _filterWeightArray <= filterWeightArray[_i];
-            _filterBiasArray <= filterBiasArray[_i];
-            ConvKernel_Start <= 1;
         end else begin
             _i <= _i;
             _m <= _m;
             _n <= _n;
             finish <= 1'b0;
             external_calculation_finished <= 0;
-            external_calculation_started <= 1;
             
-            _paramArray <= _paramArray;
-            _filterWeightArray <= _filterWeightArray;
-            _filterBiasArray <= _filterBiasArray;
-            ConvKernel_Start <= 0;
+            _paramArray <= paramArray[_m][_n];
+            _filterWeightArray <= filterWeightArray[_i];
+            _filterBiasArray <= filterBiasArray[_i];
+            ConvKernel_Start <= 1;
         end
     end
 endmodule
