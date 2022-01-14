@@ -1,0 +1,8 @@
+JA3 : data2
+JA2 : data1
+JA1 : data0
+
+JAXC4 : ack
+JXAC3 : notice
+JXAC2 : request
+JXAC1 : valid
