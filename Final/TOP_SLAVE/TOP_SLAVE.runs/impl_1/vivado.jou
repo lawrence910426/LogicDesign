@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 14 07:02:18 2022
+# Process ID: 10112
+# Current directory: D:/LogicDesignExperiment/final_project/TOP_SLAVE/TOP_SLAVE.runs/impl_1
+# Command line: vivado.exe -log TOP_SLAVE.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP_SLAVE.tcl -notrace
+# Log file: D:/LogicDesignExperiment/final_project/TOP_SLAVE/TOP_SLAVE.runs/impl_1/TOP_SLAVE.vdi
+# Journal file: D:/LogicDesignExperiment/final_project/TOP_SLAVE/TOP_SLAVE.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_SLAVE.tcl -notrace

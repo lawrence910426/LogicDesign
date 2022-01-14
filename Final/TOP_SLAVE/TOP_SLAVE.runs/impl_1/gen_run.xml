@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1642114880">
+  <File Type="BITSTR-BMM" Name="TOP_SLAVE_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="TOP_SLAVE_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="TOP_SLAVE_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="TOP_SLAVE_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="TOP_SLAVE.tcl"/>
+  <File Type="OPT-TIMING" Name="TOP_SLAVE_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="TOP_SLAVE_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="TOP_SLAVE_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="TOP_SLAVE_reports.tcl"/>
+  <File Type="OPT-DRC" Name="TOP_SLAVE_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="TOP_SLAVE.hwdef"/>
+  <File Type="PWROPT-DCP" Name="TOP_SLAVE_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="TOP_SLAVE_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="TOP_SLAVE_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="TOP_SLAVE_placed.dcp"/>
+  <File Type="PLACE-IO" Name="TOP_SLAVE_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="TOP_SLAVE_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TOP_SLAVE_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TOP_SLAVE_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TOP_SLAVE_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="TOP_SLAVE_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TOP_SLAVE_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="TOP_SLAVE_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TOP_SLAVE_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="TOP_SLAVE.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="TOP_SLAVE_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="TOP_SLAVE_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="TOP_SLAVE_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="TOP_SLAVE.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="TOP_SLAVE_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TOP_SLAVE_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="TOP_SLAVE_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TOP_SLAVE_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="TOP_SLAVE_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TOP_SLAVE_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="TOP_SLAVE_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="TOP_SLAVE.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TOP_SLAVE_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TOP_SLAVE_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TOP_SLAVE_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="TOP_SLAVE_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="TOP_SLAVE_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TOP_SLAVE_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TOP_SLAVE_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TOP_SLAVE_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TOP_SLAVE_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="TOP_SLAVE_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="TOP_SLAVE_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="TOP_SLAVE_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="TOP_SLAVE_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="TOP_SLAVE_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TOP_SLAVE_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TOP_SLAVE_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TOP_SLAVE_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TOP_SLAVE_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TOP_SLAVE_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="TOP_SLAVE_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="TOP_SLAVE_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="TOP_SLAVE.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="TOP_SLAVE_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="TOP_SLAVE.rbt"/>
+  <File Type="BITSTR-NKY" Name="TOP_SLAVE.nky"/>
+  <File Type="PDI-FILE" Name="TOP_SLAVE.pdi"/>
+  <File Type="RCFI_FILE" Name="TOP_SLAVE.rcfi"/>
+  <File Type="CFI_FILE" Name="TOP_SLAVE.cfi"/>
+  <File Type="RNPI_FILE" Name="TOP_SLAVE.rnpi"/>
+  <File Type="NPI_FILE" Name="TOP_SLAVE.npi"/>
+  <File Type="RBD_FILE" Name="TOP_SLAVE.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="TOP_SLAVE.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="TOP_SLAVE.sysdef"/>
+  <File Type="BG-BGN" Name="TOP_SLAVE.bgn"/>
+  <File Type="BG-DRC" Name="TOP_SLAVE.drc"/>
+  <File Type="RDI-RDI" Name="TOP_SLAVE.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Debounce_OnePulse.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CODE/RANDOM/LFSR.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CODE/RANDOM/RANDOM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CODE/STATE/STATE_CHANGE.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CODE/VGA/clock_divisor.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CODE/SLAVE/counter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CODE/VGA/mem_addr_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CODE/SLAVE/slave_control.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CODE/SLAVE/slave_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CODE/VGA/top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CODE/VGA/vga.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TOP_SLAVE.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CODE/VGA/full_pic.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="TOP_SLAVE"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/cons.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/cons.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>
