@@ -1,0 +1,232 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 14256
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Jan 14 11:22:25 CST 2022
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 6
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	lawre
+User home directory: C:/Users/lawre
+User working directory: C:/home/github/LogicDesign/Final/TopMaster
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/lawre/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/lawre/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/lawre/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/home/github/LogicDesign/Final/TopMaster/vivado.log
+Vivado journal file location: 	C:/home/github/LogicDesign/Final/TopMaster/vivado.jou
+Engine tmp dir: 	C:/home/github/LogicDesign/Final/TopMaster/.Xil/Vivado-14256-DESKTOP-P0B4VES
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,029 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\home\github\LogicDesign\Final\TopMaster\TopMaster.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/home/github/LogicDesign/Final/TopMaster/TopMaster.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 74 MB (+74827kb) [00:00:11]
+// [Engine Memory]: 1,029 MB (+927238kb) [00:00:11]
+// [GUI Memory]: 107 MB (+30711kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  2677 ms.
+// Tcl Message: open_project C:/home/github/LogicDesign/Final/TopMaster/TopMaster.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,029 MB. GUI used memory: 59 MB. Current time: 1/14/22, 11:22:25 AM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.992 ; gain = 0.000 
+// Project name: TopMaster; location: C:/home/github/LogicDesign/Final/TopMaster; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 116 MB (+3917kb) [00:00:27]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 136 MB (+15066kb) [00:00:39]
+// Elapsed time: 24 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v)]", 2); // D
+// Elapsed time: 538 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Messenger : top (top.v)]", 3); // D
+// Elapsed time: 20 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Messenger : top (top.v)]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Camera : top_level(Behavioral) (top_level.vhd)]", 4); // D
+// Elapsed time: 227 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Camera : top_level(Behavioral) (top_level.vhd)]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v)]", 5); // D
+// Elapsed time: 62 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), converter : CAM_Preprocess (CAM_Preprocess.v)]", 6); // D
+// Elapsed time: 15 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), converter : CAM_Preprocess (CAM_Preprocess.v)]", 6); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v)]", 11); // D
+// Elapsed time: 19 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v)]", 12); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v), convKernel : ConvKernel (ConvKernel.v)]", 13); // D
+// Elapsed time: 127 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v), convKernel : ConvKernel (ConvKernel.v), Summer : FLOAT32_ADD (FLOAT32_ADD.v)]", 14); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v), convKernel : ConvKernel (ConvKernel.v), Summer : FLOAT32_ADD (FLOAT32_ADD.v)]", 14); // D
+// Elapsed time: 147 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v)]", 11); // D
+// Elapsed time: 22 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v)]", 11); // D
+// Elapsed time: 46 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v), convKernel : ConvKernel (ConvKernel.v), Summer : FLOAT32_ADD (FLOAT32_ADD.v)]", 14); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v), convKernel : ConvKernel (ConvKernel.v), Summer : FLOAT32_ADD (FLOAT32_ADD.v)]", 14); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), relu : Relu_activation (Relu_activation.v)]", 16); // D
+// Elapsed time: 30 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), relu : Relu_activation (Relu_activation.v)]", 16); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), max_pool : Max_pool (Max_pool.v)]", 17); // D
+// Elapsed time: 68 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), max_pool : Max_pool (Max_pool.v)]", 17); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), dense_1 : Dense_Layer (Dense_Layer.v)]", 19); // D
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), dense_2 : Dense_Layer (Dense_Layer.v)]", 22); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), dense_1 : Dense_Layer (Dense_Layer.v), full : FullConnect (FullConnect.v)]", 20); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), dense_1 : Dense_Layer (Dense_Layer.v), relu : Relu_activation (Relu_activation.v)]", 23); // D
+// PAPropertyPanels.initPanels (ConvKernel.v) elapsed time: 0.2s
+// Elapsed time: 141 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v), convKernel : ConvKernel (ConvKernel.v)]", 13, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v)]", 11, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v)]", 11, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v)]", 11, true); // D - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,029 MB. GUI used memory: 82 MB. Current time: 1/14/22, 11:52:30 AM CST
+// Elapsed time: 922 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v)]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v)]", 5); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v)]", 11, true); // D - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v), convKernel : ConvKernel (ConvKernel.v)]", 13); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 1,029 MB. GUI used memory: 75 MB. Current time: 1/14/22, 12:22:30 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  14281839 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,029 MB. GUI used memory: 75 MB. Current time: 1/14/22, 4:30:43 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1317 ms. Increasing delay to 3951 ms.
+// Elapsed time: 17179 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v)]", 12, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v)]", 12, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v)]", 12, true); // D - Node
+// Elapsed time: 135 seconds
+selectCodeEditor("Conv2d.v", 209, 201); // bP
+selectCodeEditor("Conv2d.v", 208, 202, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 359 seconds
+selectCodeEditor("Conv2d.v", 267, 216); // bP
+selectCodeEditor("Conv2d.v", 267, 216, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Conv2d.v", 289, 217); // bP
+selectCodeEditor("Conv2d.v", 289, 217, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Conv2d.v", 285, 233); // bP
+selectCodeEditor("Conv2d.v", 285, 233, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 60 seconds
+selectCodeEditor("Conv2d.v", 271, 65); // bP
+selectCodeEditor("Conv2d.v", 271, 65, false, false, false, false, true); // bP - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,029 MB. GUI used memory: 74 MB. Current time: 1/14/22, 5:00:43 PM CST
+// Elapsed time: 220 seconds
+selectCodeEditor("Conv2d.v", 170, 452); // bP
+selectCodeEditor("Conv2d.v", 170, 452, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 833 seconds
+selectCodeEditor("Conv2d.v", 187, 266); // bP
+selectCodeEditor("Conv2d.v", 187, 266, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Conv2d.v", 310, 300); // bP
+selectCodeEditor("Conv2d.v", 309, 297); // bP
+selectCodeEditor("Conv2d.v", 307, 297, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 238 seconds
+selectCodeEditor("Conv2d.v", 240, 263); // bP
+selectCodeEditor("Conv2d.v", 240, 263, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 43 seconds
+selectCodeEditor("Conv2d.v", 249, 344); // bP
+selectCodeEditor("Conv2d.v", 249, 344, false, false, false, false, true); // bP - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,029 MB. GUI used memory: 74 MB. Current time: 1/14/22, 5:30:44 PM CST
+// Elapsed time: 622 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v)]", 12); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v), convKernel : ConvKernel (ConvKernel.v)]", 13, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), conv : Conv2d (Conv2d.v), convKernel : ConvKernel (ConvKernel.v)]", 13, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 1719 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), dense_2 : Dense_Layer (Dense_Layer.v), full : FullConnect (FullConnect.v)]", 33); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), dense_2 : Dense_Layer (Dense_Layer.v), full : FullConnect (FullConnect.v)]", 33, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), dense_2 : Dense_Layer (Dense_Layer.v), full : FullConnect (FullConnect.v)]", 33, true, false, false, false, false, true); // D - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,029 MB. GUI used memory: 75 MB. Current time: 1/14/22, 6:00:44 PM CST
+// Elapsed time: 949 seconds
+selectCodeEditor("FullConnect.v", 115, 270); // bP
+selectCodeEditor("FullConnect.v", 119, 285); // bP
+selectCodeEditor("FullConnect.v", 119, 285, false, false, false, false, true); // bP - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,029 MB. GUI used memory: 75 MB. Current time: 1/14/22, 6:30:44 PM CST
+// Elapsed time: 1642 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), dense_2 : Dense_Layer (Dense_Layer.v), full : FullConnect (FullConnect.v)]", 33); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), dense_2 : Dense_Layer (Dense_Layer.v), relu : Relu_activation (Relu_activation.v)]", 36); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), dense_2 : Dense_Layer (Dense_Layer.v), relu : Relu_activation (Relu_activation.v), genblk1[0].genblk1[0].genblk1[0].relu : Relu (Relu.v)]", 37, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), dense_2 : Dense_Layer (Dense_Layer.v), relu : Relu_activation (Relu_activation.v), genblk1[0].genblk1[0].genblk1[0].relu : Relu (Relu.v)]", 37, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Relu.v", 531, 480); // bP
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), max_pool : Max_pool (Max_pool.v)]", 17); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), max_pool : Max_pool (Max_pool.v), genblk3[0].genblk1[0].genblk1[0].max : Max (Max.v)]", 18, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMaster (TopMaster.v), Neuron : CNN (CNN.v), conv_1 : Convolution_Layer (Convolution_Layer.v), max_pool : Max_pool (Max_pool.v), genblk3[0].genblk1[0].genblk1[0].max : Max (Max.v)]", 18, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Max.v", 458, 474); // bP
+selectCodeEditor("Max.v", 465, 478); // bP
