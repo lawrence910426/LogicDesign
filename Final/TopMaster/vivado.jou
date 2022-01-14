@@ -2,56 +2,23 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Jan 14 07:52:05 2022
-# Process ID: 12848
+# Start of session at: Fri Jan 14 08:34:16 2022
+# Process ID: 11300
 # Current directory: C:/home/github/LogicDesign/Final/TopMaster
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15052 C:\home\github\LogicDesign\Final\TopMaster\TopMaster.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17348 C:\home\github\LogicDesign\Final\TopMaster\TopMaster.xpr
 # Log file: C:/home/github/LogicDesign/Final/TopMaster/vivado.log
 # Journal file: C:/home/github/LogicDesign/Final/TopMaster\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/home/github/LogicDesign/Final/TopMaster/TopMaster.xpr
 update_compile_order -fileset sources_1
+add_files {C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v}
+add_files {C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v}
+add_files -norecurse {C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/LFSR.v C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/RANDOM.v}
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
 reset_run synth_1
 launch_runs impl_1 -jobs 6
 wait_on_run impl_1
-open_run impl_1
-place_ports {data_to_slave_o[0]} J1
-place_ports {data_to_slave_o[1]} L2
-place_ports {data_to_slave_o[2]} J2
-set_property IOSTANDARD LVCMOS33 [get_ports [list {data_to_slave_o[2]}]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list {data_to_slave_o[2]} {data_to_slave_o[1]} {data_to_slave_o[0]}]]
-place_ports ack N2
-place_ports clk W5
-place_ports notice_master U16
-place_ports request2s L3
-place_ports rst_n U18
-place_ports valid J3
-set_property IOSTANDARD LVCMOS33 [get_ports [list ack]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list ack]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list notice_master]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list request2s]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
-file mkdir C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/constrs_1/new
-close [ open C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/constrs_1/new/constraints.xdc w ]
-add_files -fileset constrs_1 C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/constrs_1/new/constraints.xdc
-set_property target_constrs_file C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/constrs_1/new/constraints.xdc [current_fileset -constrset]
-save_constraints -force
-set_property IOSTANDARD LVCMOS33 [get_ports [list valid]]
-save_constraints -force
-save_constraints_as constrs_2
-set_property constrset constrs_2 [get_runs synth_1]
-set_property constrset constrs_2 [get_runs impl_1]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-set_property {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} {} [get_runs synth_1]
-reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
 open_hw_manager
@@ -66,3 +33,14 @@ set_property PROGRAM.FILE {C:/home/github/LogicDesign/Final/TopMaster/TopMaster.
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/impl_1/TopMaster.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/impl_1/TopMaster.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

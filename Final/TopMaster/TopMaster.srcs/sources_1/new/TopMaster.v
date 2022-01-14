@@ -12,7 +12,7 @@ module TopMaster(
     reg [8 - 1 : 0] in;
     reg [32 - 1 : 0] counter;
     reg request;
-    reg [8 - 1 : 0] x;
+    wire [1 : 0] x;
     top Messenger(
         .clk(clk), .rst_n(rst_n), 
         .in(in), .request(request), 
@@ -21,12 +21,12 @@ module TopMaster(
         .valid(valid), .request2s(request2s), .ack(ack)
     );
     
+    RANDOM( .clk(clk), .rst(!rst_n), .com_result(x));
     always @ (posedge clk) begin
         if (rst_n == 1'b1) begin
-            x <= 8'd2;
+            
         end else begin
-            x <= (x * 8'd2) % 8'd97;
-            in <= (8'b0000_0001 << (x % 2'd3));
+            in <= (8'b0000_0001 << x);
             
             if (counter == 32'd1000_000000) begin
                 counter <= 0;
