@@ -62,6 +62,4 @@ module top(clk, rst_n, in, request, notice_master, data_to_slave_o, valid, reque
     master_control ms_ctrl_0(.clk(clk), .rst_n(rst_n_inv), .request(op_request), .ack(ack), .data_in(data_to_slave), .notice(notice_master), .data(), .valid(valid), .request2s(request2s));
 	decoder dec0(.in(data_to_slave), .out(data_to_slave_dec));
     seven_segment dis_0(.in(data_to_slave_dec), .out(seven_seg));
-
-
 endmodule

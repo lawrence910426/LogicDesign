@@ -28,7 +28,7 @@ module TopMaster(
             x <= (x * 8'd2) % 8'd97;
             in <= (8'b0000_0001 << (x % 2'd3));
             
-            if (counter == 32'd100_000000) begin
+            if (counter == 32'd1000_000000) begin
                 counter <= 0;
                 request <= 1;
             end else begin
