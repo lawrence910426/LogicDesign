@@ -10,18 +10,18 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source TopMaster.tcl -notrace
-Command: synth_design -top TopMaster -part xc7a35tcpg236-1 -assert -mode out_of_context
+Command: synth_design -top TopMaster -part xc7a35tcpg236-1 -assert
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16576
+INFO: [Synth 8-7075] Helper process launched with PID 5896
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1019.715 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.730 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'TopMaster' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TopMaster' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:1]
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:36]
 INFO: [Synth 8-6157] synthesizing module 'encoder' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v:16]
 INFO: [Synth 8-6155] done synthesizing module 'encoder' (1#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v:16]
@@ -42,484 +42,55 @@ INFO: [Synth 8-6155] done synthesizing module 'decoder' (6#1) [C:/home/github/Lo
 INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:28]
 INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (7#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:28]
 INFO: [Synth 8-6155] done synthesizing module 'top' (8#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:36]
-WARNING: [Synth 8-7071] port 'seven_seg' of module 'top' is unconnected for instance 'Messenger' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
-WARNING: [Synth 8-7071] port 'AN' of module 'top' is unconnected for instance 'Messenger' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
-WARNING: [Synth 8-7023] instance 'Messenger' of module 'top' has 11 connections declared, but only 9 given [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
-INFO: [Synth 8-638] synthesizing module 'top_level' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:33]
-INFO: [Synth 8-3491] module 'clocking' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:75' bound to instance 'your_instance_name' of component 'clocking' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:157]
-INFO: [Synth 8-638] synthesizing module 'clocking' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:85]
-	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
-	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
-	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:119]
-	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
-	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
-	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
-	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: double 
-	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
-	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
-	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter COMPENSATION bound to: ZHOLD - type: string 
-	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
-	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
-	Parameter IS_PSEN_INVERTED bound to: 1'b0 
-	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
-	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
-	Parameter IS_RST_INVERTED bound to: 1'b0 
-	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
-	Parameter REF_JITTER2 bound to: 0.000000 - type: double 
-	Parameter SS_EN bound to: FALSE - type: string 
-	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
-	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
-	Parameter STARTUP_WAIT bound to: 0 - type: bool 
-INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:130]
-INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:193]
-INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:199]
-INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:206]
-INFO: [Synth 8-256] done synthesizing module 'clocking' (9#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:85]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:11' bound to instance 'Inst_debounce' of component 'debounce' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:165]
-INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_debounce' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_debounce' (10#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:17]
-INFO: [Synth 8-3491] module 'ov7670_controller' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:11' bound to instance 'Inst_ov7670_controller' of component 'ov7670_controller' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:171]
-INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:23]
-INFO: [Synth 8-3491] module 'i2c_sender' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:58]
-INFO: [Synth 8-638] synthesizing module 'i2c_sender' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (11#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
-INFO: [Synth 8-3491] module 'ov7670_registers' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:12' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:73]
-INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (12#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (13#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:23]
-INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-17796-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6' bound to instance 'Inst_frame_buffer' of component 'frame_buffer' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:188]
-INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-17796-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (14#1) [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-17796-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6]
-INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:17' bound to instance 'Inst_ov7670_capture' of component 'ov7670_capture' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:199]
-INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (15#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:29]
-INFO: [Synth 8-3491] module 'Address_Generator' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:8' bound to instance 'Inst_Address_Generator' of component 'Address_Generator' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:211]
-INFO: [Synth 8-638] synthesizing module 'Address_Generator' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'Address_Generator' (16#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'top_level' (17#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:33]
-WARNING: [Synth 8-7071] port 'btnl' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
-WARNING: [Synth 8-7071] port 'btnc' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
-WARNING: [Synth 8-7071] port 'btnr' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
-WARNING: [Synth 8-7071] port 'config_finished' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
-WARNING: [Synth 8-7023] instance 'Camera' of module 'top_level' has 16 connections declared, but only 12 given [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
-INFO: [Synth 8-6157] synthesizing module 'CNN' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:1]
-INFO: [Synth 8-6157] synthesizing module 'CAM_Preprocess' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v:1]
-	Parameter divisor bound to: 939524096 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'FLOAT_TO_INT' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'FLOAT_TO_INT' (18#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v:1]
-INFO: [Synth 8-6157] synthesizing module 'FLOAT32_MUL' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v:1]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_64' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:2]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_32' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:26]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_16' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:50]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_8' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:74]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_4' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:98]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_2' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:122]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_2' (19#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:122]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_4' (20#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:98]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_8' (21#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_16' (22#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:50]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_32' (23#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:26]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_64' (24#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'FLOAT32_MUL' (25#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'CAM_Preprocess' (26#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v:1]
-WARNING: [Synth 8-689] width (15000) of port connection 'in' does not match port width (7500) of module 'CAM_Preprocess' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:18]
-INFO: [Synth 8-6157] synthesizing module 'conv1_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'conv1_params' (27#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v:1]
-INFO: [Synth 8-6157] synthesizing module 'conv2_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'conv2_params' (28#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v:1]
-INFO: [Synth 8-6157] synthesizing module 'dense1_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'dense1_params' (29#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v:1]
-INFO: [Synth 8-6157] synthesizing module 'dense2_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'dense2_params' (30#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v:1]
-INFO: [Synth 8-6157] synthesizing module 'Convolution_Layer' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:1]
-	Parameter DATAWIDTH bound to: 25 - type: integer 
-	Parameter DATAHEIGHT bound to: 25 - type: integer 
-	Parameter DATACHANNEL bound to: 3 - type: integer 
-	Parameter FILTERBATCH bound to: 8 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'Conv2d' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATAWIDTH bound to: 25 - type: integer 
-	Parameter DATAHEIGHT bound to: 25 - type: integer 
-	Parameter DATACHANNEL bound to: 3 - type: integer 
-	Parameter FILTERHEIGHT bound to: 2 - type: integer 
-	Parameter FILTERWIDTH bound to: 2 - type: integer 
-	Parameter FILTERBATCH bound to: 8 - type: integer 
-	Parameter STRIDEHEIGHT bound to: 1 - type: integer 
-	Parameter STRIDEWIDTH bound to: 1 - type: integer 
-	Parameter PADDINGENABLE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'ConvKernel' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATACHANNEL bound to: 3 - type: integer 
-	Parameter LATENCY_MAX bound to: 10 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'FLOAT32_ADD' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'FLOAT32_ADD' (31#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'ConvKernel' (32#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
-
-*** Running vivado
-    with args -log TopMaster.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopMaster.tcl
-
-
-
-****** Vivado v2020.2 (64-bit)
-  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source TopMaster.tcl -notrace
-Command: synth_design -top TopMaster -part xc7a35tcpg236-1 -assert -mode out_of_context
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
-INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5892
+WARNING: [Synth 8-7071] port 'seven_seg' of module 'top' is unconnected for instance 'Messenger' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:16]
+WARNING: [Synth 8-7071] port 'AN' of module 'top' is unconnected for instance 'Messenger' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:16]
+WARNING: [Synth 8-7023] instance 'Messenger' of module 'top' has 11 connections declared, but only 9 given [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'TopMaster' (9#1) [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:1]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.773 ; gain = 0.000
----------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'TopMaster' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:23]
-INFO: [Synth 8-6157] synthesizing module 'top' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:36]
-INFO: [Synth 8-6157] synthesizing module 'encoder' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v:16]
-INFO: [Synth 8-6155] done synthesizing module 'encoder' (1#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v:16]
-INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:12]
-INFO: [Synth 8-6157] synthesizing module 'onepulse' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'onepulse' (3#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:25]
-INFO: [Synth 8-6157] synthesizing module 'master_control' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v:24]
-	Parameter state_wait_rqst bound to: 3'b000 
-	Parameter state_wait_ack bound to: 3'b001 
-	Parameter state_wait_to_send_data bound to: 3'b100 
-	Parameter state_send_data bound to: 3'b101 
-INFO: [Synth 8-6157] synthesizing module 'counter' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v:18]
-INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v:18]
-INFO: [Synth 8-6155] done synthesizing module 'master_control' (5#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v:24]
-INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'decoder' (6#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:11]
-INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (7#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'top' (8#1) [C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v:36]
-WARNING: [Synth 8-7071] port 'seven_seg' of module 'top' is unconnected for instance 'Messenger' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
-WARNING: [Synth 8-7071] port 'AN' of module 'top' is unconnected for instance 'Messenger' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
-WARNING: [Synth 8-7023] instance 'Messenger' of module 'top' has 11 connections declared, but only 9 given [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:48]
-INFO: [Synth 8-638] synthesizing module 'top_level' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:33]
-INFO: [Synth 8-3491] module 'clocking' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:75' bound to instance 'your_instance_name' of component 'clocking' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:157]
-INFO: [Synth 8-638] synthesizing module 'clocking' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:85]
-	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
-	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
-	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:119]
-	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
-	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
-	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
-	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: double 
-	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT1_DIVIDE bound to: 40 - type: integer 
-	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
-	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
-	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
-	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter COMPENSATION bound to: ZHOLD - type: string 
-	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
-	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
-	Parameter IS_PSEN_INVERTED bound to: 1'b0 
-	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
-	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
-	Parameter IS_RST_INVERTED bound to: 1'b0 
-	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
-	Parameter REF_JITTER2 bound to: 0.000000 - type: double 
-	Parameter SS_EN bound to: FALSE - type: string 
-	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
-	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
-	Parameter STARTUP_WAIT bound to: 0 - type: bool 
-INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:130]
-INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:193]
-INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:199]
-INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFG' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:206]
-INFO: [Synth 8-256] done synthesizing module 'clocking' (9#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd:85]
-INFO: [Synth 8-3491] module 'debounce' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:11' bound to instance 'Inst_debounce' of component 'debounce' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:165]
-INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_debounce' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_debounce' (10#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd:17]
-INFO: [Synth 8-3491] module 'ov7670_controller' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:11' bound to instance 'Inst_ov7670_controller' of component 'ov7670_controller' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:171]
-INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:23]
-INFO: [Synth 8-3491] module 'i2c_sender' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:58]
-INFO: [Synth 8-638] synthesizing module 'i2c_sender' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (11#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd:22]
-INFO: [Synth 8-3491] module 'ov7670_registers' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:12' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:73]
-INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (12#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (13#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd:23]
-INFO: [Synth 8-226] default block is never used [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:184]
-INFO: [Synth 8-3491] module 'frame_buffer' declared at 'C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-5980-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6' bound to instance 'Inst_frame_buffer' of component 'frame_buffer' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:190]
-INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-5980-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (14#1) [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/.Xil/Vivado-5980-DESKTOP-P0B4VES/realtime/frame_buffer_stub.v:6]
-INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:17' bound to instance 'Inst_ov7670_capture' of component 'ov7670_capture' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:201]
-INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (15#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd:29]
-INFO: [Synth 8-3491] module 'Address_Generator' declared at 'C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:8' bound to instance 'Inst_Address_Generator' of component 'Address_Generator' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:213]
-INFO: [Synth 8-638] synthesizing module 'Address_Generator' [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'Address_Generator' (16#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'top_level' (17#1) [C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd:33]
-WARNING: [Synth 8-7071] port 'btnl' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
-WARNING: [Synth 8-7071] port 'btnc' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
-WARNING: [Synth 8-7071] port 'btnr' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
-WARNING: [Synth 8-7071] port 'config_finished' of module 'top_level' is unconnected for instance 'Camera' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
-WARNING: [Synth 8-7023] instance 'Camera' of module 'top_level' has 16 connections declared, but only 12 given [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:60]
-INFO: [Synth 8-6157] synthesizing module 'CNN' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:1]
-INFO: [Synth 8-6157] synthesizing module 'CAM_Preprocess' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v:1]
-	Parameter divisor bound to: 939524096 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'FLOAT_TO_INT' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'FLOAT_TO_INT' (18#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v:1]
-INFO: [Synth 8-6157] synthesizing module 'FLOAT32_MUL' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v:1]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_64' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:2]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_32' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:26]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_16' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:50]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_8' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:74]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_4' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:98]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER_2' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:122]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_2' (19#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:122]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_4' (20#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:98]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_8' (21#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_16' (22#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:50]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_32' (23#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:26]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER_64' (24#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'FLOAT32_MUL' (25#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'CAM_Preprocess' (26#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v:1]
-WARNING: [Synth 8-689] width (15000) of port connection 'in' does not match port width (7500) of module 'CAM_Preprocess' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:18]
-INFO: [Synth 8-6157] synthesizing module 'conv1_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'conv1_params' (27#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v:1]
-INFO: [Synth 8-6157] synthesizing module 'conv2_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'conv2_params' (28#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v:1]
-INFO: [Synth 8-6157] synthesizing module 'dense1_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'dense1_params' (29#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v:1]
-INFO: [Synth 8-6157] synthesizing module 'dense2_params' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'dense2_params' (30#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v:1]
-INFO: [Synth 8-6157] synthesizing module 'Convolution_Layer' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:1]
-	Parameter DATAWIDTH bound to: 25 - type: integer 
-	Parameter DATAHEIGHT bound to: 25 - type: integer 
-	Parameter DATACHANNEL bound to: 3 - type: integer 
-	Parameter FILTERBATCH bound to: 8 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'Conv2d' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATAWIDTH bound to: 25 - type: integer 
-	Parameter DATAHEIGHT bound to: 25 - type: integer 
-	Parameter DATACHANNEL bound to: 3 - type: integer 
-	Parameter FILTERHEIGHT bound to: 2 - type: integer 
-	Parameter FILTERWIDTH bound to: 2 - type: integer 
-	Parameter FILTERBATCH bound to: 8 - type: integer 
-	Parameter STRIDEHEIGHT bound to: 1 - type: integer 
-	Parameter STRIDEWIDTH bound to: 1 - type: integer 
-	Parameter PADDINGENABLE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'ConvKernel' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATACHANNEL bound to: 3 - type: integer 
-	Parameter LATENCY_MAX bound to: 10 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'FLOAT32_ADD' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'FLOAT32_ADD' (31#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'ConvKernel' (32#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Conv2d' (33#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v:23]
-WARNING: [Synth 8-7071] port 'debug' of module 'Conv2d' is unconnected for instance 'conv' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:28]
-WARNING: [Synth 8-7023] instance 'conv' of module 'Conv2d' has 8 connections declared, but only 7 given [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:28]
-INFO: [Synth 8-6157] synthesizing module 'Relu_activation' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATAWIDTH bound to: 24 - type: integer 
-	Parameter DATAHEIGHT bound to: 24 - type: integer 
-	Parameter DATACHANNEL bound to: 8 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'Relu' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter THRESHOLD bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'Relu' (34#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Relu_activation' (35#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Max_pool' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATAWIDTH bound to: 24 - type: integer 
-	Parameter DATAHEIGHT bound to: 24 - type: integer 
-	Parameter DATACHANNEL bound to: 8 - type: integer 
-	Parameter KWIDTH bound to: 2 - type: integer 
-	Parameter KHEIGHT bound to: 2 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'Max' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'Max' (36#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Max_pool' (37#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Convolution_Layer' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:1]
-INFO: [Synth 8-6157] synthesizing module 'Convolution_Layer__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:1]
-	Parameter DATAWIDTH bound to: 12 - type: integer 
-	Parameter DATAHEIGHT bound to: 12 - type: integer 
-	Parameter DATACHANNEL bound to: 8 - type: integer 
-	Parameter FILTERBATCH bound to: 20 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'Conv2d__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATAWIDTH bound to: 12 - type: integer 
-	Parameter DATAHEIGHT bound to: 12 - type: integer 
-	Parameter DATACHANNEL bound to: 8 - type: integer 
-	Parameter FILTERHEIGHT bound to: 2 - type: integer 
-	Parameter FILTERWIDTH bound to: 2 - type: integer 
-	Parameter FILTERBATCH bound to: 20 - type: integer 
-	Parameter STRIDEHEIGHT bound to: 1 - type: integer 
-	Parameter STRIDEWIDTH bound to: 1 - type: integer 
-	Parameter PADDINGENABLE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'ConvKernel__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATACHANNEL bound to: 8 - type: integer 
-	Parameter LATENCY_MAX bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'ConvKernel__parameterized0' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Conv2d__parameterized0' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v:23]
-WARNING: [Synth 8-7071] port 'debug' of module 'Conv2d' is unconnected for instance 'conv' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:28]
-WARNING: [Synth 8-7023] instance 'conv' of module 'Conv2d' has 8 connections declared, but only 7 given [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:28]
-INFO: [Synth 8-6157] synthesizing module 'Relu_activation__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATAWIDTH bound to: 11 - type: integer 
-	Parameter DATAHEIGHT bound to: 11 - type: integer 
-	Parameter DATACHANNEL bound to: 20 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'Relu_activation__parameterized0' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Max_pool__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATAWIDTH bound to: 11 - type: integer 
-	Parameter DATAHEIGHT bound to: 11 - type: integer 
-	Parameter DATACHANNEL bound to: 20 - type: integer 
-	Parameter KWIDTH bound to: 2 - type: integer 
-	Parameter KHEIGHT bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'Max_pool__parameterized0' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v:23]
-WARNING: [Synth 8-689] width (16000) of port connection 'result' does not match port width (19360) of module 'Max_pool__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:65]
-INFO: [Synth 8-6155] done synthesizing module 'Convolution_Layer__parameterized0' (38#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v:1]
-INFO: [Synth 8-6157] synthesizing module 'Dense_Layer' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v:1]
-	Parameter LENGTH bound to: 500 - type: integer 
-	Parameter UNITS bound to: 8 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'FullConnect' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter LENGTH bound to: 500 - type: integer 
-	Parameter FILTERBATCH bound to: 8 - type: integer 
-	Parameter LATENCY_MAX bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'FullConnect' (39#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Relu_activation__parameterized1' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATAWIDTH bound to: 1 - type: integer 
-	Parameter DATAHEIGHT bound to: 1 - type: integer 
-	Parameter DATACHANNEL bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'Relu_activation__parameterized1' (39#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Dense_Layer' (40#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v:1]
-INFO: [Synth 8-6157] synthesizing module 'Dense_Layer__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v:1]
-	Parameter LENGTH bound to: 8 - type: integer 
-	Parameter UNITS bound to: 3 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'FullConnect__parameterized0' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter LENGTH bound to: 8 - type: integer 
-	Parameter FILTERBATCH bound to: 3 - type: integer 
-	Parameter LATENCY_MAX bound to: 10 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'FullConnect__parameterized0' (40#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Relu_activation__parameterized2' [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
-	Parameter BITWIDTH bound to: 32 - type: integer 
-	Parameter DATAWIDTH bound to: 1 - type: integer 
-	Parameter DATAHEIGHT bound to: 1 - type: integer 
-	Parameter DATACHANNEL bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'Relu_activation__parameterized2' (40#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Dense_Layer__parameterized0' (40#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'CNN' (41#1) [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:1]
-WARNING: [Synth 8-7071] port 'Rock' of module 'CNN' is unconnected for instance 'Neuron' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:80]
-WARNING: [Synth 8-7071] port 'Paper' of module 'CNN' is unconnected for instance 'Neuron' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:80]
-WARNING: [Synth 8-7071] port 'Scissors' of module 'CNN' is unconnected for instance 'Neuron' [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:80]
-WARNING: [Synth 8-7023] instance 'Neuron' of module 'CNN' has 8 connections declared, but only 5 given [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:80]
-INFO: [Synth 8-6155] done synthesizing module 'TopMaster' (42#1) [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v:23]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:05:11 ; elapsed = 00:05:21 . Memory (MB): peak = 3378.223 ; gain = 2360.449
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.730 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:05:34 ; elapsed = 00:05:46 . Memory (MB): peak = 3378.223 ; gain = 2360.449
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.730 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:34 ; elapsed = 00:05:46 . Memory (MB): peak = 3378.223 ; gain = 2360.449
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.730 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 4500.793 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
-WARNING: [Netlist 29-432] The IBUFG primitive 'Camera/your_instance_name/clkin1_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1017.730 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/home/github/LogicDesign/Final/TopMaster/TopMaster.gen/sources_1/ip/frame_buffer/frame_buffer/frame_buffer_in_context.xdc] for cell 'Camera/Inst_frame_buffer'
-Finished Parsing XDC File [c:/home/github/LogicDesign/Final/TopMaster/TopMaster.gen/sources_1/ip/frame_buffer/frame_buffer/frame_buffer_in_context.xdc] for cell 'Camera/Inst_frame_buffer'
+Parsing XDC File [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/constrs_2/new/constraints.xdc]
+Finished Parsing XDC File [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/constrs_2/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/constrs_2/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopMaster_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopMaster_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.189 . Memory (MB): peak = 6416.145 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1068.508 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  IBUFG => IBUF: 1 instance 
+No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 6829.059 ; gain = 412.914
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1068.508 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:10:15 ; elapsed = 00:10:09 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:10:15 ; elapsed = 00:10:09 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1068.508 ; gain = 50.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'master_control'
-WARNING: [Synth 8-6040] Register address_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
-INFO: [Synth 8-802] inferred FSM for state register 'line_reg' in module 'ov7670_capture'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -529,99 +100,34 @@ INFO: [Synth 8-802] inferred FSM for state register 'line_reg' in module 'ov7670
          state_send_data |                               11 |                              101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'master_control'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 iSTATE0 |                             0001 |                               00
-                 iSTATE1 |                             0010 |                               01
-                 iSTATE2 |                             0100 |                               10
-                  iSTATE |                             1000 |                               11
-*
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'line_reg' using encoding 'one-hot' in module 'ov7670_capture'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:15:48 ; elapsed = 00:16:12 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input  500 Bit       Adders := 1     
 	   2 Input   32 Bit       Adders := 1     
-	   2 Input   31 Bit       Adders := 1     
 	   2 Input   27 Bit       Adders := 1     
-	   3 Input   26 Bit       Adders := 4     
-	   2 Input   25 Bit       Adders := 2     
-	   2 Input   21 Bit       Adders := 1     
-	   2 Input   12 Bit       Adders := 2     
-	   2 Input   11 Bit       Adders := 3     
-	   2 Input   10 Bit       Adders := 4     
-	   4 Input    9 Bit       Adders := 5     
-	   2 Input    9 Bit       Adders := 5     
-	   2 Input    8 Bit       Adders := 17    
-	   3 Input    8 Bit       Adders := 4     
-	   2 Input    6 Bit       Adders := 8     
-	   2 Input    5 Bit       Adders := 8     
-	   2 Input    3 Bit       Adders := 1     
-+---XORs : 
-	   2 Input      1 Bit         XORs := 5     
 +---Registers : 
-	            60000 Bit    Registers := 2     
-	            36864 Bit    Registers := 1     
-	            15000 Bit    Registers := 1     
-	             1024 Bit    Registers := 2     
-	              500 Bit    Registers := 1     
-	              384 Bit    Registers := 2     
-	               32 Bit    Registers := 7058  
+	               32 Bit    Registers := 1     
 	               27 Bit    Registers := 1     
-	               25 Bit    Registers := 1     
-	               16 Bit    Registers := 2     
-	               12 Bit    Registers := 1     
-	               11 Bit    Registers := 3     
-	               10 Bit    Registers := 4     
-	                8 Bit    Registers := 7     
-	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 5     
-	                4 Bit    Registers := 2     
-	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 46    
-+---ROMs : 
-	                    ROMs := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
 +---Muxes : 
-	   5 Input 60000 Bit        Muxes := 1     
-	   2 Input  500 Bit        Muxes := 4     
-	   2 Input   32 Bit        Muxes := 12008 
-	   3 Input   32 Bit        Muxes := 1     
-	   2 Input   31 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 1     
 	   2 Input   27 Bit        Muxes := 1     
-	   2 Input   26 Bit        Muxes := 4     
-	   2 Input   25 Bit        Muxes := 2     
-	   2 Input   24 Bit        Muxes := 8     
-	   2 Input   23 Bit        Muxes := 4     
-	   2 Input   21 Bit        Muxes := 1     
-	   4 Input   17 Bit        Muxes := 1     
-	   2 Input   12 Bit        Muxes := 2     
-	   2 Input   11 Bit        Muxes := 3     
-	   2 Input   10 Bit        Muxes := 2     
-	   2 Input    9 Bit        Muxes := 3     
-	   2 Input    8 Bit        Muxes := 21    
 	   8 Input    8 Bit        Muxes := 1     
-	   2 Input    6 Bit        Muxes := 8     
-	   2 Input    5 Bit        Muxes := 14    
-	   4 Input    4 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 30    
-	   2 Input    3 Bit        Muxes := 61    
 	   9 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
 	   4 Input    3 Bit        Muxes := 1     
-	   7 Input    2 Bit        Muxes := 1     
-	   4 Input    2 Bit        Muxes := 2     
-	   2 Input    2 Bit        Muxes := 116   
-	   2 Input    1 Bit        Muxes := 23682 
-	   3 Input    1 Bit        Muxes := 8     
-	   4 Input    1 Bit        Muxes := 7     
-	   5 Input    1 Bit        Muxes := 3     
-	   6 Input    1 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -637,448 +143,26 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6040] Register Inst_ov7670_controller/Inst_ov7670_registers/address_reg_rep_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
-DSP Report: Generating DSP Computed_mantissa, operation Mode is: A*B.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: Generating DSP Computed_mantissa, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: Generating DSP raddr1, operation Mode is: A*(B:0x140).
-DSP Report: operator raddr1 is absorbed into DSP raddr1.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2048] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2049] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2050] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2051] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2052] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2053] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2054] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2055] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2056] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2057] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2058] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2059] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2060] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2061] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2062] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2063] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2064] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2065] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2066] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2067] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2068] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2069] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2070] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2071] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2072] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2073] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2074] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2075] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2076] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2077] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2078] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2079] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2080] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2081] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2082] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2083] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2084] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2085] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2086] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2087] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2088] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2089] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2090] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2091] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2092] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2093] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2094] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2095] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2096] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2097] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2098] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2099] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2100] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2101] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2102] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2103] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2104] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2105] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2106] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2107] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2108] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2109] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2110] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2111] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2112] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2113] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2114] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2115] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2116] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2117] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2118] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2119] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2120] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2121] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2122] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2123] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2124] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2125] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2126] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2127] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2128] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2129] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2130] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2131] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2132] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2133] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2134] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2135] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2136] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2137] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2138] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2139] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2140] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2141] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2142] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2143] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2144] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2145] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2146] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\out_reg[2147] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-DSP Report: Generating DSP Computed_mantissa, operation Mode is: A*B.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: Generating DSP Computed_mantissa, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: Generating DSP Computed_mantissa, operation Mode is: A*B.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: Generating DSP Computed_mantissa, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-WARNING: [Synth 8-7129] Port debug[1023] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1022] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1021] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1020] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1019] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1018] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1017] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1016] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1015] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1014] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1013] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1012] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1011] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1010] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1009] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1008] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1007] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1006] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1005] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1004] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1003] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1002] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1001] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[1000] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[999] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[998] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[997] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[996] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[995] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[994] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[993] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[992] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[991] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[990] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[989] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[988] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[987] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[986] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[985] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[984] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[983] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[982] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[981] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[980] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[979] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[978] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[977] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[976] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[975] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[974] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[973] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[972] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[971] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[970] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[969] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[968] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[967] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[966] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[965] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[964] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[963] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[962] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[961] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[960] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[959] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[958] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[957] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[956] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[955] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[954] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[953] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[952] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[951] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[950] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[949] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[948] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[947] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[946] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[945] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[944] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[943] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[942] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[941] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[940] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[939] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[938] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[937] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[936] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[935] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[934] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[933] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[932] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[931] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[930] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[929] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[928] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[927] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[926] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[925] in module ConvKernel__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port debug[924] in module ConvKernel__parameterized0 is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-DSP Report: Generating DSP Computed_mantissa, operation Mode is: A*B.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: Generating DSP Computed_mantissa, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: Generating DSP Computed_mantissa, operation Mode is: A*B.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: Generating DSP Computed_mantissa, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-DSP Report: operator Computed_mantissa is absorbed into DSP Computed_mantissa.
-WARNING: [Synth 8-3936] Found unconnected internal register 'CAM_reg_reg' and it is trimmed from '15000' to '7500' bits. [C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v:18]
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3071] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3070] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3069] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3068] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3067] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3066] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3065] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3064] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3063] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3062] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3061] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3060] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3059] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3058] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3057] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3056] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3055] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3054] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3053] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3052] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3051] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3050] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3049] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3048] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3047] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3046] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3045] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3044] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3043] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3042] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3041] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3040] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3039] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3038] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3037] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3036] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3035] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3034] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3033] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3032] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3031] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3030] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3029] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3028] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3027] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3026] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3025] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3024] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3023] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3022] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3021] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3020] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3019] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3018] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3017] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3016] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3015] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3014] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3013] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3012] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3011] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3010] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3009] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3008] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3007] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3006] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3005] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3004] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3003] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3002] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3001] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[3000] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2999] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2998] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2997] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2996] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2995] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2994] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2993] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2992] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2991] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2990] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2989] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2988] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2987] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2986] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2985] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2984] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2983] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2982] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2981] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2980] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2979] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2978] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2977] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2976] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2975] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2974] driven by constant 0
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2973] driven by constant 1
-WARNING: [Synth 8-3917] design CNN__GC0 has port weight[2972] driven by constant 1
-INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[0]' (FDE) to 'dense_2/full/Sum_reg[9]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[1]' (FDE) to 'dense_2/full/Sum_reg[4]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[3]' (FDE) to 'dense_2/full/Sum_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[4]' (FDE) to 'dense_2/full/Sum_reg[6]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[5]' (FDE) to 'dense_2/full/Sum_reg[8]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[6]' (FDE) to 'dense_2/full/Sum_reg[10]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[7]' (FDE) to 'dense_2/full/Sum_reg[14]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[8]' (FDE) to 'dense_2/full/Sum_reg[19]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[9]' (FDE) to 'dense_2/full/Sum_reg[16]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[11]' (FDE) to 'dense_2/full/Sum_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[12]' (FDE) to 'dense_2/full/Sum_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[13]' (FDE) to 'dense_2/full/Sum_reg[24]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[14]' (FDE) to 'dense_2/full/Sum_reg[18]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[15]' (FDE) to 'dense_2/full/Sum_reg[17]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[17]' (FDE) to 'dense_2/full/Sum_reg[30]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[18]' (FDE) to 'dense_2/full/Sum_reg[26]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[19]' (FDE) to 'dense_2/full/Sum_reg[21]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[20]' (FDE) to 'dense_2/full/Sum_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[22]' (FDE) to 'dense_2/full/Sum_reg[25]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[23]' (FDE) to 'dense_2/full/Sum_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[26]' (FDE) to 'dense_2/full/Sum_reg[27]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[27]' (FDE) to 'dense_2/full/Sum_reg[28]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[28]' (FDE) to 'dense_2/full/Sum_reg[29]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/Sum_reg[31]' (FDE) to 'dense_2/full/Sum_reg[2]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][0]' (FDE) to 'dense_2/full/resultArray_reg[0][16]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][1]' (FDE) to 'dense_2/full/resultArray_reg[0][10]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][3]' (FDE) to 'dense_2/full/resultArray_reg[0][31]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][4]' (FDE) to 'dense_2/full/resultArray_reg[0][10]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][5]' (FDE) to 'dense_2/full/resultArray_reg[0][21]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][6]' (FDE) to 'dense_2/full/resultArray_reg[0][10]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][7]' (FDE) to 'dense_2/full/resultArray_reg[0][29]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][8]' (FDE) to 'dense_2/full/resultArray_reg[0][21]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][9]' (FDE) to 'dense_2/full/resultArray_reg[0][16]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][11]' (FDE) to 'dense_2/full/resultArray_reg[0][31]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][12]' (FDE) to 'dense_2/full/resultArray_reg[0][31]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][13]' (FDE) to 'dense_2/full/resultArray_reg[0][24]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][14]' (FDE) to 'dense_2/full/resultArray_reg[0][29]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][15]' (FDE) to 'dense_2/full/resultArray_reg[0][30]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][17]' (FDE) to 'dense_2/full/resultArray_reg[0][30]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][18]' (FDE) to 'dense_2/full/resultArray_reg[0][29]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][19]' (FDE) to 'dense_2/full/resultArray_reg[0][21]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][20]' (FDE) to 'dense_2/full/resultArray_reg[0][31]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][22]' (FDE) to 'dense_2/full/resultArray_reg[0][25]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][23]' (FDE) to 'dense_2/full/resultArray_reg[0][31]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][26]' (FDE) to 'dense_2/full/resultArray_reg[0][29]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][27]' (FDE) to 'dense_2/full/resultArray_reg[0][29]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][28]' (FDE) to 'dense_2/full/resultArray_reg[0][29]'
-INFO: [Synth 8-3886] merging instance 'dense_2/full/resultArray_reg[0][31]' (FDE) to 'dense_2/full/resultArray_reg[0][2]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:26:21 ; elapsed = 00:26:53 . Memory (MB): peak = 6829.059 ; gain = 5811.285
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-ROM: Preliminary Mapping	Report
-+------------+-------------------------------------------------------+---------------+----------------+
-|Module Name | RTL Object                                            | Depth x Width | Implemented As | 
-+------------+-------------------------------------------------------+---------------+----------------+
-|TopMaster   | Inst_ov7670_controller/Inst_ov7670_registers/sreg_reg | 256x16        | Block RAM      | 
-+------------+-------------------------------------------------------+---------------+----------------+
-
-
-DSP: Preliminary Mapping	Report (see note below)
-+------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|FLOAT32_MUL | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|FLOAT32_MUL | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|TopMaster   | A*(B:0x140)    | 10     | 9      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|FLOAT32_MUL | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|FLOAT32_MUL | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|FLOAT32_MUL | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|FLOAT32_MUL | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|FLOAT32_MUL | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|FLOAT32_MUL | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|FLOAT32_MUL | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|FLOAT32_MUL | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-
-Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:27:21 ; elapsed = 00:27:56 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:27:50 ; elapsed = 00:28:25 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance Camerai_2/Inst_ov7670_controller/Inst_ov7670_registers/sreg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:39:03 ; elapsed = 00:39:47 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1092,98 +176,89 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance Camera/Inst_ov7670_controller/Inst_ov7670_registers/sreg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'Camerai_0' to logic
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:39:39 ; elapsed = 00:40:29 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:39:39 ; elapsed = 00:40:29 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:39:39 ; elapsed = 00:40:29 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:39:39 ; elapsed = 00:40:29 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:39:39 ; elapsed = 00:40:29 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:39:39 ; elapsed = 00:40:29 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+--------------+----------+
-|      |BlackBox name |Instances |
-+------+--------------+----------+
-|1     |frame_buffer  |         1|
-+------+--------------+----------+
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------------+------+
-|      |Cell         |Count |
-+------+-------------+------+
-|1     |frame_buffer |     1|
-|2     |BUFG         |     3|
-|3     |CARRY4       |   226|
-|4     |DSP48E1      |     1|
-|5     |LUT1         |    22|
-|6     |LUT2         |   201|
-|7     |LUT3         |   388|
-|8     |LUT4         |   207|
-|9     |LUT5         |   227|
-|10    |LUT6         |    88|
-|11    |MMCME2_ADV   |     1|
-|12    |RAMB18E1     |     1|
-|13    |FDRE         |   950|
-|14    |FDSE         |    31|
-|15    |IBUFG        |     1|
-+------+-------------+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    17|
+|3     |LUT1   |     7|
+|4     |LUT2   |    32|
+|5     |LUT3   |     1|
+|6     |LUT4   |    19|
+|7     |LUT5   |    13|
+|8     |LUT6   |    11|
+|9     |FDRE   |    82|
+|10    |FDSE   |     1|
+|11    |IBUF   |     3|
+|12    |OBUF   |     6|
++------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:39:39 ; elapsed = 00:40:29 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1068.508 ; gain = 50.777
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 203 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:29:46 ; elapsed = 00:36:38 . Memory (MB): peak = 6829.059 ; gain = 2360.449
-Synthesis Optimization Complete : Time (s): cpu = 00:39:40 ; elapsed = 00:40:35 . Memory (MB): peak = 6829.059 ; gain = 5811.285
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1068.508 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1068.508 ; gain = 50.777
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 6829.059 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 230 Unisim elements for replacement
-WARNING: [Netlist 29-432] The IBUFG primitive 'Camera/your_instance_name/clkin1_buf' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1070.891 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 6829.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1070.891 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  IBUFG => IBUF: 1 instance 
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-292 Infos, 223 Warnings, 1 Critical Warnings and 0 Errors encountered.
+35 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:39:52 ; elapsed = 00:40:49 . Memory (MB): peak = 6829.059 ; gain = 5811.285
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1070.891 ; gain = 53.160
 INFO: [Common 17-1381] The checkpoint 'C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/TopMaster.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file TopMaster_utilization_synth.rpt -pb TopMaster_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jan 14 07:39:47 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 14 08:14:03 2022...

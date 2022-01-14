@@ -70,16 +70,15 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/home/github/LogicDesign/Final/TopMaster/TopMaster.cache/wt [current_project]
 set_property parent.project_path C:/home/github/LogicDesign/Final/TopMaster/TopMaster.xpr [current_project]
-set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/home/github/LogicDesign/Final/TopMaster/TopMaster.cache/ip [current_project]
@@ -87,45 +86,13 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v
   C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v
-  C:/home/github/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v
   C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v
   C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v
   C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v
   C:/home/github/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v
   C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/new/TopMaster.v
 }
-read_vhdl -library xil_defaultlib {
-  C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd
-  C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd
-  C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd
-  C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd
-  C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd
-  C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd
-  C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd
-  C:/home/github/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd
-}
-read_ip -quiet c:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
-set_property used_in_implementation false [get_files -all c:/home/github/LogicDesign/Final/TopMaster/TopMaster.gen/sources_1/ip/frame_buffer/frame_buffer_ooc.xdc]
-
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -135,11 +102,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/constrs_2/new/constraints.xdc
+set_property used_in_implementation false [get_files C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/constrs_2/new/constraints.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top TopMaster -part xc7a35tcpg236-1 -assert -mode out_of_context
+synth_design -top TopMaster -part xc7a35tcpg236-1 -assert
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

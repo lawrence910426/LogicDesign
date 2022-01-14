@@ -133,16 +133,15 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path C:/home/github/LogicDesign/Final/TopMaster/TopMaster.xpr [current_project]
   set_property ip_output_repo C:/home/github/LogicDesign/Final/TopMaster/TopMaster.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/home/github/LogicDesign/Final/TopMaster/TopMaster.runs/synth_1/TopMaster.dcp
-  read_ip -quiet c:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
 OPTRACE "read constraints: implementation" START { }
+  read_xdc C:/home/github/LogicDesign/Final/TopMaster/TopMaster.srcs/constrs_2/new/constraints.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
-  link_design -top TopMaster -part xc7a35tcpg236-1 -mode out_of_context
+  link_design -top TopMaster -part xc7a35tcpg236-1
 OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }
@@ -295,4 +294,34 @@ if {$rc} {
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
+OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
+OPTRACE "write_bitstream setup" START { }
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+OPTRACE "read constraints: write_bitstream" START { }
+OPTRACE "read constraints: write_bitstream" END { }
+  catch { write_mem_info -force -no_partial_mmi TopMaster.mmi }
+OPTRACE "write_bitstream setup" END { }
+OPTRACE "write_bitstream" START { }
+  write_bitstream -force TopMaster.bit 
+OPTRACE "write_bitstream" END { }
+OPTRACE "write_bitstream misc" START { }
+OPTRACE "read constraints: write_bitstream_post" START { }
+OPTRACE "read constraints: write_bitstream_post" END { }
+  catch {write_debug_probes -quiet -force TopMaster}
+  catch {file copy -force TopMaster.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
+  unset ACTIVE_STEP 
+}
+
+OPTRACE "write_bitstream misc" END { }
+OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }

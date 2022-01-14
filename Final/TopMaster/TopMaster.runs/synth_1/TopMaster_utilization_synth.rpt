@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Jan 14 07:39:46 2022
+| Date         : Fri Jan 14 08:14:03 2022
 | Host         : DESKTOP-P0B4VES running 64-bit major release  (build 9200)
 | Command      : report_utilization -file TopMaster_utilization_synth.rpt -pb TopMaster_utilization_synth.pb
 | Design       : TopMaster
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  919 |     0 |     20800 |  4.42 |
-|   LUT as Logic          |  919 |     0 |     20800 |  4.42 |
+| Slice LUTs*             |   61 |     0 |     20800 |  0.29 |
+|   LUT as Logic          |   61 |     0 |     20800 |  0.29 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  981 |     0 |     41600 |  2.36 |
-|   Register as Flip Flop |  981 |     0 |     41600 |  2.36 |
+| Slice Registers         |   83 |     0 |     41600 |  0.20 |
+|   Register as Flip Flop |   83 |     0 |     41600 |  0.20 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -56,34 +56,32 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 31    |          Yes |         Set |            - |
-| 950   |          Yes |       Reset |            - |
+| 1     |          Yes |         Set |            - |
+| 82    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
 2. Memory
 ---------
 
-+-------------------+------+-------+-----------+-------+
-|     Site Type     | Used | Fixed | Available | Util% |
-+-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |  0.5 |     0 |        50 |  1.00 |
-|   RAMB36/FIFO*    |    0 |     0 |        50 |  0.00 |
-|   RAMB18          |    1 |     0 |       100 |  1.00 |
-|     RAMB18E1 only |    1 |       |           |       |
-+-------------------+------+-------+-----------+-------+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |        50 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |        50 |  0.00 |
+|   RAMB18       |    0 |     0 |       100 |  0.00 |
++----------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
 
 3. DSP
 ------
 
-+----------------+------+-------+-----------+-------+
-|    Site Type   | Used | Fixed | Available | Util% |
-+----------------+------+-------+-----------+-------+
-| DSPs           |    1 |     0 |        90 |  1.11 |
-|   DSP48E1 only |    1 |       |           |       |
-+----------------+------+-------+-----------+-------+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |        90 |  0.00 |
++-----------+------+-------+-----------+-------+
 
 
 4. IO and GT Specific
@@ -92,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    0 |     0 |       106 |  0.00 |
+| Bonded IOB                  |    9 |     0 |       106 |  8.49 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -117,9 +115,9 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    3 |     0 |        32 |  9.38 |
+| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |        20 |  0.00 |
-| MMCME2_ADV |    1 |     0 |         5 | 20.00 |
+| MMCME2_ADV |    0 |     0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         5 |  0.00 |
 | BUFMRCE    |    0 |     0 |        10 |  0.00 |
 | BUFHCE     |    0 |     0 |        72 |  0.00 |
@@ -148,34 +146,30 @@ Table of Contents
 7. Primitives
 -------------
 
-+------------+------+---------------------+
-|  Ref Name  | Used | Functional Category |
-+------------+------+---------------------+
-| FDRE       |  950 |        Flop & Latch |
-| LUT3       |  388 |                 LUT |
-| LUT5       |  227 |                 LUT |
-| CARRY4     |  226 |          CarryLogic |
-| LUT4       |  207 |                 LUT |
-| LUT2       |  201 |                 LUT |
-| LUT6       |   88 |                 LUT |
-| FDSE       |   31 |        Flop & Latch |
-| LUT1       |   22 |                 LUT |
-| BUFG       |    3 |               Clock |
-| RAMB18E1   |    1 |        Block Memory |
-| MMCME2_ADV |    1 |               Clock |
-| IBUF       |    1 |                  IO |
-| DSP48E1    |    1 |    Block Arithmetic |
-+------------+------+---------------------+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| FDRE     |   82 |        Flop & Latch |
+| LUT2     |   32 |                 LUT |
+| LUT4     |   19 |                 LUT |
+| CARRY4   |   17 |          CarryLogic |
+| LUT5     |   13 |                 LUT |
+| LUT6     |   11 |                 LUT |
+| LUT1     |    7 |                 LUT |
+| OBUF     |    6 |                  IO |
+| IBUF     |    3 |                  IO |
+| LUT3     |    1 |                 LUT |
+| FDSE     |    1 |        Flop & Latch |
+| BUFG     |    1 |               Clock |
++----------+------+---------------------+
 
 
 8. Black Boxes
 --------------
 
-+--------------+------+
-|   Ref Name   | Used |
-+--------------+------+
-| frame_buffer |    1 |
-+--------------+------+
++----------+------+
+| Ref Name | Used |
++----------+------+
 
 
 9. Instantiated Netlists
