@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 14 11:22:06 2022
+# Process ID: 14256
+# Current directory: C:/home/github/LogicDesign/Final/TopMaster
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16044 C:\home\github\LogicDesign\Final\TopMaster\TopMaster.xpr
+# Log file: C:/home/github/LogicDesign/Final/TopMaster/vivado.log
+# Journal file: C:/home/github/LogicDesign/Final/TopMaster\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/home/github/LogicDesign/Final/TopMaster/TopMaster.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.992 ; gain = 0.000
+update_compile_order -fileset sources_1

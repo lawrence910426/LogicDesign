@@ -1,228 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1642114725">
   <File Type="PA-TCL" Name="TopMaster.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="TopMaster_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="TopMaster_reports.tcl"/>
   <File Type="RDS-RDS" Name="TopMaster.vds"/>
   <File Type="RDS-UTIL" Name="TopMaster_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="TopMaster_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="TopMaster.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="TopMaster_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="TopMaster_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/CAM_Preprocess.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/CNN.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/CNN.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/CNN.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Conv2d.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/ConvKernel.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/Convolution_Layer.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/Convolution_Layer.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/Dense_Layer.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/Dense_Layer.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/ENCODER.v"/>
+        <Attr Name="ImportTime" Val="1642066655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD.v"/>
+        <Attr Name="ImportTime" Val="1642066655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL.v"/>
+        <Attr Name="ImportTime" Val="1642066655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT_TO_INT.v"/>
+        <Attr Name="ImportTime" Val="1642066655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/FullConnect.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Max_pool.v"/>
+        <Attr Name="ImportTime" Val="1642066655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Relu_activation.v"/>
+        <Attr Name="ImportTime" Val="1642066655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/conv1_params.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv1_params.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/conv1_params.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/conv2_params.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/conv2_params.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/conv2_params.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/counter.v"/>
+        <Attr Name="ImportTime" Val="1642066656"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/dense1_params.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense1_params.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/dense1_params.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/dense2_params.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_params.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/dense2_params.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/encoder.v"/>
+        <Attr Name="ImportTime" Val="1642066656"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/master_control.v"/>
+        <Attr Name="ImportTime" Val="1642066656"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/seven_seg.v"/>
+        <Attr Name="ImportTime" Val="1642066656"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab6-Advanced/Chip2Chip/Master/Chip2Chip_Master/Chip2Chip_Master.srcs/sources_1/imports/chip2chip_master/top.v"/>
+        <Attr Name="ImportTime" Val="1642174323"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/address_Generator.vhd"/>
+        <Attr Name="ImportTime" Val="1642104110"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/clocking.vhd"/>
+        <Attr Name="ImportTime" Val="1642104110"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/debounce.vhd"/>
+        <Attr Name="ImportTime" Val="1642104110"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/i2c_sender.vhd"/>
+        <Attr Name="ImportTime" Val="1642104110"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_capture.vhd"/>
+        <Attr Name="ImportTime" Val="1642104110"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/ov7670_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1642104110"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/basys3_ov7670/ov7670_registers.vhd"/>
+        <Attr Name="ImportTime" Val="1642104110"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/top_level.vhd"/>
+        <Attr Name="ImportTime" Val="1642174317"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -234,174 +295,218 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/RGB.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/RGB.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/RGB.vhd"/>
+        <Attr Name="ImportTime" Val="1642104110"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/vga.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/vga.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/vga.vhd"/>
+        <Attr Name="ImportTime" Val="1642104110"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/ip/blk_mem_gen_conv_1_weight/blk_mem_gen_conv_1_weight.xci">
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_conv_1_weight/blk_mem_gen_conv_1_weight.xci">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sim_1/new/Convolution_Layer_T.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/ip/blk_mem_gen_conv_1_weight/blk_mem_gen_conv_1_weight.xci"/>
+        <Attr Name="ImportTime" Val="1642174412"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sim_1/new/ConvKernel_T.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/Convolution_Layer_T.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sim_1/new/Convolution_Layer_T.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sim_1/new/CNN_T.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/ConvKernel_T.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sim_1/new/ConvKernel_T.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/Conv2d_T.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/CNN_T.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sim_1/new/CNN_T.v"/>
+        <Attr Name="ImportTime" Val="1642066655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/ConvKernel_T.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Conv2d_T.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/Conv2d_T.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/Convolution_Layer_T.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/ConvKernel_T.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/ConvKernel_T.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/Dense_Layer_T.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Convolution_Layer_T.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/Convolution_Layer_T.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD_PIPELINE.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/Dense_Layer_T.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/Dense_Layer_T.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL_PIPELINE.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD_PIPELINE.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_ADD_PIPELINE.v"/>
+        <Attr Name="ImportTime" Val="1642066655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/FullConnect_T.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL_PIPELINE.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/FLOAT32_MUL_PIPELINE.v"/>
+        <Attr Name="ImportTime" Val="1642066655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/FullConnect_T.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/FullConnect_T.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/MockUpPlacement.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/home/github/VerilogFloat/project_1/project_1.srcs/sources_1/new/INT_TO_FLOAT.v"/>
+        <Attr Name="ImportTime" Val="1642066655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Mult.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/MockUpPlacement.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/MockUpPlacement.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/SumTree.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Mult.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/imports/Users/lawre/Downloads/CNN-FPGA-master/CNN-FPGA-master/src/Mult.v"/>
+        <Attr Name="ImportTime" Val="1642066655"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sources_1/new/dense2_param.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/SumTree.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/SumTree.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/i3c2.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sources_1/new/dense2_param.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sim_1/new/Conv2d_T.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sources_1/new/dense2_param.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sim_1/new/FullConnect_T.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/i3c2.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../basys3_ov7670_v1/basys3_ov7670_v1.srcs/sources_1/imports/ov7670_fr/i3c2.vhd"/>
+        <Attr Name="ImportTime" Val="1642104110"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/Conv2d_T.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sim_1/new/Conv2d_T.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../CNN/CNN.srcs/sim_1/new/Dense_T.v">
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/FullConnect_T.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sim_1/new/FullConnect_T.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/LogicDesign/Final/CNN/CNN.srcs/sim_1/new/Dense_T.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CNN/CNN.srcs/sim_1/new/Dense_T.v"/>
+        <Attr Name="ImportTime" Val="1642174316"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -425,12 +530,10 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design">
-      <Option Id="Assert">1</Option>
       <Option Id="MoreOptsStr"><![CDATA[-mode out_of_context]]></Option>
+      <Option Id="Assert">1</Option>
     </Step>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="frame_buffer"/>
