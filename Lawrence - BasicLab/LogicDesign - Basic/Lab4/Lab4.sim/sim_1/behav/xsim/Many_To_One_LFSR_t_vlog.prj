@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../Users/lawre/Downloads/Lab4/Lab4_Many_To_OneLFSR.v" \
+"../../../../../../../Users/lawre/Downloads/Lab4/Many_To_One_LFSR_t.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

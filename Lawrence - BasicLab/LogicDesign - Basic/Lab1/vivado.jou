@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 24 04:18:38 2021
+# Process ID: 10252
+# Current directory: C:/home/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7496 C:\home\Lab1\Lab1.xpr
+# Log file: C:/home/Lab1/vivado.log
+# Journal file: C:/home/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/home/Lab1/Lab1.xpr
+update_compile_order -fileset sources_1

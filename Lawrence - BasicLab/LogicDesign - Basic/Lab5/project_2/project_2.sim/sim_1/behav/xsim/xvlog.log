@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/home/LogicDesign - Basic/Lab5/project_2/project_2.gen/sources_1/ip/KeyboardCtrl_0/src/Ps2Interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ps2Interface
+ERROR: [VRFC 10-2323] parameter with unpacked dimension is only allowed in SystemVerilog [C:/home/LogicDesign - Basic/Lab5/project_2/project_2.gen/sources_1/ip/KeyboardCtrl_0/src/Ps2Interface.v:196]
+INFO: [VRFC 10-2458] undeclared symbol tx_parity, assumed default net type wire [C:/home/LogicDesign - Basic/Lab5/project_2/project_2.gen/sources_1/ip/KeyboardCtrl_0/src/Ps2Interface.v:296]
+ERROR: [VRFC 10-395] cannot assign a packed type to an unpacked type [C:/home/LogicDesign - Basic/Lab5/project_2/project_2.gen/sources_1/ip/KeyboardCtrl_0/src/Ps2Interface.v:196]
+ERROR: [VRFC 10-2865] module 'Ps2Interface' ignored due to previous errors [C:/home/LogicDesign - Basic/Lab5/project_2/project_2.gen/sources_1/ip/KeyboardCtrl_0/src/Ps2Interface.v:164]

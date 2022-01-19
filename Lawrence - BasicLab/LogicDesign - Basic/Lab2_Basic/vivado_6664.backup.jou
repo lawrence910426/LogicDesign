@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 12 14:45:34 2021
+# Process ID: 6664
+# Current directory: C:/home/Lab2_Basic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4056 C:\home\Lab2_Basic\Lab2_Basic.xpr
+# Log file: C:/home/Lab2_Basic/vivado.log
+# Journal file: C:/home/Lab2_Basic\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/home/Lab2_Basic/Lab2_Basic.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top NAND_Implement_t [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source NAND_Implement_t.tcl
+close_sim
+launch_simulation
+source NAND_Implement_t.tcl
+close_sim

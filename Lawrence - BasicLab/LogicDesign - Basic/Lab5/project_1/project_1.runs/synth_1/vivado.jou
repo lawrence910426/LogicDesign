@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov 18 16:31:40 2021
+# Process ID: 3012
+# Current directory: C:/home/LogicDesign - Basic/Lab5/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log SampleDisplay.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SampleDisplay.tcl
+# Log file: C:/home/LogicDesign - Basic/Lab5/project_1/project_1.runs/synth_1/SampleDisplay.vds
+# Journal file: C:/home/LogicDesign - Basic/Lab5/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SampleDisplay.tcl -notrace

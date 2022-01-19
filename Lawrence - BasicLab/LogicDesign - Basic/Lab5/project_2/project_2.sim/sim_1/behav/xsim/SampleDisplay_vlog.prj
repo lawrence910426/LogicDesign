@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_2.gen/sources_1/ip/KeyboardCtrl_0/src/Ps2Interface.v" \
+"../../../../project_2.gen/sources_1/ip/KeyboardCtrl_0/src/KeyboardCtrl.v" \
+"../../../../project_2.gen/sources_1/ip/KeyboardCtrl_0/sim/KeyboardCtrl_0.v" \
+"../../../../../../../../Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/KeyboardDecoder.v" \
+"../../../../../../../../Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/OnePulse.v" \
+"../../../../../../../../Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/SevenSegment.v" \
+
+sv xil_defaultlib  \
+"../../../../../../../../Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/SampleDisplay.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

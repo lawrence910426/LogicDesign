@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov 25 15:46:36 2021
+# Process ID: 2616
+# Current directory: C:/home/LogicDesign - Basic/Lab5/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1964 C:\home\LogicDesign - Basic\Lab5\project_2\project_2.xpr
+# Log file: C:/home/LogicDesign - Basic/Lab5/project_2/vivado.log
+# Journal file: C:/home/LogicDesign - Basic/Lab5/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/home/LogicDesign - Basic/Lab5/project_2/project_2.xpr}
+update_compile_order -fileset sources_1

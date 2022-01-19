@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../Users/lawre/Downloads/Lab2_Adders.v" \
+"../../../../../../Users/lawre/Downloads/Lab2_Majority.v" \
+"../../../../../../Users/lawre/Downloads/Lab2_NAND_Implement.v" \
+"../../../../../../Users/lawre/Downloads/Adders_t.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov 25 15:46:36 2021
+# Process ID: 2616
+# Current directory: C:/home/LogicDesign - Basic/Lab5/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1964 C:\home\LogicDesign - Basic\Lab5\project_2\project_2.xpr
+# Log file: C:/home/LogicDesign - Basic/Lab5/project_2/vivado.log
+# Journal file: C:/home/LogicDesign - Basic/Lab5/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/home/LogicDesign - Basic/Lab5/project_2/project_2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lawre/Downloads/Keyboard Sample Code/Keyboard Sample Code/Keyboard Sample Code/ip/Keyboard-Controller/keyboard_cntr_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'KeyboardCtrl_0' is locked:
+* IP 'KeyboardCtrl_0' does not support the current project part 'xa7a35tcpg236-1I'. Note that part differences may result in undefined behavior.
+update_compile_order -fileset sources_1

@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/lawre/Downloads/Adders_t.v,1633594019,verilog,,,,Adders_t,,,,,,,,
+C:/Users/lawre/Downloads/Lab2_Adders.v,1633599078,verilog,,C:/Users/lawre/Downloads/Lab2_Majority.v,,Full_Adder;Half_Adder,,,,,,,,
+C:/Users/lawre/Downloads/Lab2_Majority.v,1633598497,verilog,,C:/Users/lawre/Downloads/Lab2_NAND_Implement.v,,Majority,,,,,,,,
+C:/Users/lawre/Downloads/Lab2_NAND_Implement.v,1633598436,verilog,,C:/Users/lawre/Downloads/NAND_Implement_t.v,,AND;NAND_Implement;OR;XOR,,,,,,,,
+C:/Users/lawre/Downloads/Majority_t.v,1633594017,verilog,,,,Majority_t,,,,,,,,
+C:/Users/lawre/Downloads/NAND_Implement_t.v,1633595657,verilog,,,,NAND_Implement_t,,,,,,,,
+C:/home/Lab2_Basic/Lab2_Basic.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
